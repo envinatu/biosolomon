@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Marcelo Amores">
+
+<title>18 Introducción a la evolución darwiniana – BIOLOGÍA SOLOMON</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./19-cambio-en-poblaciones.html" rel="next">
+<link href="./17-genetica-del-desarrollo.html" rel="prev">
+<link href="./images/Icono_E.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<!-- Verificación de Google -->
+
+<meta name="google-site-verification" content="EYveEP5I9oi6m-r8Qa_Fett47y3RJFqSizYYvf7G1RM">
+
+
+
+<!-- Canonical URL dinámico -->
+
+<link rel="canonical" link:"{{="" page.url="" |="" absolute_url="" }}"="">
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/envinatu1.png" alt="Envinatu logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/biologia/"> 
+<span class="menu-text">Biología</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/quimica/"> 
+<span class="menu-text">Química</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/geociencias"> 
+<span class="menu-text">Geociencias</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/pedagogia"> 
+<span class="menu-text">Educación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/rubick"> 
+<span class="menu-text">Ludociencia</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/blog"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/amores"> 
+<span class="menu-text">Sobre Mi</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.pdf"> <i class="bi bi-filetype-pdf" role="img" aria-label="Ver PDF">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.epub"> <i class="bi bi-journal-bookmark-fill" role="img" aria-label="Ver eBook">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/"> <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu"> <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./18-evolucion-darwiniana.html"><span class="chapter-title">18 Introducción a la evolución darwiniana</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000-prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefacio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001-al-estudiante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Al estudiante</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-una-vision-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1 Una visión de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-atomos-y-moleculas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2 Átomos y moléculas: la base química de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-quimica-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 La química de la vida: Compuestos orgánicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-organizacion-de-la-celula.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4 Organización de la célula</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-membranas-biologicas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5 Membranas biológicas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-comunicacion-celular.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6 Comunicación celular</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-energia-y-metabolismo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7 Energía y metabolismo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-produccion-de-atp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8 ¿Cómo producen ATP las células? Rutas de liberación de energía</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-fotosintesis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9 Fotosíntesis: captura de energía luminosa</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-mitosis-y-meiosis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10 Cromosomas, mitosis y meiosis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-herencia.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11 Los principios básicos de la herencia</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">12 ADN: Molécula portadora de la información genética</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-expresion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">13 Expresión génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-regulacion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">14 Regulación génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-tecnologia-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">15 Tecnología ADN y genómica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16-genetica-humana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">16 Genética humana y el genoma humano</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-genetica-del-desarrollo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">17 Genética del desarrollo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./18-evolucion-darwiniana.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">18 Introducción a la evolución darwiniana</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./19-cambio-en-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">19 Cambio evolutivo en poblaciones</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./20-especiacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">20 Especiación y macroevolución</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./21-historia-evolutiva.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">21 El origen e historia evolutiva de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./22-evolucion-de-primates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">22 La evolución de los primates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./23-sistematica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">23 Comprensión de la diversidad: sistemática</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./24-virus.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">24 Virus y agentes subvirales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./25-bacterias-y-arqueas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">25 Bacterias y arqueas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./26-protistas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">26 Protistas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./27-plantas-sin-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">27 Plantas sin semillas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./28-plantas-con-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">E</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./29-hongos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">29 Los hongos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./30-diversidad-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">30 Introducción a la diversidad animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./31-protostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">31 Esponjas, cnidarios, ctenóforos y protóstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./32-deuterostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">32 Los deuteróstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./33-crecimiento-vegetal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">33 Estructura, crecimiento y desarrollo vegetal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./34-hoja.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">L</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./35-tallo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">35 Estructura y transporte en el tallo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./36-raices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">36 Raíces y nutrición mineral</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./37-reproduccion-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">37 Reproducción en plantas con ﬂ ores</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./38-respuestas-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">38 Respuestas de desarrollo en plantas a señales externas e internas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./39-introduccion-fisiologia-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">39 Estructura y función animal. Una introducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./40-proteccion-y-movimiento.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">40 Protección, sostén y movimiento</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./41-senalizacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">41 Señalización neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./42-regulacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">42 Regulación neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./43-sentidos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">43 Sistemas sensoriales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./44-transporte-interno.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">44 Transporte interno</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./45-sistema-inmunologico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">45 El sistema inmunológico: Defensa interna</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./46-intercambio-gases.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">46 Intercambio de gases</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./47-nutricion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">47 Procesamiento de alimentos y nutrición</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./48-osmorregulacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">48 Osmorregulación y desecho de residuos metabólicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./49-regulacion-endocrina.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">49 Regulación endocrina</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./50-reproduccion-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">50 Reproducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./51-desarrollo-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">51 Desarrollo animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./52-comportamiento-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52 Comportamiento animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./53-ecologia-de-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52.6 SELECCIÓN SEXUAL</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./54-ecologia-de-comunidades.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">54 Ecología de comunidades</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./55-ecosistemas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">55 Ecosistemas y la biosfera</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./56-geografia-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">56 Ecología y geografía de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./57-conservacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">57 Diversidad biológica y biología de la conservación</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#g" id="toc-g" class="nav-link active" data-scroll-target="#g">G</a>
+  <ul class="collapse">
+  <li><a href="#qué-es-evolución" id="toc-qué-es-evolución" class="nav-link" data-scroll-target="#qué-es-evolución">18.1 ¿QUÉ ES EVOLUCIÓN?</a></li>
+  <li><a href="#ideas-predarwinianas-acerca-de-la-evolución" id="toc-ideas-predarwinianas-acerca-de-la-evolución" class="nav-link" data-scroll-target="#ideas-predarwinianas-acerca-de-la-evolución">18.2 IDEAS PREDARWINIANAS ACERCA DE LA EVOLUCIÓN</a></li>
+  <li><a href="#darwin-y-la-evolución" id="toc-darwin-y-la-evolución" class="nav-link" data-scroll-target="#darwin-y-la-evolución">18.3 DARWIN Y LA EVOLUCIÓN</a></li>
+  <li><a href="#evidencia-de-la-evolución" id="toc-evidencia-de-la-evolución" class="nav-link" data-scroll-target="#evidencia-de-la-evolución">18.4 EVIDENCIA DE LA EVOLUCIÓN</a></li>
+  <li><a href="#resumen-enfoque-en-los-objetivos-de-aprendizaje" id="toc-resumen-enfoque-en-los-objetivos-de-aprendizaje" class="nav-link" data-scroll-target="#resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">18 Introducción a la evolución darwiniana</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">septiembre, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>391 391 391</p>
+<p>Charles Darwin. Este retrato fue pintado poco después de que Darwin regresara a Inglaterra de su viaje alrededor del mundo.</p>
+<p>CONCEPTOS CLAVE</p>
+<p>18.1 La evolución es la acumulación de cambios heredados dentro de las poblaciones a lo largo del tiempo. 18.2 Las ideas acerca de la evolución se originaron mucho antes de la época de Darwin. 18.3 La teoría cientíﬁ ca de la evolución propuesta por Darwin, la selección natural, explicaba cómo fuerzas naturales en el ambiente podían causar la evolución. La selección natural ocurre porque los individuos con caracteres que los hacen mejor adaptados a las condiciones locales tienen más probabilidad de sobrevivir y producir descendencia que los individuos que no están bien adaptados. La síntesis moderna combina la teoría de Darwin con la genética. 18.4 La evidencia de que la evolución tuvo lugar y todavía ocurre es abrumadora. Esta evidencia incluye fósiles, biogeografía, anatomía comparada, biología molecular, biología del desarrollo y experimentos evolutivos con organismos vivos.</p>
+<section id="g" class="level1">
+<h1>G</h1>
+<p>ran cantidad de evidencia sugiere que la diversidad biológica, representada por los millones de especies vivas actualmente en el planeta, evolucionó a partir de un solo ancestro durante la larga historia de la Tierra. Por tanto, organismos radicalmente diferentes entre sí de hecho tienen un parentesco distante, vinculado a través de numerosos ancestros intermediarios con un solo ancestro común. El naturalista británico Charles Darwin (1809-1882) desarrolló un mecanismo simple, veriﬁ cable cientíﬁ camente, para explicar la relación entre la diversidad de organismos de la Tierra. Darwin argumentó de modo convincente que todas las especies que existen en la actualidad, así como las incontables especies extintas que existieron en el pasado, surgieron a partir de otras más antiguas mediante un proceso de divergencia (división en rutas evolutivas separadas) gradual o evolución. El concepto de evolución es la piedra angular de la biología porque vincula todos los campos de las ciencias de la vida en un cuerpo de conocimiento uniﬁ cado. Como lo dijo el genetista estadounidense Theodosius Dobzhansky: “Nada en la biología tiene sentido, excepto a la luz de la evolución”. 1 Los biólogos buscan comprender tanto la notable variedad como las semejanzas fundamentales de los organismos dentro del contexto de la</p>
+<p>Science Source/Photo Researchers, Inc.</p>
+<p>1 American Biology Teacher, vol.&nbsp;35, núm. 125 (1973).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p425_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p425_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>392 Capítulo 18</p>
+<p>evolución. La ciencia de la evolución permite a los biólogos comparar hilos comunes entre organismos aparentemente tan diferentes como bacterias, ballenas, margaritas, mohos acuáticos y tenias. El comportamiento animal, la biología del desarrollo, la genética, la ecología evolutiva, la sistemática y la evolución molecular son ejemplos de algunas de las disciplinas biológicas que se fundamentan en la evolución. En este capítulo se estudia a Charles Darwin y el desarrollo de su teoría de la evolución mediante selección natural. También presenta evidencia que apoya la evolución, incluidos fósiles, biogeografía, anatomía comparativa, biología molecular, biología del desarrollo y estudios experimentales de cambio evolutivo en marcha, tanto en el laboratorio como en la naturaleza.</p>
+<section id="qué-es-evolución" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-evolución">18.1 ¿QUÉ ES EVOLUCIÓN?</h2>
+<p>OBJETIVO DE APRENDIZAJE</p>
+<p>1 Deﬁ nir evolución .</p>
+<p>Al comenzar el estudio de la evolución, la evolución se defi ne como la acumulación de cambios genéticos dentro de las poblaciones a lo largo del tiempo. Una población es un grupo de individuos de una especie que vive en la misma área geográfi ca al mismo tiempo. Así como la defi nición de gen cambia conforme se estudia genética, descubrirá que la defi nición de evolución se volverá más precisa en capítulos posteriores. El término evolución no se refi ere a los cambios que ocurren en un individuo durante su vida. En vez de ello, se refi ere a los cambios en las características de las poblaciones a lo largo de varias generaciones. Dichos cambios pueden ser tan pequeños que son difíciles de detectar o tan grandes que la población difi ere notablemente de su población ancestral. Con el tiempo, dos poblaciones pueden divergir a tal grado que uno se refi ere a ellas como especies diferentes. El concepto de especie se desarrolla ampliamente en el capítulo 20. Por el momento, una defi nición operativa simple es que una especie es un grupo de organismos, con estructura, función y comportamiento similares, que son capaces de cruzarse naturalmente entre sí y producir progenie fértil. La evolución tiene dos perspectivas principales: los cambios evolutivos menores de las poblaciones observados por lo general a través de algunas generaciones ( microevolución , que se estudia en el capítulo 19) y los grandes eventos evolutivos generalmente observados a través de períodos largos, como la formación de diferentes especies a partir de ancestros comunes ( macroevolución , que se estudia en el capítulo 20). La evolución tiene importantes aplicaciones prácticas. La agricultura debe lidiar con la evolución de la resistencia a los pesticidas en insectos y otras plagas. Del mismo modo, la medicina debe responder al rápido potencial evolutivo de los organismos patógenos, como bacterias y virus ( FIGURA 18-1 ). (En insectos, bacterias y otros organismos con vidas cortas, ocurren cambios evolutivos signifi cativos en períodos muy cortos.) Los médicos investigadores usan principios evolutivos para predecir cuáles cepas de infl uenza evolucionan más rápidamente, información que los científi cos necesitan para fabricar las vacunas contra la infl uenza para el próximo año. Además, los investigadores que desarrollan estrategias de tratamiento efectivo para el virus de inmunodefi ciencia humana (VIH) deben entender su evolución, tanto entre los huéspedes como dentro de ellos. El manejo para la conservación de especies raras y en peligro de extinción hace uso de los principios evolutivos de la genética de poblaciones. La rápida evolución de las bacterias y hongos en los suelos contaminados se utiliza en el campo de la biorremediación , en la que se</p>
+<p>emplean microorganismos para limpiar sitios con desechos peligrosos. La evolución incluso tiene aplicaciones más allá de la biología. Por ejemplo, ciertas aplicaciones de computadora usan algoritmos que imitan la selección natural en los sistemas biológicos.</p>
+<p>Repaso</p>
+<p>■ ¿Qué es evolución?</p>
+<p>■ ¿Los individuos evolucionan? Explique su respuesta.</p>
+</section>
+<section id="ideas-predarwinianas-acerca-de-la-evolución" class="level2">
+<h2 class="anchored" data-anchor-id="ideas-predarwinianas-acerca-de-la-evolución">18.2 IDEAS PREDARWINIANAS ACERCA DE LA EVOLUCIÓN</h2>
+<p>OBJETIVO DE APRENDIZAJE</p>
+<p>2 Discutir el desarrollo histórico de la teoría evolutiva.</p>
+<p>Aunque universalmente se asocia a Darwin con la evolución, las ideas de la evolución antecedieron a Darwin durante siglos. Aristóteles (384-322 a.C.) observó mucha evidencia de afi nidades naturales entre los organismos. Esto lo condujo a ordenar a todos los organismos que conocía en una “escala de la naturaleza” que se extendía desde lo excesivamente simple hasta lo más complejo. Aristóteles consideró a los organismos como seres imperfectos “que se movían hacia un estado más perfecto”. Algunos historiadores de la ciencia han interpretado esta idea como la precursora de la teoría evolutiva, pero Aristóteles fue impreciso acerca de la naturaleza de este “movimiento hacia la perfección” y ciertamente no propuso qué procesos naturales impulsaran el mecanismo de la evolución. Más aún, la moderna teoría evolutiva reconoce ahora que la evolución no se mueve hacia estados más “perfectos” o incluso necesariamente hacia mayor complejidad. Mucho antes de la época de Darwin se habían descubierto fósiles incrustados en rocas. Algunos de ellos correspondían a partes de especies</p>
+<p>Resistencia porcentual</p>
+<p>0</p>
+<p>5</p>
+<p>10</p>
+<p>15</p>
+<p>20</p>
+<p>25</p>
+<p>1990 1992 1994 1996 1998 2000 Año 2002 2004 2006 2007</p>
+<p>FIGURA 18-1 Evolución de resistencia a la ciproﬂ oxacina en E. coli Estos datos muestran una creciente resistencia para E. coli en pacientes con infecciones sanguíneas y cerebroespinales en Inglaterra, Gales e Irlanda del Norte, de 1990 a 2007. (Fuente: Livermore, D., “Zietgeist of Resistance”, The Journal of Antimicrobial Chemotherapy, vol.&nbsp;60, i59-i61, 2007. Con permiso de Oxford University Press.)</p>
+<p>Introducción a la evolución darwiniana 393</p>
+</section>
+<section id="darwin-y-la-evolución" class="level2">
+<h2 class="anchored" data-anchor-id="darwin-y-la-evolución">18.3 DARWIN Y LA EVOLUCIÓN</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>3 Explicar las cuatro premisas de la evolución mediante selección natural propuestas por Charles Darwin. 4 Comparar la síntesis moderna con la teoría evolutiva original de Darwin.</p>
+<p>Cuando tenía 15 años de edad, Darwin, hijo de un médico destacado, fue enviado a estudiar medicina a la Universidad de Edimburgo. Al darse cuenta de que la medicina no era lo suyo, pidió su cambio a la Universidad de Cambridge para estudiar teología. Durante esa época se convirtió en el protegido del reverendo John Henslow, quien era profesor de botánica. Henslow alentó el interés de Darwin por el mundo natural. Poco después de su graduación, Darwin se embarcó en el HMS Beagle , que realizaría un viaje de exploración de cinco años alrededor del mundo con el fi n de elaborar cartas de navegación para la marina británica. El Beagle partió de Plymouth, Inglaterra, en 1831 y navegó a lo largo de las costas oriental y occidental de América del Sur ( FIGURA 18-2 ). Mientras otros miembros de la tripulación elaboraban los mapas de las costas y puertos, Darwin pasaba muchas semanas en tierra estudiando los animales, plantas, fósiles y formaciones geológicas tanto de las regiones costeras como de tierra adentro, áreas que no se habían explorado ampliamente. Recolectó y catalogó miles de especímenes de plantas y animales, y tomó notas de sus observaciones, información que se volvió esencial en el desarrollo de su teoría. El Beagle pasó casi dos meses en las islas Galápagos, a 965 km al oeste de Ecuador, donde Darwin continuó con sus observaciones y recolecciones. Comparó los animales y plantas de las Galápagos con los de tierra fi rme en América del Sur. Estaba particularmente sorprendido por sus semejanzas y se preguntó por qué los organismos de las Galápagos se parecían más a los de América del Sur que a los de otras islas en diferentes partes del mundo. Más aún, aunque había semejanzas entre las especies de las Galápagos y las sudamericanas, también había diferencias. Incluso existieron diferencias reconocibles entre los reptiles y aves de una isla y otra. Darwin se preguntó por qué dichas islas remotas tendrían</p>
+<p>familiares, pero otras eran extrañamente diferentes a cualquier especie conocida. Con frecuencia, los fósiles se encontraban en contextos inesperados; por ejemplo, en ocasiones se encontraban invertebrados marinos (animales marinos sin espina dorsal) en rocas en lo alto de las montañas. Leonardo da Vinci (1452-1519) estuvo entre los primeros en interpretar correctamente estos hallazgos inusuales como restos de animales que existieron en épocas anteriores pero que ahora estaban extintos. El naturalista francés Jean Baptiste de Lamarck (1744-1829) fue el primer científi co en proponer que los organismos experimentan cambios en el transcurso del tiempo como resultado de algún fenómeno natural más que de intervención divina. De acuerdo con Lamarck, un ambiente cambiante hacía que un organismo alterara su comportamiento, y en consecuencia usara más algunos órganos o partes corporales y otros los usara menos. A través de varias generaciones, un órgano o parte corporal dado aumentaría de tamaño si se usara mucho, o se reduciría y posiblemente desaparecería si se usaba menos. Su hipótesis requería que los organismos transmitieran a sus descendientes caracteres adquiridos durante sus vidas. Por ejemplo, Lamarck sugirió que el largo cuello de la jirafa se desarrolló cuando un ancestro de cuello corto estiró su cuello para ramonear en las hojas de los árboles. Sus descendientes heredaban el cuello más largo, que se estiraba aún más conforme se alimentaban. Este proceso, repetido durante muchas generaciones, resultó en los largos cuellos de las jirafas modernas. Lamarck también pensó que todos los organismos estaban dotados con una fuerza vital que los impulsaba a cambiar hacia mayor complejidad y “perfección” a lo largo del tiempo. El mecanismo de evolución propuesto por Lamarck es muy diferente del mecanismo posterior propuesto por Darwin. Sin embargo, la hipótesis de Lamarck permaneció como una explicación razonable de la evolución hasta que se redescubrieron las bases de la herencia de Mendel a principios del siglo xx. En aquella época, las ideas de Lamarck estaban muy desacreditadas.</p>
+<p>Repaso</p>
+<p>■ ¿Por qué se vincula a Aristóteles con el pensamiento evolutivo temprano?</p>
+<p>■ ¿Cuáles fueron las ideas de Jean Baptiste de Lamarck acerca de la evolución?</p>
+<p>Mauricio</p>
+<p>Is. Canarias</p>
+<p>Montevideo</p>
+<p>Is. Falkland (Malvinas) Tierra del Fuego</p>
+<p>Callao</p>
+<p>Nueva Zelanda</p>
+<p>Hobart</p>
+<p>Sydney</p>
+<p>Is. Cocos</p>
+<p>Ecuador</p>
+<p>King George Sound</p>
+<p>Tahití</p>
+<p>Is. Galápagos</p>
+<p>Valparaíso Río de Janeiro</p>
+<p>Bahía</p>
+<p>Azores</p>
+<p>Is. Cabo Verde</p>
+<p>Is. Santa Helena</p>
+<p>Is. Ascensión</p>
+<p>FIGURA 18-2 Animada El viaje del HMS Beagle El viaje de cinco años comenzó en Plymouth, Inglaterra ( estrella ), en 1831. Las observaciones realizadas en las Islas Galápagos ( diana ), en la costa occidental de América del Sur, ayudaron a Darwin a desarrollar un mecanismo satisfactorio para explicar cómo una población de organismos podía cambiar con el transcurso del tiempo.</p>
+<p>394 Capítulo 18</p>
+<p>explicación de Darwin de la evolución. Los años que Darwin observó los hábitos de animales y plantas lo introdujeron a la lucha por la existencia descrita por Malthus. Darwin pensó que, en esta lucha, las variaciones heredades favorables para la supervivencia tenderían a conservarse, mientras que las desfavorables se eliminarían. El resultado sería la adaptación , una modifi cación evolutiva que mejora las posibilidades de supervivencia y éxito reproductivo en un ambiente dado. Con el tiempo, la acumulación de modifi caciones puede resultar en una nueva especie. Tiempo era lo único que se requería para el origen de nuevas especies y los geólogos de la época, incluyendo Lyell, proporcionaron evidencia de que la Tierra era lo sufi cientemente antigua como para brindar el tiempo adecuado. Darwin fi nalmente desarrolló una explicación científi ca operativa de la evolución, la de la selección natural , en la que los organismos mejor adaptados tenían más probabilidades de sobrevivir y convertirse en progenitores de la siguiente generación. Como resultado de la selección natural, la población cambia a lo largo del tiempo; la frecuencia de los caracteres favorables aumenta en generaciones sucesivas, mientras que los caracteres menos favorables se vuelven escasos o desaparecen. Darwin pasó los siguientes 20 años formulando sus argumentos para la selección natural y acumuló un inmenso cuerpo de evidencia para apoyar su teoría, y para concordar con otros científi cos. Mientras Darwin meditaba en sus ideas, Alfred Russel Wallace (1823-1913), naturalista británico que estudió las plantas y los animales del archipiélago malayo durante ocho años, fue igualmente sorprendido por la diversidad de especies y las peculiaridades de su distribución. Wallace escribió un breve ensayo acerca de este tema y se lo envió a Darwin, en ese entonces un biólogo de renombre mundial, para pedirle su opinión. Darwin reconoció su propia teoría y se dio cuenta de que Wallace había llegado de manera independiente a la misma conclusión: que la evolución ocurre mediante selección natural. Los colegas de Darwin lo persuadieron de presentar el manuscrito de Wallace junto</p>
+<p>tal diversidad biológica. Después de regresar a casa, Darwin refl exionó acerca de tales observaciones e intentó desarrollar una explicación satisfactoria para la distribución de las especies entre las islas. Darwin trazó varias líneas de evidencia al considerar cómo pudieron originarse las especies. A pesar de la obra de Lamarck, la noción general a mediados del siglo xix era que la Tierra era demasiado joven para que los organismos hubieran cambiado de manera signifi cativa desde que aparecieron por primera vez. Sin embargo, durante los comienzos del siglo xix, los geólogos consideraron la idea de que en su origen las montañas, valles y otras características físicas de la superfi cie de la Tierra no tenían su forma actual. En vez de ello, tales características se desarrollaron lentamente durante largos períodos por los procesos geológicos de actividad volcánica, levantamiento, erosión y glaciación. En su viaje, Darwin llevó consigo el libro titulado Principios de geología , publicado en 1830 por el geólogo inglés Charles Lyell, el que estudió con cuidado. Lyell le proporcionó a Darwin un importante concepto: que el lento ritmo de los procesos geológicos, que todavía ocurren en la actualidad, indicaba que la Tierra era extremadamente antigua. Otra importante evidencia que infl uyó a Darwin fue el hecho de que los criadores y granjeros podían desarrollar muchas variedades de animales domesticados en pocas generaciones. Lo hacían al elegir ciertos caracteres y cruzar sólo a los individuos que mostraban los caracteres deseados, un procedimiento conocido como selección artifi cial . Los criadores, por ejemplo, produjeron numerosas variedades de perros mediante selección artifi cial (como sabuesos, dálmatas, airedales, border collies y pequineses). Muchas variedades de plantas también se produjeron mediante selección artifi cial. Por ejemplo: col, brócoli, coles de Bruselas, colifl or, acelgas, berzas y colorábamos son distintos cultivos cuyos miembros son todos parte de la misma especie, Brassica oleracea ( FIGURA 18-3 ). La cruza selectiva de col marítima, o col silvestre, una planta frondosa nativa de Europa y Asia, produjo los siete vegetales mencionados. Hace más de 4000 años, algunos granjeros seleccionaron artifi cialmente coles silvestres cuyas hojas estaban solapadas. Con el tiempo, dichas hojas se volvieron tan prominentes que las plantas, que parecían coles modernas, llegaron a reconocerse como separadas y distintas de su col silvestre ancestral. Otros granjeros seleccionaron diferentes características de la col silvestre, lo que produjo las otras modifi caciones. Por ejemplo, el colorábamos se produjo al seleccionar tallos de almacenamiento agrandados y las coles de Bruselas al seleccionar bulbos axilares agrandados. En consecuencia, los humanos son responsables de la evolución de B. oleracea en siete cultivos vegetales. Darwin estaba impresionado por los cambios inducidos mediante selección artifi cial y planteó la hipótesis de que un proceso selectivo similar ocurría en la naturaleza. Por tanto, Darwin usó la selección artifi cial como modelo cuando desarrolló el concepto de selección natural. Las ideas de Th omas Malthus (1766-1834), clérigo y economista inglés, fueron otra importante infl uencia para Darwin. En un Ensayo sobre el principio de población , publicado en 1798, Malthus afi rmó que el crecimiento poblacional no siempre es deseable, una visión contraria a las creencias de su época. Él observó que las poblaciones tienen la capacidad de aumentar en forma geométrica (1 ¡ 2 ¡ 4 ¡ 8 ¡ 16) y por ende superan el suministro de alimentos, que sólo tiene la capacidad de aumentar aritméticamente (1 ¡ 2 ¡ 3 ¡ 4 ¡ 5). En el caso de los humanos, Malthus sugirió que el confl icto entre crecimiento poblacional y suministro de alimentos genera hambrunas, enfermedades y guerras, que funcionan como frenos inevitables del crecimiento de la poblaci ó n.&nbsp;La idea de Malthus de que había una fuerte y constante restricción sobre el crecimiento poblacional humano infl uyó enormemente en la</p>
+<p>FIGURA 18-3 Selección artiﬁ cial en Brassica oleracea Un bulbo terminal agrandado (la “cabeza”) se seleccionó en la col ( inferior izquierda ), grupos de ﬂ ores en el brócoli ( superior izquierda ) y la coliﬂ or ( centro derecha ), bulbos axilares en las coles de Bruselas ( inferior centro ), las hojas en las acelgas ( superior derecha ) y las berzas ( inferior derecha ), y tallos en el colorábamos ( centro ).</p>
+<p>John Amaldi</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p428_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p428_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Introducción a la evolución darwiniana 395</p>
+<p>cimiento y otros recursos disponibles para una población, de modo que los organismos compiten entre sí por dichos recursos limitados. Puesto que existen más individuos de los que el ambiente puede sostener, no todos sobreviven para reproducirse. Otros límites sobre el crecimiento poblacional incluyen depredadores, organismos patógenos y condiciones climatológicas desfavorables. 4. Éxito reproductivo diferencial . Aquellos individuos que tienen la combinación más favorable de características (las que hacen a los individuos mejor adaptados a su ambiente) tienen más probabilidad de sobrevivir y reproducirse. Los descendientes tienden a parecerse a sus progenitores porque la siguiente generación hereda caracteres con la base genética de los progenitores. La reproducción exitosa es la clave de la selección natural: los individuos mejor adaptados producen más descendientes, mientras que los individuos menos adaptados mueren de manera prematura o producen menos descendientes o de categoría inferior.</p>
+<p>Con el tiempo pueden acumularse sufi cientes cambios en poblaciones geográfi camente separadas (por lo general con ambientes ligeramente diferentes) para producir nuevas especies. Darwin observó que los pinzones de las Galápagos parecían haber evolucionado de esta forma. Las 14 especies están estrechamente relacionadas. Todas descienden de un ancestro común, una sola especie que viajó desde la parte continental de América del Sur hace 2 a 3 millones de años. (Los parientes genéticos más cercanos de los pinzones de las Galápagos son pequeñas aves granívoras conocidas como tomeguines que viven en el occidente de Sudamérica). Durante este periodo de 2 a 3 millones de años, el número de islas aumentó, el clima cambió, la vida vegetal y el suministro de alimentos también variaron. Las diferentes islas de las Galápagos mantuvieron a los pinzones aislados entre sí, lo que en consecuencia les permitió divergir en especies separadas en respuesta a condiciones variables ( FIGURA 18-5 ). Peter Grant, Rosemary Grant y sus colegas documentan la selección natural en los pinzones de las Galápagos en su ambiente natural desde principios de la década de 1970. Como un ejemplo del proceso evolutivo en acción, considere al pinzón de tierra de pico fi loso ( Geospiza diffi cilis ). Esta especie vive en varias islas diferentes y cada población ha evolucionado diferentes formas y tamaños de pico dependiendo de la dieta disponible en la isla donde vive. En capítulos posteriores se estudiarán de nuevo los pinzones de las Galápagos. En el capítulo 19 se describe parte de la investigación a largo plazo que Peter Grant, Rosemary Grant y sus colegas realizaron acerca de la microevolución de los pinzones de las Galápagos cuando las sequías afectaron el suministro de alimentos; dichos estudios demuestran que el cambio ambiental puede impulsar la selección natural. En el capítulo 54 se describe el desplazamiento de características , un aspecto de la ecología evolutiva, en los pinzones de las Galápagos.</p>
+<p>La síntesis moderna combina la teoría de Darwin con la genética</p>
+<p>Una de las premisas sobre la cual Darwin basó su teoría científi ca de la evolución mediante selección natural es que los individuos transmiten caracteres a la siguiente generación. Sin embargo, Darwin no pudo explicar cómo ocurre esto o por qué los individuos varían dentro de una población. Según se estudió en el capítulo 11, Gregor Mendel dilucidó los patrones básicos de la herencia. Darwin, quien era contemporáneo con Mendel, aparentemente no estaba familiarizado con el trabajo de este último. De hecho, la comunidad científi ca no reconoció el trabajo de Mendel sino hasta la primera parte del siglo xx.</p>
+<p>con un resumen de su propia obra que había preparado y había circulado entre algunos de sus amigos muchos años antes. Ambos ensayos se presentaron en julio de 1858 en una reunión en Londres de la Linnaean Society. La obra monumental de Darwin, El origen de las especies por selección natural o La preservación de las razas favorecidas en la lucha por la vida se publicó en 1859. En 1870 se publicó el libro de Wallace, Aportaciones a la teoría de la selección natural , ocho años después de que regresara del archipiélago malayo.</p>
+<p>Darwin propuso que la evolución ocurría mediante selección natural</p>
+<p>El mecanismo de evolución mediante selección natural propuesto por Darwin consiste de observaciones en cuatro aspectos del mundo natural: variación, sobreproducción, límites sobre el crecimiento poblacional o una lucha por la existencia, y éxito reproductivo diferencial.</p>
+<ol type="1">
+<li>Variación . Los individuos en una población muestran variación ( FIGURA 18-4 ). Cada individuo tiene una combinación única de caracteres, como tamaño, color, capacidad para tolerar condiciones ambientales difíciles y resistencia a ciertos parásitos o infecciones. Algunos caracteres mejoran las posibilidades de supervivencia y éxito reproductivo de un individuo, mientras que otros no lo hacen. Recuerde que la variación necesaria para la evolución mediante selección natural debe heredarse. Aunque Darwin reconoció la importancia de la variación heredada para la evolución, no conocía el mecanismo de la herencia. 2. Sobreproducción . La capacidad reproductiva de cada especie tiene el potencial de hacer que su población aumente geométricamente con el tiempo. Una hembra de rana pone alrededor de 10,000 huevos, ¡y una hembra de bacalao pone tal vez 40 millones de huevos! Sin embargo, en cada caso, sólo sobreviven alrededor de dos descendientes para reproducirse. Por ende, en cada generación cada especie tiene la capacidad de producir más descendientes de los que pueden sobrevivir. 3. Límites sobre el crecimiento poblacional o una lucha por la existencia . Sólo existe cierta cantidad de alimento, agua, luz, espacio para cre-</li>
+</ol>
+<p>FIGURA 18-4 Variación genética en boas arbóreas esmeralda Estas serpientes, todas de la misma especie ( Corallus caninus ), fueron capturadas en una pequeña sección de selva en la Guyana francesa. Muchas especies de serpiente muestran considerables variaciones en su coloración y patrones.</p>
+<p>© Biosphoto/Sauvenet Jany/Peter Arnold, Inc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p429_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p429_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>396 Capítulo 18</p>
+<p>Ahora considere una de las muchas preguntas evolutivas que en la actualidad abordan los biólogos: los efectos relativos del azar y la selección natural sobre la evolución.</p>
+<p>Los biólogos estudian el efecto del azar sobre la evolución</p>
+<p>Los biólogos se preguntan si obtendrían los mismos resultados si pudieran repetir la evolución a partir de organismos similares expuestos a condiciones ambientales análogas. Esto es: ¿evolucionarían los mismos tipos de cambios como resultado de la selección natural? ¿O los organismos serían muy diferentes como resultado de eventos aleatorios? Muchos ejemplos recientemente reportados de evolución en acción sugieren que el azar puede no ser tan importante como la selección natural, al menos en lo que concierne a las poblaciones. Una especie de mosca de la fruta ( Drosophila subobscura ) nativa de Europa habita en áreas desde Dinamarca hasta España. Los biólogos observaron que las moscas del norte tienen alas más grandes que las del sur ( FIGURA 18-6 ). La misma especie de mosca se introdujo accidentalmente en América del Norte a fi nales de la década de 1970. Diez años después de su introducción, los biólogos determinaron que no habían ocurrido cambios estadísticamente signifi cativos en el tamaño de las alas en las diferentes regiones de América del Norte. Sin embargo, 20 años después de su introducción, las moscas de la fruta en América del Norte mostraban el mismo tipo de cambios de alas norte-sur que en Europa. (No se sabe por qué las alas más grandes evolucionaron en áreas del norte y las alas más pequeñas en los climas del sur). Un estudio de la evolución de peces conocidos como espinosos en tres lagos costeros del occidente de Canadá produjo resultados sorprendentemente similares al estudio de moscas de la fruta. La evidencia molecular indica que cuando los lagos se formaron hace miles de años, estaban poblados por la misma especie ancestral. (El análisis de ADN mitocondrial de espinosos en los tres lagos apoya la hipótesis de un ancestro común). En cada lago, las mismas dos especies evolucionaron a partir de un pez ancestral común. Una especie es grande y consume invertebrados que se encuentran en el fondo del lago, mientras que la otra es más pequeña y consume plancton en la superfi cie del lago.</p>
+<p>A partir de las décadas de 1930 y 1940, los biólogos experimentaron un adelanto conceptual cuando combinaron los principios de la herencia mendeliana con la teoría de Darwin de la selección natural. El resultado fue una explicación unifi cada de la evolución conocida como síntesis moderna . En este contexto, síntesis se refi ere a combinar partes de varias teorías para formar un todo unifi cado. Algunos de los fundadores de la síntesis moderna fueron el genetista estadounidense Th eodosius Dobzhansky, el genetista y estadístico británico Ronald Fisher, el genetista británico J. B. S. Haldane, el biólogo británico Julian Huxley, el biólogo estadounidense Ernst Mayr, el paleontólogo estadounidense George Gaylord Simpson, el botánico estadounidense G. Ledyard Stebbins y el genetista estadounidense Sewell Wright. En la actualidad, la síntesis moderna incorpora el conocimiento en expansión de la genética, que por sí misma argumenta de manera irrefutable a favor de la evolución, la sistemática, la paleontología, la biología del desarrollo, el comportamiento y la ecología. La síntesis moderna explica la observación de Darwin de la variación entre la descendencia en términos de mutación , o cambios en el ADN, como en las sustituciones de nucleótidos. Las mutaciones brindan la variabilidad genética sobre la que actúa la selección natural durante la evolución. La síntesis moderna, que enfatiza la genética de poblaciones como el foco central de la evolución, se ha mantenido fi rme desde su planteamiento. Domina el pensamiento y la investigación de los biólogos que trabajan en muchas áreas y ha producido una enorme acumulación de nuevos descubrimientos que validan la evolución mediante selección natural. La mayoría de los biólogos no sólo aceptan los principios básicos de la síntesis moderna, sino que también intentan comprender mejor los procesos causales de la evolución. Por ejemplo, ¿cuál es el papel del azar en la evolución? ¿Con qué rapidez evolucionan nuevas especies? Estas y otras preguntas han surgido en parte a partir de una reevaluación del registro fósil y en parte a partir de nuevos descubrimientos acerca de los aspectos moleculares de la herencia. Tales análisis críticos son parte integral del proceso científi co porque estimulan la observación y la experimentación adicionales, junto con un nuevo examen de la evidencia previa. La ciencia es un proceso en marcha continua y la información que se obtenga en el futuro puede requerir modifi car ciertas partes de la síntesis moderna.</p>
+<ol start="4" type="a">
+<li><p>El pinzón carpintero ( Camarhynchus pallidus ) saca insectos de la corteza y oquedades usando espinas, varitas o incluso hojas muertas.</p></li>
+<li><p>El pinzón cactus ( Geospiza scandens ), que se alimenta de las partes carnosas de los cactus, como son las ﬂores, tiene un pico largo y puntiagudo.</p></li>
+<li><p>El pinzón de tierra grande ( Geospiza magnirostris ) tiene un pico muy abultado, del tipo cascanueces, adaptado para comer gruesas semillas con cáscara dura.</p></li>
+<li><p>El pinzón mosquitero ( Certhidia olivacea ) tiene un pico delgado para comer insectos.</p></li>
+</ol>
+<p>© INTERFOTO/Alamy</p>
+<p>© Images &amp; Stories/Alamy</p>
+<p>© Images &amp; Stories/Alamy</p>
+<p>Miguel Castro/Photo Researchers, Inc.</p>
+<p>FIGURA 18-5 Animada Pinzones de las Galápagos Darwin inﬁ rió que estas aves descendían de una población ancestral común de aves granívoras de América del Sur. La variación en sus picos es resultado de la adaptación a la disponibilidad de diferentes tipos de alimentos.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p430_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p430_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p430_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p430_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p430_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p430_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p430_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p430_img4.jpeg</figcaption>
+</figure>
+</div>
+<p>Introducción a la evolución darwiniana 397</p>
+<p>7 Describir la evidencia de la evolución obtenida a partir de la anatomía comparada. 8 Explicar brevemente cómo la biología molecular y la biología del desarrollo brindan comprensión del proceso evolutivo. 9 Proporcionar un ejemplo de cómo se ponen a prueba experimentalmente las hipótesis evolutivas.</p>
+<p>Un gran cuerpo de evidencia científi ca brinda apoyo a la evolución, incluidas las observaciones del registro fósil, la biogeografía, la anatomía comparada, la biología molecular y la biología del desarrollo. Además, las hipótesis evolutivas se ponen a prueba de manera experimental cada vez más. En conjunto, esta evidencia confi rma la teoría científi ca de que la vida se propagó sobre la Tierra por el proceso de la evolución.</p>
+<p>El registro fósil proporciona fuerte evidencia de la evolución</p>
+<p>Posiblemente la evidencia más directa de la evolución provenga del descubrimiento, identifi cación e interpretación de fósiles , que son los restos o trazas dejadas en roca sedimentaria por organismos que existieron anteriormente. (El término fósil proviene de la palabra latina fossilis , que signifi ca “algo desenterrado”). La roca sedimentaria se forma por la acumulación y solidifi cación de partículas (guijarros, arena, cieno o arcilla) producidas por la exposición a la intemperie de rocas más antiguas, como las rocas volcánicas. Las partículas de sedimento, que por lo general se depositan en los lechos de los ríos, el fondo de los lagos o el suelo marino, se acumulan con el paso del tiempo y exhiben capas distintivas ( FIGU -</p>
+<p>RA 18-7 ). En una secuencia rocosa sin perturbaciones, la capa más antigua está en el fondo y las capas superiores son sucesivamente más jóvenes. El estudio de las capas de rocas sedimentarias, incluida su composición, orden y semejanza de una ubicación a otra, permite a los geólogos colocar en la secuencia correcta los eventos registrados en las rocas. El registro fósil muestra una progresión desde los organismos unicelulares más tempranos hasta los muchos organismos unicelulares y multicelulares que viven en la actualidad (vea la tabla 21-1). En consecuencia, el registro fósil demuestra que la vida evolucionó a lo largo del tiempo. Actualmente, los paleontólogos (científi cos que estudian la especies extintas) han descrito y nombrado alrededor de 300,000 especies fósiles, y otras todavía están por descubrirse. Aunque la mayoría de los fósiles se conservan en roca sedimentaria, algunos restos más recientes se han conservado excepcionalmente bien en pantanos, brea, ámbar (resina de árbol antigua) o hielo ( FIGURA 18-8 ). Por ejemplo, los restos de un mamut lanudo congelado en la profundidad del hielo siberiano durante más de 25,000 años estaban tan bien conservados que parte de su ADN pudo analizarse. Pocos organismos que mueren se convierten en fósiles. La formación y conservación de un fósil requiere que un organismo quede enterrado en condiciones que hagan más lento o eviten el proceso de degradación. Esto es más probable que ocurra si los restos de un organismo quedan cubiertos rápidamente por un sedimento de fi nas partículas de suelo suspendidas en agua. De esta forma los restos de los organismos acuáticos pueden quedar atrapados en pantanos, barro, bancos de arena o deltas. Los restos de organismos terrestres que vivieron en llanuras aluviales también pudieron cubrirse con sedimentos acuáticos o, si el organismo vivió en una región árida, por arena transportada por el viento. Con el tiempo, los sedimentos se endurecen para formar roca sedimentaria y los minerales suelen sustituir los restos del organismo de modo que se conservan muchos detalles de su estructura, incluso de tipo celular. El registro fósil no es una muestra aleatoria de la vida pasada, pues está sesgado hacia los organismos acuáticos y aquellos que vivieron en</p>
+<p>Los miembros de las dos especies dentro de un solo lago no se cruzan entre sí, pero los individuos de las especies más grandes de un lago se cruzan en cautiverio con individuos de las especies más grandes de los otros lagos. De igual modo, los individuos más pequeños de un lago se cruzan en cautiverio con individuos más pequeños de los otros lagos. En estos ejemplos la selección natural parece ser un agente más importante de cambio evolutivo que el azar. Si el azar fuese el factor de infl uencia más importante en la dirección de la evolución, entonces la evolución de la mosca de la fruta no habría procedido de la misma forma en dos continentes y la evolución de los espinosos no habría procedido de la misma forma en los tres lagos. Sin embargo, sólo porque se tienen muchos ejemplos de la importancia de la selección natural en la evolución, no necesariamente se concluye que los eventos aleatorios deban ignorarse como un factor en la dirección del cambio evolutivo. Los defensores del papel del azar consideran que el cambio es más importante en la evolución de los grandes grupos taxonómicos (macroevolución) que en la de poblaciones (microevolución). También es posible que ocurran los eventos aleatorios, pero que sus efectos sobre la evolución sean más difíciles de demostrar que la selección natural.</p>
+<p>Repaso</p>
+<p>■ ¿Qué es selección natural?</p>
+<p>■ ¿Por qué sólo las variaciones heredadas son importantes en el proceso evolutivo?</p>
+<p>■ ¿Qué parte de la teoría no pudo explicar Darwin? ¿Cómo llena esta brecha la síntesis moderna?</p>
+</section>
+<section id="evidencia-de-la-evolución" class="level2">
+<h2 class="anchored" data-anchor-id="evidencia-de-la-evolución">18.4 EVIDENCIA DE LA EVOLUCIÓN</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>5 Resumir la evidencia de la evolución obtenida a partir del registro fósil. 6 Deﬁ nir biogeografía y describir cómo la distribución de los organismos da apoyo a la evolución.</p>
+<p>FIGURA 18-6 Tamaño de alas en hembras de moscas de la fruta En Europa, las hembras de las moscas de la fruta ( Drosophila subobscura ) de los países del norte tienen alas más grandes que las moscas de los países del sur. Aquí se muestran dos moscas: una de Dinamarca ( derecha ) y otra de España ( izquierda ). El mismo patrón evolutivo surgió en América del Norte después de la introducción accidental de D. subobscura en el continente.</p>
+<p>George Gilchrist</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p431_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p431_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>398 Capítulo 18</p>
+<p>brindan evidencia directa del origen de nuevas especies a partir de otras ya existentes, incluidas muchas formas transicionales.</p>
+<p>Fósiles transicionales documentan la evolución de las ballenas</p>
+<p>Durante el siglo pasado, los biólogos descubrieron evidencia que sugiere que las ballenas y otros cetáceos (un orden de mamíferos marinos) evolucionaron a partir de mamíferos terrestres. Durante las décadas de 1980 y 1990, los paleontólogos descubrieron muchos intermediarios fósiles en la evolución de las ballenas que ayudaron a documentar la transición de la tierra al agua de las ballenas. Los fósiles de Ambulocetus natans , una forma transicional con 50 millones de años de antigüedad descubierta en Pakistán, tiene muchas características de las ballenas modernas, pero también posee extremidades posteriores y patas ( FIGURA 18-9a ). (Las ballenas modernas no tienen ex tre mi da des posteriores, aunque persisten huesos vestigiales de pelvis y extremidades posteriores. Las estructuras vestigiales se estudian más adelante en el capítulo). Las vértebras de la espalda baja del Ambulocetus eran muy fl exibles, lo que permitía que la espalda se moviera de manera dorsoventral (arriba y abajo) durante el nado y el buceo, como ocurre con las ballenas modernas. Esta antigua ballena podía nadar pero también moverse en tierra, acaso como lo hacen los leones marinos de la actualidad. El Rodhocetus es un fósil de ballena que se encontró en rocas más recientes en Pakistán ( FIGURA 18-9b ). Las vértebras del Rodhocetus eran incluso más fl exibles que las encontradas en el Ambulocetus . Las vértebras fl exibles permitieron al Rodhocetus un movimiento dorsoventral más poderoso durante el nado. Tal vez el Rodhocetus pudo ser totalmente acuático. Hace 40 millones de años la transición de la ballena de tierra al océano estaba casi completa. Los fósiles egipcios de Basilosaurus muestran una ballena con un cuerpo aerodinámico y aletas frontales para cambiar de dirección, como las de las ballenas de la época actual ( FIGURA 18-9c ). El Basilosaurus conservó vestigios de sus ancestros terrestres: un par de extremidades posteriores reducidas que se desarticularon de la espina dorsal y que probablemente no se usaron en la locomoción. La reducción en las extremidades posteriores continuó hasta el presente. La moderna ballena azul tiene pelvis y fémures vestigiales incrustados en su cuerpo ( FIGURA 18-9d ).</p>
+<p>Varios métodos determinan la edad de los fósiles</p>
+<p>Puesto que las capas de roca sedimentaria se presentan de manera natural en la secuencia de su deposición, con las capas más recientes arriba de las más antiguas, la mayoría de los fósiles se datan por su posición relativa en la roca sedimentaria. Sin embargo, los eventos geológicos que ocurrieron después de que las rocas se formaron inicialmente en ocasiones cambiaron las relaciones de algunas capas de rocas. Los geólogos identifi can rocas sedimentarias específi cas no sólo por sus posiciones en las capas, sino también por características como contenido mineral y por los restos fosilizados de ciertos organismos, conocidos como fósiles índice , que caracterizan una capa específi ca a lo largo de grandes áreas geográfi cas. Los fósiles índice corresponden a organismos que existieron durante un tiempo geológico relativamente corto pero que se conservaron como fósiles en grandes cantidades. Con esta información, los geólogos pueden ordenar las capas de roca y los fósiles que contienen en orden cronológico e identifi car capas similares en ubicaciones muy separadas. Los isótopos radiactivos, también llamados radioisótopos , presentes en una roca brindan un medio para medir con precisión su edad (vea el capítulo 2). Los radioisótopos emiten radiaciones invisibles. Conforme la radiación se emite, el núcleo de un radioisótopo se convierte en el núcleo de un elemento diferente; este proceso se conoce como decaimiento radiactivo . El núcleo radiactivo del uranio 235, por ejemplo, decae a plomo 207. Cada radioisótopo tiene su propia tasa de decaimiento característica. El tiempo requerido para que la mitad de los átomos de un radioisótopo</p>
+<p>los pocos hábitats terrestres que contribuyeron a la formación de fósiles. Por ejemplo, se han encontrado relativamente pocos fósiles de organismos de selva pluvial, porque sus restos se degradan muy rápido en el suelo de la selva antes de que puedan desarrollarse fósiles. Otra razón de este sesgo en el registro fósil es que los organismos con partes corporales duras, como huesos y conchas, tienen más probabilidad de formar fósiles que los que tienen partes corporales blandas. Además, rocas de diferentes edades están expuestas de manera desigual en la superfi cie de la Tierra; algunas rocas de ciertas edades son más accesibles para que los paleontólogos estudien fósiles que las de otras eras. Debido a la naturaleza del proceso científi co, cada descubrimiento fósil representa una “prueba” separada de la teoría evolutiva. Si alguna de las pruebas falla, la teoría tiene que modifi carse para ajustar la evidencia existente. El descubrimiento comprobable, por ejemplo, de restos fósiles de humanos modernos ( Homo sapiens ) en rocas del Precámbrico, que tienen más de 570 millones de años de antigüedad, falsifi caría la teoría evolutiva como se propone en la actualidad. Sin embargo, las rocas precámbricas examinadas a la fecha sólo contienen fósiles de organismos simples, como algas y pequeños animales de cuerpo blando que evolucionaron temprano en la historia de la vida. Los fósiles más antiguos de H. sapiens con características anatómicamente modernas no aparecieron en el registro fósil sino hasta hace aproximadamente 195,000 años (vea el capítulo 22). Los fósiles proporcionan un registro de organismos antiguos y cierta comprensión de dónde y cuándo vivieron. Con los fósiles de organismos de diferentes eras geológicas, los científi cos a veces pueden inferir las líneas de descendencia (relaciones evolutivas) que dieron origen a los organismos de la época moderna. En muchos casos, los fósiles</p>
+<p>FIGURA 18-7 Capas de roca sedimentaria expuestas en el lecho fósil de pizarra de Burgess Este sitio, ubicado en las Rocosas canadienses, se formó hace alrededor de 500 millones de años cuando una avalancha de lodo enterró y conservó diversos e inusuales animales marinos.</p>
+<p>© Alan Sirulnikoff/Photo Researchers, Inc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p432_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p432_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Introducción a la evolución darwiniana 399</p>
+<ol type="a">
+<li>Aunque algunos fósiles contienen trazas de materia orgánica, todo lo que permanece en este fósil de una medusa de 500 millones de años de antigüedad es una impresión en la roca.</li>
+</ol>
+<p>Bruce S. Lieberman/University of Kansas</p>
+<ol start="2" type="a">
+<li>La madera petriﬁcada del Parque Nacional Bosque Petriﬁcado en Arizona consiste de árboles que quedaron enterrados y fueron inﬁltrados con minerales. Los troncos quedaron expuestos por erosión de las capas de arcilla en las que estaban enterrados.</li>
+</ol>
+<p>Kenneth Murray/Photo Researchers, Inc.</p>
+<ol start="3" type="a">
+<li>Fósil de un insecto de 2 millones de años de antigüedad (un mosquito) que quedó incrustado en ámbar.</li>
+</ol>
+<p>Alfred Pasieka/Science Photo Library/Photo Researchers, Inc.</p>
+<ol start="4" type="a">
+<li>Molde de un fósil de antiguos equinodermos llamados crinoideos formado cuando éstos se descompusieron, lo que dejó un molde que más tarde se llenó con minerales disueltos que se endurecieron.</li>
+</ol>
+<p>A. J. Copley/Visuals Unlimited</p>
+<ol start="5" type="a">
+<li>Huellas de dinosaurio, cada una de 75 a 90 cm de longitud, proporcionan pistas acerca de la postura, modo de andar y comportamiento de estos animales extintos.</li>
+</ol>
+<p>Scott Berner/Visuals Unlimited</p>
+<p>FIGURA 18-8 Fósiles desarrollados en diferentes formas</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p433_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p433_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p433_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p433_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p433_img3.png" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p433_img3.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p433_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p433_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p433_img5.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p433_img5.jpeg</figcaption>
+</figure>
+</div>
+<p>400 Capítulo 18</p>
+<p>se solidifi ca en roca volcánica. La roca inicialmente contiene algo de potasio mas no argón. Puesto que el argón es un gas, escapa de la roca caliente tan pronto como se forma, pero cuando el potasio decae en roca que ya está fría y solidifi cada, el argón se acumula en la estructura cristalina de la roca. Si la razón de potasio 40 a argón 40 en la roca puesta a prueba es de 1:1, la roca tiene 1300 millones de años de antigüedad. Para datar fósiles comúnmente se usan varios radioisótopos. Tres de ellos son potasio 40 (vida media: 1300 millones de años), uranio 235 (vida media: 704 millones de años) y carbono 14 (vida media: 5730 años). Los radioisótopos distintos al carbono 14 se usan para datar la roca en la que se encuentran los fósiles, mientras que el carbono 14 se usa para datar los restos de carbono de algo que alguna vez estuvo vivo, como madera, huesos y conchas. Siempre que es posible, la edad de un fósil se verifi ca de manera independiente con el uso de dos o más radioisótopos distintos. El carbono 14, que se produce continuamente en la atmósfera a partir de nitrógeno 14 (mediante radiación cósmica), decae después a nitrógeno 14. Dado que la formación y el decaimiento del carbono 14 ocurre a tasas constantes, la razón de carbono 14 a carbono 12 (un isótopo del carbono más abundante y estable) es constante en la atmósfera. Los organismos absorben carbono de la atmósfera en forma directa (por fotosíntesis) o indirecta (al consumir organismos fotosintéticos). Puesto que cada organismo absorbe carbono de la atmósfera, su razón de carbono 14 a carbono 12 es la misma que hay en la atmósfera. No obstante, cuando un organismo muere, ya no absorbe carbono y la proporción de carbono 14 en sus restos declina conforme el carbono 14 decae a nitrógeno 14. Dada su vida media relativamente corta, el carbono 14 es útil para datar fósiles que tienen 50,000 años de antigüedad o menos. Es particularmente útil para datar sitios arqueológicos.</p>
+<p>La distribución de plantas y animales apoyan la evolución</p>
+<p>El estudio de la distribución geográfi ca pasada y presente de los organismos se llama biogeografía . La distribución geográfi ca de los organismos afecta su evolución. Darwin estuvo interesado en la biogeografía y consideró por qué las especies que se encuentran en las islas oceánicas</p>
+<p>se transformen en átomos diferentes se conoce como su vida media ( FIGURA 18-10 ). Los radioisótopos difi eren de manera signifi cativa en sus vidas medias. Por ejemplo, la vida media del yodo 132 sólo es de 2.4 horas, mientras que la vida media del uranio 235 es de 704 millones de años. La vida media de un radioisótopo particular es constante y no varía con la temperatura, la presión o algún otro factor ambiental. La edad de un fósil en roca sedimentaria por lo general se estima mediante mediciones de las proporciones relativas del radioisótopo original y su producto de decaimiento en intrusiones de roca volcánica que penetran los sedimentos. Por ejemplo, la vida media del potasio 40 es 1300 millones de años, lo que signifi ca que en 1300 millones de años la mitad del potasio radiactivo habrá decaído en su producto de decaimiento, argón 40. El reloj radiactivo comienza a correr cuando el magma</p>
+<ol type="a">
+<li><p>Ambulocetus natans , una forma transicional entre los descendientes de las ballenas modernas y sus ancestros terrestres. No obstante, conservó las extremidades posteriores de sus ancestros cuadrúpedos.</p></li>
+<li><p>El más reciente Rodhocetus tenía vértebras ﬂexibles que permitían un poderoso movimiento dorsoventral durante el nado.</p></li>
+<li><p>El Basilosaurus era más aerodinámico y poseía pequeñas extremidades posteriores no funcionales.</p></li>
+<li><p>Balaenoptera , la moderna ballena azul, contiene vestigios de pelvis y extremidades incrustadas en su cuerpo.</p></li>
+</ol>
+<p>FIGURA 18-9 Intermediarios fósiles en la evolución de la ballena Los biólogos plantean la hipótesis de que los ancestros de las ballenas ten ía n cuatro patas, como se muestra en estas reconstrucciones de intermediarios de ballenas con base en evidencia fósil. Los fósiles indican que el astrágalo en los intermediarios de ballenas coinciden con los encontrados en los hipopótamos, vacas, cerdos y camellos de la actualidad. Las ﬁ guras no están dibujadas a escala. ( a-c : adaptado con permiso de Futuyma, D. J., Science on Trial: The Case for Evolution, ﬁ g. 2, pp.&nbsp;260-261, Sinauer Associates, Sunderland, MA, 1995).</p>
+<p>Proporción de isótopo original restante (%)</p>
+<p>0 0</p>
+<p>Tiempo en vidas medias 1 2 3 4 5</p>
+<p>10</p>
+<p>20</p>
+<p>30</p>
+<p>40</p>
+<p>50</p>
+<p>60</p>
+<p>70</p>
+<p>80</p>
+<p>90</p>
+<p>100</p>
+<p>Decaimiento de isótopo original</p>
+<p>FIGURA 18-10 Animada Decaimiento de radioisótopos En el tiempo cero, la muestra está compuesta por completo del radioisótopo y el reloj radiactivo comienza a correr. Después de una vida media, sólo permanece 50% del radioisótopo original. Durante cada vida media sucesiva, la mitad del radioisótopo restante se convierte en producto de decaimiento.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p434_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p434_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p434_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p434_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p434_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p434_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p434_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p434_img4.jpeg</figcaption>
+</figure>
+</div>
+<p>Introducción a la evolución darwiniana 401</p>
+<p>continentes estaban unidos en una gran masa de tierra. Durante el curso de millones de años, el continente australiano gradualmente se separó de los demás. Los monotremas y marsupiales en Australia siguieron proliferando y diversifi cándose. El aislamiento de Australia también evitó que los mamíferos placentarios, que surgieron en todas partes tiempo después, compitieran con sus monotremas y marsupiales. En otras áreas del mundo donde los mamíferos placentarios evolucionaron, la mayoría de los monotremas y marsupiales se extinguieron. Considere ahora cómo la geología dinámica de la Tierra afecta la biogeografía y la evolución.</p>
+<p>Biogeografía y evolución están relacionadas con la historia geológica de la Tierra</p>
+<p>En 1915, el científi co alemán Alfred Wegener, quien observó una correspondencia entre las formas geográfi cas de América del Sur y África, propuso que todas las masas de tierra en una época estuvieron unidas en un enorme supercontinente, que él llamó Pangea ( FIGURA 18-11a ). Además sugirió que Pangea se separó después y que las diversas masas de tierra se separaron en un proceso conocido como deriva continental . Wegener no conocía algún mecanismo que pudiera provocar la deriva continental, de modo que su idea, aunque debatida inicialmente, se ignoró en gran medida. En la década de 1960, evidencia científi ca proporcionó la explicación para la deriva continental. La corteza de la Tierra está compuesta de</p>
+<p>tienden a parecerse a las especies del continente más cercano, incluso si el ambiente es diferente. También observó que las especies en las islas oceánicas no tienden a parecerse a las especies en islas con ambientes similares en otras partes del mundo. Darwin estudió las plantas y los animales de dos conjuntos de islas áridas: las islas de Cabo Verde, a casi 640 km de África occidental, y las islas Galápagos, aproximadamente a 960 km al oeste de Ecuador, en América del Sur. En cada grupo de islas, las plantas y animales terrestres eran indígenas (nativos), pero los de las islas Cabo Verde se parecían a las especies africanas y los de las islas Galápagos se parecían a las especies sudamericanas. Las semejanzas de las especies de las Galápagos con las especies sudamericanas eran particularmente sorprendentes si se considera que las islas Galápagos son secas y rocosas, y que la parte más cercana de América del Sur es húmeda y tiene una exuberante selva pluvial. Darwin concluyó que las especies del continente vecino emigraron o fueron transportadas a las islas, donde más tarde se adaptaron al nuevo ambiente y, en el proceso, evolucionaron en nuevas especies. Si la evolución no fuera un factor en la distribución de las especies, uno esperaría encontrar una especie que pudiera sobrevivir en todas partes. Sin embargo, la distribución geográfi ca real de los organismos tiene sentido en el contexto de la evolución. Por ejemplo, Australia, que ha sido una masa de tierra separada durante millones de años, tiene organismos característicos. Australia tiene poblaciones de mamíferos ovíparos (monotremas) y mamíferos con bolsas (marsupiales) que no se encuentran en ninguna otra parte. Hace 200 millones de años, Australia y los otros</p>
+<p>Los geólogos plantean la hipótesis de que la separación de Pangea sólo es la más reciente en una serie de separaciones y colisiones continentales que han tenido lugar desde épocas muy tempranas en la historia de la Tierra.</p>
+<ol type="a">
+<li><p>El supercontinente Pangea, hace aproximadamente 240 millones de años (período Triásico).</p></li>
+<li><p>Los continentes en la actualidad.</p></li>
+<li><p>La separación de Pangea en Laurasia (hemisferio norte) y Gondwana (hemisferio sur) comenzó aproximadamente hace 180 millones de años. Las masas terrestres se veían de esta forma hace aproximadamente 120 millones de años (período Cretácico).</p></li>
+<li><p>Mayor separación de masas terrestres, hace 60 millones de años (período Paleógeno temprano). Observe que Europa y América del Norte todavía están unidas y que India era una masa terrestre separada.</p></li>
+</ol>
+<p>Pangea</p>
+<p>Laurasia</p>
+<p>Gondwana</p>
+<p>América del Norte</p>
+<p>India</p>
+<p>Asia</p>
+<p>América del Norte</p>
+<p>América del Sur</p>
+<p>África</p>
+<p>Eurasia</p>
+<p>Australia</p>
+<p>Antártica</p>
+<p>Europa</p>
+<p>África</p>
+<p>América del Sur</p>
+<p>Antártica</p>
+<p>Australia</p>
+<p>FIGURA 18-11 Animada Deriva continental</p>
+<p>PUNTO CLAVE</p>
+<p>402 Capítulo 18</p>
+<p>(metacarpo y falanges). Esta similitud es particularmente sorprendente porque brazos, patas delanteras, aletas y alas se usan para diferentes tipos de locomoción, y no hay una razón mecánica decisiva para que sean estructuralmente similares. Los arreglos semejantes de las partes de las extremidades anteriores son evidentes en aves, reptiles y anfi bios ancestrales, e incluso en los primeros peces que salieron del agua hacia la tierra hace cientos de millones de años (vea la fi gura 32-17).</p>
+<p>siete grandes placas (más algunas más pequeñas) que fl otan en el manto, que es la capa principalmente sólida de la Tierra que yace bajo la corteza y arriba del núcleo. (Debido a su temperatura más caliente, la roca sólida del manto es más plástica que la roca sólida de la corteza sobre ella). Las masas terrestres están situadas en alguna de estas placas. Conforme la placa se mueve, los continentes cambian sus posiciones relativas ( FIGURAS 18-11b, c y d ). El movimiento de las placas de corteza se denomina tectónica de placas . Cualquier área donde se encuentren dos placas es un sitio de intensa actividad geológica. Los terremotos y volcanes son comunes en dichas regiones. Tanto San Francisco, notable por sus terremotos, como el volcán Monte Santa Helena están situados donde se juntan dos placas. Si las masas de tierra se encuentran en los bordes de dos placas adyacentes, pueden formarse montañas. Los Himalaya se formaron cuando la placa que transporta a la India embistió contra la placa que transporta a Asia. Cuando dos placas golpean una contra otra, una de ellas en ocasiones queda enterrada bajo la otra en un proceso conocido como subducción . Cuando dos placas se separan, se forma un surco de lava entre ellas. El océano Atlántico aumenta de tamaño debido a la zona de lava en expansión a lo largo del surco del Atlántico medio, donde se separan dos placas. El conocimiento de que los continentes alguna vez estuvieron conectados y desde entonces se han separado es útil para explicar ciertos aspectos de la biogeografía ( FIGURA 18-12 ). Del mismo modo, la deriva continental tuvo un importante papel en la evolución de diferentes organismos. Cuando Pangea se formó originalmente durante el período Pérmico tardío, juntó a especies terrestres que evolucionaron por separado unas de otras, lo que condujo a competencia y cierta extinción. La vida marina fue afectada de manera adversa, en parte porque, con los continentes unidos como una gran masa, existían menos áreas costeras. (Las áreas costeras poco profundas contienen mayor diversidad de especies marinas que los ambientes de agua profunda). Pangea se separó en varias masas terrestres hace aproximadamente 180 millones de años. Al ocurrir la deriva continental, las poblaciones se aislaron geográfi camente, estuvieron expuestas a diferentes condiciones ambientales y comenzaron a divergir a lo largo de rutas evolutivas separadas. Como resultado, las plantas, animales y otros organismos de continentes antes conectados (América del Sur y África, por ejemplo) se diferenciaron. La deriva continental también provocó cambios graduales en las corrientes oceánicas y atmosféricas que tuvieron profunda infl uencia sobre la biogeografía y la evolución de los organismos. (La biogeografía se estudia un poco más en el capítulo 56).</p>
+<p>La anatomía comparada de especies relacionadas demuestra semejanzas en sus estructuras</p>
+<p>La comparación de los detalles estructurales de características que se encuentran en organismos diferentes pero relacionados revela una semejanza básica. Los detalles de esas características revelan que se derivan de un ancestro común y se denominan características homólogas ; la condición se conoce como homología . Por ejemplo, considere los huesos de las extremidades de los mamíferos. Un brazo humano, la pata delantera de un gato, la aleta frontal de una ballena y el ala de un murciélago, aunque muy diferentes en apariencia, tienen arreglos de huesos, músculos y nervios sorprendentemente similares. La FIGURA 18-13 muestra una comparación de sus estructuras esqueléticas. Cada una tiene un solo hueso (el húmero) en la parte de la extremidad más cercana al tronco del cuerpo, seguido por los dos huesos (radio y cúbito) del antebrazo, un grupo de huesos (carpo) en la muñeca y un número variable de dedos</p>
+<p>El conocimiento de que los continentes estuvieron unidos en alguna época explica la distribución única de ciertas plantas y animales fósiles.</p>
+<p>Antártica</p>
+<p>India</p>
+<p>Australia</p>
+<p>África</p>
+<p>América del Sur</p>
+<p>Mesosaurus</p>
+<p>Glossopteris</p>
+<p>Lystrosaurus Cynognathus</p>
+<ol type="a">
+<li><p>El Cynognathus era un reptil carnívoro encontrado en rocas del Triásico en América del Sur y África.</p></li>
+<li><p>El Mesosaurus era un reptil de agua dulce encontrado en rocas del Pérmico en América del Sur y África. (d) Glossopteris era un árbol que producía semillas encontrado en rocas del Pérmico en América del Sur, África, India, Antártica y Australia.</p></li>
+<li><p>El Lystrosaurus era un reptil herbívoro encontrado en rocas del Triásico en África, India y Antártica.</p></li>
+</ol>
+<p>Adaptado de E. H. Colbert, Wandering Lands and Animals, Hutchinson, London, 1973.</p>
+<p>FIGURA 18-12 Distribución de fósiles en continentes que estuvieron unidos durante los períodos Pérmico y Triásico (hace 286 a 213 millones de años)</p>
+<p>PUNTO CLAVE</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p436_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p436_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p436_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p436_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p436_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p436_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p436_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p436_img4.jpeg</figcaption>
+</figure>
+</div>
+<p>Introducción a la evolución darwiniana 403</p>
+<p>Las características estructuralmente similares que no son homólogas pero tienen funciones semejantes que evolucionaron de manera independiente en organismos con parentesco distante se dice que son características homoplásticas . Dichas similitudes en diferentes especies que son adquiridas de manera independiente mediante evolución convergente y no por descendencia común se llaman homoplasia. 2</p>
+<p>Las hojas brindan un ejemplo de homología en las plantas. En muchas especies de plantas, las hojas se han modifi cado para funciones distintas a la fotosíntesis. Una espina de cactus y un zarcillo de guisante, aunque muy diferentes en apariencia, son homólogos porque ambos son hojas modifi cadas ( FIGURA 18-14 ). La espina protege el suculento tejido del tallo del cactus, mientras que el zarcillo, que se enreda en un objeto pequeño una vez que tiene contacto con él, ayuda a sostener el tallo en ascenso de la planta de guisante. Tales modifi caciones en órganos usados en diferentes formas son el resultado esperado de un origen evolutivo común. La estructura básica presente en un ancestro común se modifi có en diferentes formas para distintas funciones conforme varios descendientes evolucionaron más tarde. No obstante, no todas las especies con características “similares” descienden de un ancestro común reciente. En ocasiones, condiciones ambientales análogas resultan en la evolución de adaptaciones similares. Dicha evolución independiente de estructuras similares en organismos con relación distante se conoce como evolución convergente . Los cerdos hormigueros, osos hormigueros y pangolines son un excelente ejemplo de evolución convergente ( FIGURA 18-15 ). Se parecen unos a otros en estilo de vida y ciertas características estructurales. Todos tienen garras fuertes y agudas para excavar en hormigueros y termiteros, y morros alargados con largas lenguas pegajosas para capturar dichos insectos. Sin embargo, cerdos hormigueros, osos hormigueros y pangolines evolucionaron a partir de tres órdenes de mamíferos con relación muy distante. (Vea la fi gura 32-28, que muestra varios ejemplos de evolución convergente en mamíferos placentarios y marsupiales).</p>
+<p>HUMANO</p>
+<p>Húmero</p>
+<p>Radio</p>
+<p>Cúbito</p>
+<p>Carpo</p>
+<p>Metacarpo</p>
+<p>Falanges</p>
+<p>Falanges</p>
+<p>1</p>
+<p>2 3 4 5</p>
+<p>GATO</p>
+<p>1</p>
+<p>1</p>
+<p>2</p>
+<p>2 3 4 5</p>
+<p>BALLENA</p>
+<p>Húmero</p>
+<p>Radio</p>
+<p>Carpo Radio</p>
+<p>Carpo</p>
+<p>Metacarpo</p>
+<p>Cúbito</p>
+<p>Cúbito</p>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>MURCIÉLAGO</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>FIGURA 18-13 Animada Homología estructural en vertebrados El brazo humano, la pata delantera de un gato, la aleta de una ballena y el ala de un murciélago tienen una similitud estructural subyacente básica porque se derivan de un ancestro común. Los cinco dedos están numerados en cada dibujo.</p>
+<p>Espina</p>
+<p>Zarcillo</p>
+<p>Foliolo</p>
+<p>Peciolo</p>
+<p>Estípula</p>
+<p>Tallo</p>
+<ol type="a">
+<li></li>
+<li></li>
+</ol>
+<p>FIGURA 18-14 Homología en plantas (a) Las espinas de la biznaga de agua ( Ferocactus wislizenii ) son hojas modiﬁ cadas, así como (b) los zarcillos del guisante de jardín ( Pisum sativum ). Las hojas del guisante de jardín son compuestas; esto es: están divididas en componentes más pequeños llamados foliolos. Los foliolos terminales se modiﬁ can en zarcillos que frecuentemente se ramiﬁ can.</p>
+<p>2 Un término antiguo, menos preciso, que todavía usan algunos biólogos para referirse a las características no homólogas con funciones similares es analogía .</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p437_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p437_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p437_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p437_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>404 Capítulo 18</p>
+<p>Las espinas, que son hojas modifi cadas, y las púas, que son tallos modifi cados, son un ejemplo de homoplasia en plantas. Espinas y púas se parecen mutuamente de manera superfi cial pero son características homoplásticas que evolucionaron en forma independiente para resolver la necesidad común de protección de los herbívoros ( FIGURA 18-16 ). Como la homología, la homoplasia ofrece evidencia crucial de la evolución. Las características homoplásticas son de interés evolutivo porque demuestran que los organismos con ascendencias separadas pueden adaptarse en formas parecidas a demandas ambientales similares. La anatomía comparada también revela la existencia de estructuras vestigiales . Muchos organismos contienen órganos o partes de órganos que en apariencia son inoperantes y degenerados, con frecuencia de tamaño reducido o que carecen de alguna parte esencial. Las estructuras vestigiales son restos de estructuras más desarrolladas que estuvieron presentes y fueron funcionales en organismos ancestrales. En el cuerpo humano, más de 100 estructuras se consideran vestigiales, incluido el cóccix (huesos de la cola fusionados), los terceros molares (muelas del juicio) y los músculos que mueven las orejas. Ballenas y pitones tienen huesos vestigiales de extremidades posteriores ( FIGURA 18-17 ); los cerdos tienen dedos vestigiales que no tocan el suelo; las aves sin alas como el kiwi tienen huesos de alas vestigiales; y muchos animales ciegos, de madrigueras o que habitan en cuevas tienen ojos vestigiales inoperantes. Es de esperar la presencia ocasional de una estructura vestigial conforme una especie se adapta a un modo de vida cambiante. Algunas estructuras se vuelven mucho menos importantes para la supervivencia y pueden terminar como vestigios. Cuando una estructura ya no confi ere una ventaja selectiva, puede volverse más pequeña y perder gran parte o el total de su función con el paso del tiempo. Sin embargo, dado que la presencia de la estructura vestigial por lo general no es dañina para el organismo, la presión selectiva para eliminarla por completo es débil y la estructura vestigial se encuentra en muchas generaciones posteriores.</p>
+<p>Las comparaciones moleculares entre organismos proporcionan evidencia de la evolución</p>
+<p>Fósiles, biogeografía y anatomía comparada proporcionaron a Darwin importantes pistas acerca de la historia evolutiva de la vida. En la actualidad, las semejanzas y diferencias en la bioquímica y biología molecular de varios organismos proporciona convincente evidencia adicional de las relaciones evolutivas. La evidencia molecular de la evolución incluye el código genético universal y las secuencias conservadas de aminoácidos en las proteínas y de nucleótidos en el ADN.</p>
+<p>El código genético virtualmente es universal</p>
+<p>Los organismos deben sus características a los tipos de proteínas que poseen, que a su vez están determinadas por la secuencia de nucleótidos en su ácido ribonucleico mensajero (ARNm), como lo especifi ca el orden de nucleótidos en su ADN. La evidencia de que toda la vida está relacionada proviene del hecho de que todos los organismos usan un código genético que virtualmente es idéntico. (Existen algunas variaciones menores en el código genético. Por ejemplo, algunas mitocondrias tienen varias desviaciones del código estándar). Recuerde del capítulo 13 que el código genético especifi ca un triplete (una secuencia de tres nucleótidos en el ADN) que codifi ca un codón particular (una secuencia de tres nucleótidos en el ARNm). El codón codifi ca entonces un aminoácido particular en una cadena de polipéptido. Por ejemplo, “AAA” en el ADN codifi ca “UUU” en el ARNm, que a su vez codifi ca el aminoácido fenilalanina en organismos tan diversos como camarones, humanos, bacterias y tulipanes. De hecho, “AAA” codifi ca fenilalanina en todos los organismos examinados hasta el momento.</p>
+<p>Por ejemplo, las alas de varios animales voladores con relación distante, como insectos y aves, se parecen superfi cialmente entre ellas; son características homoplásticas que evolucionaron con el paso del tiempo para satisfacer la función común de volar, aunque difi eren en aspectos más fundamentales. Las alas de las aves son extremidades anteriores modifi cadas sostenidas por huesos, mientras que las alas de los insectos quizá evolucionaron a partir de apéndices parecidos a branquias presentes en los ancestros acuáticos de los insectos.</p>
+<ol type="a">
+<li>El cerdo hormiguero ( Orycteropus afer ) es nativo del centro, sur y oriente de África.</li>
+</ol>
+<p>Kjell B. Sandved/Visuals Unlimited</p>
+<ol start="2" type="a">
+<li>Un oso hormiguero gigante ( Myrmecophaga tridactyla ) en un termitero. El oso hormiguero es nativo de América Latina, desde el sur de México hasta el norte de Argentina.</li>
+</ol>
+<p>Gunter Ziesler/Peter Arnold, Inc.</p>
+<ol start="3" type="a">
+<li>El pangolín ( Manis crassicaudata ) es nativo de África y del sur al sureste de Asia.</li>
+</ol>
+<p>Mandal Ranjit/Photo Researchers, Inc.</p>
+<p>FIGURA 18-15 Evolución convergente Tres mamíferos con relación distante adaptados independientemente para comer hormigas y termitas en ambientes de pastizal-bosque similares en diferentes partes del mundo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p438_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p438_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p438_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p438_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p438_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p438_img3.jpeg</figcaption>
+</figure>
+</div>
+<p>Introducción a la evolución darwiniana 405</p>
+<p>comienza a brindar un cúmulo de datos evolutivos conforme se comparan dichos genomas. Las relaciones basadas en las secuencias generalmente concuerda con los primeros estudios, los cuales basaron sus relaciones evolutivas en semejanzas estructurales entre los organismos vivos y en datos de fósiles de organismos extintos. Las investigaciones de la secuencia de aminoácidos en las proteínas que desempeñan el mismo papel en muchas especies han revelado que tienen grandes semejanzas como también ciertas diferencias específi cas. Incluso los organismos que sólo están remotamente relacionados comparten algunas proteínas, como el citocromo c , que es parte de la cadena de transporte de electrones en la respiración aeróbica. Para sobrevivir, todos los organismos aerobios necesitan una proteína respiratoria con la misma estructura y función básicas del citocromo c de su ancestro común. En consecuencia, no todos los aminoácidos que confi eren las características estructurales y funcionales del citocromo c tienen libertad para cambiar. Cualquier mutación que cambiara la secuencia de aminoácidos en sitios estructuralmente importantes de la molécula del citocromo c habría sido dañina, y la selección natural habría evitado que tales mutaciones se transmitieran a generaciones futuras. Sin embargo, en el curso de la larga evolución independiente de diferentes organismos, las mutaciones resultaron en la sustitución de muchos aminoácidos en ubicaciones menos importantes en la molécula de citocromo c . Mientras más grandes sean las diferencias en las secuencias de aminoácidos de sus moléculas de citocromo c , más tiempo ha transcurrido desde que dos especies divergieron. Puesto que las secuencias de aminoácidos de una proteína están codifi cadas en el ADN, las diferencias en las secuencias de aminoácidos refl ejan de manera indirecta la naturaleza y el número de cambios en el par de bases de ADN subyacente que debieron ocurrir durante la evolución. Desde luego, no todo el ADN codifi ca para proteínas (son testigos los intrones y los genes de ARN de transferencia). La secuenciación de ADN (esto es; la determinación del orden de bases de nucleótidos en el ADN, tanto del ADN que codifi ca proteínas como del ADN que no codifi ca proteínas) es útil en la determinación de las relaciones evolutivas. Por lo general, mientras más estrechamente relacionadas se consideren las especies sobre la base de otra evidencia científi ca, mayor será el porcentaje de secuencias de nucleótidos que tengan en común sus moléculas de ADN. Por ejemplo, al usar los datos de secuencia de ADN en la</p>
+<p>FIGURA 18-18 es posible concluir que el pariente vivo más cercano de los humanos es el chimpancé (porque su ADN tiene el menor porcentaje de diferencias en la secuencia examinada). (La evolución de los primates se estudia en el capítulo 22). En algunos casos, la evidencia molecular desafía las ideas evolutivas tradicionales que se basaron en comparaciones estructurales entre especies vivientes y/o en estudios de esqueletos fósiles. Considere los mamíferos ungulados con dedos pares como cerdos, camellos, ciervos, antílopes, reses e hipopótamos. Las ballenas carecen de dedos y tradicionalmente no se clasifi caban como parientes cercanos de los mamíferos ungulados.</p>
+<p>La universalidad del código genético (no se ha encontrado otro código en ningún organismo) es evidencia convincente de que todos los organismos surgieron a partir de un ancestro común. El código genético se ha mantenido y transmitido a lo largo de todas las ramas del árbol evolutivo desde su origen en algún organismo extremadamente temprano (y exitoso).</p>
+<p>Proteínas y ADN contienen un registro del cambio evolutivo</p>
+<p>Los investigadores han realizado miles de comparaciones de secuencias de proteínas y ADN en varias especies durante los últimos 30 años. Más aún, el reciente auge en la información de secuencias de ADN (actualmente se tiene secuenciado el genoma de más de 1000 especies)</p>
+<p>Cicatriz foliar</p>
+<p>Espina (nervadura de hoja)</p>
+<p>Púa (se desarrolla a partir de la yema axilar)</p>
+<ol type="a">
+<li><p>Una espina de agracejo japonés ( Berberis thunbergii ) es una hoja modiﬁcada. (En este ejemplo, la espina en realidad es la nervadura de la hoja original, de la que se despojó).</p></li>
+<li><p>Las púas de espino rojo ( Crataegus mollis ) son tallos modiﬁcados que se desarrollan a partir de yemas axilares.</p></li>
+</ol>
+<p>Retoño (se desarrolla a partir de la yema axilar)</p>
+<p>FIGURA 18-16 Homoplasia en plantas</p>
+<ol type="a">
+<li>Una pitón africana ( Python sebae ). (b) Acercamiento de parte de un esqueleto de pitón que muestra los huesos de las extremidades posteriores.</li>
+</ol>
+<p>E. R. Degginger/Animals Animals</p>
+<p>J. D. Cunningham/Visuals Unlimited</p>
+<p>FIGURA 18-17 Estructuras vestigiales Todas las pitones tienen remanentes de huesos de extremidades posteriores incrustados en sus cuerpos.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p439_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p439_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p439_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p439_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p439_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p439_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p439_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p439_img4.jpeg</figcaption>
+</figure>
+</div>
+<p>406 Capítulo 18</p>
+<p>cies con genes similares. Las mutaciones en los genes que regulan el desarrollo con frecuencia resultan en estructuras dramáticamente diferentes (vea la fi gura 17-12). Cada vez más, la biología del desarrollo, en particular en el ámbito molecular, brinda respuestas a preguntas como: ¿en qué forma las serpientes se estiraron y perdieron sus extremidades? En muchos casos, cambios evolutivos como la pérdida de extremidades en las serpientes ocurren como resultado de variaciones en los genes que regulan la secuencia ordenada de eventos que ocurren durante el desarrollo. En las pitones, por ejemplo, la pérdida de extremidades anteriores y la elongación del cuerpo están ligadas con mutaciones en varios genes Hox que afectan la expresión de los patrones corporales y la formación de extremidades en una gran variedad de animales. (Vea la discusión de los grupos de genes Hox en el capítulo 17). Las extremidades posteriores pueden no desarrollarse porque el tejido embrionario de la pitón no responde a señales internas que disparan la elongación de las patas. Los genetistas del desarrollo en la Escuela de Medicina en Harvard y la Universidad de Princeton estudian las bases de desarrollo para las diferentes formas de pico de los pinzones de Galápagos. Determinaron que un gen que codifi ca una importante molécula de señalización, la proteína morfogenética de hueso 4 (BMP4), afecta el desarrollo del esqueleto craneofacial de las aves. El gen para BMP4 se activa temprano en el desarrollo y tiene un mayor nivel de expresión en las especies de pinzones con picos más largos y más gruesos que en las de pinzones con picos más pequeños. La evidencia científi ca demuestra de manera abrumadora que el desarrollo en diferentes animales está controlado por los mismos tipos de genes; tales semejanzas genéticas en una gran variedad de organismos refl eja una historia evolutiva compartida. Por ejemplo, los vertebrados tienen patrones similares de desarrollo embrionario que indican que comparten un ancestro común. Todos los embriones vertebrados tienen músculos segmentados, sacos faríngeos (garganta), un corazón tubular sin lados izquierdo y derecho, un sistema de arterias conocido como arcos aórticos en la región faríngea y muchas otras características compartidas. Todas estas estructuras son necesarias y funcionales en el pez en desarrollo. Los pequeños músculos segmentados del embrión de pez dan lugar a los músculos segmentados usados por el pez adulto al nadar. Los sacos faríngeos salen a la superfi cie como hendiduras branquiales. El corazón del pez adulto sigue sin dividirse y bombea sangre hacia las branquias que se desarrollan en asociación con los arcos aórticos. Puesto que ninguna de estas características embrionarias persisten en los adultos de reptiles, aves o mamíferos, ¿por qué estas estructuras similares a las de los peces se presentan en sus embriones? La evolución es un proceso conservador y la selección natural construye sobre lo que ya existe en vez de comenzar desde cero. La evolución de nuevas características con frecuencia no requiere la evolución de nuevos genes de desarrollo, más bien depende de una modifi cación en los genes del desarrollo que ya existen (vea la discusión acerca de las preadaptaciones en el capítulo 20). Se cree que los vertebrados terrestres evolucionaron a partir de ancestros con forma de pez; por tanto, comparten algunas de las primeras etapas de desarrollo que todavía se encuentran en los peces</p>
+<p>La FIGURA 18-19 muestra un cladograma , o árbol fi logenético , con base en datos moleculares de ballenas y mamíferos ungulados seleccionados. Dichos cladogramas, diagramas que muestran líneas de descendencia, pueden obtenerse a partir de diferencias en una secuencia dada de nucleótidos de ADN. Este diagrama indica que las ballenas están más estrechamente relacionadas con los hipopótamos que con cualquier otro mamífero ungulado. Es probable que las ramas que representan ballenas e hipopótamos divergieran en un momento relativamente reciente debido a la cercana similitud de secuencias de ADN en dichas especies. En contraste, los camellos, que tienen secuencias de ADN que son menos similares a las de las ballenas, divergieron mucho más temprano. La evidencia molecular indica que ballenas e hipopótamos comparten un ancestro común reciente. La evidencia molecular que vincula ballenas y mamíferos ungulados con dedos pares condujo a una revaloración de las ballenas fósiles tempranas. Al igual que los mamíferos ungulados de hoy, los fósiles tempranos de ballenas tenían un número par de dedos en sus apéndices. Las ballenas fósiles también tienen el mismo tipo de astrágalo especializado (llamado polea doble) que los hipopótamos y otros mamíferos ungulados.</p>
+<p>La biología del desarrollo ayuda a revelar patrones evolutivos</p>
+<p>Ya en 1975 los biólogos sugerían que los cambios reguladores en la expresión génica, en particular de los genes involucrados en el desarrollo, eran responsables de muchas diferencias entre especies cercanamente relacionadas. En la actualidad mucha evidencia apoya la idea de que los cambios reguladores (la manera en que los genes se activan o desactivan durante el desarrollo) ayuda a explicar la diversidad de formas en espe-</p>
+<p>Chimpancé</p>
+<p>Gorila</p>
+<p>Orangután</p>
+<p>Gibón</p>
+<p>Mono Rhesus</p>
+<p>Mono araña</p>
+<p>Tarsero</p>
+<p>5 10 15</p>
+<p>Porcentaje de divergencia en secuencia no codificadora del gen β -globina</p>
+<p>20</p>
+<p>Especies de primates comparadas con humanos</p>
+<p>25</p>
+<p>FIGURA 18-18 Diferencias en secuencias de nucleótidos de ADN como evidencia de relaciones evolutivas La comparación del mismo gen en diferentes organismos brinda una ventana a la evolución. Aquí las diferencias en la región no codiﬁ cadora del gen b -globina se comparan entre humanos y otros primates. Los biólogos evolutivos comienzan a expandir dichos estudios de comparar uno o varios genes, a comparar genomas enteros.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p440_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p440_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p440_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p440_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p440_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p440_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p440_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p440_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p440_img5.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p440_img5.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p440_img6.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p440_img6.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p440_img7.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p440_img7.jpeg</figcaption>
+</figure>
+</div>
+<p>Introducción a la evolución darwiniana 407</p>
+<p>depredadores que se alimentan de los guppies más grandes están presentes en todas las corrientes a elevaciones más bajas; tales áreas de intensa presión depredadora se conocen como hábitats de alta depredación . Los depredadores con frecuencia son excluidos de los tributarios o áreas corriente arriba por rápidos y cascadas. Las áreas arriba de tales barreras se conocen como hábitats de baja depredación porque sólo contienen una especie de pequeño pez depredador que ocasionalmente se alimenta de guppies más pequeños. Las diferencias en depredación están correlacionadas con muchas diferencias en los guppies, como la coloración del macho, el comportamiento y atributos conocidos como rasgos de historia de vida (que se estudian con más detalle en el capítulo 53). Dichos rasgos incluyen edad y tamaño al momento de la maduración sexual, el número de descendientes por evento reproductivo, el tamaño de los descendientes y la frecuencia de la reproducción. Por ejemplo, los adultos guppies son más grandes en las corrientes que se encuentran a mayores elevaciones mientras que los más pequeños están en corrientes a elevaciones más bajas. ¿Realmente los depredadores provocan la evolución de estas diferencias? Reznick y sus colegas pusieron a prueba esta hipótesis evolutiva al realizar experimentos de campo en Trinidad. Al sacar ventaja de las cascadas que evitan el movimiento corriente arriba de los guppies, de sus depredadores o de ambos, movieron guppies o depredadores de éstos sobre tales barreras. Por ejemplo, los guppies de un hábitat de alta depredación se introdujeron en un hábitat de baja depredación al moverlos superando una cascada hacia una sección de la corriente que estaba libre de guppies y grandes depredadores. La única especie de pez que vivía en esta sección de corriente antes de la introducción era el pez depredador pequeño. Once años después, los investigadores capturaron hembras adultas del sitio de introducción (hábitat de baja depredación) y del sitio de control abajo de la cascada (hábitat de alta depredación). Criaron a dichas hem-</p>
+<p>actuales. La acumulación de cambios genéticos al paso del tiempo en dichos vertebrados modifi có la estructura corporal básica que se encuentra en el desarrollo de los peces ( FIGURA 18-20 ).</p>
+<p>Las hipótesis evolutivas se ponen a prueba experimentalmente</p>
+<p>Cada vez más, los biólogos diseñan experimentos imaginativos, con frecuencia en escenarios naturales, para poner a prueba hipótesis evolutivas. David Reznick, de la Universidad de California en Santa Bárbara, y John Endler, de la James Cook University en Australia, estudian evolución en poblaciones de guppies en Venezuela y Trinidad, una pequeña isla en el sur del Caribe. Reznick y Endler observaron que diferentes corrientes tienen distintos tipos y número de peces que depredan a los guppies. Los peces</p>
+<p>Este diagrama de ramiﬁ cación, llamado cladograma , muestra relaciones evolutivas hipotéticas. Los organismos que se presentan aquí comparten un ancestro común.</p>
+<p>Camello</p>
+<p>Cerdo</p>
+<p>Rumiante</p>
+<p>Hipopótamo</p>
+<p>Cetáceo</p>
+<p>Ancestro común de mamíferos ungulados con dedos pares y cetáceos</p>
+<p>Ancestro común de hipopótamos y ballenas</p>
+<p>Adaptado de Nikaido, M., et al., “Phylogenetic Relationships among Cetartiodactyls Based on Insertions of Short and Long Interspersed Elements: Hippopotamuses Are the Closest Extant Relatives of Whales”, Proceedings of the National Academy of Sciences, Vol. 96, 31 de agosto de 1999.</p>
+<p>FIGURA 18-19 Cladograma de ballenas y sus parientes vivos más cercanos Las diferencias en secuencias de ADN entre mamíferos seleccionados sugiere que los mamíferos ungulados, como los hipopótamos y las jirafas, son los parientes vivos más cercanos de las ballenas. El hipopótamo probablemente es el pariente vivo más cercano de las ballenas y otros cetáceos. Los nodos ( círculos ) representan puntos de ramiﬁ cación donde una especie se divide en dos o más linajes. (Los rumiantes son mamíferos como las vacas, ovejas y jirafas que tienen un estómago de múltiples cámaras y mastican material vegetal regurgitado para hacerlo más digerible).</p>
+<p>PUNTO CLAVE</p>
+<p>1 día</p>
+<p>3 días 12 días 56 días</p>
+<p>3 días 32 días</p>
+<p>Humano Pollo Pez</p>
+<p>FIGURA 18-20 Desarrollo de aletas de pez, alas de pollo y extremidades humanas Peces, pollos y humanos son vertebrados con genes sorprendentemente similares. Aunque los embriones tempranos de estos organismos son muy parecidos, las áreas en color naranja siguen diferentes rutas de desarrollo, lo que resulta en aletas, alas o extremidades. (Las ﬁ guras no están a escala).</p>
+<p>John Burgoyne/National Geographic Image Collection</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img5.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img5.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img6.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img6.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img7.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img7.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img8.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img8.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img9.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img9.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img10.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img10.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p441_img11.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p441_img11.jpeg</figcaption>
+</figure>
+</div>
+<p>408 Capítulo 18</p>
+<p>bras en sus laboratorios y compararon los rasgos de historia de vida de generaciones sucesivas. Los descendientes de los guppies introducidos en el hábitat de baja depredación maduraron a un mayor tamaño que los descendientes de los guppies en el sitio de control abajo de la cascada ( FIGU -</p>
+<p>RA 18-21 ). También produjeron menos descendientes, aunque más grandes. Las poblaciones de peces introducidos evolucionaron para tener historias de vida similares a las de los peces que se suelen encontrar en los hábi tats de baja depredación. Estudios similares demostraron que los depredadores han tenido un papel activo en la evolución de otros rasgos, como el número promedio de descendientes producidos durante la vida de una hembra individual (fecundidad), la coloración del macho y el comportamiento. La evolución rápida en una escala de años también se ha observado en organismos tan diversos como caracoles marinos, mejillones, gusanos del jaboncillo, efímeras, lagartos anole, ’i’iwis (mieleros escarlata) y conejos silvestres. Estos y otros experimentos y observaciones demuestran no sólo que la evolución es real, sino que también ocurre ahora, impulsada por fuerzas ambientales selectivas, como la depredación, que puede manipularse experimentalmente. Darwin supuso de manera incorrecta que la evolución era tan gradual que los humanos no podían observarla. Como apunta Jonathan</p>
+<p>18.1 (página 392)</p>
+<p>1 Deﬁ nir evolución .</p>
+<p>■ Evolución es la acumulación de cambios heredados dentro de una población a lo largo del tiempo. Evolución es el concepto uniﬁ cador de la biología, porque vincula todos los campos de las ciencias de la vida en un cuerpo coherente de conocimiento.</p>
+<p>18.2 (página 392)</p>
+<p>2 Discutir el desarrollo histórico de la teoría evolutiva.</p>
+<p>■ Jean Baptiste de Lamarck fue el primer cientíﬁ co en proponer que los organismos experimentan cambio con el correr del tiempo como resultado de algún fenómeno natural y no por intervención divina. Lamarck pensó que los organismos estaban dotados con una fuerza vital que los impulsaba a cambiar hacia mayor complejidad con el tiempo. Consideró que los organismos podían transmitir a sus descendientes caracteres adquiridos durante sus vidas.</p>
+<p>■ Las observaciones de Charles Darwin mientras viajó en el HMS Beagle fueron la base para su teoría evolutiva. Darwin trató de explicar las semejanzas entre animales y plantas de las áridas islas Galápagos y el húmedo continente sudamericano.</p>
+<p>■ Darwin estuvo inﬂ uido por la selección artiﬁ cial , en la que los criadores desarrollan muchas variedades de plantas y animales domesticados sólo en pocas generaciones. Darwin aplicó a las poblaciones naturales las ideas de Thomas Malthus acerca del aumento natural en poblaciones humanas. Darwin estuvo inﬂ uido por la idea de que la Tierra era extremadamente antigua, una idea promovida por Charles Lyell y otros geólogos.</p>
+<p>18.3 (página 393)</p>
+<p>3 Explicar las cuatro premisas de la evolución mediante selección natural propuestas por Charles Darwin.</p>
+<p>■ Charles Darwin y Alfred Wallace propusieron de manera independiente la evolución mediante selección natural , que se basa en cuatro observaciones. Primero: la variación genética existe entre los individuos en una población. Segundo: la capacidad reproductiva de cada especie hace que sus poblaciones tengan el potencial de aumentar geométricamente en número con el transcurso del tiempo. Tercero: los organismos compiten unos con otros por los recursos necesarios para la vida, como alimento, espacio vital, agua y luz. Cuarto: los descendientes con la combinación más favorable de características heredadas tienen más probabilidad de sobrevivir y reproducirse, y transmiten dichas características genéticas a la siguiente generación.</p>
+<p>■ La selección natural resulta en adaptaciones , modiﬁ caciones evolutivas que mejoran las posibilidades de supervivencia y éxito reproductivo en un ambiente particular. Con el tiempo, pueden acumularse suﬁ cientes cambios en poblaciones geográﬁ camente separadas para producir nuevas especies.</p>
+<p>Aprenda más acerca de las islas Galápagos y los pinzones de estas islas haciendo clic sobre las ﬁ guras en CengageNOW.</p>
+<p>4 Comparar la síntesis moderna con la teoría evolutiva original de Darwin.</p>
+<p>■ La síntesis moderna combina la teoría evolutiva mediante selección natural de Darwin con la genética moderna para explicar por qué varían los individuos en una población y cómo las especies se adaptan a su ambiente.</p>
+<p>■ La mutación brinda la variabilidad genética sobre la que actúa la selección natural durante la evolución.</p>
+<p>18.4 (página 397)</p>
+<p>5 Resumir la evidencia de la evolución obtenida a partir del registro fósil.</p>
+<p>■ La evidencia directa de la evolución proviene de los fósiles , los restos o trazas de organismos antiguos. Las capas de roca sedimentaria por lo general se presentan en su secuencia de deposición, con las capas más recientes encima de las más antiguas. Los fósiles índice caracterizan una capa especíﬁ ca a lo largo de grandes áreas geográﬁ cas. Los radioisótopos presentes en una roca ofrecen una forma de medir con precisión la edad de la roca.</p>
+<p>Aprenda más acerca de los intermediarios fósiles haciendo clic sobre la ﬁ gura en CengageNOW.</p>
+<p>6 Deﬁ nir biogeografía y describir cómo la distribución de los organismos da apoyo a la evolución.</p>
+<p>■ La biogeografía , la distribución geográﬁ ca de los organismos, afecta su evolución. Las áreas que han estado separadas del resto del mundo durante mucho tiempo contienen organismos que evolucionaron en aislamiento y por tanto son únicos para dichas áreas.</p>
+<p>■ En una época los continentes estaban unidos y formaban un supercontinente. La deriva continental , la cual hizo que las diversas masas de tierra se rompieran y separaran, tuvo un importante papel en la evolución.</p>
+<p>Observe la deriva continental haciendo clic en la ﬁ gura en CengageNOW.</p>
+</section>
+<section id="resumen-enfoque-en-los-objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</h2>
+<p>Weiner, autor de Th e Beak of the Finch: A Story of Evolution in Our Time (El pico de los pinzones: una historia de evolución en nuestra época): “Darwin no conocía la fuerza de su teoría. Subestimó enormemente el poder de la selección natural. Su acción no es ni rara ni lenta. Conduce a evolución todos los días y todas las horas, en todo el entorno, y uno puede observarla”.</p>
+<p>Repaso</p>
+<p>■ ¿Cómo datan fósiles los cientíﬁ cos?</p>
+<p>■ ¿Cómo puede explicar que los fósiles de Mesosaurus , un reptil extinto que no podía nadar en mar abierto, se encuentren en las partes sureñas tanto de África como de América del Sur?</p>
+<p>■ ¿En qué forma las características homólogas y homoplásticas ofrecen evidencia de la evolución?</p>
+<p>■ ¿De qué manera la biología del desarrollo proporciona evidencia de una ascendencia común para vertebrados tan diversos como reptiles, aves, cerdos y humanos?</p>
+<p>■ ¿Cómo favorecen las preferencias de los depredadores la evolución de tamaño en los guppies?</p>
+<p>Introducción a la evolución darwiniana 409</p>
+<p>■ Las estructuras vestigiales son restos no funcionales o degenerados de estructuras que estuvieron presentes y eran funcionales en organismos ancestrales. Las estructuras ocasionalmente se convierten en vestigiales conforme las especies se adaptan a diferentes modos de vida.</p>
+<p>Aprenda más acerca de las estructuras vestigiales haciendo clic sobre la ﬁ gura en CengageNOW.</p>
+<p>8 Explicar brevemente cómo la biología molecular y la biología del desarrollo brindan comprensión del proceso evolutivo.</p>
+<p>■ La evidencia molecular para la evolución incluye el código genético universal y las secuencias conservadas de aminoácidos en proteínas y de nucleótidos en ADN.</p>
+<p>■ Los cambios evolutivos con frecuencia son resultado de mutaciones en genes que afectan la secuencia ordenada de eventos durante el desarrollo. El desarrollo en diferentes animales está controlado por el mismo tipo de genes, lo que indica que dichos animales tienen una historia evolutiva compartida.</p>
+<p>■ La acumulación de cambios genéticos desde que los organismos divergieron, o tomaron rutas evolutivas separadas, modiﬁ có el patrón de desarrollo en los embriones de vertebrados más complejos. 9 Proporcionar un ejemplo de cómo se ponen a prueba experimentalmente las hipótesis evolutivas.</p>
+<p>■ Reznick y Endler estudiaron los efectos de la intensidad de depredación sobre la evolución de poblaciones de guppies en el laboratorio y en la naturaleza. Dichos experimentos son una poderosa herramienta para que los investigadores pongan a prueba los procesos subyacentes de la selección natural.</p>
+<p>7 Describir la evidencia de la evolución obtenida a partir de la anatomía comparada.</p>
+<p>■ Las características homólogas tienen semejanzas estructurales básicas, aun cuando las estructuras puedan usarse en diferentes formas porque las características homólogas se derivan de la misma estructura en un ancestro común. Entre los organismos que tienen características homólogas existen aﬁ nidades evolutivas.</p>
+<p>■ Las características homoplásticas evolucionaron independientemente para tener funciones similares en organismos con relaciones distantes. Las características homoplásticas demuestran evolución convergente , en la que los organismos con ascendientes separados se adaptaron en formas similares ante demandas ambientales semejantes.</p>
+<ol type="1">
+<li><p>¿En cuál de los siguientes conceptos se basa la evolución? (a) los organismos comparten un origen común (b) con el tiempo, los organismos divergieron de un ancestro común (c) las partes corporales de un animal pueden cambiar a lo largo de su vida y dichos cambios adquiridos se transmiten a la siguiente generación (d) a y b (e) a, b y c</p></li>
+<li><p>La evolución es la acumulación de cambios genéticos dentro de _____________ a lo largo del tiempo. (a) los individuos (b) las poblaciones (c) las comunidades (d) a y b (e) a y c</p></li>
+<li><p>Charles Darwin propuso que la evolución podía explicarse mediante el éxito reproductivo diferencial de los organismos resultado de su variación que ocurre de manera natural. Darwin llamó a este proceso (a) coevolución (b) evolución convergente (c) selección natural (d) selección artifi cial (e) homoplasia</p></li>
+<li><p>¿Cuál de los siguientes no es parte del mecanismo de evolución de Darwin? (a) éxito reproductivo diferencial (b) variación en una población (c) herencia de caracteres adquiridos (no genéticos) (d) sobreproducción de descendientes (e) lucha por la existencia</p></li>
+<li><p>La síntesis moderna (a) se basa en la secuencia de fósiles en las capas de rocas (b) usa la genética para explicar la fuente de variación hereditaria que es esencial para la selección natural (c) la propusieron por primera vez los antiguos pensadores griegos (d) considera la infl uencia de la distribución geográfi ca de los organismos sobre su evolución (e) es reforzada por homologías que se explican mediante ascendencia común</p></li>
+<li><p>La evolución del tamaño del pico en las diversas especies de pinzones de las Galápagos se asocia con sus (a) cantos (b) dietas (c) tamaños corporales (d) depredadores (e) ninguno de los anteriores</p></li>
+<li><p>El registro fósil (a) por lo general ocurre en roca sedimentaria (b) en ocasiones parece fragmentaria (c) es relativamente completo para organismos de la selva pluvial pero incompleto para organismos acuáticos (d) a y b (e) a, b y c</p></li>
+<li><p>En la ___________, el agente de selección es el ambiente, mientras que en la ___________, el agente de selección son los humanos. (a) selección natural; evolución convergente (b) mutación; selección artifi cial (c) homoplasia; homología (d) selección artifi cial; selección natural (e) selección natural; selección artifi cial</p></li>
+<li><p>Los cerdos hormigueros, osos hormigueros y pangolines están relacionados sólo de manera distante, pero son similares en estructura y forma como resultado de (a) homología (b) evolución convergente (c) biogeografía (d) estructuras vestigiales (e) selección artifi cial</p></li>
+<li><p>Las especies de las islas Galápagos (a) son similares a las de otras islas en la misma latitud (b) son similares a las de tierra fi rme en América del Sur (c) son idénticas a las de otras islas en la misma latitud (d) son idénticas a las de tierra fi rme en América del Sur (e) son similares a las que hay tanto en tierra fi rme de África como de América del Sur</p></li>
+<li><p>Los cambios en sólo algunos genes que regulan ____________ con frecuencia son responsables de la evolución de nuevas características anatómicas en una población. (a) la formación de fósiles (b) las estructuras vestigiales (c) el desarrollo (d) la biogeografía (e) la adaptación</p></li>
+</ol>
+<p>EVALÚE SU COMPRENSIÓN</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p443_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p443_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p443_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p443_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>410 Capítulo 18</p>
+<ol type="1">
+<li><p>VÍNCULO CON LA EVOLUCIÓN. El uso de organismos modelo, como el ratón, para la investigación y las pruebas biomédicas de las enfermedades humanas se basa en la suposición de que todos los organismos comparten un ancestro común. ¿En qué evidencia se basa esta suposición?</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. ¿Qué adaptaciones deben poseer los animales para nadar en el océano? ¿Por qué organismos tan genéticamente diferentes como las marsopas, que son mamíferos, y los tiburones, que son peces, son tan similares en forma?</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. El feto humano produce un recubrimiento de pelo fi no (el lanugo) que pierde antes o poco después del nacimiento. Los fetos de chimpancés y otros primates también producen recubrimientos de pelo, pero ellos no lo pierden. Explique estas observaciones con base en lo que aprendió en este capítulo.</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. Charles Darwin dijo alguna vez: “No es la más fuerte de las especies la que sobrevive, ni la más inteligente, sino la que responde mejor al cambio”. Explique qué trató de decir.</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. Escriba breves párrafos en los que explique cada uno de los siguientes enunciados: a. La selección natural elige entre los individuos de una población a aquellos más adaptados a las condiciones ambientales actuales . Ello no garantiza la supervivencia en condiciones futuras. b. Los individuos no evolucionan, sino las poblaciones. c.&nbsp;Los organismos que existen en la actualidad lo hacen porque sus ancestros tuvieron caracteres que permitieron que ellos y sus descendientes proliferaran. d.&nbsp;En el ámbito molecular la evolución puede tener lugar mediante el reemplazo de un nucleótido por otro. e. Se dice que la evolución ha ocurrido dentro de una población cuando se detectan cambios genéticos mesurables.</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. Aunque la mayoría de las salamandras tienen cuatro patas, algunas especies que viven en aguas poco profundas carecen de extremidades posteriores y tienen extre-</p></li>
+</ol>
+<p>PENSAMIENTO CRÍTICO</p>
+<p>La sirena listada ( Pseudobranchus striatus axanthus ) es una salamandra acuática que se asemeja a una anguila. Es nativa de Florida.</p>
+<p>Suzanne L. Collins y Joseph T. Collins/Photo Researchers, Inc.</p>
+<p>midades anteriores extremadamente pequeñas ( vea la fotografía ). Desarrolle una hipótesis para explicar cómo se originaron las salamandras sin extremidades de acuerdo con el mecanismo de evolución mediante selección natural propuesto por Darwin. ¿Cómo podría poner a prueba su hipótesis?</p>
+<ol start="7" type="1">
+<li><p>ANÁLISIS DE DATOS. ¿Cuál de los primates en la fi gura 18-18 es el pariente más distante de los humanos? Explique su respuesta.</p></li>
+<li><p>CIENCIA, TECNOLOGÍA Y SOCIEDAD. Los granjeros enfrentan con frecuencia un predicamento, conocido como ciclo infi nito de los pesticidas, en el que el costo de emplear pesticidas aumenta porque éstos tienen que aplicarse con más frecuencia o en dosis mayores a medida que su efectividad disminuye. Relacionado a lo aprendido en este capítulo, ofrezca una explicación de por qué los pesticidas pierden su efectividad.</p></li>
+</ol>
+<p>Preguntas adicionales están disponibles en CengageNOW en www.cengage.com/login.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18-evolucion-darwiniana/18-evolucion-darwiniana_p444_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>18-evolucion-darwiniana_p444_img1.jpeg</figcaption>
+</figure>
+</div>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+&nbsp;
+
+
+<footer style="background-color:	#d0f0ea; padding:1.5em 1em 0.5em; font-family:'Segoe UI', sans-serif; font-size:0.95em; color:#333; margin-bottom: 0;">
+
+  <div style="max-width:960px; margin:0 auto; text-align:center;">
+
+    <p><a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a> – Ingeniero Ambiental | Magíster en Educación</p>
+
+    <p>Asesor educativo, científico y ambiental con más de 6 años de experiencia desarrollando proyectos de investigación, biodiversidad, ciencia de datos ambientales, ciencia ciudadana y divulgación científica.</p>
+
+    <p>¿Necesitas asesoría experta en educación, medio ambiente, biodiversidad o herramientas científicas como <em>R, Quarto, LaTeX</em> o <em>Google Earth Engine</em>?<br><strong>¡Estoy aquí para ayudarte!</strong></p>
+
+    <p style="margin-top:1em; margin-bottom: 0.5em;">
+
+      <a href="mailto:contacto.envinatu@gmail.com" style="color:#007bff; text-decoration:none;">📩 Contáctame: contacto.envinatu@gmail.com</a><br>
+
+      <a href="https://www.linkedin.com/in/marceloamores" target="_blank" style="color:#007bff; text-decoration:none; display:inline-flex; align-items:center; gap:0.3em;">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#007bff" viewbox="0 0 24 24" style="vertical-align:middle;">
+
+          <path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.3 7.6 24 10.05 24 14.45V24h-5v-8.2c0-1.95-.03-4.45-2.71-4.45-2.71 0-3.13 2.12-3.13 4.3V24h-5V8z"></path>
+
+        </svg>
+
+        Conecta en LinkedIn
+
+      </a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- Carrusel de iNaturalist debajo del footer -->
+
+<div class="inat-carousel-container">
+
+  <div id="inat-carousel-track" class="inat-carousel-track"></div>
+
+</div>
+
+
+
+<style>
+
+.inat-carousel-container {
+
+  overflow: hidden;
+
+  width: 100%;
+
+  background: #d0f0ea;
+
+  padding: 10px 0 14px; /* reducido */
+
+  font-family: 'Segoe UI', sans-serif;
+
+  font-size: 0.85em;
+
+  color: #333;
+
+  margin-top: -8px; /* compensación visual mínima */
+
+}
+
+
+
+.inat-carousel-track {
+
+  display: flex;
+
+  gap: 12px;
+
+  animation: scroll-left 100s linear infinite;
+
+  width: max-content;
+
+  padding: 0 1em;
+
+}
+
+
+
+.inat-card {
+
+  flex: 0 0 auto;
+
+  width: 90px;
+
+  text-align: center;
+
+  background: #fff;
+
+  padding: 8px 6px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 6px;
+
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+}
+
+
+
+.inat-card img {
+
+  width: 75px;
+
+  height: 75px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+}
+
+
+
+.inat-card .species {
+
+  font-weight: 600;
+
+  font-size: 0.75em;
+
+  margin-top: 4px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+}
+
+
+
+.inat-card .date {
+
+  font-size: 0.7em;
+
+  color: #666;
+
+}
+
+
+
+@keyframes scroll-left {
+
+  0% { transform: translateX(0); }
+
+  100% { transform: translateX(-50%); }
+
+}
+
+</style>
+
+
+
+<script>
+
+fetch("https://api.inaturalist.org/v1/observations?user_id=marceloamores&order=desc&order_by=observed_on&per_page=8")
+
+  .then(response => response.json())
+
+  .then(data => {
+
+    const track = document.getElementById("inat-carousel-track");
+
+    const items = data.results.map(obs => {
+
+      const img = obs.photos.length ? obs.photos[0].url.replace("square", "small") : "https://static.inaturalist.org/images/users/defaults/thumb.png";
+
+      const species = obs.taxon ? (obs.taxon.preferred_common_name || obs.taxon.name) : "Sin ID";
+
+      const date = new Date(obs.observed_on).toLocaleDateString("es-EC");
+
+      return `
+
+        <div class="inat-card">
+
+          <a href="https://www.inaturalist.org/observations/${obs.id}" target="_blank" rel="noopener noreferrer">
+
+            <img src="${img}" alt="${species}" />
+
+          </a>
+
+          <div class="species" title="${species}">${species}</div>
+
+          <div class="date">${date}</div>
+
+        </div>`;
+
+    }).join("");
+
+    track.innerHTML = items + items;
+
+  })
+
+  .catch(err => {
+
+    console.error("Error:", err);
+
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<hr />
+
+<p style="text-align: center;">Developed and maintained by <a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a>. <br>
+
+
+
+
+
+Keen to support the site? You're most welcome to <a href='https://ko-fi.com/I2I1K189U' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> </p>
+
+
+
+
+
+
+
+<p style="text-align: center;">For updates, sign up to my <a href="https://github.com/envinatu" target="_blank">newsletter</a></p>
+
+
+
+
+
+<hr>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add icon library 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- Add font awesome icons 
+
+<!--<p style="text-align: center;">
+
+<!--    <a href="https://www.linkedin.com/in/marceloamores" class="fa fa-linkedin" target="_blank"></a>
+
+ <!--   <a href="https://www.inaturalist.org/people/marceloamores" target="_blank">
+
+  <img src="https://static.inaturalist.org/wiki_page_attachments/3154-medium.png" alt="iNaturalist" style="width:24px; height:24px;">
+
+    <a href="https://github.com/envinatu" class="fa fa-github" target="_blank"></a>
+
+    <a href="https://x.com/envinatu" target="_blank">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/300px-X_logo_2023_original.svg.png" alt="X" style="width:13px; height:13px;">
+
+    <a href="https://www.youtube.com/channel/envinatu" class="fa fa-youtube" target="_blank"></a>
+
+</a>
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+
+.inat-widget {padding: 10px; line-height: 1;}
+
+.inat-widget-header {margin-bottom: 10px;}
+
+.inat-widget td {vertical-align: top; padding-bottom: 10px;}
+
+.inat-label { color: #888; }
+
+.inat-meta { font-size: smaller; margin-top: 3px; line-height: 1.2;}
+
+.inat-observation-body, .inat-user-body { padding-left: 10px; }
+
+.inat-observation-image {text-align: center;}
+
+.inat-observation-image, .inat-user-image { width: 48px; display: inline-block; }
+
+.inat-observation-image img, .inat-user-image img { max-width: 48px; }
+
+.inat-observation-image img { vertical-align: middle; }
+
+.inat-widget-small .inat-observation-image { display:block; float: left; margin: 0 3px 3px 0; height:48px;}
+
+.inat-label, .inat-value, .inat-user { font-family: "Trebuchet MS", Arial, sans-serif; }
+
+.inat-user-body {vertical-align: middle;}
+
+.inat-widget td.inat-user-body {vertical-align: middle;}
+
+.inat-widget .inat-footer td.inat-value {vertical-align: middle; padding-left: 10px;}
+
+</style>
+
+<div class="inat-widget">
+
+  
+<table class="inat-footer caption-top" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd inat-user">
+<td class="inat-user-image"><a href="https://www.inaturalist.org/observations/marceloamores" data-border="0"><img src="https://static.inaturalist.org/attachments/users/icons/1116633/thumb.jpg?1628812209" class="usericon img-fluid" /></a></td>
+<td class="inat-value"><strong><a href="https://www.inaturalist.org/observations/marceloamores">Ver las observaciones de Marcelo en iNaturalist »</a></strong></td>
+</tr>
+</tbody>
+</table>
+
+
+  <script type="text/javascript" charset="utf-8" src="https://www.inaturalist.org/observations/marceloamores.widget?layout=large&limit=5&order=desc&order_by=creatrd_at&locale=es"></script>
+
+</div>
+
+
+
+-->
+
+    
+
+
+
+
+
+&nbsp;
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./17-genetica-del-desarrollo.html" class="pagination-link" aria-label="17 Genética del desarrollo">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">17 Genética del desarrollo</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./19-cambio-en-poblaciones.html" class="pagination-link" aria-label="19 Cambio evolutivo en poblaciones">
+        <span class="nav-page-text"><span class="chapter-title">19 Cambio evolutivo en poblaciones</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<div style="display:inline;">
+©
+<script>document.write(new Date().getFullYear());</script>
+<a href="https://github.com/envinatu"> Marcelo F. Amores Palma</a>
+</div>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/">
+      <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu">
+      <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/nvinatu">
+      <i class="bi bi-twitter-x" role="img" aria-label="Quarto X">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/envinatu">
+      <i class="bi bi-youtube" role="img" aria-label="Envinatu YouTube">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:contacto.envinatu@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email Us">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,2606 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Marcelo Amores">
+
+<title>17 Genética del desarrollo – BIOLOGÍA SOLOMON</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./18-evolucion-darwiniana.html" rel="next">
+<link href="./16-genetica-humana.html" rel="prev">
+<link href="./images/Icono_E.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<!-- Verificación de Google -->
+
+<meta name="google-site-verification" content="EYveEP5I9oi6m-r8Qa_Fett47y3RJFqSizYYvf7G1RM">
+
+
+
+<!-- Canonical URL dinámico -->
+
+<link rel="canonical" link:"{{="" page.url="" |="" absolute_url="" }}"="">
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/envinatu1.png" alt="Envinatu logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/biologia/"> 
+<span class="menu-text">Biología</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/quimica/"> 
+<span class="menu-text">Química</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/geociencias"> 
+<span class="menu-text">Geociencias</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/pedagogia"> 
+<span class="menu-text">Educación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/rubick"> 
+<span class="menu-text">Ludociencia</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/blog"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/amores"> 
+<span class="menu-text">Sobre Mi</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.pdf"> <i class="bi bi-filetype-pdf" role="img" aria-label="Ver PDF">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.epub"> <i class="bi bi-journal-bookmark-fill" role="img" aria-label="Ver eBook">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/"> <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu"> <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./17-genetica-del-desarrollo.html"><span class="chapter-title">17 Genética del desarrollo</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000-prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefacio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001-al-estudiante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Al estudiante</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-una-vision-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1 Una visión de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-atomos-y-moleculas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2 Átomos y moléculas: la base química de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-quimica-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 La química de la vida: Compuestos orgánicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-organizacion-de-la-celula.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4 Organización de la célula</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-membranas-biologicas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5 Membranas biológicas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-comunicacion-celular.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6 Comunicación celular</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-energia-y-metabolismo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7 Energía y metabolismo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-produccion-de-atp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8 ¿Cómo producen ATP las células? Rutas de liberación de energía</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-fotosintesis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9 Fotosíntesis: captura de energía luminosa</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-mitosis-y-meiosis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10 Cromosomas, mitosis y meiosis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-herencia.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11 Los principios básicos de la herencia</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">12 ADN: Molécula portadora de la información genética</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-expresion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">13 Expresión génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-regulacion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">14 Regulación génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-tecnologia-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">15 Tecnología ADN y genómica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16-genetica-humana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">16 Genética humana y el genoma humano</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-genetica-del-desarrollo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">17 Genética del desarrollo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./18-evolucion-darwiniana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">18 Introducción a la evolución darwiniana</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./19-cambio-en-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">19 Cambio evolutivo en poblaciones</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./20-especiacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">20 Especiación y macroevolución</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./21-historia-evolutiva.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">21 El origen e historia evolutiva de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./22-evolucion-de-primates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">22 La evolución de los primates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./23-sistematica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">23 Comprensión de la diversidad: sistemática</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./24-virus.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">24 Virus y agentes subvirales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./25-bacterias-y-arqueas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">25 Bacterias y arqueas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./26-protistas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">26 Protistas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./27-plantas-sin-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">27 Plantas sin semillas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./28-plantas-con-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">E</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./29-hongos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">29 Los hongos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./30-diversidad-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">30 Introducción a la diversidad animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./31-protostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">31 Esponjas, cnidarios, ctenóforos y protóstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./32-deuterostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">32 Los deuteróstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./33-crecimiento-vegetal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">33 Estructura, crecimiento y desarrollo vegetal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./34-hoja.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">L</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./35-tallo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">35 Estructura y transporte en el tallo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./36-raices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">36 Raíces y nutrición mineral</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./37-reproduccion-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">37 Reproducción en plantas con ﬂ ores</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./38-respuestas-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">38 Respuestas de desarrollo en plantas a señales externas e internas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./39-introduccion-fisiologia-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">39 Estructura y función animal. Una introducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./40-proteccion-y-movimiento.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">40 Protección, sostén y movimiento</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./41-senalizacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">41 Señalización neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./42-regulacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">42 Regulación neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./43-sentidos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">43 Sistemas sensoriales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./44-transporte-interno.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">44 Transporte interno</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./45-sistema-inmunologico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">45 El sistema inmunológico: Defensa interna</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./46-intercambio-gases.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">46 Intercambio de gases</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./47-nutricion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">47 Procesamiento de alimentos y nutrición</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./48-osmorregulacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">48 Osmorregulación y desecho de residuos metabólicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./49-regulacion-endocrina.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">49 Regulación endocrina</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./50-reproduccion-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">50 Reproducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./51-desarrollo-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">51 Desarrollo animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./52-comportamiento-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52 Comportamiento animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./53-ecologia-de-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52.6 SELECCIÓN SEXUAL</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./54-ecologia-de-comunidades.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">54 Ecología de comunidades</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./55-ecosistemas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">55 Ecosistemas y la biosfera</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./56-geografia-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">56 Ecología y geografía de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./57-conservacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">57 Diversidad biológica y biología de la conservación</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#l" id="toc-l" class="nav-link active" data-scroll-target="#l">L</a>
+  <ul class="collapse">
+  <li><a href="#diferenciación-celular-y-equivalencia-nuclear" id="toc-diferenciación-celular-y-equivalencia-nuclear" class="nav-link" data-scroll-target="#diferenciación-celular-y-equivalencia-nuclear">17.1 DIFERENCIACIÓN CELULAR Y EQUIVALENCIA NUCLEAR</a></li>
+  <li><a href="#el-control-genético-del-desarrollo" id="toc-el-control-genético-del-desarrollo" class="nav-link" data-scroll-target="#el-control-genético-del-desarrollo">17.2 EL CONTROL GENÉTICO DEL DESARROLLO</a></li>
+  <li><a href="#cáncer-y-desarrollo-celular" id="toc-cáncer-y-desarrollo-celular" class="nav-link" data-scroll-target="#cáncer-y-desarrollo-celular">17.3 CÁNCER Y DESARROLLO CELULAR</a></li>
+  <li><a href="#resumen-enfoque-en-los-objetivos-de-aprendizaje" id="toc-resumen-enfoque-en-los-objetivos-de-aprendizaje" class="nav-link" data-scroll-target="#resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">17 Genética del desarrollo</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">septiembre, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>369</p>
+<p>CONCEPTOS CLAVE</p>
+<p>17.1 La expresión génica diferencial controla el desarrollo de tejidos especializados y órganos. 17.2 Muchos genes que regulan el desarrollo son bastante similares en un amplio rango de organismos, desde las moscas de la fruta hasta los seres humanos. Las mutaciones en los genes que regulan el desarrollo han proporcionado claves de cómo funcionan estos genes. 17.3 Las mutaciones en oncogenes y genes supresores de tumor pueden conducir al cáncer.</p>
+<section id="l" class="level1">
+<h1>L</h1>
+<p>a genética del desarrollo es el estudio de los genes implicados en la diferenciación celular y en el desarrollo de un organismo. Hasta ﬁ nes de la década de 1970, los biólogos sabían poco sobre cómo interactúan los genes para controlar el desarrollo. Desenredar las interacciones genéticas que tienen lugar durante el desarrollo era un problema intratable con los métodos tradicionales. Sin embargo, el rápido progreso en la investigación con ADN recombinante condujo a los cientíﬁ cos a buscar mutantes en el desarrollo y a aplicar técnicas soﬁ sticadas para estudiarlos. (Un mutante es un individuo con un fenotipo anormal causado por una mutación génica). El organismo de la fotografía es un embrión en desarrollo de la mosca de la fruta Drosophila melanogaster . Los genetistas usaron la técnica de inmunoﬂ uorescencia , en la que un colorante ﬂ uorescente unido a un anticuerpo, se adhiere a una proteína especíﬁ ca, por tanto sirve para localizar proteínas. En este caso los investigadores unieron tres anticuerpos ﬂ uorescentes diferentes, uno rojo, uno azul, y uno amarillo, con tres proteínas especíﬁ cas. Los patrones de bandas de colores indican que las diferentes células del embrión presentan una expresión génica diferencial , es decir, genes distintos activos a la vez. El trabajo con Drosophila y otros organismos tiene profundas implicaciones para la comprensión tanto del desarrollo humano normal (incluyendo el envejecimiento) como de las disfunciones que conducen a defectos congénitos y a cáncer. Las sorprendentes similitudes entre los genes que controlan el desarrollo en una amplia variedad de especies muy diferentes sugieren que los mecanismos genéticos importantes para el desarrollo están profundamente arraigados en la historia evolutiva de los organismos multicelulares. Existen también diferencias en los patrones de desarrollo de las especies que reﬂ ejan sus caminos evolutivos separados.</p>
+<p>Expresión génica diferencial en el organismo modelo Drosophila melanogaster .</p>
+<p>Stephen W. Paddock</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p403_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p403_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>370 Capítulo 17</p>
+<p>tructuras y funciones muy diferentes de las de varios tipos de células localizadas en las hojas. También se encuentra diversidad a nivel molecular; más extraordinariamente, cada tipo de célula de una planta o de un animal produce un conjunto de proteínas muy específi co. En algunos casos, como el de la proteína hemoglobina en los eritrocitos, una proteína específi ca de una célula puede llegar a representar hasta más del 90% de la masa proteínica total de la célula. Otras células pueden presentar un complemento de proteínas de células específi cas, cada una de las cuales está presente en pequeñas cantidades pero igualmente tienen una función esencial. Sin embargo, como ciertas proteínas se requieren en todos los tipos de células (todas las células, por ejemplo, necesitan las mismas enzimas para la glucólisis), las proteínas de células específi cas normalmente sólo constituyen una fracción del número total de diferentes clases de proteínas. Cuando los investigadores descubrieron por primera vez que cada tipo de célula diferenciada produce un conjunto único de proteínas, algunos científi cos plantearon la hipótesis de que cada grupo de células pierde los genes que no necesita y retiene sólo los que necesita. Sin embargo, por lo general esto no parece ser cierto. De acuerdo con el principio de la equivalencia nuclear , los núcleos de esencialmente todas las células adultas diferenciadas de un individuo son desde el punto de vista genético (aunque no por necesidad metabólicamente) idénticas entre sí y respecto al núcleo del cigoto del que descienden. Esto signifi ca que prácticamente todas las células somáticas en un adulto tienen los mismos genes. Sin embargo, células diferentes expresan distintos subconjuntos de estos genes. Las células somáticas son todas las células del cuerpo excepto las células de la línea germinal , que contienen el material genético que transmitirán a la próxima generación. En los animales, las células de la línea germinal, cuyas hijas fi nalmente sufren meiosis y se diferencian en gametos, por lo general son separadas pronto en el desarrollo. En las plantas, la diferenciación entre las células somáticas y las células de la línea germinal no es tan clara, y la determinación de que ciertas células sufran meiosis se realiza mucho después en el desarrollo. La evidencia de la equivalencia nuclear proviene de casos en los que se ha encontrado que células diferenciadas o sus núcleos retienen el potencial de dirigir el desarrollo del organismo entero. Estas células o núcleos se dice que manifi estan totipotencia .</p>
+<p>La mayoría de las diferencias celulares se deben a una expresión génica diferencial</p>
+<p>Ya que no parece que los genes se pierdan de forma regular durante el desarrollo (y por lo tanto la equivalencia nuclear está presente en distintos tipos celulares), las diferencias en la composición molecular de las células debe estar regulada por las actividades de diferentes genes. Con frecuencia se hace referencia al proceso de regulación génica del desarrollo como expresión génica diferencial . Como se analizó en el capítulo 14, la expresión de los genes eucariotas está regulada de muchos modos y en varios niveles. Por ejemplo, una enzima particular puede producirse en una forma inactiva y activarse posteriormente. Sin embargo, gran parte de la regulación importante para el desarrollo se produce a nivel transcripcional. La transcripción de ciertos conjuntos de genes se reprime, mientras que la de otros conjuntos se activa. Incluso la expresión de los genes que son constitutivos, es decir, que se transcriben constantemente, se regula durante el desarrollo de manera que la cantidad de cada producto varía de un tejido a otro.</p>
+<p>Como se verá en el capítulo 18, los genes del desarrollo han jugado un papel fundamental en la diversidad de formas de los organismos durante el curso de su evolución. Los biólogos ahora están estudiando cómo se activan, desactivan y modiﬁ can los genes para controlar el desarrollo. Los cientíﬁ cos esperan comprender ﬁ nalmente cómo en una única célula, el óvulo fecundado, genera en su interior un organismo multicelular tan complejo como un ser humano.</p>
+<section id="diferenciación-celular-y-equivalencia-nuclear" class="level2">
+<h2 class="anchored" data-anchor-id="diferenciación-celular-y-equivalencia-nuclear">17.1 DIFERENCIACIÓN CELULAR Y EQUIVALENCIA NUCLEAR</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>1 Distinguir entre determinación celular y diferenciación celular, y entre equivalencia nuclear y totipotencia. 2 Describir los experimentos clásicos de Steward, Gurdon y Wilmut. 3 Deﬁ nir células madre , distinguir entre células madre embrionarias y células madre pluripotentes, y describir algunas de las prometedoras áreas de investigación que implican el uso de células madre.</p>
+<p>El estudio del desarrollo , defi nido de un modo amplio como todos los cambios que ocurren en la vida de un individuo, abarca algunos de los problemas más fascinantes y difíciles de la biología de hoy en día. De particular interés es el proceso por el que las células se especializan y se organizan en un organismo complejo. Durante las muchas divisiones celulares necesarias para que una única célula se convierta en un organismo multicelular, grupos de células se comprometen gradualmente en patrones específi cos de actividad génica a través del proceso de determinación celular . Conforme se produce la determinación celular, las vías de desarrollo de las células embrionarias se restringen de manera que su destino se limita cada vez más y más. El paso fi nal que lleva a la especialización celular es la diferenciación celular . Una célula diferenciada, que tiene una apariencia y actividades características, está irreversiblemente comprometida con su destino. Otra parte intrigante del rompecabezas del desarrollo es la formación del cuerpo. En la morfogénesis , o proceso para adquirir la forma, determinadas células en localizaciones específi cas se diferencian y se organizan espacialmente en estructuras reconocibles. La morfogénesis tiene lugar a través del proceso de múltiples etapas de formación de patrones , u organización de las células en estructuras tridimensionales. La formación de patrones incluye señalización entre las células, cambios en la forma de las células, y migraciones celulares. Dependiendo de su localización, las células están expuestas a diferentes concentraciones de moléculas señalizadoras que especifi can la información de la situación. Así, dónde se localiza una célula determina a menudo en lo que se convertirá cuando madure. El cuerpo humano, como el de otros vertebrados, contiene unos 250 tipos de células diferentes reconocibles ( FIGURA 17-1 ). Las combinaciones de estas células especializadas, conocidas como células diferenciadas , se organizan en estructuras diversas y complejas, como el ojo, la mano, y el cerebro, donde cada una es capaz de realizar muchas actividades sofi sticadas. Lo más importante de todo es el hecho de que todas las estructuras del cuerpo y las células diferenciadas dentro de ellas provienen de un cigoto unicelular, un óvulo fecundado. Todos los organismos multicelulares experimentan complejos patrones de desarrollo. Las raíces de las plantas, por ejemplo, tienen es-</p>
+<p>Genética del desarrollo 371</p>
+<p>Conforme se determina el desarrollo de una célula a lo largo de una ruta de diferenciación, su apariencia física puede o no cambiar de manera signifi cativa. En cualquier caso, cuando se completa una etapa de determinación, los cambios en la célula se vuelven normalmente autoperpetuadores y no es fácil que se reviertan. La diferenciación celular normalmente es la última etapa en el proceso de desarrollo. En este punto, una célula precursora se vuelve estructural y funcionalmente reconocible como una célula ósea, por ejemplo, y su patrón de actividad génica difi ere del de una célula nerviosa, o de cualquier otro tipo celular.</p>
+<p>Se puede pensar en la diferenciación como una serie de rutas que conducen desde una célula individual (cigoto) hasta las células de los diferentes tejidos especializados, organizadas en un patrón apropiado. En el momento en que una célula se compromete genéticamente con una trayectoria del desarrollo, sus células hijas la seguirán. Estos compromisos restringen en forma gradual el desarrollo de las células descendientes a un grupo limitado de tipos de tejidos fi nales. La determinación celular, entonces, es una fi jación progresiva del destino y funciones de los descendientes de una célula.</p>
+<p>Conforme avanza el desarrollo, las células somáticas que antes tenían el potencial de convertirse en diversas células, progresivamente evidencian un mayor compromiso con una función o destino especíﬁ co.</p>
+<p>Glándula suprarrenal (médula)</p>
+<p>Célula epitelial</p>
+<p>Eritrocito</p>
+<p>Gónada</p>
+<p>Célula pigmentada</p>
+<p>Célula de la retina</p>
+<p>Células de la piel</p>
+<p>Ectodermo</p>
+<p>Hígado</p>
+<p>Célula exocrina</p>
+<p>Pulmones</p>
+<p>Línea germinal</p>
+<p>Endodermo</p>
+<p>Óvulo fecundado</p>
+<p>División celular y diferenciación celular</p>
+<p>Músculos esqueléticos</p>
+<p>Riñón</p>
+<p>Músculo intestinal</p>
+<p>Corazón, vasos sanguíneos</p>
+<p>Glándulas</p>
+<p>Epidermis Mesodermo</p>
+<p>Sangre</p>
+<p>Células endoteliales</p>
+<p>Glándula suprarrenal (corteza)</p>
+<p>Células del músculo liso</p>
+<p>Célula tubular Célula muscular estriada</p>
+<p>Células del cartílago</p>
+<p>Huesos y tejido conjuntivo</p>
+<p>Revestimiento de la vejiga urinaria</p>
+<p>Células de la tráquea</p>
+<p>Glándula tiroides</p>
+<p>Recubrimiento de la faringe</p>
+<p>Células productoras de gametos</p>
+<p>Neurona</p>
+<p>Sistema nervioso Célula de la glándula mamaria</p>
+<p>Páncreas</p>
+<p>Células somáticas</p>
+<p>FIGURA 17-1 Linajes celulares en los vertebrados Repetidas divisiones del óvulo fecundado ( parte inferior ) dan como resultado el establecimiento de tejidos que contienen grupos de células especializadas. Las células de la línea germinal (células que producen los gametos)</p>
+<p>se forman en las etapas iniciales del desarrollo. Las células somáticas se forman a lo largo de diversas rutas de desarrollo, experimentando una serie de cambios que determinan progresivamente sus funciones y destino.</p>
+<p>PUNTO CLAVE</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img1.png" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img1.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img2.png" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img2.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img5.png" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img5.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img6.png" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img6.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img7.png" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img7.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img8.png" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img8.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img9.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img9.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img10.png" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img10.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p405_img11.png" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p405_img11.png</figcaption>
+</figure>
+</div>
+<p>372 Capítulo 17</p>
+<p>Puesto que los éxitos conseguidos en ranas no se podían reproducir con embriones de mamíferos, durante muchos años, numerosos biólogos del desarrollo concluyeron que alguna característica fundamental de la biología de la reproducción mamífera podría representar una barrera impenetrable para la clonación de mamíferos. Esta percepción cambió marcadamente en 1996 y 1997 con los primeros informes del nacimiento de mamíferos clonados.</p>
+<p>Un núcleo totipotente contiene todas las instrucciones para el desarrollo</p>
+<p>En las plantas, algunas células diferenciadas pueden inducirse para que se conviertan en el equivalente a las células embrionarias. Los biólogos utilizan técnicas de cultivo celular para aislar células individuales de ciertas plantas y permitirles que crezcan en un medio nutritivo. En la década de 1950, F. C. Steward y sus colaboradores en la Universidad Cornell realizaron algunos de los primeros experimentos para investigar la totipotencia celular en las plantas ( FIGURA 17-2 ). Las células totipotentes tienen el potencial de dar lugar a todas las partes de un organismo ya que tienen un conjunto completo de las instrucciones genéticas necesarias para dirigir el desarrollo normal de un organismo completo. Steward y sus colaboradores provocaron la división de células de la raíz de una zanahoria en un medio líquido nutritivo, formando grupos de células llamadas cuerpos embrioides (parecidos a embriones). Estos grupos de división de células se transfi rieron entonces a un medio con agar, que proporcionó nutrientes y una estructura de soporte sólida para las células de la planta en crecimiento. Algunas de las células de los cuerpos embrioides dieron lugar a raíces, tallos y hojas. Las pequeñas plantas resultantes, llamadas, plantuloides para diferenciarlas de las verdaderas plántulas, se trasplantaron al suelo, donde fi nalmente se trasformaron en plantas adultas capaces de producir fl ores y semillas viables. Ya que estas plantas se derivan todas de la misma planta progenitora, son genéticamente iguales y por lo tanto constituyen un clon. Como se menciona en el capítulo 15, un clon consiste en organismos individuales, células, o moléculas de ADN que son genéticamente idénticas a otro individuo, célula, o molécula de ADN, de la que se derivaron. Los métodos de cultivos de tejidos de plantas ahora se utilizan ampliamente para producir plantas modifi cadas con ingeniería genética ya que éstas permiten a los investigadores regenerar plantas completas a partir de células individuales que han incorporado moléculas de ADN recombinante (vea el capítulo 38). En la década de 1950, los investigadores comenzaron a probar si los pasos en el proceso de determinación celular son reversibles en las células animales al trasplantar el núcleo de una célula en una etapa relativamente tardía del desarrollo en un óvulo (célula huevo) que había sido enucleada (es decir, su propio núcleo había sido destruido). Robert Briggs y Th omas J. King del Institute of Cancer Research en Pennsylvania fueron los pioneros en los experimentos de trasplante de núcleos . Trasplantaron núcleos de células de rana que se encontraban en diferentes estados de desarrollo en óvulos cuyos núcleos se habían eliminado. Algunos de los trasplantes procedieron de forma normal durante varios estadios del desarrollo, y unos pocos incluso se trasformaron en renacuajos normales. Como regla, los núcleos trasplantados a partir de células en estadios más tempranos soportaban con mayor probabilidad el desarrollo hasta el estadio renacuajo. Conforme el destino de las células estaba más determinado, la probabilidad de que el núcleo trasplantado pudiera controlar el desarrollo normal disminuía rápidamente. El biólogo británico John B. Gurdon realizó experimentos de trasplante nuclear en ranas durante la década de 1960. En unos pocos casos demostró que los núcleos aislados de células epiteliales del intestino de un renacuajo dirigían el desarrollo hasta el estadio de renacuajo ( FIGURA</p>
+<p>17-3 ). Este resultado no se presenta con frecuencia (aproximadamente 1.5% de las veces); sin embargo, en este tipo de experimentos el éxito cuenta más que el fracaso. Por lo tanto, pudo concluir con seguridad, que al menos algunos núcleos de células animales diferenciadas eran en realidad totipotentes.</p>
+<p>EXPERIMENTO CLAVE</p>
+<p>PREGUNTA: ¿Las células somáticas diferenciadas de plantas son totipotentes?</p>
+<p>HIPÓTESIS: Células individuales de zanahoria se pueden inducir para que desarrollen una planta completa.</p>
+<p>EXPERIMENTO: F. C. Steward y sus compañeros de trabajo cultivaron tejidos de la raíz de zanahoria en un medio nutritivo líquido. Estas células se dividían para formar grupos de células no diferenciadas. Los agregados se transﬁ rieron a un medio de cultivo sólido.</p>
+<p>Planta madura</p>
+<p>1</p>
+<p>2</p>
+<p>3 Los tejidos de raíces de zanahoria se cortan en discos y se cultivan en un medio nutritivo líquido. Las células se dividen, formando una masa de células indiferenciadas.</p>
+<p>Si se transﬁeren a un medio sólido, algunos agregados celulares forman pequeños “plantuloides”.</p>
+<p>Cuando se transﬁeren a la tierra, los “plantuloides” crecen hasta formar plantas maduras.</p>
+<p>RESULTADOS Y CONCLUSIÓN: El desarrollo de una planta de zanahoria completa a partir de células somáticas diferenciadas demostró la totipotencia de estas células.</p>
+<p>Fuente: Shantz, E. M., y F. C. Steward. “Investigations on Growth and Metabolism of Plant Cells VII: Sources of Nitrogen for Tissue Cultures under Optimal Conditions for Their Growth”. Annals of Botany , Vol. 23, 371-390, 1959. Con permiso de la Oxford University Press.</p>
+<p>FIGURA 17-2 Experimento de Steward sobre la totipotencia celular en zanahorias</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p406_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p406_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p406_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p406_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p406_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p406_img3.jpeg</figcaption>
+</figure>
+</div>
+<p>Genética del desarrollo 373</p>
+<p>pulmonar de origen viral que infectó a varias ovejas en donde ella estaba. Sin embargo, había adquirido artritis a los 5½ años, una edad muy temprana para que una oveja padezca esta enfermedad degenerativa. Algunos biólogos especulan que el uso de material genético adulto para producir un clon podría producir un animal con células prematuramente viejas (vea el análisis de los telómeros y el envejecimiento celular en el capítulo 12). Investigaciones adicionales pueden proporcionar algunas respuestas a este problema potencial. El principal objetivo de los estudios de clonación es la producción de organismos transgénicos , en los que se hayan incorporado genes exógenos (vea el capítulo 15). Los investigadores están estudiando activamente nuevas técnicas para mejorar la efi ciencia del proceso de clonación. Sólo entonces será posible producir grandes cantidades de animales transgénicos clonados con varios usos, como aumentar las poblaciones de especies en peligro de extinción. Por ejemplo, el primer clon sano de una especie en peligro de extinción, un animal salvaje relacionado con las vacas conocido como banteng , nació en 2003. El núcleo de este clon provenía de una célula congelada de la piel de un banteng muerto en 1980 en el zoológico de San Diego.</p>
+<p>Las células madre se dividen y conducen a células diferenciadas</p>
+<p>Las células madre son células indiferenciadas que se pueden dividir para producir descendientes diferenciados pero que todavía retienen la capacidad de dividirse para mantener la población de células madre. Cuando una célula madre se divide, sus células hijas pueden permanecer como células madre o diferenciarse en células especializadas como por ejemplo células musculares, células nerviosas o células sanguíneas. Lo que ocurra depende de la presencia o ausencia de un conjunto de señales bioquímicas. Actualmente una de las áreas más estimulantes de la investigación con células madre implica determinar la identidad, el orden, y las cantidades de las señales químicas que darán lugar a un tipo específi co de diferenciación celular.</p>
+<p>El primer mamífero clonado fue una oveja</p>
+<p>En 1996, Ian Wilmut, Keith Campbell y sus colaboradores del Instituto Roslin en Edimburgo, Escocia, informaron que habían logrado clonar una oveja usando los núcleos de embriones de oveja en un estadio temprano (el estadio blastocisto , vea el capítulo 51). Estos científi cos recibieron atención mundial a principios de 1997 cuando anunciaron el nacimiento de un cordero, llamado Dolly (por la cantante Dolly Parton). El material genético de Dolly derivaba de una célula de la glándula mamaria de una oveja que se fusionó con un óvulo enucleado de oveja. La célula resultante se dividió y desenvolvió en un embrión que se cultivó in vitro hasta que alcanzó un estadio en el que podía transferirse a una madre anfi triona ( FIGURA 17-4 ). No es sorprendente que la tasa de éxito global fue baja: de 277 células fusionadas, sólo 29 se convirtieron en embriones que pudieran transferirse, y Dolly fue el único cordero vivo que se obtuvo. ¿Por qué el equipo de Wilmut tuvo éxito donde muchos investigadores habían fracasado? Aplicando los principios básicos de la biología celular, reconocieron que los ciclos celulares (vea el capítulo 10) del citoplasma del óvulo y del núcleo donante no estaban sincronizados. El óvulo está detenido en la metafase II de la meiosis, mientras que la célula somática donante en crecimiento activo se encuentra normalmente en la fase de síntesis (S) del ADN, o en la G 2 . Privando de ciertos nutrientes a las células de las glándulas mamarias usadas como donantes, los investigadores provocaron que estas células entraran en un estado de no división llamado G 0 . Esto tuvo el efecto de sincronizar los ciclos celulares del núcleo donante y del óvulo. Entonces aplicaron un choque eléctrico para fusionar la célula donante con el óvulo e iniciar el desarrollo del embrión. Aunque se requiere un nivel de pericia técnica extraordinariamente elevado, estos y otros investigadores han modifi cado y ampliado estas técnicas para clonar terneros, cabras, cerdos, caballos, ratas, ratones, perros y gatos, entre otros. La lista de mamíferos clonados con éxito continúa creciendo. Sin embargo, la tasa de éxito de cada grupo de ensayos es baja, alrededor del 1 al 2%, y la incidencia de defectos genéticos es alta. Dolly se tuvo que sacrifi car a los 6 años porque sufría un cáncer</p>
+<p>EXPERIMENTO CLAVE</p>
+<p>PREGUNTA: ¿Los núcleos de las células animales diferenciadas son totipotentes?</p>
+<p>HIPÓTESIS: Los núcleos de las células diferenciadas contienen la información necesaria para el desarrollo normal.</p>
+<p>EXPERIMENTO: John Gurdon inyectó los núcleos de células diferenciadas (células intestinales de renacuajo) en óvulos cuyos núcleos se habían destruido mediante radiación ultravioleta.</p>
+<p>Renacuajo</p>
+<p>Células intestinales</p>
+<p>Núcleo removido</p>
+<p>Tasa de éxito: 1.5% Inyectar el núcleo en el óvulo</p>
+<p>Óvulo sin fecundar Blástula</p>
+<p>Irradiar con luz UV para eliminar el núcleo</p>
+<p>RESULTADOS Y CONCLUSIÓN: En aproximadamente 1.5% de los ensayos se produjo un desarrollo normal hasta el estadio de renacuajo, lo que indicaba que los genes para programar el desarrollo, al menos hasta ese momento, estaban aún presentes y se podían activar adecuadamente.</p>
+<p>Fuente: Gurdon, J. B. “The Developmental Capacity of Nuclei Taken from Intestinal Epithelium Cells of Feeding Tadpoles”. Journal of Embryology and Experimental Morphology Vol. 10, Dec.&nbsp;1962.</p>
+<p>FIGURA 17-3 Experimento de Gurdon sobre la totipotencia nuclear en ranas</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p407_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p407_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>374 Capítulo 17</p>
+<p>Las células madre más versátiles, los cigotos, son totipotentes y presentan el potencial de dar lugar a todos los tejidos del cuerpo y a la placenta. Las células madre se pueden derivar también de embriones o de células adultas. (El término adulto es en cierto modo confuso, porque las células madre adultas se pueden obtener del tejido del cordón umbilical, de bebés, y de niños así como de adultos). Las células madre embrionarias (CME) y adultas se conocen como células madre pluripotentes, porque pueden dar lugar a muchos tipos de células de un organismo pero no a todos. Las células madre embrionarias (células ME ), formadas después de que el cigoto ha experimentado varias rondas de división celular para formar un blastocisto de 5 o 6 días de edad, son más versátiles que las células madre adultas ( FIGURA 17-5 ). Por ejemplo, las células ME son pluripotentes y presentan el potencial de desarrollarse en cualquier tipo de célula del cuerpo; las células ME no son totipotentes porque no pueden formar las células de la placenta. Se han encontrado células madre adultas en el cerebro humano, la retina, el corazón, la médula ósea, la pulpa dental, los intestinos y en otros sitios. Las células madre neuronales adultas del cerebro son pluripotentes y se diferencian para formar neuronas y células gliales. Las células madre adultas de la médula ósea forman tanto eritrocitos como diversos tipos de leucocitos del sistema inmunológico. El rango de células en que se pueden distinguir las células madre adultas es más limitado que el de las células ME. Sin embargo, estudios recientes sugieren que incluso las células madre especializadas pueden ser más versátiles de lo que se piensa. Por ejemplo, las células madre neuronales forman células sanguíneas cuando se trasplantan en la médula ósea. Las células madre son una fuente potencial de células que se pueden trasplantar en pacientes para tratar enfermedades degenerativas graves. Por ejemplo, la enfermedad de Parkinson da como resultado la pérdida progresiva de las células que producen el neurotransmisor dopamina en una región específi ca del cerebro. El trasplante de células madre que habrían sido inducidas para diferenciarse en células productoras de dopamina supone una gran promesa para un tratamiento efectivo a largo plazo. Similarmente, las células madre podrían ser una fuente de células productoras de insulina para trasplantarse en el páncreas de individuos con diabetes mellitus. Las células madre podrían reemplazar también células nerviosas en personas con lesiones en la médula espinal u otros tipos de daños neurológicos. Los investigadores esperan fi nalmente establecer linajes de células madre humanas pluripotentes que puedan crecer de manera indefi nida en cultivo, inducirse para que se diferencien bajo condiciones controladas y que mantengan de forma estable su estado diferenciado, y ser manipuladas genéticamente. En particular quieren poner en práctica linajes de células ME provenientes de pacientes con cáncer, diabetes, enfermedades cardiovasculares, y desórdenes neurodegenerativos (como la enfermedad de Parkinson); estos linajes celulares podrían ser muy valiosos en la investigación de estos desórdenes. Aunque se han realizado trabajos con células madre en ratones y otros mamíferos durante muchos años, en los seres humanos estos estudios han progresado lentamente, a pesar de que las células madre son una gran promesa como herramienta terapéutica. Hasta el momento, la única fuente conocida de células ME son los embriones sobrantes de fertilizaciones in vitro (vea el capítulo 50). Algunos países tienen restricciones gubernamentales sobre el fi nanciamiento público debido a consideraciones éticas relacionadas con el origen de las células madre embrionarias. Otros países, sobre todo algunos países de Asia, no tienen restricciones en este tipo de investigación. En los Estados Unidos, la administración de Obama levantó las restricciones a la investigación con células madre que se establecieron durante el gobierno de George W. Bush, y en 2009 estuvo disponible el fi nanciamiento público.</p>
+<p>EXPERIMENTO CLAVE</p>
+<p>PREGUNTA: ¿Los núcleos de las células diferenciadas de mamíferos son totipotentes?</p>
+<p>HIPÓTESIS: El núcleo de una célula diferenciada procedente de un mamífero adulto, fusionado con un óvulo enucleado puede proporcionar la información genética necesaria para dirigir el desarrollo normal de todo el organismo.</p>
+<p>EXPERIMENTO: Ian Wilmut y sus colegas produjeron un embrión de oveja fusionando una célula mamaria cultivada de una oveja adulta con un óvulo de oveja enucleado. Entonces implantó el embrión en el útero de una madre anﬁ triona.</p>
+<p>Óvulo enucleado</p>
+<p>Célula mamaria de oveja</p>
+<p>Choque eléctrico</p>
+<p>Fusión</p>
+<p>Citoplasma del óvulo con el núcleo de la célula donadora</p>
+<p>Embrión</p>
+<p>Transferencia a la madre anfitriona</p>
+<p>Cordero</p>
+<p>RESULTADOS Y CONCLUSIÓN: Se produjo un desarrollo normal, y un cordero hembra, el primer mamífero clonado, nació. Para proporcionar pruebas adicionales de que la oveja clonada era totalmente funcional, cuando Dolly maduró, crió y dio a luz a una descendencia normal.</p>
+<p>Fuente: Campbell, K. H., J. McWhir, W. A. Ritchie, e I. Wilmut. “Sheep Cloned by Nuclear Transfer from a Cultured Cell Line.” Nature, Vol. 380, 1996.</p>
+<p>FIGURA 17-4 Animada Experimento de Wilmut en la clonación de mamíferos</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p408_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p408_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Genética del desarrollo 375</p>
+<p>mano, por lo común un adulto. Esto podría implicar el implante de un embrión humano producido por un proceso diferente de la fecundación, en el cuerpo de una mujer. Muchos países se oponen a la clonación reproductiva humana. En cambio, la clonación terapéutica humana implicaría la duplicación de células ME humanas o CMPi para estudios científi cos o con fi nes médicos; no se crearía un recién nacido humano. Estas células proporcionarían un suministro de tejidos de reemplazo, como el músculo cardiaco o los tejidos de nervios, en procedimientos médicos revolucionarios. Mucha gente apoya la investigación de la clonación terapéutica por los benefi cios potenciales en la cura de enfermedades. Otras personas manifi estan objeciones éticas o religiosas, en especial si se utilizan células ME.</p>
+<p>Repaso</p>
+<p>■ ¿Qué evidencias sustentan el principio de la equivalencia nuclear?</p>
+<p>■ ¿Por qué el equipo de Wilmut tuvo éxito en la clonación de mamíferos donde otros fracasaron?</p>
+<p>■ ¿Qué son las células madre?</p>
+</section>
+<section id="el-control-genético-del-desarrollo" class="level2">
+<h2 class="anchored" data-anchor-id="el-control-genético-del-desarrollo">17.2 EL CONTROL GENÉTICO DEL DESARROLLO</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>4 Indicar las características de Drosophila melanogaster , Caenorhabditis elegans , Mus musculus y Arabidopsis thaliana que los han constituido en organismos modelo valiosos para la genética del desarrollo. 5 Distinguir entre los genes de efecto materno, los genes de segmentación, y los genes homeóticos en Drosophila . 6 Explicar la relación entre los factores de transcripción y los genes que controlan el desarrollo de un organismo. 7 Deﬁ nir inducción y apoptosis , y dar ejemplos de las funciones que desempeñan en el desarrollo de un organismo.</p>
+<p>La biología del desarrollo ha sido un área de investigación importante durante muchos años, y los biólogos han dedicado un tiempo considerable al estudio del desarrollo en animales invertebrados y vertebrados. Al</p>
+<p>Las células madre pluripotentes inducidas (CMPi) pueden reemplazar a células ME</p>
+<p>En 2007 y 2008, los científi cos de varios laboratorios de investigación fueron capaces de producir células madre pluripotentes inducidas (CMPi) mediante la introducción de una serie de factores de transcripción clave en ratón maduro y células humanas tales como los fi broblastos y las células de la piel. (Recuerde del capítulo 14 que son factores de transcripción de proteínas de unión al ADN que regulan la transcripción de genes en células eucariotas). Los factores de transcripción reprograman el estado de desarrollo de las células maduras por lo que se convirtieron en células embrionarias pluripotentes, pero el mecanismo por el cual se logra esto es en la actualidad desconocido. Los factores de transcripción pueden haber eliminado los grupos metilo de los genes clave que normalmente están desactivados en células adultas, pero activos en las células embrionarias. (Recuerde del capítulo 14 que la herencia epigenética consiste en la desactivación de genes, por ejemplo, por metilación del ADN). Para los genes que están desactivados por metilación, la eliminación de los grupos metilo deberían reactivar los genes. Los científi cos deben aprender más acerca de las células MPi antes de que se puedan utilizar para reemplazar las células madre embrionarias en la investigación. No parece que haya ninguna diferencia entre las células MPi y las células ME. Si éste es el caso, entonces las preocupaciones éticas que hacen que las células ME sean controversiales (analizado en la sección siguiente) puede no importar pronto porque los científi cos ya no tendrán que utilizar células ME.</p>
+<p>Existen cuestiones éticas relacionadas con la clonación humana</p>
+<p>La investigación sobre la clonación continúa alimentando un debate considerando el potencial de clonar humanos y sus implicaciones éticas y religiosas. En los Estados Unidos, se ha establecido la National Bioethics Advisory Commission (Comisión asesora nacional de bioética) para estudiar esta y otras cuestiones. Al considerar estos temas, es importante reconocer que la clonación es un amplio término que incluye varios procesos diferentes implicados en la producción biológica de células, tejidos, órganos u organismos. La clonación reproductiva humana tiene como meta producir un recién nacido humano que sea genéticamente idéntico a otro ser hu-</p>
+<p>Las células madre embrionarias humanas (CME) se derivan de un embrión de 5 a 6 días de edad (blastocisto).</p>
+<p>Las células ME están presentes en las gotas de líquido de este cultivo de células madre. Puede ser posible inducir a las células ME a diferenciarse en cualquiera de los aproximadamente 250 tipos de células del cuerpo humano.</p>
+<p>Células del músculo liso</p>
+<p>Neurona</p>
+<p>Eritrocitos Blastocisto</p>
+<p>2 3 1</p>
+<p>Volker Steger/Science Photo Library/Photo Researchers, Inc.</p>
+<p>FIGURA 17-5 Células madre embrionarias humanas (CMEH)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p409_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p409_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p409_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p409_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p409_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p409_img3.jpeg</figcaption>
+</figure>
+</div>
+<p>376 Capítulo 17</p>
+<p>dio, incluyendo los genes del desarrollo, y la relativa facilidad con la que una nueva mutación se mapea en los cromosomas. El biólogo estadounidense Edward B. Lewis (1918-2004), un genetista pionero del desarrollo, empezó a trabajar con mutantes de la Drosophila en la década de 1940. El trabajo del investigador alemán Christiane Nüsslein-Volhard y el estadounidense Eric Wieschaus ampliaron el conocimiento del desarrollo en las moscas de la fruta. Lewis, Nüsslein-Volhard, y Wieschaus compartieron el premio Nobel en Fisiología o Medicina en 1995 por las décadas de esmerada investigación en la genética del desarrollo de la Drosophila . Ahora se sabe que muchos de los genes que ellos descubrieron en la mosca de la fruta son importantes en el crecimiento y en el desarrollo de todos los animales.</p>
+<p>El ciclo de vida de la Drosophila incluye estadios de huevo, larva, pupa y adulto</p>
+<p>El desarrollo en la Drosophila consiste en varios estadios distintos ( FI-</p>
+<p>GURA 17-7 ). Después de que el óvulo es fecundado, se produce un período de embriogénesis durante el cual el cigoto se transforma en una forma sexualmente inmadura conocida como larva . Cuando el huevo eclosiona, cada larva experimenta varias mudas (mudas de la cubierta externa, o cutícula). Los períodos entre mudas se llaman estadios. Cada muda resulta en un aumento de tamaño hasta que la larva está lista para convertirse en pupa . La formación de la pupa implica una muda y el endurecimiento de la nueva cutícula externa; de manera, que la pupa queda completamente recubierta. El insecto experimenta entonces la metamorfosis , un cambio completo en la forma. Durante este tiempo, la mayoría de los tejidos larvarios degeneran y otros tejidos se diferencian para formar las partes del cuerpo de la mosca adulta sexualmente madura (imago). Las larvas tienen una apariencia similar a los gusanos y no se parecen en nada a las moscas adultas. Sin embargo, muy pronto en la embriogénesis del desarrollo larvario, las células precursoras de muchas de las estructuras de los adultos se organizan en estructuras pares relativamente indiferenciadas llamadas discos imaginales . El nombre proviene de imago , la forma adulta del insecto. Cada disco imaginal ocupa una posición defi nida en la larva y formará una estructura específi ca, como un ala o una pata, en el cuerpo adulto ( FIGURA 17-8 ). Los discos se forman mientras se completa la embriogénesis y la larva está lista para empezar a alimentarse. En esta etapa del desarrollo, la larva alimenta y nutre las células precursoras que la conducirán a la etapa de mosca adulta, única forma con la capacidad de reproducirse. La organización de los precursores de las estructuras de la mosca adulta, incluyendo los discos imaginales, está bajo control genético. Hasta ahora se han identifi cado más de 50 genes que especifi can la formación de los discos imaginales, la posición de cada uno en la larva, y su función defi nitiva en la mosca adulta. Estos genes se identifi caron a través de mutaciones que provocaban diferentes efectos, como evitar la formación de ciertos discos imaginales o alterar su estructura o su ubicación fi nal.</p>
+<p>Las mutaciones del desarrollo en la Drosophila afectan el plan corporal o anatómico</p>
+<p>Los científi cos han identifi cado muchas mutaciones del desarrollo en la Drosophila . Los investigadores han examinado los efectos en el desarrollo de varias combinaciones y las han estudiado extensamente a nivel molecular. En este análisis se presta una atención especial a las mutaciones que afectan el plan corporal segmentado del organismo, tanto en la larva como en el adulto.</p>
+<p>estudiar los patrones de morfogénesis en diferentes especies, los investigadores han identifi cado tanto similitudes como diferencias en el plan básico del desarrollo de un organismo desde el cigoto hasta su forma adulta en especies que van del erizo de mar hasta diferentes mamíferos (vea el capítulo 51). Además de estudios descriptivos, muchos experimentos clásicos han demostrado cómo los grupos de células se diferencian y experimentan la formación de patrones celulares. Los investigadores han ideado elaborados programas informáticos de análisis para detectar mutaciones que les permitan identifi car muchos de los genes del desarrollo tanto en plantas como en animales. Luego, utilizan las técnicas de genética molecular y otros métodos sofi sticados para determinar cómo funcionan estos genes y cómo interactúan para coordinar los procesos del desarrollo de un organismo.</p>
+<p>Una variedad de organismos modelo proporcionan claves sobre los procesos biológicos básicos</p>
+<p>En los estudios del control genético del desarrollo, la elección del organismo que se va a usar como modelo experimental es importante. Un organismo modelo es una especie escogida para estudios biológicos porque tiene características que permiten un análisis efi ciente de los procesos biológicos. Puesto que la mayoría de los organismos modelo son organismos pequeños con tiempos de generación cortos, se crían y estudian fácilmente bajo condiciones controladas. Por ejemplo, los ratones son un organismo modelo mejor que los canguros. Una de las aproximaciones más potentes en genética del desarrollo implica aislar organismos modelos mutantes que presentan diferentes características anormales de su desarrollo. No todos los organismos presentan características útiles que permiten a los investigadores aislar y mantener mutantes en el desarrollo para futuros estudios. Los genetistas comprenden tan profundamente la genética de la mosca de la fruta, Drosophila melanogaster , que este organismo se ha convertido en uno de los sistemas más importantes para estos estudios. Otros organismos, la levadura Saccharomyces cerevisiae ; el gusano nematodo, Caenorhabditis elegans ; el pez cebra, Danio rerio ; el ratón de laboratorio, Mus musculus ; y ciertas plantas, incluida Arabidopsis thaliana , una pequeña hierba, también se han convertido en importantes modelos para la genética del desarrollo. Cada uno de estos organismos presenta atributos que los hacen especialmente útiles para el estudio de ciertos aspectos del desarrollo ( FIGURA 17-6 ). En la década de 1990, genetistas del desarrollo que trabajaban con C. elegans descubrieron una nueva tecnología denominada ARN de interferencia, el cual se ha convertido en una poderosa herramienta para la investigación. Como se analiza en el capítulo 13, el ARN de interferencia (ARNi) corresponde a pequeñas moléculas ARN que interfi eren en la expresión de genes o en la transcripción de sus ARN. Un modo en el que estas moléculas de ARNi actúan es silenciando la expresión de los genes mediante secuencia de ARN complementarias al ARNm que causan su degradación selectiva, impidiendo su traducción a proteínas. El uso de ARNi permite desactivar la expresión de un gen específi co de un organismo durante su desarrollo, deduciéndose así el propósito del gen.</p>
+<p>Muchos genes que controlan el desarrollo se han identiﬁ cado en la mosca de la fruta</p>
+<p>La secuencia del genoma de la mosca de la fruta ( Drosophila ), que se completó a fi nales de 1999, incluye unos 13,600 genes codifi cantes de proteínas. Al menos 1200 de éstos son esenciales para el desarrollo embrionario. Dos ventajas tradicionales de la Drosophila como organismo para la investigación son la abundancia de alelos mutantes disponibles para su estuFIGURA 17-6 Organismos modelo en genética del desarrollo</p>
+<p>▲</p>
+<p>Genética del desarrollo 377</p>
+<ol start="3" type="a">
+<li><p>El cuerpo adulto del nematodo ( Caenorhabditis elegans ) consiste en sólo 959 células y su transparencia permite a los investigadores hacer un seguimiento del desarrollo de cada célula.</p></li>
+<li><p>Los peces cebra ( Danio reri o) son pequeños (de 2 a 4 cm de largo) y fáciles de criar, constituyendo un organismo ideal para el estudio de las bases genéticas del desarrollo en vertebrados.</p></li>
+<li><p>Levadura ( Saccharomyces cerevisiae ) es un organismo modelo para el estudio de la genética del desarrollo en células eucariotas unicelulares, haploides.</p></li>
+<li><p>El ratón ( Mus musculus ) es un organismo modelo para el estudio de la genética del desarrollo, incluida la genética del cáncer, en mamíferos.</p></li>
+<li><p>La planta orejas de ratón berros ( Arabidopsis thaliana ) es una planta pequeña con un genoma pequeño que se utiliza para estudiar el desarrollo de las plantas con ﬂor.</p></li>
+<li><p>El desarrollo de la mosca de la fruta ( Drosophil a melanogaster ) implica un plan corporal o anatómico antero-posterior que es común a muchos invertebrados y vertebrados.</p></li>
+</ol>
+<p>5 μ m</p>
+<p>0.25 mm</p>
+<p>© Knorre/Shutterstock</p>
+<p>© roblan/Dreamstime</p>
+<p>Sinclair Stammers/Science Photo Library/Photo Researchers, Inc.</p>
+<p>Mark Smith/Photo Researchers, Inc.</p>
+<p>J. M. Labat/Photo Researchers, Inc.</p>
+<p>Dr.&nbsp;Jeremy Burgess/Photo Researchers, Inc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p411_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p411_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p411_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p411_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p411_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p411_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p411_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p411_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p411_img5.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p411_img5.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p411_img6.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p411_img6.jpeg</figcaption>
+</figure>
+</div>
+<p>378 Capítulo 17</p>
+<p>rrollo. El análisis de moscas mutantes con genes defectuosos de efecto materno ha revelado que muchos de estos genes están implicados en el establecimiento de la polaridad del embrión, como por ejemplo qué parte del embrión será la cabeza y qué parte será la cola. La polaridad determina qué partes del huevo son dorsales o ventrales y cuáles son anteriores o posteriores (vea el capítulo 30); así, estos genes se conocen como genes de polaridad del huevo. La FIGURA 17-9a ilustra los gradientes de concentración en el embrión temprano de dos moléculas de ARNm maternas específi cas. Estos ARNm transcritos a partir de algunos de los genes de efecto materno se identifi can por su capacidad de hibridar con sondas de ADN radiactivas derivadas de genes clonados (se analiza en el capítulo 15). De modo alternativo, los investigadores utilizan anticuerpos marcados fl uorescentemente (como en la fotografía de apertura del capítulo) que se unen a productos proteínicos específi cos de los genes de efecto materno. Estos gradientes de proteínas organizan el patrón temprano del desarrollo en el embrión, determinando las regiones anterior y posterior. Una combinación de gradientes de proteínas puede proporcionar una información posicional que especifi ca el destino, es decir, la ruta de desarrollo, de cada núcleo en el embrión. Por ejemplo, mutaciones en ciertos genes de efecto materno causan la ausencia de señales específi cas, lo que resulta en un embrión con dos cabezas o dos extremos posteriores. En muchos casos, la inyección de ARNm materno normal en el embrión mutante revierte el fenotipo asociado con la mutación del gen de efecto materno determinado. La mosca subsecuentemente crece de forma normal, lo que indica que el producto del gen sólo se necesita durante un corto tiempo en los estadios más tempranos del desarrollo.</p>
+<p>Genes de segmentación o cigóticos Conforme los núcleos empiezan a migrar a la periferia del embrión, los genes de segmentación en estos núcleos empiezan a producir ARNm embrionarios. Hasta ahora, los genetistas han identifi cado al menos 24 genes de segmentación que son responsables de generar un patrón repetitivo de segmentos corporales dentro del embrión y la mosca adulta. De acuerdo con estudios de fenotipos imitantes, los investigadores agrupan los genes de segmentación en tres clases, genes gap, genes de la regla par y genes de la polaridad de los segmentos. Los genes gap son el primer conjunto de genes de segmentación en actuar. Estos genes interpretan la información materna anteroposterior</p>
+<p>Durante el desarrollo temprano de Drosophila hembra la estructura del óvulo se va organizando progresivamente en el ovario. Moléculas de ARNm, junto con las proteínas de la yema y otras moléculas citoplasmáticas provistas por las células maternas que se encuentran alrededor del óvulo, ingresan a su interior. Inmediatamente después de la fecundación, el núcleo del cigoto se divide, empezando una serie de 13 divisiones mitóticas. Cada división dura sólo 5 o 10 minutos, lo que signifi ca que el ADN de los núcleos se replica constantemente y a una alta velocidad. Durante este tiempo, los núcleos no sintetizan ARN. No se produce la citocinesis, y los núcleos formados durante las primeras siete divisiones permanecen en el centro del embrión hasta que se produce la octava división. En ese momento, la mayoría de los núcleos migra fuera del centro y se localiza en la periferia del embrión. Esto se conoce como el estadio blastodermo sincitial , ya que los núcleos no están rodeados por membranas plasmáticas individuales. (Un sincitio es una estructura que contiene muchos núcleos situados en un citoplasma común). Subsecuentemente, se forman membranas plasmáticas, y el embrión se conoce como blastodermo celular .</p>
+<p>Genes de efecto materno Los genes que organizan la estructura del óvulo se llaman genes de efecto materno . Estos genes, que provienen de los tejidos maternos que rodean al óvulo, se transcriben para producir moléculas de ARNm que se transportan al interior del óvulo en desa-</p>
+<p>Espermatozoide</p>
+<p>Óvulo</p>
+<p>Óvulo fecundado</p>
+<p>Larva de primer estadio</p>
+<p>Larva de segundo estadio</p>
+<p>Larva de tercer estadio</p>
+<p>Pupa</p>
+<p>Adulto</p>
+<p>Hembra</p>
+<p>Macho</p>
+<p>1 día</p>
+<p>1 día</p>
+<p>1 día</p>
+<p>2 1 / 2 a 3 días</p>
+<p>3 1 / 2 a 4 1 / 2 días</p>
+<p>Labio Piezas bucales Protórax dorsal Ojo Segunda pata Ala Ala posterior que contribuye en el equilibrio</p>
+<p>Aparato genital</p>
+<p>Adulto</p>
+<p>Larva</p>
+<p>FIGURA 17-8 La localización de los discos imagínales Cada par de discos imaginales en la larva de Drosophila ( parte inferior ) se desarrolla en pares especíﬁ cos de estructuras en la mosca adulta.</p>
+<p>FIGURA 17-7 Ciclo de vida de Drosophila La transformación de mosca de la fruta desde un cigoto hasta una mosca adulta sexualmente madura, implica el paso por varios estadios. Su ciclo de vida es cercano a los 12 días, a 25°C. Las líneas discontinuas en la pupa representan el animal experimentando la metamorfosis.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p412_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p412_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p412_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p412_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p412_img3.png" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p412_img3.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p412_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p412_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p412_img5.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p412_img5.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p412_img6.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p412_img6.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p412_img7.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p412_img7.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p412_img8.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p412_img8.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p412_img9.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p412_img9.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p412_img10.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p412_img10.jpeg</figcaption>
+</figure>
+</div>
+<p>Genética del desarrollo 379</p>
+<p>en el huevo e inician la organización del cuerpo en las regiones anterior, media y posterior ( FIGURA 17-9b ). Una mutación de uno de los genes gap normalmente causa la ausencia de uno o más segmentos corporales en el embrión ( FIGURA 17-10a ). Las otras dos clases de genes de segmentación no actúan sobre pequeños grupos de segmentos corporales, sino que afectan a todos los segmentos. Las mutaciones en los genes de la regla par suprimen cada uno de los otros segmentos, produciendo una larva con la mitad de segmentos ( FIGURA 17-10b ). Las mutaciones en los genes de polaridad de los segmentos producen segmentos a los que les falta una parte y la parte restante está duplicada en una imagen especular ( FIGURA 17-10c ). En la TABLA 17-1 se resumen los efectos de las diferentes clases de mutantes. Cada gen de segmentación en el embrión presenta una actividad máxima en un momento y lugar determinado.. El patrón de expresión ob-</p>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>+++</li>
+</ul>
+<p>+++</p>
+<p>Anterior</p>
+<p>Estado de desarrollo Actividad génica</p>
+<p>Anterior Posterior Posterior</p>
+<ol type="a">
+<li><p>A las 1.25 horas después de la fecundación, el embrión consiste en un citoplasma común con cerca de 128 núcleos ( círculos morados ). Los genes de efecto materno dividen el embrión en las secciones anterior y posterior. Las cruces en la región anterior representan moléculas de ARNm transcritas a partir de un gen de efecto materno. El sombreado rosa representa una molécula de ARNm materno diferente que está más concentrada en la región anterior.</p></li>
+<li><p>A las 2 horas después de la fecundación, unos 1500 núcleos han migrado a la periferia del embrión y han empezado a producir sus propias moléculas de ARNm. Los genes gap dividen el embrión en las secciones anterior, media y posterior. El ARN materno ( que se muestra en rosa ) se transcribe ahora a partir de los genes de segmentación ( cruces ) de los núcleos de la región anterior. El ARNm de otro gen gap se transcribe en la parte media del embrión ( región negra ).</p></li>
+</ol>
+<p>Tipo silvestre Tipo silvestre Tipo silvestre</p>
+<p>Mutante Mutante Mutante</p>
+<ol type="a">
+<li>Genes gap (b) Genes de regla par (c) Genes de la polaridad del segmento</li>
+</ol>
+<p>FIGURA 17-9 Desarrollo temprano en Drosophila Las secciones longitudinales a la izquierda muestran dos estadios tempranos del desarrollo del embrión de la Drosophila . El par de secciones a la derecha corresponde a los patrones simpliﬁ cados de la actividad génica en cada estadio. (Adaptada de M. E. Akam, “The Molecular Basis for Metameric Pattern in the Drosophila Embryo”, Development , Vol. 101, 1987).</p>
+<p>FIGURA 17-10 Comparación de mutaciones en genes de segmentación de Drosophila Los genes gap, genes de regla par, y genes de polaridad de los segmentos controlan el patrón de segmentos corporales en un embrión de Drosophila . Las bandas azules marcan las regiones en las que los productos proteínicos de estos genes se expresan normalmente en los embriones silvestres. Estas mismas regiones están ausentes en los embriones en los que el gen es mutado, es decir, el mutante carece de las partes pintadas de azul. El fenotipo resultante es característico de la clase a la que pertenece el gen. (Adaptada de C. Nusslein-Volhard y E. Wieschaus, “Mutations Aﬀ ecting Segment Number and Polarity in Drosophila”, Nature , Vol. 287, 1980).</p>
+<p>Clases de genes implicados en la formación del plan corporal segmentado de la Drosophila</p>
+<p>Lugar de la Clases de genes actividad génica Funciones de los genes</p>
+<p>Genes de efecto materno Tejidos maternos Inician el desarrollo de las regiones anterior y posterior del embrión y regulan la expresión de los alrededor del óvulo genes de segmentación</p>
+<p>Genes de segmentación Genes gap Embrión Dividen al embrión en regiones anchas e inﬂ uyen en la actividad de los genes de regla par Genes de la regla par Embrión Dividen al embrión en dos secciones, cada una contiene aproximadamente dos segmentos de ancho. También inﬂ uyen en la actividad de los genes de la polaridad de los segmentos. Genes de la polaridad Embrión Deﬁ ne todos los segmentos del cuerpo, y divide cada segmento en las partes anterior y posterior de los segmentos</p>
+<p>Genes homeóticos Embrión Controlan la identidad de los segmentos; la expresión del gen homeótico se controla por genes de segmentación</p>
+<p>TABLA 17-1</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img5.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img5.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img6.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img6.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img7.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img7.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img8.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img8.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img9.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img9.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img10.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img10.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img11.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img11.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img12.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img12.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img13.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img13.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img14.png" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img14.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p413_img15.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p413_img15.jpeg</figcaption>
+</figure>
+</div>
+<p>380 Capítulo 17</p>
+<p>une al ADN (vea la fi gura 14-12b para repasar dedos de zinc). Los genes homeóticos , que se analizan a continuación, codifi can también factores de transcripción. El hecho de que muchos de los genes implicados en el control de los procesos del desarrollo codifi quen factores transcripcionales indica que estas proteínas actúan como interruptores genéticos que regulan la expresión de otros genes. Una vez que los investigadores han identifi cado una proteína que funciona como factor transcripcional, pueden purifi carla para establecer la secuencia de ADN específi ca a las que se unen. Este método ha sido cada vez más útil para la identifi cación de segmentos adicionales en las rutas reguladoras que están implicadas en diferentes etapas del desarrollo. Los factores de transcripción también desempeñan un papel en el cáncer (que se analiza posteriormente en el capítulo).</p>
+<p>Genes homeóticos Después de que los genes de segmentación han establecido el patrón básico de segmentos en el cuerpo de la mosca, los genes homeóticos especifi can el plan de desarrollo para cada segmento. Las mutaciones en los genes homeóticos causan que una parte del cuerpo sea sustituida por otra y por lo tanto producen algunos cambios peculiares en el adulto. Un ejemplo importante es el de la mosca mutante Antennapedia , que tiene patas que crecen en la cabeza donde estarían normalmente las antenas ( FIGURA 17-11 ). Los genes homeóticos en Drosophila fueron identifi cados originalmente por los fenotipos alterados producidos por alelos mutantes. Cuando los genetistas analizaron las secuencias de ADN de varios genes homeóticos, descubrieron una corta secuencia de ADN de aproxima-</p>
+<p>servado en los genes de efecto materno y en los genes de segmentación indica que una serie progresiva de eventos en el desarrollo determinan qué células están destinadas a formar las estructuras del organismo adulto. En primer lugar, los genes de efecto materno forman gradientes de morfógenos en el cigoto, que determinan el eje anteroposterior (de la cabeza a la cola) y las regiones dorsal y ventral del embrión. Un morfógeno es una sustancia química que afecta la diferenciación de las células y tejidos, así como la forma del organismo. Los gradientes de morfógenos son señales que ayudan a las células a determinar su localización dentro del embrión y promueven su eventual diferenciación en tejidos y órganos especializados. Después, los genes de segmentación responden a los morfógenos en cada localización para regular la producción de segmentos desde la cabeza hasta la región posterior. Dentro de cada segmento, otros genes se activan entonces para especifi car qué parte del cuerpo se formará en cada segmento. La posición de cada célula se especifi ca aún más con base en una “dirección” específi ca designada por la combinación de las actividades de genes reguladores. Los genes de segmentación actúan de forma secuencial, primero los genes gap, después los genes de la regla par y, fi nalmente, los genes de la polaridad del segmento. Además, los genes de los tres grupos interactúan entre sí. Cada vez que actúa un nuevo grupo de genes, las células para ese grupo se van determinando más en su desarrollo. Conforme crece el embrión, cada región se subdivide progresivamente en regiones más pequeñas. La mayoría de los genes de segmentación codifi can factores de transcripción. Por ejemplo, algunos genes de segmentación codifi can estructuras llamadas “dedos de zinc”, un tipo de proteína reguladora que se</p>
+<ol type="a">
+<li>La cabeza de una mosca normal y una mosca con la mutación Antennapedia . (b) MEB de la cabeza de una mosca con una mutación Antennapedia .</li>
+</ol>
+<p>Antena</p>
+<p>Ojo</p>
+<p>Pata homeótica</p>
+<p>Piezas bucales</p>
+<p>Mosca adulta normal Mutante homeótico Antennapedia</p>
+<p>Ojo Pata homeótica</p>
+<p>250 μ m</p>
+<p>Dr.&nbsp;Thomas Kaufman</p>
+<p>FIGURA 17-11 Locus Antennapedia Las mutaciones Antennapedia causan transformaciones homeóticas en Drosophila en las que las patas o parte de las patas reemplazan las antenas.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p414_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p414_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p414_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p414_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>Genética del desarrollo 381</p>
+<p>Caenorhabditis elegans tiene un patrón de desarrollo relativamente rígido</p>
+<p>El gusano nematodo C. elegans es un organismo modelo ideal porque su sistema de control genético del desarrollo es relativamente fácil de estudiar. Sydney Brenner, un genetista molecular británico, empezó a estudiar el desenvolvimiento molecular en este animal en la Universidad de Cam-</p>
+<p>damente 180 pares de bases, que caracteriza muchos genes homeóticos así como algunos otros genes que desempeñan una función en el desarrollo. Esta secuencia de ADN se denomina caja homeótica . Cada caja homeótica codifi ca una región proteínica funcional llamada homeodominio , que consiste en 60 aminoácidos que forman cuatro hélices a . Una de ellas sirve como hélice de reconocimiento que se une a secuencias de ADN específi cas, afectando de este modo a la transcripción. Por lo tanto, los productos de los genes homeóticos, así como los genes de segmentación que actúan antes, son factores de transcripción. En efecto, algunos genes de segmentación contienen también cajas homeóticas. El estudio de los genes Hox , grupos de genes con cajas homeóticas que se disponen en el mismo orden en el que se expresan a lo largo del eje anteroposterior del cuerpo durante el desarrollo, proporcionan claves sobre las relaciones evolutivas. Los genes Hox se descubrieron inicialmente en Drosophila , en la que se organizan en el cromosoma en dos grupos adyacentes: el complejo Antennapedia y el complejo bithorax . Conforme los genes Hox se han identifi cado en otros animales, incluyendo otros artrópodos, anemonas, anélidos (gusanos segmentados), nematodos, y vertebrados, los investigadores han encontrado que estos genes también se encuentran agrupados y que su organización es notablemente similar a la de Drosophila . En la FIGURA 17-12 se compara la organización de los grupos de genes Hox de la mosca de la fruta con los del ratón. Los genes Hox de la mosca de la fruta y del ratón se localizan en el mismo orden a lo largo del cromosoma. Además, el orden lineal de los genes en el cromosoma corresponde al control de las regiones corporales del animal, desde la región anterior hasta la posterior del cuerpo. Esta organización aparentemente refl eja la necesidad de que estos genes se transcriban en una secuencia temporal específi ca. La Drosophila sólo tiene un complejo Antennapedia-bithorax . Sin embargo, los ratones, seres humanos y muchos otros vertebrados tienen cuatro grupos similares de genes Hox , cada uno localizado en un cromosoma diferente. Estos complejos probablemente surgieron por duplicación génica. El hecho de que estén presentes copias extra de estos genes ayuda a explicar por qué raramente se observan mutaciones causantes de transformaciones similares a las homeóticas en los animales vertebrados. No se ha observado, por ejemplo, un ojo en el lugar donde debería estar una pierna en un ratón. Sin embargo, un tipo particular de mutación Hox que se ha descrito tanto en ratones como en humanos causa anomalías en las extremidades y los genitales. La implicación de los genitales proporciona una explicación más de la rareza de estos alelos mutantes, ya que los individuos afectados muy raramente se reproducen. El hecho de que los controles del desarrollo sean muy similares en organismos tan diversos como los insectos, los nematodos, y los vertebrados (incluyendo los seres humanos) indica que el mecanismo básico evolucionó muy pronto y ha sido altamente conservado en todos los animales con un eje anteroposterior, incluso en aquellos que no son segmentados. Claramente, una vez que evolucionó un mecanismo exitoso en la regulación de grupos de genes y en la integración de sus actividades, éste se retuvo, aunque en apariencia se ha modifi cado para proporcionar alteraciones en el plan corporal. El descubrimiento de genes similares a los genes con cajas homeóticas en las plantas sugiere que estos genes se originaron tempranamente durante la evolución eucariota. Con base en investigaciones adicionales, se espera construir un modelo general de cómo están controlados los rudimentos de la morfogénesis en todos los eucariotas multicelulares. Estos sistemas de genes maestros que regulan el desarrollo son una rica fuente de “fósiles moleculares” que están aportando luz a la historia evolutiva de un modo nuevo y excitante. Este tipo de estudios ha conducido a una síntesis entre biología evolutiva y del desarrollo que se conoce como Evo Devo .</p>
+<p>Los genes Hox se organizan en el cromosoma en el mismo orden en el que se expresan a lo largo del eje anteroposterior del embrión.</p>
+<p>Región anterior Región posterior</p>
+<p>Mosca de la fruta adulta</p>
+<p>Embrión de mosca de la fruta (10 horas) Cromosoma de mosca de la fruta</p>
+<p>Cromosoma del ratón</p>
+<p>Embrión de ratón</p>
+<p>Ratón adulto</p>
+<p>1 2 3 4 5 6 7</p>
+<p>8</p>
+<p>8</p>
+<p>9</p>
+<p>1 2 3 4 5 6 7 9</p>
+<p>10 11</p>
+<p>12</p>
+<p>8 12</p>
+<p>13</p>
+<p>1 3 4 9 10 11 13</p>
+<p>4 5 6 9 10 11 13</p>
+<p>FIGURA 17-12 Grupos de genes Hox Los grupos de genes Hox se encuentran en todos los grupos de animales excepto en las esponjas. Observe que en cada organismo, la secuencia lineal de este desarrollo de genes ( bandas codiﬁ cadas por color ) en el (los) cromosoma(s) reﬂ eja su orden espacial de expresión en el embrión.</p>
+<p>PUNTO CLAVE</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img5.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img5.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img6.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img6.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img7.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img7.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img8.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img8.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img9.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img9.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img10.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img10.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img11.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img11.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img12.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img12.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img13.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img13.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img14.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img14.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img15.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img15.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img16.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img16.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p415_img17.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p415_img17.jpeg</figcaption>
+</figure>
+</div>
+<p>382 Capítulo 17</p>
+<p>larva sexualmente inmadura. Después de que la larva sale del huevo, se producen nuevas divisiones celulares que lo conducen al gusano adulto. El linaje de cada célula somática en el adulto se puede trazar desde una única célula hasta un grupo pequeño de células fundadoras , que se forman en el desarrollo temprano ( FIGURA 17-14a ). Si se destruye o se quita una célula fundadora particular, faltarán las estructuras adultas que se desarrollarían normalmente a partir de esta célula. Este rígido patrón del desarrollo, en el que el destino de las células se restringe prontamente, se denomina desarrollo en mosaico . Cada célula tiene un destino específi co en el embrión, al igual que cada baldosa en el diseño de un mosaico forma parte del patrón. Los científi cos plantearon inicialmente la hipótesis de que cada sistema de órganos de C. elegans podría derivar de una única célula fundadora. Sin embargo, el análisis detallado de los linajes celulares reveló que muchas de las estructuras halladas en el adulto, como el sistema nervioso y la musculatura, derivan en realidad de más de una célula fundadora ( FIGURA</p>
+<p>17-14b ). Se han identifi cado unos pocos linajes en los que una célula nerviosa y una célula muscular derivan de la división de una única célula. Un investigador que utilice rayos láser microscópicos sufi cientemente pequeños como para destruir células individuales puede determinar la infl uencia que tiene una célula en el crecimiento de una célula vecina. Consistentemente con el rígido patrón de los linajes celulares, la destrucción de una célula individual en C. elegans resulta, en la mayoría de casos, en la ausencia de todas las estructuras derivadas de esta célula pero con una diferenciación normal de todas las células somáticas vecinas. Esta observación sugiere que el desenvolvimiento de cada célula está regulado mediante su propio programa interno. Sin embargo, el patrón de desarrollo de C. elegans no es completamente en mosaico. En algunos casos, la diferenciación celular está infl uenciada por interacciones con células vecinas específi cas, un fenómeno conocido como inducción . Un ejemplo es la formación de la vulva, la estructura reproductiva a través de la cual se ponen los huevos. Una única célula que no se divide, llamada célula ancla, es parte del ovario, la estructura en la que las células de la línea germinal sufren meiosis para producir los huevos. La célula ancla se une al ovario y a un punto de la superfi cie externa del animal, induciendo la formación de un conducto a través del cual los huevos salen al exterior. Cuando está presente, la célula ancla induce a las células de la superfi cie para que formen la vulva y su abertura. Sin embargo, si la célula ancla se destruye con un rayo láser no se forma la vulva, y las células que normalmente formarían la vulva permanecen como células de la superfi cie ( FIGURA 17-15 ). El análisis de las mutaciones del gusano ha contribuido al conocimiento de las interacciones inductivas. Por ejemplo, varios tipos de mutaciones causan la formación de más de una vulva. En estos animales mutantes, se forman múltiples vulvas incluso si se destruye la célula ancla. Es decir, las células mutantes no necesitan una señal inductiva de la célula ancla para formar una vulva. Evidentemente en estos mutantes el gen o genes responsables de la formación de la vulva son constitutivos. El caso contrario, también se conocen mutantes que carecen de vulva. En algunos de éstos, las células que normalmente formarían la vulva en apariencia no responden a la señal inductora de la célula ancla.</p>
+<p>C. elegans es un sistema modelo para estudiar la apoptosis</p>
+<p>Durante el desenvolvimiento normal de C. elegans , hay momentos en los que el destino de las células es morir poco después de producirse. La apoptosis , o muerte celular programada, se ha observado en una amplia variedad de organismos, tanto en plantas como en animales. Por ejemplo, la mano humana se forma como una estructura palmípeda, pero los dedos se individualizan cuando las células entre los dedos experimentan</p>
+<p>bridge en la década de 1960. Él seleccionó C. elegans porque es pequeño, tiene un ciclo de vida corto (por lo común alrededor de 3 semanas), y está genéticamente bien caracterizado. Consistente en unos 19,700 genes codifi cantes de proteínas, fue el primer genoma animal secuenciado. En la actualidad, C. elegans es una herramienta importante para responder a cuestiones básicas acerca del desarrollo de células individuales dentro de organismos pluricelulares. Cuando es adulto, C. elegans mide tan sólo 1.5 mm de largo y contiene sólo 959 células somáticas ( FIGURA 17-13 ). Los individuos pueden ser machos o hermafroditas (organismos con ambos sexos en el mismo individuo). Los C. elegans hermafroditas pueden autofecundarse, lo que hace fácil la obtención de descendencia homocigótica para mutaciones recesivas recién inducidas. La disponibilidad de machos que pueden reproducirse sexualmente con los hermafroditas, también hace posible realizar cruzamientos genéticos. Puesto que el cuerpo del gusano es transparente, los investigadores pueden seguir literalmente la evolución de cada una de sus células somáticas utilizando un microscopio de interferencia diferencial de Nomarski, que proporciona contraste en especímenes transparentes. Como resultado de los esfuerzos de diversos equipos de investigación, se ha determinado el linaje de cada célula somática en el adulto. Estos estudios han mostrado que el nematodo tiene un patrón de desenvolvimiento rígido, o fi jo. Después de la fecundación, el huevo experimenta repetidas divisiones, produciendo unas 550 células que constituyen la pequeña</p>
+<p>0.3 mm</p>
+<ol start="2" type="a">
+<li><p>Estructuras en el adulto hermafrodita. No se muestran las estructuras productoras de espermatozoides.</p></li>
+<li><p>Micrografía óptica de escáner con falso color del nematodo hermafrodita adulto. Las estructuras ovales son huevos.</p></li>
+</ol>
+<p>Faringe Intestino óvulos</p>
+<p>Oviducto Oocitos Útero Vulva Ano</p>
+<p>Recto</p>
+<p>James King-Holmes/Photo Researchers, Inc.</p>
+<p>FIGURA 17-13 Caenorhabditis elegans Este organismo transparente tiene un número ﬁ jo de células somáticas. (Inciso b adaptada de la ﬁ gura 22-6a en V. Walbot y N. Holder, Developmental Biology . © 1987. Utilizada con el permiso de las compañías McGraw-Hill).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p416_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p416_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p416_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p416_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>Genética del desarrollo 383</p>
+<p>apoptosis. En C. elegans , como en otros organismos, la apoptosis está bajo el control genético. Los embriones del gusano experimentan mitosis para producir un total de 1090 células, pero 131 de estas experimentan apoptosis durante el desarrollo, lo que resulta en gusanos adultos con 959 células. En 1986, el genetista molecular estadounidense Robert Horvitz descubrió varios gusanos mutantes que estaban defectuosos en algún aspecto relacionado con la apoptosis. Las mutaciones y los genes responsables de ellas se caracterizaron a nivel molecular. Por ejemplo, uno de los genes codifi ca una proteína que regula la producción por parte de la mitocondria de moléculas que activan la apoptosis (ahora se sabe que la mitocondria desempeña una función importante en la apoptosis en animales que van desde el C. elegans hasta los humanos). Se identifi caron otros genes que codifi can una familia de proteínas conocidas como caspasas , enzimas proteolíticas activas en las etapas iniciales de la apoptosis. Subsecuentemente se identifi caron genes homólogos en otros organismos, incluyendo humanos; algunos de estos loci codifi can también caspasas en mamíferos. Los eventos moleculares que inducen la apoptosis son todavía un área de intenso interés de investigación, y cuyos resultados aclararán considerablemente los procesos generales de envejecimiento celular y cáncer. Robert Horvitz y los científi cos británicos Sydney Brenner y John Sulston compartieron el premio Nobel en Fisiología o Medicina en 2002 por su trabajo en la regulación genética del desarrollo de los órganos y la apoptosis en C. elegans . Sulston fue uno de los estudiantes de Brenner.</p>
+<p>El gusano nematodo C. elegans tiene un patrón ﬁ jo de desarrollo en el cual el destino de cada célula adulta puede rastrearse a partir de una de las varias células fundadoras en el embrión.</p>
+<p>Huevo 0</p>
+<p>50</p>
+<p>100</p>
+<p>Tiempo después de la fecundación (minutos)</p>
+<p>ANTERIOR POSTERIOR</p>
+<p>Incubación</p>
+<p>Intestino</p>
+<p>Intestino</p>
+<p>Sistema nervioso Hipodermis Musculatura</p>
+<p>Musculatura Sistema nervioso Gónada</p>
+<p>HUEVO</p>
+<p>Tiempo después de la fecundación (horas)</p>
+<p>10</p>
+<p>0</p>
+<p>Línea germinal Hipodermis Sistema nervioso</p>
+<p>Musculatura</p>
+<ol type="a">
+<li><p>Todas las células somáticas de C. elegans se derivan de cinco células somáticas fundadoras ( que se muestran en azul ) producidas durante las primeras divisiones del embrión. La célula que se muestra en blanco da lugar a las células de la línea germinal.</p></li>
+<li><p>El sistema nervioso, hipodermis, y musculatura derivan de varias células fundadoras. Este mapa de linajes traza el desarrollo de las células que forman el intestino. Las líneas discontinuas representan muchas divisiones celulares de un linaje particular.</p></li>
+</ol>
+<p>FIGURA 17-14 Linajes de celulas de Caenorhabditis elegans</p>
+<p>PUNTO CLAVE</p>
+<ol start="3" type="a">
+<li><p>Desarrollo normal de la vulva</p></li>
+<li><p>No se desarrolla la vulva (a) Desarrollo normal de la vulva</p></li>
+</ol>
+<p>Gónada</p>
+<p>C. elegans</p>
+<p>Célula ancla</p>
+<p>Se eliminan todas las células de la gónada excepto la célula ancla Célula ancla eliminada</p>
+<p>Desarrollo de la vulva Desarrollo de la vulva FIGURA 17-15 Inducción Una única célula ancla induce a las células vecinas para formar la vulva en C. elegans . Este diagrama muestra cómo la destrucción por láser de células inﬂ uye en las células vecinas.</p>
+<p>▲</p>
+<p>384 Capítulo 17</p>
+<p>ha mostrado que todas las células son equivalentes, en el embrión muy temprano. Por ejemplo, en el estadio de dos células de la embriogénesis del ratón, si los investigadores destruyen una célula e implantan la célula restante en el útero de una madre sustituta, normalmente se manifi esta un ratón normal. Por el contrario, si dos embriones en el estadio del desarrollo de ocho células se fusionan y se implantan en una madre sustituta, se manifi esta un ratón de un tamaño normal ( FIGURA 17-16 ). Usando dos embriones con características genéticas diferentes, como el color del pelaje, los investigadores demostraron que el ratón resultante tiene cuatro progenitores. Estos ratones quimera tienen un pelaje con zonas de diferentes colores derivadas de grupos de células genéticamente distintas. Una quimera es un organismo que contiene dos o más tipos de células genéticamente diferentes que provienen de distintos cigotos. (El término se deriva del nombre de una bestia mítica que se decía que tenía la cabeza de un león, el cuerpo de una cabra, y una cola como una serpiente). Las quimeras permiten a los investigadores usar células marcadas genéticamente para trazar los destinos de ciertas células durante el desarrollo. Las respuestas de los embriones de ratón a estas manipulaciones contrasta con la naturaleza en mosaico o predeterminada del desarrollo inicial en C. elegans , en el que la destrucción de una de las células fundadoras resulta en la pérdida de una parte muy signifi cativa del embrión. Por esta razón, los biólogos dicen que el ratón presenta un gran desarrollo regulativo , el embrión temprano actúa como un todo autorregulador que acomoda partes faltantes o sobrantes.</p>
+<p>Los ratones transgénicos se utilizan en estudios de regulación del desarrollo En los experimentos de transformación, se incorpora ADN exógeno en los cromosomas de un óvulo de ratón fecundado, para observar su expresión ( FIGURA 17-17 ). (También vea la fi gura 15-14 para un ejemplo de un ratón transgénico). Los ratones transgénicos resultantes proporcionan</p>
+<p>Él trazó el linaje de cómo un único cigoto da lugar a las 959 células del nematodo adulto y también observó que algunas células mueren durante el desarrollo normal. Continuando el trabajo de Sulston en la apoptosis, Horvitz, como ya se mencionó, fue el primero en descubrir genes implicados en la apoptosis.</p>
+<p>El ratón es un modelo para el desarrollo en mamíferos</p>
+<p>Los embriones de mamíferos se desarrollan de modos marcadamente diferentes de los embriones de Drosophila y C. elegans . El ratón de laboratorio, Mus musculus , es el ejemplo mejor estudiado del desarrollo en mamíferos. Los investigadores han identifi cado numerosos genes que afectan el desarrollo del ratón. La secuencia del genoma del ratón, publicada en 2002, contiene de 27,000 a 30,000 genes, un número similar al de los genes codifi cantes de proteínas en el genoma humano. Así mismo, el 99% de los genes en el ratón tiene su equivalente o contraparte en los seres humanos. El desarrollo temprano en el ratón y en otros mamíferos es similar en muchos aspectos al desarrollo humano. Durante el período de desarrollo temprano, el embrión se encuentra libre en el tracto reproductor de la hembra. Éste, entonces se implanta en la pared del útero, después de lo cual la madre se encarga de sus requerimientos nutricionales y respiratorios. En consecuencia, los óvulos de los mamíferos son muy pequeños y contienen poca cantidad de reservas de alimentos. Casi toda la investigación en el desarrollo del ratón se ha concentrado en los estadios que conducen a la implantación, porque en estos estadios el embrión se encuentra libre y puede manipularse experimentalmente. Durante este período, se producen los compromisos del desarrollo que tendrán un efecto signifi cativo en la futura organización del embrión. Después de la fecundación, una serie de divisiones celulares conducen a un grupo de células holgadamente empaquetadas. La investigación</p>
+<p>Se utilizan enzimas para eliminar la gruesa cubierta que rodea cada embrión.</p>
+<p>Embrión de ratón negro en el estadio de 8 células</p>
+<p>Embrión de ratón blanco en el estadio de 8 células</p>
+<p>Se fusionan los embriones. El embrión fusionado continúa desarrollándose.</p>
+<p>El embrión es implantado en el útero de una madre sustituta.</p>
+<p>La cría de ratón tiene 4 progenitores genéticos y un progenitor de nacimiento (la madre sustituta).</p>
+<p>1</p>
+<p>2 3 4 5</p>
+<p>FIGURA 17-16 Ratones quimera Los investigadores retiran embriones de hembras de dos cepas diferentes y combinan las células in vitro. El embrión agregado resultante continúa creciendo y se implanta en el útero de una madre sustituta. La descendencia tiene cuatro progenitores genéticos diferentes. Aunque la madre sustituta es la madre que da a luz, no está relacionada genéticamente con la cría.</p>
+<p>Genética del desarrollo 385</p>
+<p>cuencias de ADN en un gen homeótico de ratón determinan el lugar del embrión donde se expresará. Muchos genes controlados por el desarrollo, introducidos en los ratones, han aportado una información importante sobre la regulación génica. Cuando los investigadores introducen genes de otras especies como los seres humanos o las ratas, en ratones, controlados por el desarrollo, los genes se regulan del mismo modo en que normalmente lo harían en el organismo donador. Cuando se introducen en el ratón, por ejemplo, los genes humanos que codifi can la insulina, la globina, y la cristalina, que se expresan en forma normal en las células del páncreas, la sangre, y los ojos, respectivamente, se expresan sólo en estos mismos tejidos en el ratón. El hecho de que estos genes se expresen de manera correcta en los tejidos apropiados indica que las señales para la expresión génica específi ca de tejido están muy conservadas a lo largo de la evolución. La información sobre la regulación de genes que controlan el desarrollo en un organismo puede tener aplicaciones muy valiosas en otros organismos, incluso en los seres humanos.</p>
+<p>Los ratones y otros organismos modelo están proporcionando claves sobre el proceso del envejecimiento El envejecimiento , que se defi ne como una decadencia progresiva en el funcionamiento de varias partes del cuerpo, es un campo importante de la biología del desarrollo. El estudio del envejecimiento tiene un gran potencial práctico porque las enfermedades relacionadas con la edad representan uno de los mayores retos de la investigación biomédica actual. Los científi cos han demostrado que muchos factores ambientales infl uyen en el envejecimiento. Por ejemplo, la restricción severa de calorías en roedores y otros mamíferos retrasa el envejecimiento. Sin embargo, aún no se entiende bien cómo el genoma humano interacciona con el ambiente celular durante el proceso de envejecimiento. Los investigadores que trabajan con organismos modelos, como Drosophila y C. elegans , han encontrado que más de 1000 genes codifi cantes de proteínas, cuando se mutan, extienden la duración de la vida del organismo en varios grados. En el gusano nematodo C. elegans , la mayoría de los genes del envejecimiento están bajo el control de tres genes (ELT-3, ELT-5 y ELT-6), todos de los cuales codifi can para factores de transcripción. Muchos de los genes que retrasan el envejecimiento en organismos tan diversos como las levaduras, nematodos, y mamíferos están asociados con las células que dan respuestas a nutrientes. Se sabe que las restricciones dietéticas prolongan la longevidad de muchos organismos, desde las levaduras hasta los perros y posiblemente aun en primates. Dos genes (el gen PHA-4 y el gen SKN-1) extienden la supervivencia del código del C. elegans para factores de transcripción. Uno de los genes de extensión de la vida más potente, presente en el gusano C. elegans , codifi ca una proteína que es muy similar al receptor de membrana que permite a las células responder al péptido factor de crecimiento tipo insulina (IGF) en los seres humanos y en otros mamíferos. La unión del IGF a su receptor activa la transducción de señales dentro de la célula, la que regula la expresión de muchos genes. Los investigadores se preguntaron si el receptor de IGF infl uye en el envejecimiento en los mamíferos, incluyendo los seres humanos. Para probar esta hipótesis, se produjeron ratones knockout con un gen del receptor del factor de crecimiento tipo insulina (IGF-1R) desactivado. (Los ratones knockout se analizaron en el capítulo 15). Puesto que los ratones son organismos diploides, presentan dos copias del gen, llamado igf1r . Cuando se inactivan ambos alelos igf1r , los ratones presentan muchas anomalías y mueren al nacer. Sin embargo, cuando se inactiva un alelo igf1r y el otro se deja en su estado normal, los ratones crecen sanos y viven 25% más que los ratones control. En todos los aspectos, los ratones heterocigotos son normales. Son prácticamente indistinguibles de los</p>
+<p>claves de cómo se activan los genes durante el desarrollo. Los científi cos pueden identifi car un transgén (un gen ajeno) que se ha introducido en un ratón y determinar si es activo, mediante el marcaje de dicho gen por varios métodos. Algunas veces se utiliza un gen similar de una especie distinta; su proteína se diferencia de la proteína del ratón mediante anticuerpos específi cos. También es posible construir un gen híbrido consistente de los elementos reguladores de un gen de ratón y parte de otro gen de otra especie que codifi ca una proteína “informadora”. Por ejemplo, la proteína informadora podría ser una enzima que normalmente no se encuentra en los ratones. Estos estudios han sido importantes para mostrar qué se-</p>
+<p>MÉTODO DE INVESTIGACIÓN</p>
+<p>Este método se utiliza para establecer una línea transgénica de ratones que contienen los genes con características útiles para la investigación cientíﬁ ca y médica.</p>
+<p>Fecundación</p>
+<p>Adulto Cría Feto/neonato</p>
+<p>Descendencia transgénica</p>
+<p>Madre sustituta</p>
+<p>1 Recolectar óvulos fecundados.</p>
+<p>5 Reproducir los animales transgénicos</p>
+<p>2 Inyectar un fragmento de ADN clonado en el núcleo.</p>
+<p>3 Implantar los embriones inyectados en una hembra.</p>
+<p>4 Comprobar para la presencia del transgén en la descendencia de la madre sustituta.</p>
+<p>FIGURA 17-17 Producción de ratones transgénicos</p>
+<p>¿Por qué se utiliza?</p>
+<p>¿Cómo se hace esto?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p419_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p419_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>386 Capítulo 17</p>
+<p>muchos genes que se conoce que especifi can la identidad de partes de la fl or de Arabidopsis codifi can factores de transcripción. Durante el desarrollo de las fl ores de Arabidopsis , se diferencian cuatro partes distintas en la fl or: los sépalos, los pétalos, los estambres, y el carpelo ( FIGURA 17-18a ; vea también la fi gura 33-1). Los sépalos cubren y protegen la fl or cuando es un capullo, los pétalos ayudan a atraer animales polinizadores a la fl or, los estambres producen los granos de polen, y el carpelo produce óvulos, que se transforman en semillas tras la fecundación (se analiza en el capítulo 28). El modelo ABC explica cómo las tres clases de genes homeóticos controlan el desarrollo de los cuatro órganos de las fl ores; este modelo puede explicar las miles de formas diferentes que se han creado. El gen de clase A es necesario para especifi car los sépalos, los genes A y B son necesarios para especifi car los pétalos, los genes B y C son necesarios para especifi car los estambres y el gen de clase C es necesario para especifi car el carpelo. Las mutaciones en los genes de identidad de órgano A, B, o C, que son todos homeóticos y codifi can factores de transcripción, causan que una parte de la fl or sea sustituida por otra. Por ejemplo, los mutantes homeóticos de clase C (que tienen un gen C inactivo) tienen pétalos en lugar de estambres y sépalos en lugar del carpelo. Por lo tanto, la fl or entera consiste en sólo sépalos y pétalos. La FIGURA 17-18b , c y d muestra tres mutantes homeóticos de Arabidopsis . El modelo ABC no es la explicación completa del desarrollo fl oral. Otra clase de genes, designados SEPALLATA , interactúan con los genes B y C para especifi car el desarrollo de los pétalos, estambres y carpelos. Notablemente, cuando los genes SEPALLATA se activan de forma permanente en la Arabidopsis , las plantas resultantes tienen pétalos blancos que crecen donde debería haber hojas. (Puesto que estas plantas no realizan la fotosíntesis se cultivan en un medio nutritivo). Estos descubrimientos en la Arabidopsis incrementan inmensamente el número de sondas moleculares disponibles para las plantas. Los investigadores utilizan estas sondas para identifi car otros genes que controlan el desarrollo en varias especies de plantas y para compararlos con los genes de un amplio rango de organismos. El éxito del proyecto de secuenciación de Arabidopsis condujo a una iniciativa internacional de los biólogos de plantas para comprender las funciones de todos los genes de la Arabidopsis . Esta información genómica funcional conducirá a una comprensión mucho más profunda del desarrollo de las plantas y de la historia evolutiva.</p>
+<p>ratones control en su tasa de desarrollo, tasa metabólica, capacidad de reproducción y tamaño corporal. Los ratones heterocigotos en el locus igf1r producen menos receptores IGF, y por lo tanto las células no están expuestas a tanta señalización proveniente del IGF. La investigación sobre el receptor IGF y el envejecimiento en los ratones sugiere que algunos de los centenares de otros genes mutantes asociados con el envejecimiento en C. elegans pueden estar también implicados en el envejecimiento de mamíferos. Así, el control genético del envejecimiento en mamíferos tiene sufi cientes temas de investigación para mantener ocupados a los genetistas moleculares durante muchos años.</p>
+<p>La Arabidopsis es un modelo para el estudio del desarrollo en plantas, incluidos los factores de transcripción</p>
+<p>La planta berro orejas de ratón ( Arabidopsis thaliana ) es el organismo más ampliamente utilizado para estudiar el control genético del desarrollo en plantas, es un miembro de la familia de la mostaza. Aunque en sí misma Arabidopsis es una mala hierba sin importancia económica, presenta varias ventajas para la investigación. La planta completa su ciclo vital en tan sólo unas pocas semanas y es sufi cientemente pequeña como para cultivarse en placas de Petri, produciendo miles de individuos en un espacio limitado. Los botánicos utilizan mutágenos químicos para producir cepas mutantes y han aislado muchos mutantes en el desarrollo. Cuando los investigadores insertan genes ajenos clonados en las células de la Arabidopsis , los genes se integran dentro de los cromosomas y se expresan. Los investigadores inducen entonces estas células transformadas para que se diferencien en plantas transgénicas. En el 2000, se logró el primer genoma secuenciado de una planta, Arabidopsis . Aunque su genoma es relativamente pequeño (el genoma del arroz es unas 4 veces más grande), incluye cerca de 26,000 genes codifi cantes de proteínas. En comparación, Drosophila , tiene cerca de 13,600 genes y C. elegans cerca de 19,700. Muchos genes de Arabidopsis son equivalentes funcionalmente a genes de Drosophila , C. elegans , y otras especies animales. De especial importancia para el desarrollo son los más de 1500 genes que codifi can factores de transcripción en Arabidopsis (en comparación con los 635, en el último recuento, de Drosophila ). No es sorprendente que</p>
+<p>Fotos cortesía de Jose Luis Reichmann y Elliot Meyerowitz</p>
+<ol type="a">
+<li><p>Una ﬂor de Arabidopsis normal tiene cuatro sépalos verdes frondosos, cuatro pétalos blancos, seis estambres (las estructuras reproductoras masculinas) y un carpelo central (la estructura reproductiva femenina).</p></li>
+<li><p>Este mutante homeótico carece de pétalos. (c) Este mutante homeótico sólo tiene sépalos y carpelos.</p></li>
+<li><p>Este mutante homeótico tiene sépalos y pétalos pero carece de las otras estructuras ﬂorales.</p></li>
+</ol>
+<p>FIGURA 17-18 Mutantes homeóticos en las ﬂ ores de Arabidopsis</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p420_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p420_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p420_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p420_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p420_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p420_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p420_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p420_img4.jpeg</figcaption>
+</figure>
+</div>
+<p>Genética del desarrollo 387</p>
+<p>Algunos de los mecanismos de control del crecimiento celular se ilustran de forma muy simplifi cada en la FIGURA 17-19 . Una o más moléculas de señalización externas activan el crecimiento y la división de las células. Algunas de estas sustancias son factores de crecimiento que se unen a receptores de factores de crecimiento específi cos asociados a la superfi cie celular, iniciando una cascada de eventos en el interior de la célula. Con frecuencia el complejo receptor del factor de crecimiento actúa como una proteína quinasa , una enzima que fosforila proteínas, las cuales a su vez fosforilan aminoácidos específi cos de diversas proteínas citoplásmaticas. Esta modifi cación postraduccional por lo común da por resultado la activación de enzimas previamente inactivas. Las enzimas activadas catalizan entonces la activación de ciertas proteínas nucleares, muchas de las cuales son factores de transcripción. Los factores de transcripción activados se unen a sus ADN objetivo y estimulan la transcripción de grupos específi cos de genes que inician el crecimiento y la división celular. Incluso en el escenario simplifi cado que se presenta en la fi gura, es evidente que se requieren múltiples pasos para controlar la proliferación celular. Los investigadores han identifi cado los protooncogenes que codifi can los productos responsables de muchos de estos pasos. La lista</p>
+<p>Repaso</p>
+<p>■ ¿Cuáles son los méritos relativos de Drosophila , C. elegans , M. musculus , y Arabidopsis como organismos modelo para el estudio del desarrollo?</p>
+<p>■ ¿Qué son los factores de transcripción y cómo influyen en el desarrollo?</p>
+<p>■ ¿Qué función desempeña la inducción en el desarrollo?</p>
+<p>■ ¿Qué es la apoptosis?</p>
+</section>
+<section id="cáncer-y-desarrollo-celular" class="level2">
+<h2 class="anchored" data-anchor-id="cáncer-y-desarrollo-celular">17.3 CÁNCER Y DESARROLLO CELULAR</h2>
+<p>OBJETIVO DE APRENDIZAJE</p>
+<p>8 Analizar la relación entre cáncer y mutaciones que afectan los procesos de desarrollo celular.</p>
+<p>Las células cancerígenas carecen de inhibidores biológicos normales. Las células normales están fuertemente reguladas mediante mecanismos de control que les indican que se dividan cuando sea necesario y evitan que crezcan y se dividan de una forma inapropiada. Normalmente las células de muchos tejidos en el adulto inhiben su división; sólo se multiplican para sustituir a una célula vecina que ha muerto o se ha dañado. Las células cancerígenas han escapado de estos controles y pueden dividirse continuamente. Como consecuencia de su patrón de crecimiento anómalo, algunas células cancerígenas forman fi nalmente una masa de tejido llamada tumor , o neoplasma . Si el tumor permanece en el lugar donde se originó, normalmente se puede eliminar por cirugía. Uno de los mayores problemas con ciertas formas de cáncer es que las células pueden escapar de los controles que las mantienen en un lugar. La metástasis es la diseminación de las células cancerígenas a diferentes partes del cuerpo. Las células cancerígenas invaden otros tejidos y forman múltiples tumores. El cáncer pulmonar, por ejemplo, es especialmente mortal porque sus células son altamente metastásicas; entran en el fl ujo sanguíneo, se diseminan, y forman tumores en otras partes de los pulmones y en otros órganos, como el hígado y el cerebro. Los biólogos ahora saben que el cáncer es causado por la expresión alterada de genes específi cos que son críticos para el proceso de la división celular. Usando métodos de ADN recombinante, los investigadores han identifi cado muchos de los genes que al funcionar anormalmente, transforman células normales en células cancerígenas. Las características de cada tipo de célula cancerígena provienen de al menos uno, y probablemente varios, oncogenes , o genes causantes de cáncer. Los oncogenes surgen de cambios en la expresión de ciertos genes denominados protooncogenes , que son genes normales que se encuentran en todas las células y que están implicados en el control del crecimiento y del desarrollo. Los investigadores descubrieron los oncogenes por primera vez en los virus que infectan células de mamíferos y las transforman en células cancerígenas, en un proceso llamado transformación maligna . Estos virus tienen oncogenes en sus genomas. Cuando estos virus infectan una célula los oncogenes virales se expresan, provocando la división celular. Un protooncogén en una célula que no ha sido infectada por un virus puede mutar también y convertirse en un oncogén. Uno de los primeros oncogenes que identifi caron los investigadores se aisló de un tumor de una vejiga urinaria humana. En la célula que dio lugar al tumor, un protooncogén había experimentado una mutación de un único par de bases; el resultado fue que el aminoácido valina había reemplazado al aminoácido glicina en el producto proteínico del gen. Este cambio sutil fue aparentemente un factor crítico en la conversión de la célula normal en una célula cancerígena.</p>
+<p>Los factores de crecimiento son proteínas señalizadoras que estimulan la división celular en células diana o células blanco especíﬁ cas.</p>
+<p>5 El crecimiento celular y la división celular ocurre.</p>
+<p>Proteínas citoplasmáticas (inactivas)</p>
+<p>Proteínas nucleares (inactivas)</p>
+<p>Membrana plasmática</p>
+<p>Envoltura nuclear</p>
+<p>Núcleo</p>
+<p>Citosol</p>
+<p>Receptor de factor de crecimiento</p>
+<p>1 Factor de crecimiento unido al receptor.</p>
+<p>2 Las proteínas están fosforiladas (activas).</p>
+<p>3 Las proteínas nucleares están activas (por ejemplo factores de transcripción activados).</p>
+<p>4 La transcripción de genes especíﬁcos se estimula.</p>
+<p>FIGURA 17-19 Cascada de control del crecimiento celular En este ejemplo, un factor de crecimiento estimula el crecimiento celular. Los protooncogenes codiﬁ can receptores de factores de crecimiento y algunos de los otros componentes del sistema. Cuando muta un protooncogén, convirtiéndose en un oncogén, la célula crece y se divide incluso en ausencia del factor de crecimiento.</p>
+<p>PUNTO CLAVE</p>
+<p>388 Capítulo 17</p>
+<p>Genoma del Cáncer, una iniciativa internacional a largo plazo con base en Gran Bretaña, está examinando actualmente cada gen humano en busca de mutaciones relacionadas con el cáncer. Conforme se descubran más de estos genes y sus interacciones, se ganará una comprensión más completa del control del crecimiento y del desarrollo. Esta comprensión mejorará el diagnóstico y los tratamientos de varios tipos de cáncer. Algunos investigadores ven el cáncer como una enfermedad de células madre, porque las células cancerígenas se propagan a partir de un pequeño número de células que tienen muchas de las propiedades de las células madre. Sin embargo, la propagación de células madre normales está fuertemente regulada, por lo que la pregunta que algunos biólogos persiguen es cómo los mecanismos celulares que regulan la autorrenovación de las células madre cambian para causar una proliferación celular cancerosa. Es posible que la relativamente larga vida de las células madre les permita acumular mutaciones que hacen que las células proliferen de un modo incontrolado. Aunque esta línea de investigación es prometedora, debería enfatizarse que la validez de la idea del cáncer como una enfermedad de las células madre tiene que demostrarse aun para la mayoría de las clases de cáncer.</p>
+<p>Repaso</p>
+<p>■ ¿Cómo se relacionan los oncogenes y los genes supresores de tumor, con los genes implicados en el control del crecimiento y el desarrollo normales?</p>
+<p>■ ¿Cómo está implicado un factor de crecimiento en una cascada de control del crecimiento normal?</p>
+<p>actual de protooncogenes conocidos incluye genes que codifi can varios factores de crecimiento o receptores de factores de crecimiento y genes que responden a la estimulación por los factores de crecimiento, incluidos muchos factores de transcripción. Cuando un protooncogén muta o se expresa inadecuadamente (es decir, cuando se convierte en un oncogén), la célula puede malinterpretar la señal y responder creciendo y dividiéndose. Por ejemplo, en algunos casos un protooncogén que codifi ca un receptor de factor de crecimiento muta de un modo que compromete la regulación del receptor. Está siempre activado, incluso en ausencia del factor de crecimiento que normalmente lo controla. No todos los genes que causan cáncer cuando mutan son protooncogenes. Aproximadamente la mitad de todos los cánceres son causados por una mutación en un gen supresor de tumor . Estos genes, también conocidos como antioncogenes , interactúan normalmente con factores de inhibición del crecimiento para bloquear la división celular. Cuando mutan, pierden la capacidad de “poner el freno” y se produce el crecimiento incontrolado. Actualmente, se han identifi cado más de 100 oncogenes y 15 genes supresores de tumor. Un cambio en un único protooncogén por lo común es insufi ciente para provocar que una célula se convierta en maligna. El desarrollo de cáncer normalmente es un proceso de múltiples etapas que implica tanto mutaciones que activan oncogenes como mutaciones que inactivan genes supresores de tumor. Otros factores adicionales, como translocaciones cromosómicas (vea el capítulo 16) o la activación inadecuada de la enzima responsable para el mantenimiento de los telómeros (vea el capítulo 12), pueden desempeñar también una función en el desarrollo del cáncer. El Proyecto</p>
+<p>17.1 (página 370)</p>
+<p>1 Distinguir entre determinación celular y diferenciación celular, y entre equivalencia nuclear y totipotencia.</p>
+<p>■ Un organismo contiene muchos tipos de células que están especializadas tanto estructural como metabólicamente para realizar funciones especíﬁ cas. Estas células son el producto de un proceso de compromiso gradual, llamado determinación celular , que lleva ﬁ nalmente a la etapa última de especialización celular, conocida como diferenciación celular .</p>
+<p>■ La equivalencia nuclear es el concepto de que, con algunas excepciones, todos los núcleos de las células somáticas diferenciadas de un organismo son idénticos entre sí y respecto al núcleo de la única célula de la que descendieron. La totipotencia es la capacidad de las células de dirigir el desarrollo de un organismo entero. 2 Describir los experimentos clásicos de Steward, Gurdon y Wilmut</p>
+<p>■ Steward indujo unas células maduras de raíz de zanahoria para que evitaran su diferenciación funcional y expresaran su totipotencia, formando una planta completa.</p>
+<p>■ Gurdon inyectó núcleos de células intestinales de renacuajo en óvulos enucleados; una pequeña fracción de ellos se desarrolló hasta renacuajo, lo que demostraba la totipotencia del núcleo inyectado.</p>
+<p>■ Wilmut fusionó una célula diferenciada de una célula de oveja adulta con un óvulo enucleado y los implantó en el útero de una madre sustituta, donde se desarrolló un cordero normal.</p>
+<p>Aprenda más acerca del clonamiento de ovejas, haciendo clic sobre la ﬁ gura en CengageNOW.</p>
+<p>3 Deﬁ nir células madre , distinguir entre células madre embrionarias y células madre pluripotentes, y describir algunas de las prometedoras áreas de investigación que implican el uso de células madre.</p>
+<p>■ Las células madre pueden dividirse para producir descendientes diferenciados que todavía retienen la capacidad de dividirse para mantener la población de células madre. Las células madre totipotentes conducen a todos los tipos celulares del cuerpo y a la placenta, mientras que las células madre pluripotentes conducen a muchos, pero no todos, los tipos celulares de un organismo.</p>
+<p>■ Las células madre embrionarias (ME) , formadas después de que un cigoto haya experimentado varias rondas de división celular para formar un blastocisto de 5 o 6 días de edad, son pluripotentes y presentan el potencial de desarrollarse en cualquier célula del cuerpo; las células ME no son totipotentes porque no pueden formar las células de la placenta.</p>
+<p>■ Las células madre son prometedoras en el tratamiento de enfermedades, como la enfermedad de Parkinson y la diabetes mellitus.</p>
+<p>17.2 (página 375)</p>
+<p>4 Indicar las características de la Drosophila melanogaster , Caenorhabditis elegans , Mus musculus , y Arabidopsis thaliana que los han constituido en organismos modelo valiosos para la genética del desarrollo.</p>
+<p>■ Se han identiﬁ cado mutaciones en el desarrollo de la mosca de la fruta, Drosophila , muchas de las cuales afectan el plan de segmentación corporal del organismo. Hoy se sabe que muchos genes del desarrollo descubiertos</p>
+</section>
+<section id="resumen-enfoque-en-los-objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/17-genetica-del-desarrollo/17-genetica-del-desarrollo_p422_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>17-genetica-del-desarrollo_p422_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Genética del desarrollo 389</p>
+<p>■ Los genes homeóticos , que actúan al último, son responsables de especiﬁ car la identidad de cada segmento. 6 Explicar la relación entre los factores de transcripción y los genes que controlan el desarrollo de un organismo.</p>
+<p>■ Los factores de transcripción son proteínas de unión al ADN que regulan la transcripción en los eucariotas. Algunos genes codiﬁ cantes de factores de transcripción contienen una secuencia de ADN llamada caja homeótica , que codiﬁ ca una proteína con una región de unión al ADN llamada homeodominio .</p>
+<p>■ Algunos genes con cajas homeóticas están organizados en complejos que parecen ser sistemas de genes maestros que especiﬁ can el plan corporal de un organismo. Existe un paralelismo entre los complejos de genes con cajas homeóticas de Drosophila y los de otros animales. 7 Deﬁ nir inducción y apoptosis , y dar ejemplos de las funciones que desempeñan en el desarrollo de un organismo.</p>
+<p>■ Inducción son las interacciones de células vecinas durante el desarrollo. Durante el desenvolvimiento de C. elegans , la célula ancla induce a las células de la superﬁ cie a organizarse para formar la vulva, la estructura a través de la cual se ponen los óvulos.</p>
+<p>■ Apoptosis es la muerte celular programada. Durante el desarrollo humano, la mano humana se forma como una estructura palmípeda, pero los dedos se individualizan cuando las células entre ellos mueren.</p>
+<p>17.3 (página 387)</p>
+<p>8 Analizar la relación entre cáncer y mutaciones que afectan los procesos de desarrollo celular.</p>
+<p>■ Las características de las células cancerígenas se deben a oncogenes causantes de cáncer. Los oncogenes derivan de cambios en la expresión de genes normales denominados protooncogenes , que existen en todas las células y están implicados en el control del crecimiento y el desarrollo.</p>
+<p>■ Los protooncogenes conocidos incluyen genes que codiﬁ can varios factores de crecimiento o receptores de factores de crecimiento y genes que responden a la estimulación por los factores de crecimiento, incluyendo muchos factores de transcripción. Cuando un protooncogén se expresa de forma inadecuada (se convierte en un oncogén), la célula puede malinterpretar la señal y responder creciendo y dividiéndose.</p>
+<p>■ Los genes supresores de tumor por lo común interactúan con factores inhibidores del crecimiento para bloquear la división celular. Una mutación en un gen supresor de tumor puede inactivarlo y conducir consecuentemente al cáncer.</p>
+<p>en la mosca de la fruta son importantes en el crecimiento y desenvolvimiento de todos los animales.</p>
+<p>■ C. elegans es un nematodo con un desarrollo en mosaico , un patrón de desarrollo rígido en el que los destinos de las células se restringen tempranamente en el crecimiento. Se conoce el linaje de cada célula somática del adulto, y cada uno puede trazarse hasta una única célula fundadora en el embrión temprano.</p>
+<p>■ El ratón de laboratorio, M. musculus , se usa extensamente en estudios del desarrollo de mamíferos. El ratón presenta un desarrollo regulativo ; el embrión muy temprano es un todo autorregulador y puede desenvolverse normalmente aun si tiene células extra o faltantes. Los ratones transgénicos , en los que se han incorporado genes foráneos o ajenos, han ayudado a los investigadores a determinar cómo se activan y regulan los genes en el desarrollo.</p>
+<p>■ También se han identiﬁ cado genes que afectan al desarrollo en ciertas plantas, como A. thaliana . El modelo ABC de las interacciones entre tres tipos de genes plantea la hipótesis de cómo se desarrollan los órganos de las ﬂ ores de Arabidopsis . Las mutaciones en estos genes causan que una parte de la ﬂ or sea sustituida por otra. 5 Distinguir entre los genes de efecto materno, los genes de segmentación, y los genes homeóticos en Drosophila .</p>
+<p>■ Los primeros eventos del desarrollo que operan en el huevo o cigoto son establecidos por los genes de efecto materno presentes en los tejidos maternos circundantes, que están activos antes de la fecundación. Algunos producen gradientes de morfógenos (sustancias químicas que afectan la diferenciación de células y tejidos, así como la forma del organismo). Los genes de efecto materno establecen la polaridad en el embrión.</p>
+<p>■ Los genes de segmentación generan un patrón repetitivo de segmentos corporales dentro del embrión. Los genes gap son genes de segmentación que inician la organización del cuerpo en las regiones anterior, media y posterior. Los genes de la regla par y los genes de la polaridad de segmento afectan todos los segmentos.</p>
+<ol type="1">
+<li><p>La morfogénesis tiene lugar a través de un proceso de múltiples etapas de (a) diferenciación (b) determinación (c) formación de patrones (d) totipotencia (e) selección</p></li>
+<li><p>Los experimentos de clonación realizados en ranas demostraron que (a) todas las células de rana diferenciadas son totipotentes (b) algunas células de rana diferenciadas son totipotentes (c) todos los núcleos de células de rana diferenciadas son totipotentes (d) algunos núcleos de células de rana diferenciadas son totipotentes (e) la diferenciación celular requiere siempre la pérdida de ciertos genes</p></li>
+<li><p>El eje anteroposterior de un embrión de Drosophila se establece en primer lugar por ciertos (a) genes homeóticos (b) genes de efecto materno (c) genes de segmentación (d) protooncogenes (e) genes de la regla par</p></li>
+<li><p>Usted descubre un nuevo mutante de Drosophila en el que las piezas bucales se localizan donde por lo común se encuentran las antenas. Se predice que el gen mutante es muy probablemente un (a) gen homeó-</p></li>
+</ol>
+<p>tico (b) gen gap (c) gen de la regla par (d) gen de efecto materno (e) gen de la polaridad de segmento</p>
+<ol start="5" type="1">
+<li><p>La mayoría de los genes de segmentación codifi can (a) ARN de transferencia (b) enzimas (c) factores de transcripción (d) histonas (e) proteínas de transporte</p></li>
+<li><p>Los genes con caja homeótica (a) se encuentran en las moscas de la fruta pero no en otros animales (b) tienden a expresarse en el orden en que se encuentran en un cromosoma (c) contienen una secuencia de ADN característica (d) b y c (e) a, b y c</p></li>
+</ol>
+<p>7 . El patrón de desarrollo de C. elegans se dice que es en mosaico porque (a) el desarrollo está controlado por gradientes de morfógenos (b) parte del embrión no se desarrolla si se destruye una célula fundadora (c) algunos individuos son hermafroditas que se autofecundan (d) todo el desarrollo está controlado por los genes de efecto materno (e) nunca se produce apoptosis</p>
+<p>EVALÚE SU COMPRENSIÓN</p>
+<p>390 Capítulo 17</p>
+<p>de tejidos (e) se han usado para clonar una oveja y otros diferentes mamíferos</p>
+<ol start="11" type="1">
+<li><p>¿Cuál de los siguientes enunciados sobre el cáncer es falso ? (a) los oncogenes derivan de mutaciones en protooncogenes (b) los genes supresores de tumor normalmente interactúan con factores inhibidores del crecimiento para bloquear la división celular (c) se han identifi cado más de 100 oncogenes y 15 genes supresores de tumor (d) los oncogenes se descubrieron por primera vez en los modelos de cáncer de ratón (e) el desarrollo del cáncer es normalmente un proceso de múltiples etapas que implica tanto oncogenes como genes supresores de tumor que han mutado</p></li>
+<li><p>Los protooncogenes codifi can (a) morfógenos (b) anticuerpos para la respuesta inmunitaria (c) receptores de factores de crecimiento y otros componentes de la cascada de control del crecimiento (d) enzimas como la transcriptasa reversa (e) células ME</p></li>
+<li><p>¿Cuál de los siguientes enunciados ilustra la naturaleza regulada del desarrollo temprano en el ratón? (a) el embrión de ratón está libre antes de la implantación en el útero (b) es posible producir un ratón transgénico (c) es posible producir un ratón en el que un gen específi co se ha eliminado (d) en el ratón se han identifi cado genes relacionados con los genes homeóticos de Drosophila (e) un ratón quimera puede producirse fusionando dos embriones de ratón</p></li>
+<li><p>Arabidopsis es un organismo modelo útil para el estudio del desarrollo de plantas porque (a) es de una gran importancia económica (b) tiene un tiempo de generación muy largo (c) se han aislado muchos mutantes en el desarrollo (d) contiene gran cantidad de ADN por célula (e) tiene un patrón de desarrollo rígido</p></li>
+<li><p>Las células madre pluripotentes (a) pierden material genético durante el desarrollo (b) conducen a muchos, pero no todos, los tipos celulares de un organismo (c) se organizan en estructuras reconocibles a través de la formación de patrones (d) no pueden crecer en cultivos</p></li>
+<li><p>¿Por qué es crucial una comprensión de la regulación génica en eucariotas para comprender el proceso del desarrollo?</p></li>
+<li><p>¿Por qué es necesario para los científi cos estudiar el desarrollo en más de un tipo de organismo?</p></li>
+<li><p>Se podría implicar un gen en el crecimiento tanto de las células madre como de algunos tipos de cáncer? Explique la respuesta.</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. ¿Por qué las sorprendentes similitudes entre los genes que controlan el desarrollo en especies ampliamente diferentes, son una fuerte evidencia de la evolución?</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. ¿Cuál es el campo común entre los biólogos evolucionistas y los biólogos del desarrollo que han adoptado la perspectiva conocida como Evo Devo?</p></li>
+<li><p>ANÁLISIS DE DATOS. Las partes de las fl ores están arregladas en cuatro círculos concéntricos: sépalos, pétalos, estambres y carpelos. De acuerdo con el modelo ABC del desarrollo de los órganos fl orales en Arabidopsis , el gen clase A es necesario para especifi car los sépalos, los genes clases A y B para especifi car los pétalos, los genes clases B y C para especifi car los estambres, y el gen clase C para especifi car</p></li>
+</ol>
+<p>el carpelo. Si se produce una mutación en uno de los genes clase B , inactivándolo, ¿en qué consistirán las fl ores resultantes?</p>
+<p>Genes A</p>
+<p>Genes B</p>
+<p>Genes C</p>
+<p>Sépalo</p>
+<p>Pétalo</p>
+<p>Estambre</p>
+<p>Carpelo</p>
+<p>Preguntas adicionales están disponibles en CengageNOW en www.cengage.com/login.</p>
+<p>PENSAMIENTO CRÍTICO</p>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+&nbsp;
+
+
+<footer style="background-color:	#d0f0ea; padding:1.5em 1em 0.5em; font-family:'Segoe UI', sans-serif; font-size:0.95em; color:#333; margin-bottom: 0;">
+
+  <div style="max-width:960px; margin:0 auto; text-align:center;">
+
+    <p><a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a> – Ingeniero Ambiental | Magíster en Educación</p>
+
+    <p>Asesor educativo, científico y ambiental con más de 6 años de experiencia desarrollando proyectos de investigación, biodiversidad, ciencia de datos ambientales, ciencia ciudadana y divulgación científica.</p>
+
+    <p>¿Necesitas asesoría experta en educación, medio ambiente, biodiversidad o herramientas científicas como <em>R, Quarto, LaTeX</em> o <em>Google Earth Engine</em>?<br><strong>¡Estoy aquí para ayudarte!</strong></p>
+
+    <p style="margin-top:1em; margin-bottom: 0.5em;">
+
+      <a href="mailto:contacto.envinatu@gmail.com" style="color:#007bff; text-decoration:none;">📩 Contáctame: contacto.envinatu@gmail.com</a><br>
+
+      <a href="https://www.linkedin.com/in/marceloamores" target="_blank" style="color:#007bff; text-decoration:none; display:inline-flex; align-items:center; gap:0.3em;">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#007bff" viewbox="0 0 24 24" style="vertical-align:middle;">
+
+          <path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.3 7.6 24 10.05 24 14.45V24h-5v-8.2c0-1.95-.03-4.45-2.71-4.45-2.71 0-3.13 2.12-3.13 4.3V24h-5V8z"></path>
+
+        </svg>
+
+        Conecta en LinkedIn
+
+      </a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- Carrusel de iNaturalist debajo del footer -->
+
+<div class="inat-carousel-container">
+
+  <div id="inat-carousel-track" class="inat-carousel-track"></div>
+
+</div>
+
+
+
+<style>
+
+.inat-carousel-container {
+
+  overflow: hidden;
+
+  width: 100%;
+
+  background: #d0f0ea;
+
+  padding: 10px 0 14px; /* reducido */
+
+  font-family: 'Segoe UI', sans-serif;
+
+  font-size: 0.85em;
+
+  color: #333;
+
+  margin-top: -8px; /* compensación visual mínima */
+
+}
+
+
+
+.inat-carousel-track {
+
+  display: flex;
+
+  gap: 12px;
+
+  animation: scroll-left 100s linear infinite;
+
+  width: max-content;
+
+  padding: 0 1em;
+
+}
+
+
+
+.inat-card {
+
+  flex: 0 0 auto;
+
+  width: 90px;
+
+  text-align: center;
+
+  background: #fff;
+
+  padding: 8px 6px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 6px;
+
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+}
+
+
+
+.inat-card img {
+
+  width: 75px;
+
+  height: 75px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+}
+
+
+
+.inat-card .species {
+
+  font-weight: 600;
+
+  font-size: 0.75em;
+
+  margin-top: 4px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+}
+
+
+
+.inat-card .date {
+
+  font-size: 0.7em;
+
+  color: #666;
+
+}
+
+
+
+@keyframes scroll-left {
+
+  0% { transform: translateX(0); }
+
+  100% { transform: translateX(-50%); }
+
+}
+
+</style>
+
+
+
+<script>
+
+fetch("https://api.inaturalist.org/v1/observations?user_id=marceloamores&order=desc&order_by=observed_on&per_page=8")
+
+  .then(response => response.json())
+
+  .then(data => {
+
+    const track = document.getElementById("inat-carousel-track");
+
+    const items = data.results.map(obs => {
+
+      const img = obs.photos.length ? obs.photos[0].url.replace("square", "small") : "https://static.inaturalist.org/images/users/defaults/thumb.png";
+
+      const species = obs.taxon ? (obs.taxon.preferred_common_name || obs.taxon.name) : "Sin ID";
+
+      const date = new Date(obs.observed_on).toLocaleDateString("es-EC");
+
+      return `
+
+        <div class="inat-card">
+
+          <a href="https://www.inaturalist.org/observations/${obs.id}" target="_blank" rel="noopener noreferrer">
+
+            <img src="${img}" alt="${species}" />
+
+          </a>
+
+          <div class="species" title="${species}">${species}</div>
+
+          <div class="date">${date}</div>
+
+        </div>`;
+
+    }).join("");
+
+    track.innerHTML = items + items;
+
+  })
+
+  .catch(err => {
+
+    console.error("Error:", err);
+
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<hr />
+
+<p style="text-align: center;">Developed and maintained by <a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a>. <br>
+
+
+
+
+
+Keen to support the site? You're most welcome to <a href='https://ko-fi.com/I2I1K189U' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> </p>
+
+
+
+
+
+
+
+<p style="text-align: center;">For updates, sign up to my <a href="https://github.com/envinatu" target="_blank">newsletter</a></p>
+
+
+
+
+
+<hr>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add icon library 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- Add font awesome icons 
+
+<!--<p style="text-align: center;">
+
+<!--    <a href="https://www.linkedin.com/in/marceloamores" class="fa fa-linkedin" target="_blank"></a>
+
+ <!--   <a href="https://www.inaturalist.org/people/marceloamores" target="_blank">
+
+  <img src="https://static.inaturalist.org/wiki_page_attachments/3154-medium.png" alt="iNaturalist" style="width:24px; height:24px;">
+
+    <a href="https://github.com/envinatu" class="fa fa-github" target="_blank"></a>
+
+    <a href="https://x.com/envinatu" target="_blank">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/300px-X_logo_2023_original.svg.png" alt="X" style="width:13px; height:13px;">
+
+    <a href="https://www.youtube.com/channel/envinatu" class="fa fa-youtube" target="_blank"></a>
+
+</a>
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+
+.inat-widget {padding: 10px; line-height: 1;}
+
+.inat-widget-header {margin-bottom: 10px;}
+
+.inat-widget td {vertical-align: top; padding-bottom: 10px;}
+
+.inat-label { color: #888; }
+
+.inat-meta { font-size: smaller; margin-top: 3px; line-height: 1.2;}
+
+.inat-observation-body, .inat-user-body { padding-left: 10px; }
+
+.inat-observation-image {text-align: center;}
+
+.inat-observation-image, .inat-user-image { width: 48px; display: inline-block; }
+
+.inat-observation-image img, .inat-user-image img { max-width: 48px; }
+
+.inat-observation-image img { vertical-align: middle; }
+
+.inat-widget-small .inat-observation-image { display:block; float: left; margin: 0 3px 3px 0; height:48px;}
+
+.inat-label, .inat-value, .inat-user { font-family: "Trebuchet MS", Arial, sans-serif; }
+
+.inat-user-body {vertical-align: middle;}
+
+.inat-widget td.inat-user-body {vertical-align: middle;}
+
+.inat-widget .inat-footer td.inat-value {vertical-align: middle; padding-left: 10px;}
+
+</style>
+
+<div class="inat-widget">
+
+  
+<table class="inat-footer caption-top" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd inat-user">
+<td class="inat-user-image"><a href="https://www.inaturalist.org/observations/marceloamores" data-border="0"><img src="https://static.inaturalist.org/attachments/users/icons/1116633/thumb.jpg?1628812209" class="usericon img-fluid" /></a></td>
+<td class="inat-value"><strong><a href="https://www.inaturalist.org/observations/marceloamores">Ver las observaciones de Marcelo en iNaturalist »</a></strong></td>
+</tr>
+</tbody>
+</table>
+
+
+  <script type="text/javascript" charset="utf-8" src="https://www.inaturalist.org/observations/marceloamores.widget?layout=large&limit=5&order=desc&order_by=creatrd_at&locale=es"></script>
+
+</div>
+
+
+
+-->
+
+    
+
+
+
+
+
+&nbsp;
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./16-genetica-humana.html" class="pagination-link" aria-label="16 Genética humana y el genoma humano">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">16 Genética humana y el genoma humano</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./18-evolucion-darwiniana.html" class="pagination-link" aria-label="18 Introducción a la evolución darwiniana">
+        <span class="nav-page-text"><span class="chapter-title">18 Introducción a la evolución darwiniana</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<div style="display:inline;">
+©
+<script>document.write(new Date().getFullYear());</script>
+<a href="https://github.com/envinatu"> Marcelo F. Amores Palma</a>
+</div>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/">
+      <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu">
+      <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/nvinatu">
+      <i class="bi bi-twitter-x" role="img" aria-label="Quarto X">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/envinatu">
+      <i class="bi bi-youtube" role="img" aria-label="Envinatu YouTube">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:contacto.envinatu@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email Us">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

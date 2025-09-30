@@ -1,0 +1,2392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Marcelo Amores">
+
+<title>47 Procesamiento de alimentos y nutrición – BIOLOGÍA SOLOMON</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./48-osmorregulacion.html" rel="next">
+<link href="./46-intercambio-gases.html" rel="prev">
+<link href="./images/Icono_E.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<!-- Verificación de Google -->
+
+<meta name="google-site-verification" content="EYveEP5I9oi6m-r8Qa_Fett47y3RJFqSizYYvf7G1RM">
+
+
+
+<!-- Canonical URL dinámico -->
+
+<link rel="canonical" link:"{{="" page.url="" |="" absolute_url="" }}"="">
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/envinatu1.png" alt="Envinatu logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/biologia/"> 
+<span class="menu-text">Biología</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/quimica/"> 
+<span class="menu-text">Química</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/geociencias"> 
+<span class="menu-text">Geociencias</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/pedagogia"> 
+<span class="menu-text">Educación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/rubick"> 
+<span class="menu-text">Ludociencia</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/blog"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/amores"> 
+<span class="menu-text">Sobre Mi</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.pdf"> <i class="bi bi-filetype-pdf" role="img" aria-label="Ver PDF">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.epub"> <i class="bi bi-journal-bookmark-fill" role="img" aria-label="Ver eBook">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/"> <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu"> <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./47-nutricion.html"><span class="chapter-title">47 Procesamiento de alimentos y nutrición</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000-prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefacio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001-al-estudiante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Al estudiante</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-una-vision-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1 Una visión de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-atomos-y-moleculas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2 Átomos y moléculas: la base química de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-quimica-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 La química de la vida: Compuestos orgánicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-organizacion-de-la-celula.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4 Organización de la célula</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-membranas-biologicas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5 Membranas biológicas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-comunicacion-celular.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6 Comunicación celular</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-energia-y-metabolismo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7 Energía y metabolismo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-produccion-de-atp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8 ¿Cómo producen ATP las células? Rutas de liberación de energía</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-fotosintesis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9 Fotosíntesis: captura de energía luminosa</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-mitosis-y-meiosis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10 Cromosomas, mitosis y meiosis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-herencia.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11 Los principios básicos de la herencia</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">12 ADN: Molécula portadora de la información genética</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-expresion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">13 Expresión génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-regulacion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">14 Regulación génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-tecnologia-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">15 Tecnología ADN y genómica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16-genetica-humana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">16 Genética humana y el genoma humano</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-genetica-del-desarrollo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">17 Genética del desarrollo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./18-evolucion-darwiniana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">18 Introducción a la evolución darwiniana</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./19-cambio-en-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">19 Cambio evolutivo en poblaciones</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./20-especiacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">20 Especiación y macroevolución</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./21-historia-evolutiva.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">21 El origen e historia evolutiva de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./22-evolucion-de-primates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">22 La evolución de los primates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./23-sistematica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">23 Comprensión de la diversidad: sistemática</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./24-virus.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">24 Virus y agentes subvirales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./25-bacterias-y-arqueas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">25 Bacterias y arqueas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./26-protistas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">26 Protistas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./27-plantas-sin-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">27 Plantas sin semillas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./28-plantas-con-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">E</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./29-hongos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">29 Los hongos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./30-diversidad-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">30 Introducción a la diversidad animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./31-protostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">31 Esponjas, cnidarios, ctenóforos y protóstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./32-deuterostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">32 Los deuteróstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./33-crecimiento-vegetal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">33 Estructura, crecimiento y desarrollo vegetal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./34-hoja.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">L</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./35-tallo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">35 Estructura y transporte en el tallo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./36-raices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">36 Raíces y nutrición mineral</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./37-reproduccion-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">37 Reproducción en plantas con ﬂ ores</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./38-respuestas-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">38 Respuestas de desarrollo en plantas a señales externas e internas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./39-introduccion-fisiologia-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">39 Estructura y función animal. Una introducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./40-proteccion-y-movimiento.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">40 Protección, sostén y movimiento</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./41-senalizacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">41 Señalización neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./42-regulacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">42 Regulación neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./43-sentidos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">43 Sistemas sensoriales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./44-transporte-interno.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">44 Transporte interno</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./45-sistema-inmunologico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">45 El sistema inmunológico: Defensa interna</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./46-intercambio-gases.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">46 Intercambio de gases</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./47-nutricion.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">47 Procesamiento de alimentos y nutrición</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./48-osmorregulacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">48 Osmorregulación y desecho de residuos metabólicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./49-regulacion-endocrina.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">49 Regulación endocrina</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./50-reproduccion-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">50 Reproducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./51-desarrollo-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">51 Desarrollo animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./52-comportamiento-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52 Comportamiento animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./53-ecologia-de-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52.6 SELECCIÓN SEXUAL</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./54-ecologia-de-comunidades.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">54 Ecología de comunidades</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./55-ecosistemas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">55 Ecosistemas y la biosfera</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./56-geografia-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">56 Ecología y geografía de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./57-conservacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">57 Diversidad biológica y biología de la conservación</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#l" id="toc-l" class="nav-link active" data-scroll-target="#l">L</a>
+  <ul class="collapse">
+  <li><a href="#estilos-y-adaptaciones-nutricionales" id="toc-estilos-y-adaptaciones-nutricionales" class="nav-link" data-scroll-target="#estilos-y-adaptaciones-nutricionales">47.1 ESTILOS Y ADAPTACIONES NUTRICIONALES</a></li>
+  <li><a href="#el-sistema-digestivo-de-los-vertebrados" id="toc-el-sistema-digestivo-de-los-vertebrados" class="nav-link" data-scroll-target="#el-sistema-digestivo-de-los-vertebrados">47.2 EL SISTEMA DIGESTIVO DE LOS VERTEBRADOS</a></li>
+  <li><a href="#nutrientes-requeridos" id="toc-nutrientes-requeridos" class="nav-link" data-scroll-target="#nutrientes-requeridos">47.3 NUTRIENTES REQUERIDOS</a></li>
+  <li><a href="#metabolismo-energético" id="toc-metabolismo-energético" class="nav-link" data-scroll-target="#metabolismo-energético">47.4 METABOLISMO ENERGÉTICO</a></li>
+  <li><a href="#resumen-enfoque-en-los-objetivos-de-aprendizaje" id="toc-resumen-enfoque-en-los-objetivos-de-aprendizaje" class="nav-link" data-scroll-target="#resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">47 Procesamiento de alimentos y nutrición</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">septiembre, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>1012</p>
+<p>Un pez lobo del Atlántico ( Anarhichas lupus ). También conocido como lobo de mar y bagre del Atlántico, este pez vive en el fondo del mar, donde caza y devora presas de cubierta dura. El lobo de mar puede pesar hasta 18 kilogramos. Su población ha disminuido drásticamente como resultado de la pesca excesiva, el daño no intencional de pescadores (captura incidental) y el daño a su hábitat. Fotograﬁ ado en Maine.</p>
+<section id="l" class="level1">
+<h1>L</h1>
+<p>as esponjas y las ballenas se alimentan de partículas de alimento suspendidas en el agua. Las jirafas comen hojas y los antílopes pastan. Las ranas, los leones y algunos insectos capturan a otros animales. Aunque sus opciones de comida y mecanismos de alimentación son diversos, todos los animales son heterótrofos , organismos que deben obtener su energía y alimento de las moléculas orgánicas manufacturadas por otros organismos. Qué comen, cómo obtienen su alimento y cómo lo procesan constituyen el tema de este capítulo. Los nutrientes son sustancias en los alimentos que se utilizan como fuentes de energía para impulsar los sistemas del cuerpo, como ingredientes para formar compuestos necesarios para los procesos metabólicos, y como componentes básicos en el crecimiento y reparación de tejidos. Obtener nutrientes reviste tal importancia vital que tanto los organismos individuales como los ecosistemas están estructurados alrededor del tema central de la nutrición , el proceso de tomar y usar los alimentos. El plano corporal de un animal y su estilo de vida están adaptados a su modo particular de obtener alimentos. Por ejemplo, el lobo de mar vive en el fondo marino a profundidades de hasta 120 m. Caza almejas, cangrejos, estrellas y erizos de mar. Sus dos mandíbulas, superior e inferior, tienen de 4 a 6 dientes similares a colmillos con los que hiere y desgarra a sus presas. Detrás de los colmillos hay tres hileras de dientes que aplastan</p>
+<p>CONCEPTOS CLAVE</p>
+<p>47.1 Muchas adaptaciones animales están asociadas con el modo de nutrición; el procesamiento de alimentos incluye ingestión, digestión, absorción y eliminación. 47.2 Varias partes del sistema digestivo de los vertebrados están especializadas en realizar funciones especíﬁ cas; glándulas accesorias (hígado, páncreas y glándulas salivales) secretan ﬂ uidos y enzimas que son importantes en la digestión. 47.3 La mayoría de los animales requiere los mismos nutrientes básicos: carbohidratos, lípidos, proteínas, vitaminas y minerales. 47.4 La tasa metabólica basal es el costo de la vida metabólica del cuerpo; el metabolismo energético es regulado por complicadas vías de señalización. Tanto la alimentación en exceso como la deﬁ ciente pueden resultar en desnutrición.</p>
+<p>© Laser 143 / Dreamstime</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1046_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1046_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Procesamiento de alimentos y nutrición 1013</p>
+<p>Los animales están adaptados a su modo de nutrición</p>
+<p>Los animales se clasifi can como herbívoros, carnívoros u omnívoros con base en el tipo de alimentos que suelen comer ( FIGURA 47-1 ). Para cada tipo de alimentación han evolucionado muchas adaptaciones. Por ejemplo, los picos de las aves y los dientes de muchos vertebrados están especializados en cortar, rasgar, aplastar o masticar alimentos. Los animales que se alimentan directamente de productores se denominan herbívoros , o consumidores primarios. La mayoría de lo que come un herbívoro no es digerido de manera efi caz y se elimina del cuerpo, casi sin ningún cambio, como desecho. Es por esto que los herbívoros deben comer grandes cantidades de alimento para obtener la nutrición que requieren. Muchos herbívoros, por ejemplo: saltamontes, langostas, elefantes y ganado, dedican una parte importante de su existencia a comer. Los animales no pueden digerir la celulosa de las paredes de las células vegetales, y en ellos han evolucionado muchas adaptaciones para extraer nutrientes del material vegetal que comen. Muchos herbívoros, incluidas termitas, vacas y caballos, tienen una relación simbiótica con bacterias, hongos y otros microorganismos que habitan en sus tractos digestivos. Los rumiantes (ganado, ovejas, ciervos, jirafas) son animales con pezuñas cuyo estómago está dividido en cuatro cámaras. Las bacterias y los protistas simbióticos que viven en las dos primeras cámaras digieren celulosa, separando algo de la molécula en azúcares, que después son usados por el huésped y las bacterias mismas. Las bacterias producen ácidos grasos durante su metabolismo, parte de ellos es absorbida por el animal y sirve como fuente de energía importante. Trozos sólidos de alimento se acumulan para formar un bolo, que es regurgitado hacia la boca del animal, donde se mezcla con saliva y es masticado otra vez. Cuando el bolo es vuelto a tragar, la comida parcialmente digerida es descompuesta aún más. La comida parcialmente digerida pasa hacia la tercera cámara, donde agua y minerales son absorbidos hacia la sangre. La digestión es completada en la cuarta cámara, que corresponde al estómago de los humanos y otros animales que tienen un solo estómago. A veces los herbívoros son comidos por carnívoros , que también pueden comerse unos a otros. Muchos carnívoros (consumidores secundarios y de nivel superior en los ecosistemas) son depredadores, adaptados para capturar y matar presas. Algunos carnívoros aprovechan sus víctimas y las devoran vivas y completas (vea la fi gura 47-1d). Otros paralizan, aplastan o trituran a la presa antes de ingerirla. Algunas adaptaciones para este tipo de alimentación incluyen tentáculos, garras, colmillos, glándulas venenosas y dientes. Los mamíferos carnívoros tienen dientes caninos bien desarrollados para herir a su presa durante el combate. Las hienas manchadas, que son excelentes depredadoras y carroñeras, tienen grandes mandíbulas que les permiten consumir todo el cadáver de un elefante, incluyendo huesos y piel. Se desperdician pocos nutrientes. La carne se digiere más fácilmente que la comida vegetal y los tractos digestivos de los carnívoros son más cortos que los de los herbívoros. Los omnívoros , como cerdos, humanos, la mayoría de los osos y algunos peces, consumen plantas y animales. Las lombrices ingieren grandes cantidades de tierra que contiene material tanto animal como vegetal. Al nadar, la ballena azul, el animal más grande, fi ltra diminutas algas y animales presentes en el agua. Los omnívoros a menudo tienen adaptaciones que les ayudan a distinguir entre una amplia gama de olores y sabores, por lo tanto seleccionan una variedad de alimentos.</p>
+<p>las duras conchas de su presa. También tiene dientes aserrados en la garganta. La nutrición ha sido una fuerza importante en la evolución humana. A través de la selección natural, la dieta humana se volvió más variada que las de otros primates. Los humanos también se volvieron más eﬁ caces para obtener alimentos. Su dieta de mayor calidad sustentó la evolución de un cerebro más grande y complejo. Con sólo unas cuantas variaciones, todos los animales requieren los mismos nutrientes básicos: carbohidratos, lípidos, proteínas, vitaminas y minerales. Los tres primeros se usan como fuentes de energía. Comer demasiado de cualquiera de estos nutrientes puede resultar en aumento de peso, mientras que comer muy pocos nutrientes o seguir una dieta no balanceada puede resultar en desnutrición y muerte. La desnutrición , o estado nutricional deﬁ ciente, resulta de la ingesta alimentaria que está por abajo o por arriba de las necesidades requeridas. En poblaciones humanas, tanto la desnutrición (en particular la deﬁ ciencia de proteínas) como la obesidad (que resulta de la alimentación en exceso) son graves problemas de salud. El procesamiento de alimentos y la nutrición son áreas de investigación activas.</p>
+<section id="estilos-y-adaptaciones-nutricionales" class="level2">
+<h2 class="anchored" data-anchor-id="estilos-y-adaptaciones-nutricionales">47.1 ESTILOS Y ADAPTACIONES NUTRICIONALES</h2>
+<p>OBJETIVO DE APRENDIZAJE</p>
+<p>1 Describir el procesamiento de alimentos, que incluye la ingestión, digestión, absorción y egestión o eliminación, y comparar el sistema digesti vo de un cnidario (como la hidra) con el de una lombriz de tierra y un vertebrado.</p>
+<p>La alimentación es la selección, adquisición e ingestión de comida. Muchos animales tienen un sistema digestivo que procesa los alimentos que comen. La ingestión es el proceso de llevar alimentos a la cavidad digestiva. En muchos animales, entre ellos los vertebrados, la ingestión incluye introducir alimentos en la boca y tragarlos. El proceso de descomponer los alimentos se denomina digestión . Puesto que los animales comen las macromoléculas elaboradas por y para otros organismos, deben descomponer estas moléculas y sintetizar nuevas macromoléculas para sus propias necesidades. Por ejemplo, los humanos no pueden incorporar las proteínas y otros compuestos orgánicos de una hamburguesa directamente en sus propias células. Deben digerir mecánicamente la carne y luego digerirla químicamente por hidrólisis enzimática (vea el capítulo 3). Durante la digestión, compuestos orgánicos complejos son degradados en componentes moleculares más pequeños. Por ejemplo, las proteínas se descomponen en los aminoácidos que las constituyen. Más tarde, estos aminoácidos son utilizados para sintetizar proteínas adaptadas a las necesidades de esa persona en ese momento particular. Los aminoácidos y otros nutrientes pasan por el revestimiento del sistema digestivo y hacia la sangre por absorción . Luego, el sistema circulatorio transporta los nutrientes a todas las células del cuerpo, las cuales los usan para sintetizar proteínas y otros compuestos orgánicos, o como combustible para la respiración celular. Los alimentos que no son digeridos y absorbidos son desechados del cuerpo, un proceso denominado egestión o eliminación .</p>
+<p>1014 Capítulo 47</p>
+<p>Algunos animales se alimentan de fl uidos por perforación y succión. Los mosquitos tienen estructuras altamente adaptadas para perforar la piel y succionar la sangre. Los murciélagos que se alimentan de néctar tienen una lengua larga y dentición reducida (número de dientes). Las aves que se alimentan de polen y néctar tienen picos y lenguas largas. La forma, el tamaño y la curva del pico pueden estar especializados para alimentarse o capturar un tipo de alimento particular (vea la fi gura 1-11).</p>
+<p>Los animales también pueden clasifi carse según los mecanismos que usan para alimentarse. Muchos omnívoros son fi ltradores que eliminan partículas de alimento suspendidas en el agua donde habitan. Por ejemplo, las almejas y las ostras atrapan partículas de alimento suspendidas en la mucosidad secretada por sus branquias. Algunos equinodermos atrapan partículas de alimento a lo largo de sus tentáculos, que están recubiertos por mucosidad. Las ballenas barbadas usan fi las de placas duras (barbas) suspendidas del techo de la boca para fi ltrar pequeños crustáceos.</p>
+<ol type="a">
+<li>Adaptación poco común de un insecto que come bellotas. El “hocico” impresionantemente largo del gorgojo herbívoro que se alimenta de bellotas ( Curculio sp. ) está adaptado para alimentarse de la bellota y hacer un hoyo en ella, donde deposita un huevo. Cuando nace, la larva se alimenta del contenido de la semilla de la bellota.</li>
+</ol>
+<p>Darwin Dale/Photo Researchers, Inc.</p>
+<ol start="2" type="a">
+<li>Un oso herbívoro. Los grandes dientes planos y las bien desarrolladas mandíbulas y músculos mandibulares del oso panda gigante ( Ailuropoda melanoleuca ) son adaptaciones para moler alimentos vegetales con alto contenido de ﬁbras.</li>
+</ol>
+<p>Tom McHugh/Photo Researchers Inc.</p>
+<ol start="3" type="a">
+<li>Pez carnívoro. La boca ( a la izquierda ) del pez mariposa de nariz larga ( Forcipiger longirostris ) está adaptada para extraer pequeños gusanos y crustáceos de minúsculos puntos en arrecifes de coral.</li>
+</ol>
+<p>Carmela Lesczynski/Animals Animals/Earth Scenes</p>
+<ol start="4" type="a">
+<li>Las serpientes son carnívoras. Esta serpiente ( Dromicus sp. ) está estrangulando una lagartija de la lava ( Tropidurus sp. ). Una serpiente puede engullir presas bastante grandes debido a la estructura de sus mandíbulas. La muy ﬂexible mandíbula inferior se expande durante la ingestión.</li>
+</ol>
+<p>Frans Lanting/Minden Pictures</p>
+<p>FIGURA 47-1 Adaptaciones para obtener y procesar alimentos</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1048_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1048_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1048_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1048_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1048_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1048_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1048_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1048_img4.jpeg</figcaption>
+</figure>
+</div>
+<p>Procesamiento de alimentos y nutrición 1015</p>
+<p>teínas. La digestión continúa intracelularmente dentro de las vacuolas digestivas y los nutrientes digeridos se difunden hacia otras células. Las contracciones del cuerpo promueven la expulsión de las partículas de alimento no digeridas a través de la boca. Los platelmintos de vida libre comienzan a digerir a su presa incluso antes de ingerirla. Extienden la faringe a través de su boca y secretan enzimas digestivas sobre su presa ( FIGURA 47-2b ). Luego de ser ingerido, el alimento entra a la cavidad gastrovascular ramifi cada, donde las enzimas continúan digiriéndola. Las células que revisten la cavidad gastrovascular fagocitan fragmentos de alimento parcialmente digeridos, y la digestión se completa dentro de las vacuolas digestivas. Así como en los cnidarios, la cavidad digestiva de los platelmintos tiene una sola abertura, por lo que los desechos no digeridos son expulsados por la boca.</p>
+<p>Los sistemas digestivos de la mayoría de los animales tienen dos aberturas</p>
+<p>La mayoría de los invertebrados y todos los vertebrados poseen un plano corporal de “tubo dentro de un tubo”. La pared del cuerpo forma el tubo exterior. El tubo interior es un sistema digestivo con dos aberturas, el cual algunas veces se conoce como sistema digestivo completo ( FIGURA</p>
+<p>47-3 ). El alimento entra por la boca y la comida no digerida es eliminada por el ano. Los movimientos de mezcla y propulsión del sistema digestivo se denominan motilidad . La actividad de propulsión característica de la mayoría de las regiones del sistema digestivo es la peristalsis , ondas de contracción muscular que empujan el alimento en una dirección. Es posible tomar más alimentos mientras los alimentos previamente ingeridos están en proceso de digestión y son absorbidos más abajo en el sistema digestivo. En un sistema</p>
+<p>Algunos invertebrados tienen una cavidad digestiva con una sola abertura</p>
+<p>Las esponjas, invertebrados muy simples, obtienen alimentos al fi ltrar organismos microscópicos del agua circundante. Las células individuales fagocitan las partículas de alimento y la digestión es intracelular dentro de las vacuolas digestivas. Los desechos son expulsados hacia el agua que circula continuamente por el cuerpo de la esponja. La mayoría de los animales tiene una cavidad digestiva. La digestión dentro de una cavidad es más efi caz que la digestión intracelular porque las enzimas digestivas pueden liberarse en un espacio confi nado. Se requiere menos área superfi cial. Los cnidarios (como las hidras y las medusas) y los platelmintos tienen una cavidad gastrovascular , una cavidad digestiva central con una sola abertura. Los cnidarios capturan pequeños peces acuáticos con ayuda de sus células y tentáculos urticantes ( FIGURA</p>
+<p>47-2a ). La boca se abre hacia la cavidad gastrovascular. Las células que revisten esta cavidad digestiva secretan enzimas que descomponen las pro-</p>
+<p>Tentáculo Boca</p>
+<p>Alimento</p>
+<p>Cavidad gastrovascular</p>
+<p>Gastrodermis</p>
+<p>Alimento absorbido</p>
+<p>Enzimas secretadas por la gastrodermis (capa interna)</p>
+<p>Alimento</p>
+<p>Desechos</p>
+<ol type="a">
+<li>Sistema digestivo de una hidra.</li>
+</ol>
+<p>Epidermis</p>
+<ol start="2" type="a">
+<li>Sistema digestivo de un platelminto.</li>
+</ol>
+<p>Enzimas</p>
+<p>Revestimiento del intestino</p>
+<p>Cavidad gastrovascular</p>
+<p>Partículas de alimento</p>
+<p>Faringe</p>
+<p>Boca</p>
+<p>Desechos</p>
+<p>Alimento</p>
+<p>Alimento absorbido</p>
+<p>Desechos</p>
+<p>Ano</p>
+<p>Intestino</p>
+<p>Buche Molleja</p>
+<p>Esófago</p>
+<p>Faringe</p>
+<p>Boca</p>
+<p>Alimento</p>
+<p>FIGURA 47-3 Sistema digestivo con dos aberturas La lombriz de tierra, como la mayoría de los animales, tiene un sistema digestivo completo que va de la boca al ano. Varias regiones del sistema digestivo están especializadas en realizar diferentes funciones de procesamiento de alimento.</p>
+<p>FIGURA 47-2 Animada Sistemas digestivos de invertebrados simples Los (a) hidras y los (b) gusanos planos (planarios) tienen una cavidadad gastrovascular, un tracto digestivo con una abertura simple que sirve como boca y como ano.</p>
+<p>▲</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1049_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1049_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1049_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1049_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1049_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1049_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1049_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1049_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1049_img5.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1049_img5.jpeg</figcaption>
+</figure>
+</div>
+<p>1016 Capítulo 47</p>
+<p>4 Describir las adaptaciones estructurales que incrementan el área superﬁ cial del sistema digestivo. 5 Comparar la absorción de lípidos con la absorción de otros nutrientes.</p>
+<p>Varias regiones del sistema digestivo de los vertebrados están especializadas en realizar funciones específi cas ( FIGURA 47-4 ). El alimento pasa en secuencia por las siguientes regiones especializadas:</p>
+<p>boca ¡ faringe (garganta) ¡ esófago ¡ estómago</p>
+<p>¡ intestino delgado ¡ intestino grueso ¡ ano</p>
+<p>El hígado, el páncreas y las glándulas salivales (en los vertebrados terrestres) son glándulas accesorias que secretan jugos gástricos en el sistema digestivo. La pared del sistema digestivo consta de cuatro capas. Aunque varias regiones difi eren de alguna manera en la estructura, las capas son básicamente semejantes en todo el tracto digestivo ( FIGURA 47-5 ). La mucosa , que consta de una capa de tejido epitelial y tejido conectivo subyacente, reviste el lumen (espacio interior) del sistema digestivo. En el estómago y en el intestino, la mucosa está bastante plegada para incre-</p>
+<p>digestivo con dos aberturas, varias regiones del tubo están adaptadas para llevar a cabo funciones específi cas.</p>
+<p>Repaso</p>
+<p>■ ¿Cómo están adaptados los carnívoros a su modo de nutrición?</p>
+<p>■ ¿En qué diﬁ ere el procesamiento de alimentos entre lombrices y platelmintos?</p>
+<p>■ ¿Cuáles son las ventajas de un sistema digestivo con dos aberturas?</p>
+</section>
+<section id="el-sistema-digestivo-de-los-vertebrados" class="level2">
+<h2 class="anchored" data-anchor-id="el-sistema-digestivo-de-los-vertebrados">47.2 EL SISTEMA DIGESTIVO DE LOS VERTEBRADOS</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>2 Seguir la vía que una carne ingerida recorre a través del sistema digestivo humano y describir la estructura y función de cada órgano implicado. 3 Seguir paso a paso la digestión de los carbohidratos, proteínas y lípidos.</p>
+<p>Glándula salival parótida Glándula salival sublingual</p>
+<p>Glándula salival submandibular</p>
+<p>Estómago</p>
+<p>Duodeno</p>
+<p>Páncreas</p>
+<p>Colon transverso</p>
+<p>Yeyuno</p>
+<p>Colon descendente</p>
+<p>Colon sigmoide</p>
+<p>Recto</p>
+<p>Ano</p>
+<p>Faringe</p>
+<p>Esófago</p>
+<p>Hígado</p>
+<p>Vesícula</p>
+<p>Colon ascendente</p>
+<p>Íleo</p>
+<p>Ciego</p>
+<p>Apéndice vermiforme</p>
+<p>FIGURA 47-4 Animada Sistema digestivo humano El sistema digestivo humano es un largo tubo enrollado que se extiende de la boca al ano. El intestino delgado consta del duodeno, el yeyuno y el íleo. El intestino grueso incluye el ciego, el colon, el recto y el ano. Ubique los tres tipos de glándulas accesorias: el hígado, el páncreas y las glándulas salivales.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1050_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1050_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Procesamiento de alimentos y nutrición 1017</p>
+<p>(Recuerde del capítulo 43 que las papilas gustativas están localizadas sobre la lengua y otras superfi cies de la boca). Tres pares de glándulas salivales secretan cada día alrededor de un litro de saliva hacia la cavidad bucal. La saliva contiene una enzima, la amilasa salival, que empieza la digestión química de almidón en azúcar.</p>
+<p>La faringe y el esófago conducen alimentos al estómago</p>
+<p>Después de haber sido masticado y convertido en una masa denominada bolo alimenticio, el trozo de alimento es tragado; movido por la faringe</p>
+<p>mentar la superfi cie de secreción y absorción. Alrededor de la mucosa se encuentra la submucosa , una capa de tejido conectivo rico en vasos sanguíneos, vasos linfáticos y nervios. Una capa muscular , que consta de dos subcapas de músculo liso, rodea la submucosa. En la subcapa interior, las fi bras musculares están dispuestas circularmente alrededor del tubo digestivo. En la capa exterior, las fi bras musculares están dispuestas longitudinalmente. Por debajo del nivel del diafragma, el recubrimiento de tejido conectivo exterior del sistema digestivo se denomina peritoneo visceral , que está conectado a través de varios pliegues con el peritoneo parietal , una hoja de tejido conectivo que reviste las paredes de las cavidades abdominal y pélvica. Los peritoneos visceral y parietal encierran parte del celoma, la cavidad peritoneal . La infl amación del peritoneo, denominada peritonitis , puede ser muy grave porque la infección puede difundirse a lo largo del peritoneo hacia la mayoría de los órganos abdominales.</p>
+<p>El procesamiento de alimentos empieza en la boca</p>
+<p>Imagine que ha dado una gran mordida a una hamburguesa en un pan. La boca está especializada en la ingestión y en comenzar el proceso digestivo. La digestión mecánica empieza al morder, moler y masticar la carne y el pan con los dientes. A diferencia de los sencillos y agudos dientes de los peces, anfi bios y reptiles, los dientes de los mamíferos varían en forma y tamaño y están especializados en realizar funciones específi cas. Los incisivos en forma de cincel se usan para morder y cortar los alimentos, mientras que los largos y agudos caninos están adaptados para perforar a la presa y rasgar los alimentos ( FIGURA 47-6 ). Las superfi cies planas de los premolares y los molares están especializadas en aplastar y moler. Cada diente está cubierto por esmalte , la sustancia más dura en el cuerpo ( FIGURA 47-7 ). La mayor parte de los dientes consta de dentina , que es similar al hueso en composición y dureza. La cavidad de la pulpa , que está por debajo de la dentina, es un tejido conectivo suave que contiene vasos sanguíneos, vasos linfáticos y nervios. Mientras los alimentos son desintegrados mecánicamente por los dientes, son humedecidos por la saliva. A medida que algunas de las moléculas de los alimentos se disuelven, es posible probar la comida.</p>
+<p>PERITONEO VISCERAL</p>
+<p>Nódulo linfático</p>
+<p>Fibras circulares interiores Fibras longitudinales exteriores CAPA MUSCULAR</p>
+<p>Vellosidades</p>
+<p>Vasos sanguíneos</p>
+<p>SUBMUCOSA</p>
+<p>Fibras nerviosas MUCOSA</p>
+<p>FIGURA 47-5 Pared del sistema digestivo De adentro hacia afuera, las capas de la pared son: la mucosa, la submucosa, la capa muscular y el peritoneo visceral.</p>
+<p>Los dientes de un animal están adaptados para su modo de nutrición.</p>
+<p>Incisivos</p>
+<p>Caninos Premolares Molares</p>
+<p>Incisivos</p>
+<p>Molares</p>
+<ol type="a">
+<li><p>Carnívoro. El cráneo de un coyote muestra los incisivos y caninos agudos, adaptaciones para desgarrar carne.</p></li>
+<li><p>Herbívoro. Los caballos y otros herbívoros tienen incisivos (y algunas veces caninos) adaptados para cortar trozos de vegetación. Algunos herbívoros carecen de caninos. Las amplias superﬁcies rugosas de los molares están adaptadas para moler material vegetal.</p></li>
+<li><p>Omnívoro. Los dientes de los humanos y otros omnívoros están adaptados para masticar una variedad de alimentos.</p></li>
+</ol>
+<p>Molares</p>
+<p>Caninos</p>
+<p>Incisivos</p>
+<p>Premolares</p>
+<p>Premolares</p>
+<p>Canino</p>
+<p>FIGURA 47-6 Los dientes y la dieta</p>
+<p>PUNTO CLAVE</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1051_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1051_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>1018 Capítulo 47</p>
+<p>El estómago está revestido por un simple epitelio columnar que secreta grandes cantidades de moco. Hoyos minúsculos indican las entradas hacia los millones de glándulas gástricas , que se extienden profundamente hacia el estómago. Las células parietales en las glándulas gástricas secretan ácido clorhídrico y factor intrínseco, una sustancia necesaria para la absorción adecuada de la vitamina B 12 . Las células principales en las glándulas gástricas secretan pepsinógeno , un precursor de</p>
+<p>hacia el esófago . La faringe, o garganta, es un tubo muscular que funciona como el pasadizo entre el sistema respiratorio y el sistema digestivo. Al tragar, un pequeño apéndice de tejido, la epiglotis , cierra el paso hacia la vía respiratoria. Ondas de peristalsis barren el bolo por la faringe y esófago hacia el estómago ( FIGURA 47-8 ). Fibras musculares circulares en la pared del esófago se contraen alrededor de la parte superior del bolo y lo empujan hacia abajo. Casi al mismo tiempo, músculos longitudinales alrededor de la parte inferior del bolo y por abajo de él lo contraen, con lo cual el tubo se acorta. Cuando el cuerpo está erguido, la fuerza de gravedad ayuda a mover el alimento por el esófago, aunque esta fuerza no es esencial. Los astronautas pueden comer en su ausencia, e inclusive si una persona está parada de cabeza, el alimento llega a su estómago.</p>
+<p>El alimento es digerido mecánica y enzimáticamente en el estómago</p>
+<p>La entrada al gran estómago muscular suele estar cerrada por un anillo de múscu lo en el extremo inferior del esófago. Cuando una onda peristáltica pasa por el esófago, el músculo se relaja y el bolo entra al estómago ( FIGU-</p>
+<p>RA 47-9 ). Cuando el estómago está vacío, se colapsa y asume una forma semejante a una salchicha. Los pliegues de la pared estomacal, denominados pliegues , otorgan al revestimiento interior un aspecto arrugado. A medida que entra el alimento, los pliegues se vuelven gradualmente lisos, lo que expande la capacidad del estómago a más de un litro.</p>
+<p>Esmalte Encía</p>
+<p>Cavidad de la pulpa</p>
+<p>Pulpa</p>
+<p>Dentina</p>
+<p>Cemento Canal de la raíz</p>
+<p>Hueso esponjoso</p>
+<p>Nervio</p>
+<p>Vena</p>
+<p>Arteria (b) Radiografía de un diente sano. (a) Molar inferior humano. Sección sagital que muestra la corona, el cuello y la raíz.</p>
+<p>Corona</p>
+<p>Cuello</p>
+<p>Raíz</p>
+<p>FIGURA 47-7 Estructura del diente</p>
+<p>Esófago</p>
+<p>Bolo alimenticio</p>
+<p>Los músculos longitudinales se contraen, acortando el pasadizo adelante del bolo</p>
+<p>Capa de músculo relajado</p>
+<p>Esfínter cerrado</p>
+<p>Estómago Estómago</p>
+<p>Capa de músculo relajado Los músculos circulares se contraen, reduciendo el pasadizo y empujando el bolo hacia delante</p>
+<p>Esfínter abierto</p>
+<p>1 2 Un bolo es movido por el esófago por contracciones peristálticas.</p>
+<p>Cuando el esfínter (anillo de músculo) en la entrada del estómago se abre, el alimento entra en él.</p>
+<p>a</p>
+<p>FIGURA 47-8 Animada Peristalsis</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1052_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1052_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1052_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1052_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1052_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1052_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1052_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1052_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1052_img5.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1052_img5.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1052_img6.png" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1052_img6.png</figcaption>
+</figure>
+</div>
+<p>Procesamiento de alimentos y nutrición 1019</p>
+<p>nas veces en la parte inferior del esófago. La bacteria Helicobacter pylori ha sido implicada como factor causante de úlceras (vea la fi gura 25-13). La Helicobacter pylori infecta las células secretoras de moco del revestimiento del estómago, disminuyendo el moco protector, lo cual puede conducir a úlceras pépticas o cáncer. Este tipo de infección responde a terapia con antibióticos. ¿Qué cambios ocurren en una mordida de hamburguesa durante su permanencia de 3 a 4 horas en el estómago? El estómago se agita y degrada químicamente el alimento, por lo que éste asume la consistencia de una sopa espesa; el alimento parcialmente digerido se denomina quimo. La digestión de proteínas degrada a continuación la mayor parte de las proteínas de la hamburguesa a polipéptidos. La digestión del almidón en el pan en pequeños polisacáridos y maltosa continúa hasta que la amilasa salival es inactivada por el pH ácido del estómago. Durante un período de varias horas, las ondas peristálticas liberan el quimo en chorros hacia la salida del estómago, el píloro , y hacia el intestino delgado.</p>
+<p>enzima inactivo. Cuando entra en contacto con el jugo gástrico ácido en el estómago, el pepsinógeno se convierte en pepsina, la enzima digestiva más activa del estómago. La pepsina hidroliza las proteínas, convirtiéndolas en polipéptidos cortos. Varios mecanismos de protección impiden que el jugo gástrico digiera la pared del estómago. Las células de la mucosa gástrica secretan un moco alcalino que recubre la pared estomacal y neutraliza la acidez del jugo gástrico a lo largo del revestimiento. Además, las células epiteliales del revestimiento se ajustan estrechamente entre sí, evitando que el jugo gástrico se fi ltre entre ellas y hacia el tejido subyacente. Si algunas de las células epiteliales se dañan, son remplazadas rápidamente. De hecho, ¡alrededor de medio millón de estas células se pierde y es sustituido cada minuto! Algunas veces estos mecanismos de protección funcionan mal y parte del revestimiento del estómago es digerido, dejando una herida abierta o úlcera péptica . Estas úlceras ocurren en el duodeno y algu-</p>
+<p>La estructura del estómago está adaptada para su función de digerir alimentos; las glándulas gástricas en su mucosa secretan jugos digestivos y tres capas de músculo en la pared del estómago son importantes para digerir mecánicamente los alimentos.</p>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<p>Esfínter pilórico</p>
+<p>Capa de músculo oblicuo</p>
+<p>Aberturas hacia las glándulas gástricas</p>
+<p>Epitelio</p>
+<p>Nódulo linfático</p>
+<p>Capa de músculo longitudinal</p>
+<p>Capa de músculo circular</p>
+<p>Esfínter</p>
+<p>Duodeno Pliegues</p>
+<p>Glándulas gástricas</p>
+<p>Mucosa gástrica</p>
+<p>Esófago</p>
+<p>Peritoneo visceral</p>
+<ol type="a">
+<li></li>
+</ol>
+<p>Núcleos</p>
+<p>Célula principal Célula parietal</p>
+<p>Epitelio superficial</p>
+<p>Células parietales</p>
+<p>Glándulas gástricas</p>
+<p>Células principales</p>
+<p>Glándulas gástricas</p>
+<p>FIGURA 47-9 Estructura del estómago El estómago está adaptado para digerir alimentos tanto mecánica como enzimáticamente. (a) La pared del estómago ha sido removida de manera progresiva para mostrar las capas de músculo y los pliegues. (b) Revestimiento del estómago y glándulas gástricas.</p>
+<p>PUNTO CLAVE</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1053_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1053_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1053_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1053_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>1020 Capítulo 47</p>
+<p>deno, las cuales actúan sobre el quimo. Luego, enzimas producidas por las células epiteliales que revisten el duodeno catalizan los pasos fi nales en la digestión de los tipos de nutrientes más importantes. El revestimiento del intestino delgado se ve aterciopelado debido a sus millones de diminutas proyecciones semejantes a dedos, las vellosidades intestinales ( FIGURA 47-10 ). Éstas aumentan el área superfi cial del intestino delgado para la digestión y absorción de nutrientes. La superfi cie interna del intestino es incrementada aún más por microvellosidades , proyecciones de la membrana plasmática de las células epiteliales</p>
+<p>La mayor parte de la digestión enzimática se lleva a cabo en el intestino delgado</p>
+<p>La digestión de alimentos es completada en el intestino delgado y los nutrientes son absorbidos a través de su pared. El intestino delgado, que mide entre 5 y 6 m de longitud, consta de tres regiones: el duodeno , el yeyuno y el íleo . La mayor parte de la digestión química se lleva a cabo en el duodeno, la primera porción del intestino delgado, y no en el estómago. Bilis del hígado y enzimas del páncreas se liberan hacia el duo-</p>
+<p>El área superﬁ cial digestiva y absorbente del intestino delgado aumenta bastante por los millones de vellosidades semejantes a dedos; el área superﬁ cial es incrementada aún más por microvellosidades sobre las células epiteliales de las vellosidades.</p>
+<ol type="a">
+<li><p>Sección transversal microscópica de la porción del yeyuno de la pared del intestino delgado mostrando vellosidades</p></li>
+<li><p>Vellosidades. Ampliación de una pequeña porción de la pared intestinal. Algunas de las vellosidades han sido abiertas para mostrar los vasos sanguíneos y linfáticos en su interior.</p></li>
+<li><p>Microvellosidades. Micrografía MEB de la superﬁcie de una célula epitelial del revestimiento del intestino delgado que muestra las microvellosidades. El epitelio ha sido cortado verticalmente, permitiendo que las microvellosidades puedan ser vistas desde un lado y desde arriba.</p></li>
+</ol>
+<p>Capa muscular</p>
+<p>Células epiteliales que revisten las vellosidades</p>
+<p>Red capilar</p>
+<p>Fibra nerviosa</p>
+<p>Vaso lactífero</p>
+<p>Vellosidades</p>
+<p>Aberturas de las glándulas intestinales</p>
+<p>Células de Goblet Glándulas intestinales</p>
+<p>Vaso linfático</p>
+<p>Peritoneo visceral</p>
+<p>Mucosa</p>
+<p>Submucosa</p>
+<p>1 μ m</p>
+<p>© Jubal Harshaur</p>
+<p>Cortesía de J. D. Hoskings, W. G. Henk, y Y. Z. Abdelbaki, American Journal of Veterinary Research, 1982, Vol. 43, No.&nbsp;10, pp.&nbsp;1715–1720</p>
+<p>FIGURA 47-10 Vellosidades y microvellosidades</p>
+<p>PUNTO CLAVE</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1054_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1054_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1054_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1054_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1054_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1054_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1054_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1054_img4.jpeg</figcaption>
+</figure>
+</div>
+<p>Procesamiento de alimentos y nutrición 1021</p>
+<p>Los carbohidratos son digeridos en monosacáridos</p>
+<p>Los polisacáridos, como almidón y glicógeno, son componentes importantes de los alimentos ingeridos por la mayoría de los animales. Las unidades de glucosa de estas grandes moléculas están conectadas por enlaces glicosídicos que unen el carbono 4 (o 6) de una molécula de glucosa con el carbono 1 de la molécula de glucosa adyacente. Estos enlaces son hidrolizados por amilasas que digieren los polisacáridos en la maltosa disacárida. Aunque la amilasa puede separar los enlaces α-glicosídicos presentes en el almidón y el glicógeno, no puede hacerlo con los enlaces β-glicosídicos presentes en la celulosa (vea las fi guras 3-9 y 3-10). La amilasa no puede romper el enlace entre las dos unidades de glucosa de la maltosa. Las enzimas producidas por las células que revisten el intestino delgado descomponen los disacáridos como la maltosa en monosacáridos. Por ejemplo, la maltasa divide la maltosa en dos moléculas de glucosa (vea la fi gura 3-8a). La hidrólisis ocurre mientras los disacáridos son absorbidos a través del epitelio del intestino delgado.</p>
+<p>Las proteínas son digeridas en aminoácidos</p>
+<p>Varias enzimas proteolíticas son secretadas hacia el sistema digestivo. Cada una rompe enlaces peptídicos en una o más ubicaciones específi cas en una cadena de polipéptidos. La tripsina, secretada en una forma inactiva por el páncreas, es activada por una enzima denominada enteroquinasa . Luego, la tripsina activa la quimiotripsina y la carboxipeptidasa, así como tripsina adicional. La pepsina, la tripsina y la quimiotripsina rompen ciertos enlaces peptídicos internos de las proteínas y los polipéptidos. La carboxipeptidasa elimina aminoácidos con grupos carboxilo libres y terminales del extremo de las cadenas polipeptídicas. Luego, las dipeptidasas liberadas por el duodeno separan los pequeños péptidos en aminoácidos.</p>
+<p>columnares simples de las vellosidades. Alrededor de 600 microvellosidades sobresalen de la superfi cie expuesta de cada célula, otorgando al revestimiento epitelial una apariencia borrosa cuando se ven con un microscopio óptico. Si el revestimiento intestinal fuese liso, como el interior de un tubo para agua, los alimentos se deslizarían por el intestino, por lo que muchos nutrientes valiosos no serían digeridos o absorbidos. Los pliegues en la pared del intestino, las vellosidades, junto con las microvellosidades incrementan el área superfi cial aproximadamente 600 veces. Si fuese posible desplegar y extender el revestimiento del intestino delgado de un adulto humano, su superfi cie sería casi igual a la de una cancha de tenis.</p>
+<p>El hígado secreta bilis</p>
+<p>El hígado , el órgano interno de mayor tamaño y también uno de los más complicados en el cuerpo, se encuentra en la parte superior derecha del abdomen, justo bajo el diafragma ( FIGURA 47-11 ). El hígado secreta bilis , que digiere mecánicamente las grasas por medio de una acción semejante a la de un detergente (que se analiza en una sección posterior). La bilis consta de agua, sales biliares, pigmentos biliares, sales y lecitina (un fosfolípido). Puesto que no contiene enzimas digestivas, la bilis no digiere enzimáticamente los alimentos. La vesícula biliar , en forma de pera, almacena y concentra la bilis y la libera hacia el duodeno a medida que se necesita. ¡Una sola célula del hígado puede realizar más de 500 actividades metabólicas especializadas por separado! El hígado lleva a cabo estas funciones vitales:</p>
+<ol type="1">
+<li>Secreta bilis que digiere mecánicamente las grasas. 2. Ayuda a mantener la homeostasis al eliminar o añadir nutrientes a la sangre. 3. Transforma el exceso de glucosa en glucógeno y lo almacena. 4. Convierte el exceso de aminoácidos en ácidos grasos y urea. 5. Almacena hierro y ciertas vitaminas. 6. Desintoxica del alcohol y otras drogas y venenos.</li>
+</ol>
+<p>El páncreas secreta enzimas digestivas</p>
+<p>El páncreas es una glándula alargada que secreta tanto enzimas digestivas como hormonas que ayudan a regular el nivel de glucosa en la sangre. Las células que revisten los conductos pancreáticos secretan una solución alcalina rica en iones bicarbonato. Este jugo pancreático neutraliza la acidez estomacal en el duodeno y proporciona el pH óptimo para la acción de las enzimas pancreáticas. Las enzimas pancreáticas incluyen la tripsina y quimiotripsina , que digieren polipéptidos en dipéptidos; la lipasa pancreática, que degrada las grasas; la amilasa pancreática, que descompone casi todos los tipos de carbohidratos complejos, excepto la celulosa, en disacáridos; y la ribonucleasa y desoxirribonucleasa , que dividen el ácido ribonucleico (ARN) y el ácido desoxirribonucleico (ADN) en nucleótidos libres.</p>
+<p>Los nutrientes son digeridos a medida que se mueven a lo largo del sistema digestivo</p>
+<p>El quimo se mueve por el sistema digestivo por peristalsis, una mezcla de contracciones y movimientos de las vellosidades. A medida que los nutrientes en el quimo se mueven por el intestino delgado, entran en contacto con enzimas que los digieren ( TABLA 47-1 ).</p>
+<p>Vena cava inferior</p>
+<p>Lóbulo derecho del hígado</p>
+<p>Conducto hepático derecho</p>
+<p>Conducto biliar común</p>
+<p>Vesícula</p>
+<p>Estómago</p>
+<p>Páncreas</p>
+<p>Vena portal hepática</p>
+<p>Conducto pancreático</p>
+<p>Duodeno</p>
+<p>FIGURA 47-11 El hígado y el páncreas La vesícula biliar almacena bilis del hígado. Observe los conductos que transportan bilis hacia la vesícula y el duodeno. El estómago ha sido desplazado para mostrar el páncreas, que secreta varias enzimas digestivas hacia el duodeno.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1055_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1055_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>1022 Capítulo 47</p>
+<p>Nervios y hormonas regulan la digestión</p>
+<p>La mayoría de las enzimas digestivas son producidas sólo cuando hay comida en el sistema digestivo. La secreción de las glándulas salivales es totalmente controlada por el sistema nervioso, pero la secreción de otros jugos gástricos es regulada tanto por nervios como por hormonas. La pared del aparato digestivo contiene densas redes de neuronas. El llamado sistema nervioso entérico continúa regulando muchas actividades motoras y secretoras del sistema digestivo incluso si los nervios simpáticos y parasimpáticos hacia estos órganos están cortados. Muchos neuropéptidos presentes en el cerebro también son liberados por neuronas en el tracto digestivo y ayudan a regular la digestión. Por ejemplo, la sustancia P estimula la contracción de músculo liso del tracto digestivo y la encefalina lo inhibe (vea la tabla 41-2). Varias hormonas, incluidas la gastrina , secretina , colecistoquinina (CCK) y el péptido insulinotrópico dependiente de la glucosa (PIDG) , ayudan a regular el sistema digestivo ( TABLA 47-2 ). Estas hormonas son polipéptidos secretados por células endocrinas en la mucosa de ciertas regiones del tracto digestivo. Los investigadores están estu-</p>
+<p>Las grasas son digeridas en ácidos grasos y monoacilgliceroles</p>
+<p>Los lípidos suelen ser ingeridos como grandes masas de triacilgliceroles (también conocidos como triglicéridos). Son digeridos principalmente dentro del duodeno por lipasa pancreática. Como muchas otras proteínas, la lipasa es soluble en agua, pero no así sus sustratos. Por tanto, la enzima puede atacar sólo las moléculas de grasa en la superfi cie de una masa de grasa. Las sales biliares actúan como detergentes, reduciendo la tensión superfi cial de las grasas. Su acción, denominada emulsifi cación , rompe grandes masas de grasa en gotas más pequeñas. La emulsifi cación incrementa bastante el área superfi cial de la grasa expuesta a la acción de la lipasa pancreática, aumentando así la velocidad de digestión de los lípidos. Las condiciones en el intestino no suelen ser óptimas para la hidrólisis completa de lípidos en glicerol y ácidos grasos. En consecuencia, los productos de la digestión de lípidos incluyen monoacilgliceroles (monoglicéridos) y diacilgliceroles (diglicéridos), así como glicerol y ácidos grasos. Los triacilgliceroles no digeridos también permanecen, algunos de los cuales son absorbidos sin digestión.</p>
+<p>Resumen de la digestión</p>
+<p>Carbohidratos Proteínas Lípidos</p>
+<p>Boca Polisacáridos</p>
+<p>¡</p>
+<p>Amilasa salival</p>
+<p>Maltosa y polisacáridos pequeños</p>
+<p>Estómago Su acción continúa hasta que el pH Proteína</p>
+<p>ácido inactiva la amilasa salival</p>
+<p>¡</p>
+<p>Pepsina</p>
+<p>Polipéptidos cortos</p>
+<p>Intestino delgado Polisacáridos no digeridos Polipéptidos Gotita de grasa</p>
+<p>¡</p>
+<p>Amilasa pancreática</p>
+<p>¡</p>
+<p>Tripsina, quimiotripsina</p>
+<p>¡</p>
+<p>Sales biliares</p>
+<p>Maltosa y otros disacáridos Polipéptidos y péptidos cortos Gotitas de grasa emulsionadas Maltasa, sacarasa, Carboxipeptidasa, Lipasa</p>
+<p>¡</p>
+<p>lactasa</p>
+<p>¡</p>
+<p>peptidasas, dipeptidasas</p>
+<p>¡</p>
+<p>pancreática Monosacáridos Aminoácidos Ácidos grasos y glicerol</p>
+<p>TABLA 47-1</p>
+<p>Algunas hormonas que regulan la digestión</p>
+<p>Hormona Fuente Tejido objetivo Acciones Factores que estimulan la liberación</p>
+<p>Gastrina Estómago (mucosa) Estómago Estimula las glándulas gástricas Distensión del estómago por los alimentos; (glándulas gástricas) para secretar pepsinógeno y HCl; ciertas sustancias como proteínas estimula la motilidad gástrica parcialmente digeridas y cafeína</p>
+<p>Secretina Duodeno (mucosa) Páncreas Señala la secreción Quimo ácido que actúa sobre de bicarbonato de sodio la mucosa del duodeno</p>
+<p>Hígado Estimula la secreción de bilis</p>
+<p>Estómago Inhibe la secreción gástrica</p>
+<p>Colecistoquinina Duodeno (mucosa) Páncreas Estimula la liberación de enzimas Presencia de ácidos grasos y proteínas (CCK) digestivas parcialmente digeridas en el duodeno</p>
+<p>Vesícula biliar Estimula el vaciado de bilis</p>
+<p>Cerebro Señala la saciedad</p>
+<p>Péptido insulinotróDuodeno (mucosa) Páncreas Estimula la secreción de insulina Presencia de glucosa en el duodeno pico dependiente de la glucosa (PIDG)</p>
+<p>TABLA 47-2</p>
+<p>Procesamiento de alimentos y nutrición 1023</p>
+<p>El intestino grueso elimina los desechos</p>
+<p>El material no digerido, como la celulosa de los alimentos vegetales, junto con el quimo no absorbido, pasa al intestino grueso (vea la fi gura 47-4). Aunque sólo mide alrededor de 1.3 m, esta parte del sistema digestivo se denomina “grueso” porque su diámetro es mayor que el del intestino delgado. El intestino delgado se une al intestino grueso en alrededor de 7 cm del extremo del intestino grueso, formando un saco cerrado: el ciego . El apéndice vermiforme se proyecta desde el extremo del ciego. (La apendicitis es una infl amación del apéndice). Herbívoros como los conejos poseen un gran ciego funcional que mantiene los alimentos mientras las bacterias digieren su celulosa. En los humanos, las funciones del ciego y del apéndice se ignoran, y estas estructuras suelen considerarse como órganos vestigiales. Desde el ciego hasta el recto (la última porción del intestino grueso), el intestino grueso se conoce como colon . Las regiones del intestino grueso son: ciego, colon ascendente, colon transverso, colon descendente, colon sigmoide, recto y ano , la apertura para eliminar desechos. En la medida en que el quimo pasa lentamente por el intestino grueso, de él se absorben agua y sodio, y gradualmente asume la consistencia de las heces normales. Las bacterias que habitan el intestino grueso son alimentadas por los últimos remanentes de los alimentos; a cambio, benefi cian a su huésped al producir vitamina K y ciertas vitaminas B que pueden ser absorbidas y usadas. Es necesario hacer una distinción entre eliminación y excreción. La eliminación o egestión es el proceso de deshacerse de desechos digestivos: materia que no ha sido absorbida del sistema digestivo y no participó en las actividades metabólicas. En contraste, la excreción es el proceso de deshacerse de desechos metabólicos, lo cual en los mamíferos es principalmente la función de los riñones y pulmones. Sin embargo, el intestino grueso, excreta pigmentos biliares. Cuando el quimo pasa por el intestino demasiado rápido, la defecación (expulsión de heces) se vuelve más frecuente y las heces son acuosas. Esta condición, denominada diarrea , puede ser ocasionada por la ansiedad, ciertos alimentos o patógenos que irritan el revestimiento intestinal. Una diarrea prolongada resulta en pérdida de agua y sales y conduce a la deshidratación; una condición grave, especialmente en infantes. El estreñimiento resulta cuando el quimo pasa por el intestino muy lentamente. Debido a que se elimina más agua del quimo, las heces pueden ser duras y secas. El estreñimiento es ocasionado a menudo por una dieta defi ciente en fi bra. El cáncer colorrectal ocurre en el colon o recto ( FIGURA 47-12 ). En los países occidentales, el cáncer colorrectal es el tercer tipo de cáncer más común y en Estados Unidos es la segunda causa más importante de fallecimiento por cáncer. Varios factores contribuyen al riesgo de desarrollar cáncer de colon, entre ellos se incluye la historia familiar, ciertos factores genéticos, fumar, inactividad física, abuso de alcohol y obesidad. Una dieta abundante en carne roja y procesada, y baja en fruta fresca, verduras, aves de corral y pescado parece incrementar el riesgo.</p>
+<p>Repaso</p>
+<p>■ Suponga que está comiendo un sándwich de pollo. Enumere la secuencia de las estructuras por las que pasa un bocado en su camino por el sistema digestivo. ¿Qué ocurre en cada estructura?</p>
+<p>■ ¿Cuál es la función de las vellosidades? ¿Cómo funcionan?</p>
+<p>■ ¿Cuál es la función del páncreas?</p>
+<p>■ ¿Qué son los quilomicrones?</p>
+<p>diando varios otros péptidos mensajeros que son importantes en la regulación de la actividad digestiva. Como un ejemplo de la regulación del sistema digestivo, considere la secreción de jugo gástrico. Ver, oler, probar o inclusive pensar en comida provoca que el cerebro envíe señales neuronales a las glándulas gástricas en el estómago. Estas señales estimulan a esas glándulas para que secreten jugo gástrico. Además, cuando los alimentos distienden al estómago, receptores de dilatación envían señales neuronales a la médula. Luego, la médula envía mensajes a las células endocrinas en la pared del estómago que secretan gastrina. Esta hormona es absorbida hacia la sangre; estimula al estómago para liberar jugo gástrico y también estimula el vaciado gástrico y la motilidad intestinal.</p>
+<p>La absorción se lleva a cabo principalmente por medio de las vellosidades del intestino delgado</p>
+<p>Sólo pocas sustancias, agua, azúcares simples, alcohol y algunas drogas, son lo sufi cientemente pequeñas para ser absorbidas a través de la pared del estómago. La absorción de nutrientes es principalmente tarea de las vellosidades intestinales. Como se observa en la fi gura 47-10, la pared de una vellosidad es una sola capa de células epiteliales. Dentro de cada vellosidad hay una red de capilares y un vaso linfático central, denominado vaso lactífero o vaso quilífero . Para llegar a la sangre (o linfa), una molécula nutriente debe pasar a través del revestimiento de una célula epitelial que reviste el intestino y a través de una célula que reviste un vaso sanguíneo o linfático. La absorción ocurre por una combinación de difusión simple, difusión facilitada y transporte activo. Debido a que la glucosa y los aminoácidos no pueden difundirse a través del revestimiento intestinal, deben ser absorbidos por transporte activo. La absorción de estos nutrientes está acoplada con el transporte activo de sodio (vea el capítulo 5). La fructosa es absorbida por difusión facilitada. Los aminoácidos y la glucosa son transportados directamente hacia el hígado por la vena portal hepática . En el hígado, la vena se divide en una vasta red de diminutos senos sanguíneos, vasos semejantes a los capilares. A medida que la sangre rica en nutrientes se mueve lentamente por el hígado, los nutrientes y ciertas sustancias tóxicas son eliminados de la circulación. Los productos de la digestión de lípidos son absorbidos por un proceso y ruta diferentes. Una vez que los ácidos grasos y los monoacilgliceroles entran en una célula epitelial en el revestimiento intestinal, vuelven a juntarse como triacilgliceroles en el retículo endoplasmático liso. Los triacilgliceroles, junto con el colesterol absorbido y los fosfolípidos, son empacados en gotitas de grasa cubiertas de proteína, denominadas quilomicrones . Después de que son liberados en el fl uido intersticial, los quilomicrones entran en el vaso quilífero (vaso linfático) de la vellosidad. Los quilomicrones son transportados en la linfa hacia las venas subclavias, donde la linfa y su contenido entran en la sangre. Alrededor de 90% de la grasa absorbida entra en la circulación de la sangre de esta forma indirecta. El resto, principalmente ácidos grasos de cadena corta como los que se encuentran en la mantequilla, es absorbido directamente hacia la sangre. Después de una dieta rica en grasa, la gran cantidad de quilomicrones en la sangre pueden otorgar al plasma un aspecto turbio, lechoso durante algunas horas. Los quilomicrones transportan grasas al hígado y otros tejidos. La mayoría de los nutrientes en el quimo son absorbidos en el momento en que llegan al extremo del intestino delgado. Lo que queda (principalmente desechos) pasa a través del esfínter, la válvula ileocecal , hacia el intestino grueso.</p>
+<p>1024 Capítulo 47</p>
+<p>Recuerde del capítulo 1 que el metabolismo incluye todos los procesos químicos que se llevan a cabo en el cuerpo. El metabolismo incluye procesos anabólicos y catabólicos. El anabolismo incluye los aspectos sintéticos del metabolismo, como la producción de proteínas y áci dos nucleicos. El catabolismo incluye procesos de descomposición, como la hidrólisis. Los nutriólogos miden el valor energético de los alimentos en kilocalorías, o simplemente Calorías. Una Caloría, escrita con C mayúscu la, denota una kilocaloría (kcal), defi nida como la cantidad de calor necesaria para elevar la temperatura de un kilogramo de agua 1 grado Celsius.</p>
+<p>Los carbohidratos proporcionan energía</p>
+<p>Los azúcares y almidones son fuentes de energía importantes en la dieta humana. La mayoría de los carbohidratos son ingeridos en la forma de almidón y celulosa, ambos polisacáridos compuestos por largas cadenas de subunidades de glucosa. (Considere conveniente revisar el análisis de los carbohidratos en el capítulo 3). Los nutriólogos se refi eren a los polisacáridos como “ carbohidratos complejos ”. Los alimentos ricos en carbohidratos complejos incluyen arroz, papas, maíz y otros cereales gramíneos. Cuando se come un exceso de alimentos ricos en carbohidratos, las células del hígado se llenan por completo con glicógeno y transforman el exceso de glucosa en ácidos grasos y glicerol. Las células del hígado convierten estos compuestos en triacilgliceroles y los envían a depósitos grasos del cuerpo para su almacenamiento. Los carbohidratos refi nados, como el pan y el arroz blancos, no son saludables porque el proceso de refi nación elimina la fi bra y muchas vitaminas y minerales. El proceso de refi nación también produce una forma de almidón que el sistema digestivo descompone rápidamente en glucosa. El rápido incremento resultante en la concentración de glucosa en la sangre estimula al páncreas a liberar una gran cantidad de insulina. Esta hormona disminuye el nivel de glucosa en la sangre al señalar al hígado y los músculos la eliminación de glucosa de la sangre. Cuando los niveles de glucosa e insulina son altos, los niveles de triacilglicerol suben y la concentración de lipoproteína de alta densidad (LAD, el colesterol bueno) disminuye. Estos eventos metabólicos pueden conducir a enfermedad cardiovascular y a un aumento en el riesgo de padecer diabetes tipo 2 (que se analiza en al capítulo 49). La fi bra dietética disminuye la concentración de colesterol en la sangre y está asociada con un menor riesgo de enfermedad cardiovascular y diabetes. La fi bra es principalmente una mezcla de celulosa y otros carbohidratos indigeribles. La fi bra dietética se obtiene al comer frutas, verduras y granos enteros. La dieta en Estados Unidos es baja en fi bra debido a la escasa ingesta de frutas y verduras y el uso de harina refi nada. Incrementar la fi bra en la dieta ofrece varios benefi cios para la salud. La fi bra estimula la sensación de estar satisfecho (saciedad) después de haber comido, por lo que es útil para tratar la obesidad.</p>
+<p>Los lípidos proporcionan energía y se usan para elaborar moléculas biológicas</p>
+<p>Las células usan lípidos ingeridos para suministrar energía y para hacer una variedad de compuestos lipídicos, como componentes de membranas celulares, hormonas esteroides y sales biliares. Las personas ingieren alrededor de 98% de los lípidos dietéticos en la forma de triacilgliceroles (triglicéridos). (Recuerde del capítulo 3 que un triacilglicerol es una molécula de glicerol combinada químicamente con tres ácidos grasos; vea la fi gura 3-12b). Los triacilgliceroles pueden estar saturados; es decir, cargados completamente con átomos de hidrógeno, o sus ácidos grasos</p>
+</section>
+<section id="nutrientes-requeridos" class="level2">
+<h2 class="anchored" data-anchor-id="nutrientes-requeridos">47.3 NUTRIENTES REQUERIDOS</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>6 Resumir los requerimientos nutricionales de carbohidratos dietéticos, lípidos y proteínas, y seguir el destino de la glucosa, los lípidos y los aminoácidos después de su absorción. 7 Describir las funciones nutricionales de las vitaminas, los minerales y los ﬁ toquímicos.</p>
+<p>Para los procesos metabólicos son necesarias cantidades adecuadas de nutrientes esenciales. Los animales requieren carbohidratos, lípidos, proteínas, vitaminas y minerales. Los nutriólogos están investigando actualmente compuestos vegetales denominados fi toquímicos que son importantes en la nutrición. Aunque el agua no se considera un nutriente en sentido estricto, es un componente dietético necesario. Es necesario ingerir bastante líquido para reemplazar los fl uidos perdidos en la orina, el sudor, las heces y la respiración. Los nutriólogos consideran nuevos datos y continuamente reexaminan las cantidades relativas de varios tipos de nutrientes recomendados para una dieta sana. Según la Dietary Guidelines for Americans del Departamento de Agricultura de Estados Unidos, entre 45% y 65% de las calorías deben provenir de carbohidratos, entre 20% y 35% de la grasa y de 10% a 35% de las proteínas.</p>
+<p>Colon transverso</p>
+<p>Colon descendente</p>
+<p>Colon ascendente</p>
+<p>Cáncer</p>
+<p>SPL/Photo Researchers, Inc.</p>
+<p>FIGURA 47-12 Cáncer de colon En esta radiografía del intestino grueso, el cáncer es evidente como una masa que se proyecta hacia el lumen del colon. El intestino grueso ha sido llenado con una suspensión de sulfato de bario, que hace visibles las irregularidades en la pared.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1058_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1058_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Procesamiento de alimentos y nutrición 1025</p>
+<p>una dieta sana, mantener un peso corporal idóneo (la obesidad aumenta los niveles de LBD y de triacilglicerol) y no fumar. En general, los alimentos de origen animal son ricos tanto en grasas saturadas como en colesterol, mientras que la mayoría de los alimentos de origen vegetal contienen grasas no saturadas y están libres de colesterol. La mantequilla contiene muchas grasas saturadas. Los aceites vegetales poliinsaturados de uso común son de maíz, soya y cártamo. Las grasas monoinsaturadas aumentan los niveles de LAD, así como el ácido esteárico, la grasa saturada en el chocolate. Los aceites de oliva, canola y cacahuate contienen grandes cantidades de grasas monoinsaturadas. Los aceites de pocas plantas, incluyendo el aceite de palma y el de coco, son altos en grasas saturadas. Los ácidos grasos omega 3 (que se encuentran en el pescado y algunos aceites vegetales) disminuyen los niveles de LBD y desempeñan otros papeles de protección en la disminución del riesgo de enfermedad cardiaca coronaria. Una dieta alta en grasas saturadas y colesterol aumenta los niveles de colesterol hasta en 25%. Debido a que las grasas poliinsaturadas disminuyen el nivel de colesterol, ahora muchas personas cocinan con aceites vegetales en vez de hacerlo con mantequilla y tocino, beben leche descremada en vez de leche entera, y comen helados bajos en grasa. Algunas personas usan margarina en lugar de mantequilla. Sin embargo, durante el proceso de producción de muchas margarinas, los aceites vegetales son parcialmente hidrogenados (algunos de los carbonos aceptan hidrógeno para volverse totalmente saturados). Durante la hidrogenación, algunos enlaces</p>
+<p>pueden estar monoinsaturados (con un solo enlace doble en su molécula) o poliinsaturados (con dos o más enlaces dobles en su molécula). Tres ácidos grasos poliinsaturados (linoleico, linolénico y araquidónico) son ácidos grasos esenciales que los humanos deben tomar de los alimentos. Dados éstos y sufi cientes nutrientes no lipídicos, el cuerpo puede elaborar todos los compuestos lipídicos (incluidos grasas, colesterol, fosfolípidos y prostaglandinas) que requiere. La dieta media en Estados Unidos proporciona por mucho más colesterol que el máximo diario recomendado de 300 mg. Altas fuentes de colesterol incluyen la yema de los huevos, la mantequilla y la carne. ¿Cómo son transportados los lípidos? Recuerde que los quilomicrones transportan lípidos del intestino al hígado y otros tejidos. Cuando los quilomicrones circulan por la sangre, la enzima lipasa lipoproteína descompone los triacilgliceroles. Luego, los ácidos grasos y el glicerol pueden ser tomados por las células. Lo que queda del quilomicrón, un remanente integrado principalmente por colesterol y proteína, es tomado por el hígado. Las células del hígado vuelven a reempacar el colesterol y los triacilgliceroles. Estos lípidos son unidos a proteínas y transportados como grandes complejos moleculares denominados lipoproteínas . Algo de colesterol en plasma es transportado por lipoproteínas de alta densidad , o LAD (el colesterol “bueno”), pero la mayoría es transportada por lipoproteínas de baja densidad , o LBD (el colesterol “malo”). Las LBD entregan el colesterol a las células. Para que éstas tomen a las lipoproteínas de baja densidad, una proteína (apoliproteína B) en la superfi cie de las LBD debe unirse con una proteína receptora de LBD sobre la membrana plasmática (vea la fi gura 5-23). Después de unirse, las LBD entran a la célula, y su colesterol y otros componentes son utilizados. Cuando los niveles de colesterol son altos, las lipoproteínas de alta densidad reúnen el exceso de colesterol y lo transportan al hígado. Las LAD disminuyen el riesgo de sufrir enfermedad cardiovascular. Cuando son necesarias, las grasas almacenadas son hidrolizadas en ácidos grasos y liberados hacia la sangre. Antes de que las células pueden usar estos ácidos grasos como combustible, son desintegrados en compuestos más pequeños y combinados con la coenzima A para formar moléculas de acetil coenzima A (acetil CoA; FIGURA 47-13 ). La acetil CoA entra en el ciclo del ácido cítrico (vea el capítulo 8). La conversión de ácidos grasos en acetil CoA se lleva a cabo en el hígado mediante un proceso denominado oxidación β . Para su transporte a las células, la acetil coenzima A es transformada en uno de tres tipos de cuerpos cetónicos (cetonas de cuatro carbonos). Normalmente el nivel de cuerpos cetónicos en la sangre es bajo, pero en ciertas condiciones anormales, como inanición y diabetes mellitus, el metabolismo de las grasas se incrementa tremendamente. Entonces los cuerpos cetónicos son producidos tan rápidamente que su nivel en la sangre se vuelve excesivo, lo cual puede hacer a la sangre demasiado ácida. Este equilibrio interrumpido del pH puede conducir a la muerte. ¿Cuál es la relación entre la grasa y la ingesta de colesterol y la enfermedad cardiovascular? Los lípidos desempeñan un papel crucial en el desarrollo de la aterosclerosis, una enfermedad progresiva en que las arterias son obstruidas por materia grasa (vea el capítulo 44). Las lipoproteínas de baja densidad son la principal fuente del colesterol que se acumula en las paredes de las arterias. El tipo de grasa consumida, así como otros factores dietéticos y de estilo de vida, son importantes. Una persona puede promover una proporción saludable entre lipoproteínas de alta densidad y lipoproteínas de baja densidad al hacer ejercicio regularmente, seguir</p>
+<p>Grasa Célula de grasa</p>
+<p>Ácidos grasos + Glicerol</p>
+<ul>
+<li>Glicerol</li>
+</ul>
+<p>G3P Entra en la respiración celular</p>
+<p>Glucosa</p>
+<p>Entra en la respiración celular</p>
+<p>Entra en la respiración celular</p>
+<p>Convertida en otros lípidos Cuerpos cetónicos</p>
+<p>Usados para elaborar triacilgliceroles</p>
+<p>Acetil CoA</p>
+<p>Ácido graso</p>
+<p>Convertido en otros lípidos</p>
+<p>Piruvato o acetil CoA</p>
+<p>Hígado</p>
+<p>Otras células</p>
+<p>Transportados en la sangre</p>
+<p>FIGURA 47-13 Cómo usa la grasa el cuerpo El hígado convierte el glicerol y los ácidos grasos en compuestos que se usan como combustible en la respiración celular. Recuerde del capítulo 8 que el G3P es gliceraldehído-3-fosfato.</p>
+<p>1026 Capítulo 47</p>
+<p>D, E y K. Las vitaminas solubles en agua son las vitaminas B y C. Las frutas y las legumbres son fuentes ricas en vitaminas. En la TABLA 47-3 se presentan las fuentes, funciones y consecuencias en caso de defi ciencia de la mayoría de las vitaminas. Los profesionales de la salud debaten la conveniencia de tomar grandes cantidades de ciertas vitaminas específi cas, como la vitamina C para prevenir los resfriados o la vitamina E como protección contra enfermedades vasculares. Algunos estudios sugieren que la vitamina A (presente en legumbres amarillas y verdes) y la vitamina C (que se encuentra en cítricos y tomates) ayuda a protegerse contra ciertas formas de cáncer. Todavía no se comprenden todos los papeles bioquímicos desempeñados por las vitaminas o las interacciones entre varias vitaminas y otros nutrientes. Se sabe que, como la defi ciencia en vitaminas, grandes sobredosis de éstas pueden ser dañinas. Dosis moderadas de vitaminas B y C son excretadas en la orina, pero excedentes de las vitaminas solubles en grasa no son excretadas fácilmente y pueden acumularse hasta niveles dañinos.</p>
+<p>Los minerales son nutrientes inorgánicos</p>
+<p>Los minerales son nutrientes inorgánicos ingeridos en la forma de sales disueltas en alimentos y agua ( TABLA 47-4 ). Las personas necesitan cier-</p>
+<p>dobles son transformados de una disposición cis a una trans (vea la fi gura 3-3b), formando ácidos grasos trans ; cuanto más dura es la margarina, más alto es el contenido de ácido graso trans . Las preocupaciones de salud se han incrementado porque los ácidos grasos trans aumentan el colesterol LBD en la sangre y disminuyen las LAD. Muchos alimentos procesados, incluidos pasteles, rosquillas, galletas dulces y saladas, así como papas fritas, contienen ácidos grasos trans . Aunque algunas grasas, como los ácidos grasos trans y las grasa s saturadas no son saludables; otros, como los ácidos grasos omega 3 y la grasa monoinsaturada, promueven la salud. Los inuits en Groenlandia tienen dietas extremadamente altas en grasa. No obstante, debido a que su grasa dietética es rica en ácidos grasos omega 3, tienen baja incidencia de enfermedades cardiacas.</p>
+<p>Las proteínas sirven como enzimas y como componentes estructurales de las células</p>
+<p>Las proteínas son bloques de construcción esenciales de las células, sirven como enzimas y se usan para elaborar compuestos esenciales como receptores, hemoglobina y miosina. El consumo de proteínas constituye un indicador de la condición económica de un país (o persona) porque la proteína de alta calidad tiende a ser el más costoso y menos disponible de los nutrientes. En muchas partes del mundo, la pobreza de proteínas es uno de los problemas de salud más apremiantes. Las proteínas ingeridas son degradadas en el sistema digestivo en pequeños péptidos y aminoácidos. De los alrededor de 20 aminoácidos importantes en la nutrición, aproximadamente 9 (10 en los niños) no pueden ser sintetizados en absoluto por los humanos, o por lo menos no en cantidades sufi cientes para satisfacer las necesidades del cuerpo. La dieta debe suministrar estos aminoácidos esenciales (vea el capítulo 3). Las proteínas completas , las que contienen la distribución más apropiada de aminoácidos para la nutrición humana, se encuentran en pescado, carne, nueces, huevos y leche. Algunos alimentos, como la gelatina y las legumbres (soya, frijoles, guisantes, cacahuates), contienen una elevada proporción de proteína. Sin embargo, no incluyen todos los aminoácidos esenciales o no los contienen en las proporciones nutricionales idóneas. La mayoría de las proteínas vegetales son defi cientes en uno o más aminoácidos esenciales. Las fuentes más saludables de proteínas son: pescado, pollo, nueces y legumbres. Los aminoácidos que circulan en la sangre son tomados por las células y usados para la síntesis de proteínas. El hígado elimina el exceso de aminoácidos de la circulación. Las células del hígado desaminan los aminoácidos; es decir, remueven el grupo amino ( FIGURA 47-14 ). Durante la desaminación se produce amoniaco a partir del grupo amino. El amoniaco, que es tóxico a altas concentraciones, es convertido en urea y excretado del cuerpo. La cadena de carbono restante del aminoácido (denominada cetoácido ) puede convertirse en carbohidrato o lípido y usarse como combustible o almacenarse. Es por esto que la gente que sigue dietas altas en proteínas puede ganar peso si come demasiado.</p>
+<p>Las vitaminas son compuestos orgánicos esenciales para el metabolismo normal</p>
+<p>Las vitaminas son compuestos orgánicos necesarios en la dieta en cantidades relativamente bajas para el funcionamiento bioquímico normal (vea el capítulo 7). Los nutriólogos dividen las vitaminas en dos grupos principales. Las vitaminas solubles en grasa incluyen las vitaminas A,</p>
+<p>Almacenamiento en células de grasa</p>
+<p>Cuerpos cetónicos</p>
+<p>Acetil CoA</p>
+<p>Ácidos grasos + glicerol</p>
+<p>Triacilglicerol</p>
+<p>Hígado</p>
+<p>Desaminación</p>
+<p>NH 3 (amoniaco) + cetoácidos α</p>
+<p>Grasa</p>
+<p>AMINOÁCIDOS</p>
+<p>Proteínas estructurales, hemoglobina, miosina, actina, enzimas, proteínas plasmáticas</p>
+<p>Exceso de aminoácidos</p>
+<p>Entra a la respiración celular</p>
+<p>Piruvato, cetoglutarato α Urea</p>
+<p>A los riñones</p>
+<p>Acetil CoA</p>
+<p>Catabolismo Anabolismo</p>
+<p>FIGURA 47-14 Cómo usa las proteínas el cuerpo El hígado desempeña un papel central en el metabolismo de las proteínas. La desaminación de aminoácidos y la conversión de los grupos amino en urea se lleva a cabo ahí. Además, muchas proteínas son sintetizadas en el hígado. Observe que una persona puede ganar peso en una dieta alta en proteínas porque el exceso de aminoácidos puede transformarse en grasa.</p>
+<p>Procesamiento de alimentos y nutrición 1027</p>
+<p>dos del cuerpo. Su defi ciencia resulta en deshidratación. El hierro es el mineral del que suele haber más defi ciencia en la dieta. De hecho, la carencia de hierro es uno de los problemas nutricionales más extendidos en el mundo.</p>
+<p>Los antioxidantes protegen contra los oxidantes</p>
+<p>Los procesos celulares normales que requieren oxígeno producen oxidantes , moléculas altamente reactivas como radicales libres, peróxidos y superóxidos. Los radicales libres , moléculas o iones con uno o más pares de electrones no apareados, también son generados por radiación</p>
+<p>tos minerales, entre ellos sodio, cloro, potasio, calcio, fósforo, magnesio, manganeso y azufre, en cantidades de 100 mg o más diariamente. Éstos se denominan minerales principales. Varios otros, como hierro, cobre, yodo, fl úor y selenio, son elementos traza o microelementos, minerales que se requieren en cantidades menores a 100 mg al día. Los minerales son componentes necesarios de los tejidos y fl uidos del cuerpo. El contenido de sal (alrededor de 0.9% en el plasma) es vital para mantener el equilibrio de fl uidos del cuerpo y debido a que las sales se pierden del cuerpo diariamente en sudor, orina y heces, es necesario remplazarlas por ingesta dietética. El cloruro de sodio (sal de mesa común) es la sal que más se necesita en la sangre y otros fl ui-</p>
+<p>Las vitaminas</p>
+<p>Las vitaminas y la Ingesta Diaria Recomendada (*RDA) en Estados Unidos Acciones Efecto de la deﬁ ciencia Fuentes</p>
+<p>Soluble en grasa Vitamina A, retinol 5000 IU † Se convierte en retinal, esencial para la visión normal y para el crecimiento y la diferenciación de células, reproducción, inmunidad</p>
+<p>Retraso del crecimiento, ceguera nocturna, millones de niños en el mundo están en riesgo de padecer ceguera debido a deﬁ ciencia de vitamina A</p>
+<p>Hígado, leche fortiﬁ cada, vegetales anaranjados y verdes, como zanahorias y brócoli, frutas anaranjadas como el melón Vitamina D, calciferol 400 IU Promueve la absorción de calcio y fósforo del sistema digestivo, esencial para el crecimiento normal y el mantenimiento de los huesos.</p>
+<p>Huesos débiles, deformaciones óseas, raquitismo en niños, osteomalacia en adultos Aceites de pescado, yema de huevo, leche fortiﬁ cada, mantequilla, margarina, salmón</p>
+<p>Vitamina E, tocoferoles 30 UI Antioxidante, protege los ácidos grasos no saturados y las membranas celulares</p>
+<p>Aumento en el catabolismo de ácidos grasos no saturados, de modo que no se cuenta con los suﬁ cientes para el mantenimiento de las membranas celulares, prevención del crecimiento normal, daño en nervios</p>
+<p>Aceites vegetales poliinsaturados, nueces, verduras de hoja verde, productos de grano entero</p>
+<p>Vitamina K, alrededor de 80 mcg ‡ Síntesis de proteínas de coagulación y de proteínas importantes en la producción de huesos</p>
+<p>Tiempo de coagulación prolongado Normalmente proporcionada por bacterias intestinales; verduras de hoja verde, legumbres</p>
+<p>Soluble en agua Vitamina C, ácido ascórbico 60 mg</p>
+<p>Síntesis de colágeno, antioxidante, necesario para la síntesis de algunas hormonas y neurotransmisores, importante en la función inmunológica</p>
+<p>Escorbuto (las heridas sanan muy lentamente y las cicatrices se vuelven débiles y se abren, crecen o no sanan apropiadamente), supresión del sistema inmunológico</p>
+<p>Cítricos, fresas, tomates, hortalizas de hoja, col</p>
+<p>Vitaminas del complejo B Vitamina B 1 , tiamina 1.5 mg La forma activa es una coenzima en muchos sistemas enzimáticos, importante en el metabolismo de carbohidratos y aminoácidos</p>
+<p>Beriberi (debilitamiento del músculo cardiaco, crecimiento del lado derecho del corazón, trastornos en los sistemas nervioso y digestivo); común en alcohólicos</p>
+<p>Hígado, levadura, granos enteros o enriquecidos, carne, verduras de hoja verde</p>
+<p>Vitamina B 2 , riboﬂ avina 1.7 mg Usado para elaborar coenzimas (p.&nbsp;ej., FAD), esencial en la respiración celular Dermatitis, inﬂ amación y agrietamiento en las comisuras de los labios; confusión Hígado, leche, huevos, verduras de hoja verde, granos enriquecidos Niacin, 20 mg Componentes de coenzimas importantes (NAD + y NADP + ), esencial para la respiración celular</p>
+<p>Pelagra (dermatitis, diarrea, síntomas mentales, debilidad muscular, fatiga) Hígado, pollo, atún, verduras de hoja verde, granos enriquecidos</p>
+<p>Vitamina B 6 , piridoxina 2 mg Su derivado es coenzima en muchas reacciones en el metabolismo de aminoácidos</p>
+<p>Dermatitis, disturbios en el sistema digestivo; convulsiones Carne, granos enteros, legumbres, verduras de hoja verde</p>
+<p>Ácido pantot én ico, 10 mg Constituyente de la coenzima A (importante en el metabolismo celular) Deﬁ ciencia extremadamente rara Carne, granos enteros, legumbres</p>
+<p>Folato, 400 mcg Coenzima necesaria para la síntesis del ácido nucleico y para la maduración de glóbulos rojos</p>
+<p>Un tipo de anemia, ciertos defectos de nacimiento, incremento en el riesgo de enfermedad cardiovascular, deﬁ ciencia en alcohólicos, fumadores y embarazadas</p>
+<p>Hígado, legumbres, verduras de hoja verde oscuro, jugo de naranja, granos</p>
+<p>Biotina, 30 mcg Coenzima importante en el metabolismo Deﬁ ciencia rara, depresión, irritación de la piel, convulsiones Producida por bacterias intestinales; hígado, chocolate, yema de huevo Vitamina B 12 , 2.4 mcg Coenzima importante en el metabolismo, contiene cobalto Un tipo de anemia Hígado, carne, pescado, huevos, queso</p>
+<p>*RDA (Ingesta Diaria Recomendada) es la tolerancia dietética recomendada, establecida por la Food and Nutrition Board of the National Research Council de Estados Unidos, para mantener una buena nutrición en adultos saludables.</p>
+<p>† Unidad internacional: la cantidad que produce un efecto biológico especíﬁ co y es internacionalmente aceptada como una medida de la actividad de la sustancia.</p>
+<p>‡ mcg = microgramos.</p>
+<p>TABLA 47-3</p>
+<p>1028 Capítulo 47</p>
+<p>Los nutriólogos recomiendan incrementar el consumo de antioxidantes en la dieta al comer frutas, legumbres y otros alimentos ricos en ellos. Aún se ignora si los suplementos antioxidantes son útiles.</p>
+<p>Los ﬁ toquímicos desempeñan papeles importantes en el mantenimiento de la salud</p>
+<p>Una dieta que incluye todos los nutrientes esenciales no proporciona los mismos benefi cios para la salud que una también rica en fruta y verduras. Los ingredientes faltantes son los fi toquímicos , compuestos vegetales que promueven la salud. Muchos fi toquímicos son antioxidantes. Por ejemplo, los licopenos , responsables del color rojo de los tomates, son poderosos antioxidantes. Los fl avonoides , que se encuentran en el cacao, especialmente en el chocolate oscuro, son antioxidantes que también parecen disminuir la presión arterial, el colesterol y mejoran la salud cardiovascular en otras formas.</p>
+<p>ionizante, fumar tabaco y otras formas de contaminación del aire. Los oxidantes dañan el ADN, las proteínas y los ácidos grasos insaturados al arrebatarles electrones. El daño al ADN provoca mutaciones que pueden producir cáncer, y daño a los ácidos grasos insaturados puede perjudicar las membranas celulares. Se considera que los radicales libres contribuyen a la aterosclerosis al provocar la oxidación del colesterol LBD. El daño oxidativo al cuerpo durante muchos años contribuye al proceso de envejecimiento. Las células tienen antioxidantes que destruyen los radicales libres y otras moléculas reactivas. Los antioxidantes en los tejidos incluyen ciertas enzimas; por ejemplo, catalasa y peroxidasa. Su acción requiere minerales como selenio, zinc, manganeso y cobre. Ciertas vitaminas (vitamina C, vitamina E y vitamina A) tienen una fuerte actividad antioxidante. Las vitaminas A y E protegen las membranas celulares de los radicales libres. Además, una variedad de fi toquímicos son poderosos antioxidantes (se analizan en la siguiente sección).</p>
+<p>Algunos minerales importantes y sus funciones</p>
+<p>Mineral Funciones Fuentes; comentarios</p>
+<p>Calcio El mineral principal en los huesos y dientes, esencial para la Leche y otros productos lácteos, pescado, verduras de hoja verde; coagulación normal de la sangre, función muscular, función los huesos sirven como depósito de calcio nerviosa, y regulación de actividades celulares</p>
+<p>Fósforo Realiza más funciones que cualquier otro mineral; componente estrucCarne, productos lácteos, cereales tural del hueso; componente del ATP, ADN, ARN y fosfolípidos</p>
+<p>Azufre Componente de muchas proteínas y vitaminas Alimentos altos en proteínas como carne, pescado, legumbres, nueces</p>
+<p>Potasio Principal ion positivo dentro de las células, importante en la Carne, leche, frutas, verduras, granos contracción muscular y función nerviosa</p>
+<p>Sodio Principal ion positivo en el ﬂ uido intersticial, importante en Muchos alimentos, sal de mesa; se ingiere demasiado en la dieta el equilibrio de ﬂ uidos, transmisión neuronal promedio de los estadunidenses, las cantidades excesivas pueden contribuir a alta presión arterial</p>
+<p>Cloro Principal ion negativo en el ﬂ uido intersticial, importante en Muchos alimentos, sal de mesa el equilibrio de ﬂ uidos y en el balance ácido-base</p>
+<p>Magnesio Necesario para función muscular y nerviosa normal Nueces, granos enteros, verduras de hoja verde, mariscos, chocolate</p>
+<p>Cobre Componente de varias enzimas; esencial para la síntesis de hemoglobina Hígado, huevos, harina de trigo integral, frijoles</p>
+<p>Yodo Componente de las hormonas tiroideas (hormonas que incrementan Mariscos, sal yodada, verduras cultivadas en suelos ricos la tasa metabólica), su deﬁ ciencia resulta en bocio (agrandamiento en yodo anormal de la glándula tiroides)</p>
+<p>Manganeso Activa muchas enzimas Cereales integrales, nueces, verduras de hoja verde; absorción deﬁ ciente de parte del intestino</p>
+<p>Hierro Componente de la hemoglobina y mioglobina, enzimas respiratorias El mineral que parece tener una alta probabilidad de ser deﬁ ciente importantes (citocromos), y otras enzimas esenciales para el en la dieta. Buenas fuentes: carne (especialmente hígado), transporte de oxígeno y la respiración celular; su deﬁ ciencia pescado, nueces, yema de huevo, legumbres, fruta seca resulta en anemia y puede perjudicar la función cognitiva</p>
+<p>Flúor Componente de huesos y dientes, hace resistentes a los dientes Pescado; en áreas donde no existe naturalmente, el ﬂ úor puede contra el pudrimiento, su exceso ocasiona diente moteado ser agregado a las redes municipales de abastecimiento de agua (ﬂ uoración)</p>
+<p>Zinc Cofactor para al menos 70 enzimas, ayuda a regular la síntesis de Carne, pescado, leche, yogur, granos, verduras ciertas proteínas, necesario para el crecimiento y reparación de tejidos; su deﬁ ciencia está asociada con pérdida del apetito, función inmunológica deprimida, crecimiento retrasado en los niños</p>
+<p>Selenio Antioxidante (cofactor de una peroxidasa que descompone los Mariscos, huevos, carne, granos integrales peróxidos), parece que protege contra el cáncer de próstata.</p>
+<p>TABLA 47-4</p>
+<p>Procesamiento de alimentos y nutrición 1029</p>
+<p>Un hombre de talla mediana que no hace ejercicio y que permanece sentado frente a un escritorio gasta alrededor de 2100 kcal diarias (las mujeres gastan menos energía). Si los alimentos que come la persona diariamente también contienen más o menos la misma cantidad de kilocalorías, el cuerpo estará en un estado de balance energético; es decir, la entrada de energía es igual a la salida de ésta. Este concepto es en extremo importante porque el peso del cuerpo permanece constante cuando:</p>
+<p>entrada de energía = salida de energía</p>
+<p>Cuando la salida de energía es mayor que la entrada de energía, la grasa almacenada es quemada y el peso del cuerpo disminuye. Las personas ganan peso cuando la energía que toman en alimento es mayor que la que gastan en actividades diarias; en otras palabras, cuando:</p>
+<p>entrada de energía &gt; salida de energía</p>
+<p>El metabolismo energético es regulado por señalización compleja</p>
+<p>El hipotálamo regula el metabolismo energético y la ingesta de alimentos. Los biólogos han identifi cado varias moléculas de señalización que constituyen complejas vías de señalización que implican el hipotálamo y el sistema digestivo. Por ejemplo, varios reguladores del apetito indican comer o dejar de hacerlo. Cuando el estómago está vacío, secreta la hormona peptídica grelina, que estimula el apetito. La grelina activa neuronas en el hipotálamo que producen al neurotransmisor estimulante del apetito neuropéptido Y (NPY) . El tracto gastrointestinal libera varios péptidos que señalan la saciedad y suprimen la ingesta de alimentos. El péptido YY , secretado por el intestino, señala al hipotálamo dejar de secretar NPY. La disminución de NPY reduce el vaciado gástrico. Otros compuestos que señalan la saciedad incluyen la hormona gastrointestinal colecistoquinina (CCK) y las melanocortinas liberadas por el hipotálamo. La leptina y la insulina también son críticas en la regulación del metabolismo energético. La leptina, una hormona liberada por el tejido adiposo, es importante para regular el peso normal del cuerpo. La leptina envía señales a los centros en el cerebro sobre el estado de las reservas de energía en el tejido adiposo. Luego, el cerebro ajusta la conducta de alimentación y el metabolismo energético. La hormona pancreática insulina es secretada cuando la concentración de glucosa y otros nutrientes aumenta después de comer. La insulina estimula a las células, especialmente las del hígado, musculares y grasas, a tomar glucosa de la sangre y usarla o almacenarla. Las acciones de la insulina inhiben la secreción de NPY por parte del hipotálamo. Así, la insulina inhibe la ingesta adicional de alimentos. El hipotálamo integra la entrada de estas moléculas de señalización con otra información, como la concentración de nutrientes que circulan en la sangre. Luego, el cerebro envía señales que ajustan el comportamiento alimenticio y el metabolismo de modo que la homeostasis de las grasas almacenadas y el metabolismo de combustible se mantengan. Cuando se dispone de alimento y las reservas de energía son idóneas, el uso de energía aumenta y las reservas de grasa se movilizan. La ingesta de energía y la producción de glucosa en el hígado son inhibidas. Por el contrario, cuando la ingesta de alimento es baja, como durante una dieta o hambruna, el hipotálamo incrementa la secreción de neuropéptido Y. El apetito aumenta y el metabolismo disminuye, acciones que ayudan a restaurar la homeóstasis energética.</p>
+<p>Los nutriólogos han comenzado a investigar intensamente los fi toquímicos. Algunas clases importantes de fi toquímicos son los carotenoides (que incluyen vitamina A y licopeno) en frutas y verduras bastante pigmentadas como las zanahorias y los tomates; los fl avonoides en bayas, hierbas, verduras, cebada, soya, té negro y verde, y cacao; isotiocianatos e índoles en el brócoli y otras verduras crucíferas; y compuestos organosulfurados en ajo y cebolla. En países asiáticos donde las dietas son bajas en grasa y altas en soya y té verde, la incidencia de cáncer de mama, próstata y colorrectal es baja. Las dietas ricas en frutas y verduras disminuyen la incidencia de enfermedad cardiaca y ciertos tipos de cáncer. Algunos estudios comparativos de dietas en varios países sugieren que la ingesta de frutas y verduras puede ser más importante que las diferencias en grasa dietética. Sin embargo, los nutriólogos estiman que en Estados Unidos sólo alrededor de 1 de cada 11 personas ingiere diariamente la dieta recomendada de entre 2 y 6.5 tazas de frutas y verduras al día (el equivalente de 4 a 13 porciones). En Estados Unidos, el National Fruit and Vegetable Program (una asociación de los sectores público y privado que incluye organismos gubernamentales, industriales y grupos sin fi nes de lucro) promueve una iniciativa de salud pública conocida como Fruit &amp; Veggies-More Matt ers. Este grupo está comprometido en aumentar el número de porciones diarias de frutas y verduras con base en directrices dietéticas reales.</p>
+<p>Repaso</p>
+<p>■ ¿Cómo afectan al cuerpo los carbohidratos complejos?</p>
+<p>■ ¿Cuál es la función de la glucosa? ¿Y de los aminoácidos esenciales?</p>
+<p>■ ¿Cuál es la función de las lipoproteínas de alta densidad (LAD)?</p>
+<p>■ ¿Qué medidas puede tomar el lector para disminuir su riesgo de padecer una enfermedad cardiaca?</p>
+</section>
+<section id="metabolismo-energético" class="level2">
+<h2 class="anchored" data-anchor-id="metabolismo-energético">47.4 METABOLISMO ENERGÉTICO</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>8 Contrastar la tasa metabólica basal con la tasa metabólica total; escribir las ecuaciones básicas de energía para mantener el peso del cuerpo y describir las consecuencias de alterarlas en cualquier dirección. 9 Identiﬁ car los componentes de las vías regulatorias que median la ingesta de alimentos y la homeostasis energética. 10 En términos generales, describir los efectos de la mala nutrición, incluyendo la sobrealimentación y la desnutrición.</p>
+<p>La cantidad de energía liberada por el cuerpo por unidad de tiempo es una medida de su tasa metabólica . Mucha de la energía gastada por el cuerpo termina convirtiéndose en calor. La tasa metabólica puede expresarse en kilocalorías de energía calorífi ca gastada al día o como un porcentaje por arriba o por abajo de un nivel normal estándar. La tasa metabólica basal (TMB) es el ritmo al que el cuerpo libera calor como resultado de descomponer moléculas de combustible. La TMB es el costo básico de vida del cuerpo; es decir, la tasa de uso de energía en condiciones de reposo. Esta energía se requiere para mantener las funciones del cuerpo, como la contracción del corazón, la respiración y el funcionamiento de los riñones. La tasa metabólica total de una persona es la suma de su TMB y la energía que usa para llevar a cabo actividades diarias. Un obrero tiene una mayor tasa metabólica total que un ejecutivo de cuentas que está inactivo la mayor parte del día y no hace ejercicio de manera regular.</p>
+<p>1030 Capítulo 47</p>
+<p>afectan estos comportamientos. Un estilo de vida sedentario combinado con la fácil disponibilidad de alimentos ricos en energía contribuye a agravar el problema. Un investigador describió de manera ingeniosa las raíces del problema de la obesidad como la combinación de “chips de computadora y papas fritas”. Por cada 9.3 kcal de alimentos en exceso tomados en el cuerpo, se almacena alrededor de 1 g de grasa. (Un exceso de aproximadamente 140 kcal, menos de una pieza de caramelo común, por día durante un mes resulta en una ganancia de 454 g de peso).</p>
+<p>Los investigadores han identiﬁ cado objetivos para el tratamiento de la obesidad</p>
+<p>A medida que los investigadores descubren los mecanismos genéticos y bioquímicos que regulan el metabolismo energético, proporcionan objetivos potenciales para el desarrollo de tratamientos farmacológicos para la obesidad. Los siguientes son algunos de los muchos objetivos para la acción de medicamentos que constituyen el foco de la investigación: (1) reducir el apetito de modo que la ingesta de alimentos disminuya, (2) bloquear la absorción de grasa, (3) desacoplar el metabolismo de la producción de energía de modo que la energía alimentaria se disipe como calor (consulte Preguntas acerca de: Transporte de electrones y calor , en el capítulo 8) y (4) bloquear los receptores de moléculas que envían señales que conducen a un incremento en el almacenamiento de energía.</p>
+<p>La desnutrición puede provocar graves problemas de salud</p>
+<p>Millones de personas no tienen sufi cientes alimentos o no tienen una dieta balanceada. Las personas que padecen desnutrición están mal alimentadas. Pueden sentirse débiles, se cansan fácilmente y son bastante sensibles a infecciones como resultado de una función inmunológica deprimida. Suele haber una defi ciencia de hierro, calcio y vitamina A, pero los aminoácidos esenciales son los nutrientes con mayor défi cit en la dieta. Millones de personas padecen una salud defi ciente y resistencia disminuida a enfermedades debido a la falta de proteínas. El desarrollo físico y mental de los niños es retrasado cuando estos componentes básicos de las células no existen en la dieta. Debido a que los cuerpos de estos niños no pueden elaborar los anticuerpos (que son proteínas) y las células necesarias para combatir infecciones, las enfermedades comunes en los niños, como sarampión, tosferina y varicela, a menudo son fatales en menores que padecen desnutrición proteica.</p>
+<p>La obesidad es un problema nutricional grave</p>
+<p>La sobrealimentación puede ocasionar mala nutrición. La obesidad , la acumulación excesiva de grasa corporal, es una forma de desnutrición grave que se ha convertido en un problema de proporciones epidémicas en sociedades opulentas. La Organización Mundial de la Salud considera a la obesidad entre los problemas de salud más importantes en todo el mundo. La obesidad contribuye con alrededor de 300,000 muertes al año en Estados Unidos y es la segunda causa de muerte más importante que puede ser evitada (sólo después de fumar). Es un factor de riesgo importante de enfermedad cardiaca, diabetes mellitus, ciertos tipos de cáncer (incluyendo el de mama y colon), hipertensión, osteoartritis, y enfermedades del hígado y la vesícula biliar. En el bastante conocido estudio Framingham de más de 2000 hombres, quienes sufrían 20% de sobrepeso tenían una tasa de mortalidad signifi cativamente más alta derivada de todas las causas. El índice de masa corporal ( IMC ), se usa ahora en todo el mundo como una medida del tamaño del cuerpo, es un índice del peso en relación con la estatura. Se calcula al dividir el cuadrado del peso (kg 2 ) entre la altura (m). El equivalente en Estados Unidos es 4.89 veces el peso (lb) dividido entre el cuadrado del peso (ft 2 ). Un adulto cuyo IMC está entre 25 y 29.9 es considerado con sobrepeso. Un adulto que tiene un IMC de 30 o más es considerado obeso. En Estados Unidos aproximadamente 33% de los adultos tiene sobrepeso y alrededor de 34% son obesos. Se estima que 17% de los niños y adolescentes estadunidenses tienen sobrepeso. Cada persona parece tener un punto de equilibrio , o estado estable, alrededor del cual se regula el peso corporal. Llevar una dieta puede ser difícil porque cuando el IMC disminuye por debajo de un punto de equilibrio, los mecanismos de conservación de energía se activan y el gasto de energía decrece.</p>
+<p>Muchos factores afectan el peso</p>
+<p>Además de una disposición de moléculas de señalización que afectan el metabolismo energético y el peso corporal, los investigadores han identifi cado varias mutaciones genéticas que afectan la ingesta de alimentos y la homeostasis energética. Por ejemplo, los ratones con un alelo mutado en el gen ob se vuelven gravemente obesos. El producto normal del gen ob es la leptina. Cuando los investigadores inyectan leptina en ratones gravemente obesos, el apetito de éstos disminuye y su uso de energía aumenta. Pierden peso, principalmente por pérdida de grasa corporal ( FIGURA 47-15 ). Por desgracia, la mayoría de los humanos obesos son resistentes a la acción de la leptina. El número de células de grasa en el adulto parece ser determinado principalmente por la cantidad de grasa almacenada durante la infancia y la juventud. Cuando una persona es alimentada en exceso al inicio de su vida, se forman cantidades anormalmente grandes de células de grasa. Más tarde en la vida, estas células de grasa pueden estar totalmente abastecidas con un exceso de lípidos o pueden reducir su tamaño, pero siempre están presentes. Se cree que las personas con tales cantidades incrementadas de células de grasa están en mayor riesgo de sufrir obesidad que aquellas cuyas cantidades son normales. Comer activa el circuito de recompensa de dopamina en el cerebro. (Recuerde que este circuito también es activado en la adicción a las drogas). La cantidad de dopamina liberada corresponde a la intensidad del placer experimentado al comer. Una hipótesis sostiene que las personas obesas pueden tener un sistema de recompensa de dopamina defi ciente. Comen en exceso para compensar lo anterior y pueden desarrollar adicción por los alimentos. Aunque muchos factores presentes en la obesidad son hereditarios, el comportamiento es críticamente importante. Dietas altas en calorías y la falta de ejercicio conducen a la obesidad, y los factores psicológicos</p>
+<p>© 1995 Amgen Inc.</p>
+<p>FIGURA 47-15 Efecto de la leptina Ratones con gen ob mutante antes ( izquierda ) y después ( derecha ) del tratamiento con leptina.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1064_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1064_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Procesamiento de alimentos y nutrición 1031</p>
+<p>En niños pequeños, la desnutrición proteica grave resulta en una condición conocida como kwashiorkor . Esta palabra ashanti (de África occidental) signifi ca “primero-segundo”. Se refi ere a la situación en que una madre desteta a un primer niño cuando nace un hermano más pequeño. Luego, al primer niño se le proporciona una dieta con cereal rico en almidón o yuca, que es defi ciente en proteínas. El crecimiento se retrasa, los músculos se debilitan y se desarrolla edema (como se observa en el vientre infl amado); el niño se vuelve apático y anémico, con un deterioro del metabolismo ( FIGURA 47-16 ). Sin aminoácidos esenciales, no es posible elaborar las enzimas digestivas, de modo que lo poco de proteína que se ingiere no puede digerirse. Las defi ciencias en elementos traza y antioxidantes también se han relacionado con el desarrollo de kwashiorkor.</p>
+<p>Repaso</p>
+<p>■ Escriba una ecuación que describa el balance energético y explique lo que ocurre cuando la ecuación es modiﬁ cada en cualquier dirección.</p>
+<p>■ ¿Qué es el índice de masa corporal (IMC)?</p>
+<p>■ ¿Cuál es la función de la grelina? ¿Y de la leptina?</p>
+<p>FIGURA 47-16 Deﬁ ciencia proteica Millones de niños padecen kwashiorkor, una enfermedad provocada por grave deﬁ ciencia proteica. Observe el vientre hinchado, que resulta de un desbalance de ﬂ uidos.</p>
+<p>P. Pittet/United Nations Food and Agricultural Organization</p>
+<p>47.1 (página 1013)</p>
+<p>1 Describir el procesamiento de alimentos, que incluye la ingestión, digestión, absorción y egestión o eliminación, y comparar el sistema digestivo de un cnidario (como la hidra) con el de una lombriz de tierra y un vertebrado.</p>
+<p>■ La nutrición es el proceso de tomar y usar alimentos. La alimentación es la selección, adquisición e ingestión de alimentos; es decir, tomar alimento en el cuerpo. La digestión es el proceso de desintegración mecánica y química de los alimentos. Los nutrientes pasan por el revestimiento del sistema digestivo y hacia el cuerpo por absorción . Los alimentos que no son digeridos y absorbidos son descargados del cuerpo por egestión o eliminación .</p>
+<p>■ En cnidarios y platelmintos, los alimentos son digeridos en la cavidad gastrovascular. Ésta tiene una abertura que funciona como boca y ano. En invertebrados más complejos y en todos los vertebrados, el sistema digestivo es un tubo completo con una abertura en cada extremo. La digestión se lleva a cabo conforme los alimentos pasan por el tubo. Varias partes del sistema digestivo están especializadas en realizar funciones especíﬁ cas.</p>
+<p>Aprenda más sobre los varios sistemas digestivos al hacer clic en la ﬁ gura en CengageNOW.</p>
+<p>47.2 (página 1016)</p>
+<p>2 Seguir la vía que una carne ingerida recorre a través del sistema digestivo humano y describir la estructura y función de cada órgano implicado.</p>
+<p>■ La digestión mecánica y enzimática de los carbohidratos comienza en la boca. Los dientes de los mamíferos incluyen incisivos , que están adaptados para morder y cortar alimentos; caninos, adaptados para desgarrar</p>
+<p>alimentos; premolares y molares adaptados para aplastar y moler. Tres pares de glándulas salivales secretan saliva, que contiene la enzima amilasa salival que digiere el almidón.</p>
+<p>■ Cuando el alimento es tragado, es impulsado a través de la faringe y el esófago . Un bolo alimenticio es desplazado a lo largo del sistema digestivo por peristalsis , ondas de contracción muscular que empujan a los alimentos.</p>
+<p>■ En el estómago , los alimentos son digeridos mecánicamente por agitación vigorosa, y las proteínas son digeridas enzimáticamente por la acción de pepsina en el jugo gástrico. Los pliegues son dobleces de la pared estomacal que se expanden en la medida que el estómago se llena de alimentos. Las glándulas gástricas secretan ácido clorhídrico y pepsinógeno , el precursor de la pepsina.</p>
+<p>■ Después de varias horas, una sopa de alimentos parcialmente digeridos, denominada quimo , sale del estómago a través del píloro y entra al intestino delgado en chorros. La mayor parte de la digestión enzimática se lleva a cabo en el duodeno , que produce varias enzimas digestivas y recibe secreciones del hígado y el páncreas.</p>
+<p>■ El hígado produce bilis , que emulsiona las grasas. El páncreas libera enzimas que digieren carbohidratos, lípidos y proteínas, así como ARN y ADN. La amilasa pancreática digiere carbohidratos complejos. La lipasa pancreática degrada las grasas, y la tripsina y la quimiotripsina digieren polipéptidos en dipéptidos.</p>
+<p>■ El intestino grueso , que consta del ciego , colon , recto y ano , es responsable de eliminar los desechos no digeridos. También incuba bacterias que producen vitamina K y ciertas vitaminas B.</p>
+<p>Aprenda más sobre la digestión humana al hacer clic en la ﬁ gura en CengageNOW.</p>
+</section>
+<section id="resumen-enfoque-en-los-objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1065_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1065_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>1032 Capítulo 47</p>
+<p>que entra en el ciclo del ácido cítrico. El exceso de ácidos grasos es convertido en triacilglicerol y almacenado como grasa.</p>
+<p>■ Los lípidos son transportados como grandes complejos moleculares denominados lipoproteínas . Las lipoproteínas de baja densidad (LBD) suministran colesterol a las células. Las lipoproteínas de alta densidad (LAD ) reúnen el exceso de colesterol y lo transportan al hígado.</p>
+<p>■ Las proteínas sirven como enzimas y son componentes estructurales esenciales de las células. La mejor distribución de aminoácidos esenciales se encuentra en las proteínas completas de los alimentos de origen animal. El exceso de aminoácidos es desaminado por células en el hígado. Los grupos amino son convertidos en urea y excretados en la orina; los cetoácidos restantes son convertidos en carbohidratos y usados como combustible, o son transformados en lípidos y almacenados en células de grasa. 7 Describir las funciones nutricionales de las vitaminas, los minerales y los ﬁ toquímicos.</p>
+<p>■ Las vitaminas son compuestos orgánicos requeridos en pequeñas cantidades para muchos procesos bioquímicos. Muchas sirven como componentes de coenzimas. Las vitaminas solubles en grasa incluyen las vitaminas A, D, E y K. Las vitaminas solubles en agua son las vitaminas B y C.</p>
+<p>■ Los minerales son nutrientes inorgánicos ingeridos como sales disueltas en alimentos y agua. Los elementos traza son minerales necesarios en cantidades menores a 100 mg al día.</p>
+<p>■ Los ﬁ toquímicos son compuestos vegetales que promueven la salud. Muchos ﬁ toquímicos son antioxidantes que destruyen a los oxidantes , que son moléculas reactivas, como los radicales libres . Estas moléculas dañan al ADN, las proteínas y los ácidos grasos insaturados al arrebatarles electrones.</p>
+<p>47.4 (página 1029)</p>
+<p>8 Contrastar la tasa metabólica basal con la tasa metabólica total; escribir las ecuaciones básicas de energía para mantener el peso del cuerpo y describir las consecuencias de alterarlas en cualquier dirección.</p>
+<p>■ La tasa metabólica basal (TMB) es el costo de la vida metabólica del cuerpo. La tasa metabólica total es la TMB más la energía usada para realizar las actividades diarias.</p>
+<p>■ Cuando la entrada de energía (kilocalorías) es igual a la salida de energía, el peso del cuerpo permanece constante. Cuando la salida de energía es mayor que la entrada de energía, el peso del cuerpo disminuye. Cuando la entrada de energía excede a la salida de energía, el peso del cuerpo aumenta. 9 Identiﬁ car los componentes de las vías regulatorias que median la ingesta de alimentos y la homeostasis energética.</p>
+<p>■ La ingesta de alimentos y el metabolismo energético son regulados por vías complejas de moléculas de señalización.</p>
+<p>■ La grelina y el neuropéptido Y (NPY) estimulan el apetito. El péptido YY, la colecistoquinina (CCK) y las melanocortinas señalan la saciedad.</p>
+<p>■ La hormona leptina señala al cerebro sobre el estado de las reservas de energía en el tejido adiposo. La leptina y la insulina inhiben la ingesta de alimentos.</p>
+<p>Aprenda más sobre las leptinas y el peso corporal al hacer clic en la ﬁ gura en CengageNOW .</p>
+<p>10 En términos generales, describir los efectos de la mala nutrición, incluyendo la sobrealimentación y la desnutrición.</p>
+<p>■ En la obesidad , un exceso de grasa se acumula en los tejidos adiposos. La obesidad es un factor importante en varios trastornos graves, incluyendo enfermedad cardiaca y diabetes mellitus. Una persona gana peso al tomar más energía, en la forma de kilocalorías, de la que gasta en actividad. Los genes, las moléculas de señalización que afectan el metabolismo energético y ciertos comportamientos contribuyen a la obesidad.</p>
+<p>■ Millones de personas padecen desnutrición, una forma de mala nutrición que provoca cansancio y función inmunológica deprimida. Los aminoácidos esenciales son los nutrientes que más a menudo son deﬁ cientes en la dieta.</p>
+<p>3 Seguir paso a paso la digestión de los carbohidratos, proteínas y lípidos.</p>
+<p>■ Los nutrientes en el quimo son digeridos enzimáticamente cuando se mueven por el tracto digestivo. Los polisacáridos son digeridos en el disacárido maltosa por la amilasa salival y pancreática. La maltasa en el intestino delgado divide la maltosa en glucosa, el producto más importante de la digestión de carbohidratos.</p>
+<p>■ Las proteínas son separadas por la pepsina en el estómago y por enzimas proteolíticas en el jugo pancreático. Las dipeptidasas dividen los péptidos pequeños en aminoácidos.</p>
+<p>■ Los lípidos son emulsionados por las sales biliares y luego hidrolizadas por la lipasa pancreática. 4 Describir las adaptaciones estructurales que incrementan el área superﬁ cial del sistema digestivo.</p>
+<p>■ El área superﬁ cial del intestino delgado se agranda bastante por los pliegues en su pared; por vellosidades intestinales, proyecciones alargadas de la mucosa; y por microvellosidades , proyecciones de la membrana plasmática de las células epiteliales de las vellosidades.</p>
+<p>Vellosidades</p>
+<p>5 Comparar la absorción de lípidos con la absorción de otros nutrientes.</p>
+<p>■ Los nutrientes son absorbidos a través de las delgadas paredes de las vellosidades intestinales. La vena portal hepática transporta aminoácidos y glucosa al hígado.</p>
+<p>■ Los ácidos grasos y monoacilgliceroles entran en las células epiteliales del revestimiento intestinal, donde vuelven a juntarse para formar triacilgliceroles. Son empacados en quilomicrones , gotas pequeñas que también contienen colesterol y fosfolípidos que están cubiertos por una capa de proteínas. El sistema linfático transporta los quilomicrones a la circulación sanguínea.</p>
+<p>47.3 (página 1024)</p>
+<p>6 Resumir los requerimientos nutricionales de carbohidratos dietéticos, lípidos y proteínas, y seguir el destino de la glucosa, los lípidos y los aminoácidos después de su absorción.</p>
+<p>■ La mayoría de los carbohidratos son ingeridos en la forma de polisacáridos: almidón y celulosa. Los polisacáridos se conocen como carbohidratos complejos . La ﬁ bra es principalmente una mezcla de celulosa y otros carbohidratos no digeribles. Los carbohidratos se usan principalmente como fuente de energía. La concentración de glucosa en la sangre es cuidadosamente regulada. El exceso de glucosa se almacena como glicógeno y también puede ser transformada en grasa.</p>
+<p>■ Los lípidos se usan para proporcionar energía, formar componentes de membranas celulares y sintetizar hormonas esteroides y otras sustancias lipídicas. La mayoría de los lípidos son ingeridos en la forma de triacilgliceroles. Los ácidos grasos son convertidos en moléculas de acetil coenzima A,</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1066_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1066_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Procesamiento de alimentos y nutrición 1033</p>
+<ol type="1">
+<li><p>Los dientes adaptados para aplastar y moler son los (a) incisivos (b) caninos (c) premolares y molares (d) incisivos y premolares (e) caninos y molares</p></li>
+<li><p>La capa de tejido que recubre el lumen del tracto digestivo es (a) la capa muscular (b) el peritoneo visceral (c) el peritoneo parietal (d) la mucosa (e) la submucosa</p></li>
+<li><p>¿Cuáles de las siguientes son glándulas digestivas accesorias? (a) glándulas salivales (b) páncreas (c) hígado (d) a, b y c (e) a y b</p></li>
+<li><p>Ordene los siguientes en la secuencia correcta. 1. estómago 2. esófago 3. faringe 4. intestino delgado 5. colon (a) 2, 3, 1, 4, 5 (b) 3, 2, 1, 5, 4 (c) 3, 2, 5, 1, 4 (d) 2, 3, 1, 5, 4 (e) 3, 2, 1, 4, 5</p></li>
+<li><p>La amilasa es producida por (a) el páncreas y las glándulas salivales (b) el estómago y el páncreas (c) el colon y las glándulas salivales (d) el hígado y el páncreas (e) el duodeno y el páncreas</p></li>
+<li><p>¿Qué secuencia describe con más precisión la digestión de proteínas? 1. dipéptido 2. aminoácido 3. proteína 4. polipéptido 5. glicerol (a) 4, 3, 1, 2 (b) 3, 4, 1, 2 (c) 3, 4, 1, 5 (d) 4, 3, 5, 1, 2 (e) 2, 1, 4, 5</p></li>
+<li><p>El área superfi cial del intestino delgado es incrementada por (a) pliegues en su pared (b) vellosidades (c) microvellosidades (d) a, b y c (e) a y b</p></li>
+<li><p>Los lípidos son transportados del intestino al hígado por (a) quilomicrones (b) LAD (c) LBD (d) transportadores de glicerol (e) leptina</p></li>
+<li><p>La mayoría de las vitaminas son (a) compuestos inorgánicos (b) componentes de coenzimas (c) usadas como combustible (d) electrolitos (e) requeridas por herbívoros y carnívoros pero no por omnívoros</p></li>
+<li><p>Cuando la entrada de energía es mayor que la salida de energía, (a) ocurre pérdida de peso (b) el peso permanece estable (c) ocurre ganancia de peso (d) se inhibe la secreción de leptina (e) se desactiva el gen ob</p></li>
+<li><p>Una hormona que estimula a las glándulas gástricas para secretar pepsinógeno es la (a) secretina (b) GIP (c) gastrina (d) colecistoquinina (CCK) (e) sustancia P</p></li>
+<li><p>Rotule la fi gura. Use la fi gura 47-4 para comprobar sus respuestas.</p></li>
+</ol>
+<p>EVALÚE SU COMPRENSIÓN</p>
+<ol type="1">
+<li><p>Diseñe un experimento para probar la hipótesis de que la vitamina B piridoxina es un nutriente esencial para los ratones.</p></li>
+<li><p>Las enzimas proteolíticas son producidas en una forma inactiva. ¿Qué benefi cio, de haber alguno, podría tener este hecho?</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN . Si usted encontrase un animal desconocido y se le pidiera determinar su estilo de vida nutricional, ¿qué haría? ( Sugerencia : considere las adaptaciones).</p></li>
+<li><p>CIENCIA, TECNOLOGÍA Y SOCIEDAD . Los investigadores están desentrañando las vías bioquímicas que ayudan a regular el peso corporal. ¿Cómo podría llevar su trabajo a una cura para la obesidad? ¿De qué manera podría afectar a la sociedad una cura para la obesidad?</p></li>
+</ol>
+<p>Preguntas adicionales están disponibles en CengageNOW en www.cengage.com/login.</p>
+<p>PENSAMIENTO CRÍTICO</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/47-nutricion/47-nutricion_p1067_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>47-nutricion_p1067_img1.jpeg</figcaption>
+</figure>
+</div>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+&nbsp;
+
+
+<footer style="background-color:	#d0f0ea; padding:1.5em 1em 0.5em; font-family:'Segoe UI', sans-serif; font-size:0.95em; color:#333; margin-bottom: 0;">
+
+  <div style="max-width:960px; margin:0 auto; text-align:center;">
+
+    <p><a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a> – Ingeniero Ambiental | Magíster en Educación</p>
+
+    <p>Asesor educativo, científico y ambiental con más de 6 años de experiencia desarrollando proyectos de investigación, biodiversidad, ciencia de datos ambientales, ciencia ciudadana y divulgación científica.</p>
+
+    <p>¿Necesitas asesoría experta en educación, medio ambiente, biodiversidad o herramientas científicas como <em>R, Quarto, LaTeX</em> o <em>Google Earth Engine</em>?<br><strong>¡Estoy aquí para ayudarte!</strong></p>
+
+    <p style="margin-top:1em; margin-bottom: 0.5em;">
+
+      <a href="mailto:contacto.envinatu@gmail.com" style="color:#007bff; text-decoration:none;">📩 Contáctame: contacto.envinatu@gmail.com</a><br>
+
+      <a href="https://www.linkedin.com/in/marceloamores" target="_blank" style="color:#007bff; text-decoration:none; display:inline-flex; align-items:center; gap:0.3em;">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#007bff" viewbox="0 0 24 24" style="vertical-align:middle;">
+
+          <path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.3 7.6 24 10.05 24 14.45V24h-5v-8.2c0-1.95-.03-4.45-2.71-4.45-2.71 0-3.13 2.12-3.13 4.3V24h-5V8z"></path>
+
+        </svg>
+
+        Conecta en LinkedIn
+
+      </a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- Carrusel de iNaturalist debajo del footer -->
+
+<div class="inat-carousel-container">
+
+  <div id="inat-carousel-track" class="inat-carousel-track"></div>
+
+</div>
+
+
+
+<style>
+
+.inat-carousel-container {
+
+  overflow: hidden;
+
+  width: 100%;
+
+  background: #d0f0ea;
+
+  padding: 10px 0 14px; /* reducido */
+
+  font-family: 'Segoe UI', sans-serif;
+
+  font-size: 0.85em;
+
+  color: #333;
+
+  margin-top: -8px; /* compensación visual mínima */
+
+}
+
+
+
+.inat-carousel-track {
+
+  display: flex;
+
+  gap: 12px;
+
+  animation: scroll-left 100s linear infinite;
+
+  width: max-content;
+
+  padding: 0 1em;
+
+}
+
+
+
+.inat-card {
+
+  flex: 0 0 auto;
+
+  width: 90px;
+
+  text-align: center;
+
+  background: #fff;
+
+  padding: 8px 6px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 6px;
+
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+}
+
+
+
+.inat-card img {
+
+  width: 75px;
+
+  height: 75px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+}
+
+
+
+.inat-card .species {
+
+  font-weight: 600;
+
+  font-size: 0.75em;
+
+  margin-top: 4px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+}
+
+
+
+.inat-card .date {
+
+  font-size: 0.7em;
+
+  color: #666;
+
+}
+
+
+
+@keyframes scroll-left {
+
+  0% { transform: translateX(0); }
+
+  100% { transform: translateX(-50%); }
+
+}
+
+</style>
+
+
+
+<script>
+
+fetch("https://api.inaturalist.org/v1/observations?user_id=marceloamores&order=desc&order_by=observed_on&per_page=8")
+
+  .then(response => response.json())
+
+  .then(data => {
+
+    const track = document.getElementById("inat-carousel-track");
+
+    const items = data.results.map(obs => {
+
+      const img = obs.photos.length ? obs.photos[0].url.replace("square", "small") : "https://static.inaturalist.org/images/users/defaults/thumb.png";
+
+      const species = obs.taxon ? (obs.taxon.preferred_common_name || obs.taxon.name) : "Sin ID";
+
+      const date = new Date(obs.observed_on).toLocaleDateString("es-EC");
+
+      return `
+
+        <div class="inat-card">
+
+          <a href="https://www.inaturalist.org/observations/${obs.id}" target="_blank" rel="noopener noreferrer">
+
+            <img src="${img}" alt="${species}" />
+
+          </a>
+
+          <div class="species" title="${species}">${species}</div>
+
+          <div class="date">${date}</div>
+
+        </div>`;
+
+    }).join("");
+
+    track.innerHTML = items + items;
+
+  })
+
+  .catch(err => {
+
+    console.error("Error:", err);
+
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<hr />
+
+<p style="text-align: center;">Developed and maintained by <a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a>. <br>
+
+
+
+
+
+Keen to support the site? You're most welcome to <a href='https://ko-fi.com/I2I1K189U' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> </p>
+
+
+
+
+
+
+
+<p style="text-align: center;">For updates, sign up to my <a href="https://github.com/envinatu" target="_blank">newsletter</a></p>
+
+
+
+
+
+<hr>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add icon library 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- Add font awesome icons 
+
+<!--<p style="text-align: center;">
+
+<!--    <a href="https://www.linkedin.com/in/marceloamores" class="fa fa-linkedin" target="_blank"></a>
+
+ <!--   <a href="https://www.inaturalist.org/people/marceloamores" target="_blank">
+
+  <img src="https://static.inaturalist.org/wiki_page_attachments/3154-medium.png" alt="iNaturalist" style="width:24px; height:24px;">
+
+    <a href="https://github.com/envinatu" class="fa fa-github" target="_blank"></a>
+
+    <a href="https://x.com/envinatu" target="_blank">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/300px-X_logo_2023_original.svg.png" alt="X" style="width:13px; height:13px;">
+
+    <a href="https://www.youtube.com/channel/envinatu" class="fa fa-youtube" target="_blank"></a>
+
+</a>
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+
+.inat-widget {padding: 10px; line-height: 1;}
+
+.inat-widget-header {margin-bottom: 10px;}
+
+.inat-widget td {vertical-align: top; padding-bottom: 10px;}
+
+.inat-label { color: #888; }
+
+.inat-meta { font-size: smaller; margin-top: 3px; line-height: 1.2;}
+
+.inat-observation-body, .inat-user-body { padding-left: 10px; }
+
+.inat-observation-image {text-align: center;}
+
+.inat-observation-image, .inat-user-image { width: 48px; display: inline-block; }
+
+.inat-observation-image img, .inat-user-image img { max-width: 48px; }
+
+.inat-observation-image img { vertical-align: middle; }
+
+.inat-widget-small .inat-observation-image { display:block; float: left; margin: 0 3px 3px 0; height:48px;}
+
+.inat-label, .inat-value, .inat-user { font-family: "Trebuchet MS", Arial, sans-serif; }
+
+.inat-user-body {vertical-align: middle;}
+
+.inat-widget td.inat-user-body {vertical-align: middle;}
+
+.inat-widget .inat-footer td.inat-value {vertical-align: middle; padding-left: 10px;}
+
+</style>
+
+<div class="inat-widget">
+
+  
+<table class="inat-footer caption-top" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd inat-user">
+<td class="inat-user-image"><a href="https://www.inaturalist.org/observations/marceloamores" data-border="0"><img src="https://static.inaturalist.org/attachments/users/icons/1116633/thumb.jpg?1628812209" class="usericon img-fluid" /></a></td>
+<td class="inat-value"><strong><a href="https://www.inaturalist.org/observations/marceloamores">Ver las observaciones de Marcelo en iNaturalist »</a></strong></td>
+</tr>
+</tbody>
+</table>
+
+
+  <script type="text/javascript" charset="utf-8" src="https://www.inaturalist.org/observations/marceloamores.widget?layout=large&limit=5&order=desc&order_by=creatrd_at&locale=es"></script>
+
+</div>
+
+
+
+-->
+
+    
+
+
+
+
+
+&nbsp;
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./46-intercambio-gases.html" class="pagination-link" aria-label="46 Intercambio de gases">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">46 Intercambio de gases</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./48-osmorregulacion.html" class="pagination-link" aria-label="48 Osmorregulación y desecho de residuos metabólicos">
+        <span class="nav-page-text"><span class="chapter-title">48 Osmorregulación y desecho de residuos metabólicos</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<div style="display:inline;">
+©
+<script>document.write(new Date().getFullYear());</script>
+<a href="https://github.com/envinatu"> Marcelo F. Amores Palma</a>
+</div>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/">
+      <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu">
+      <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/nvinatu">
+      <i class="bi bi-twitter-x" role="img" aria-label="Quarto X">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/envinatu">
+      <i class="bi bi-youtube" role="img" aria-label="Envinatu YouTube">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:contacto.envinatu@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email Us">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

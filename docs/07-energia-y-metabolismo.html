@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Marcelo Amores">
+
+<title>7 Energía y metabolismo – BIOLOGÍA SOLOMON</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./08-produccion-de-atp.html" rel="next">
+<link href="./06-comunicacion-celular.html" rel="prev">
+<link href="./images/Icono_E.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<!-- Verificación de Google -->
+
+<meta name="google-site-verification" content="EYveEP5I9oi6m-r8Qa_Fett47y3RJFqSizYYvf7G1RM">
+
+
+
+<!-- Canonical URL dinámico -->
+
+<link rel="canonical" link:"{{="" page.url="" |="" absolute_url="" }}"="">
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/envinatu1.png" alt="Envinatu logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/biologia/"> 
+<span class="menu-text">Biología</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/quimica/"> 
+<span class="menu-text">Química</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/geociencias"> 
+<span class="menu-text">Geociencias</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/pedagogia"> 
+<span class="menu-text">Educación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/rubick"> 
+<span class="menu-text">Ludociencia</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/blog"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/amores"> 
+<span class="menu-text">Sobre Mi</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.pdf"> <i class="bi bi-filetype-pdf" role="img" aria-label="Ver PDF">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.epub"> <i class="bi bi-journal-bookmark-fill" role="img" aria-label="Ver eBook">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/"> <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu"> <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-energia-y-metabolismo.html"><span class="chapter-title">7 Energía y metabolismo</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000-prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefacio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001-al-estudiante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Al estudiante</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-una-vision-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1 Una visión de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-atomos-y-moleculas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2 Átomos y moléculas: la base química de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-quimica-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 La química de la vida: Compuestos orgánicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-organizacion-de-la-celula.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4 Organización de la célula</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-membranas-biologicas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5 Membranas biológicas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-comunicacion-celular.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6 Comunicación celular</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-energia-y-metabolismo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">7 Energía y metabolismo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-produccion-de-atp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8 ¿Cómo producen ATP las células? Rutas de liberación de energía</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-fotosintesis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9 Fotosíntesis: captura de energía luminosa</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-mitosis-y-meiosis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10 Cromosomas, mitosis y meiosis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-herencia.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11 Los principios básicos de la herencia</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">12 ADN: Molécula portadora de la información genética</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-expresion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">13 Expresión génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-regulacion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">14 Regulación génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-tecnologia-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">15 Tecnología ADN y genómica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16-genetica-humana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">16 Genética humana y el genoma humano</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-genetica-del-desarrollo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">17 Genética del desarrollo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./18-evolucion-darwiniana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">18 Introducción a la evolución darwiniana</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./19-cambio-en-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">19 Cambio evolutivo en poblaciones</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./20-especiacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">20 Especiación y macroevolución</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./21-historia-evolutiva.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">21 El origen e historia evolutiva de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./22-evolucion-de-primates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">22 La evolución de los primates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./23-sistematica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">23 Comprensión de la diversidad: sistemática</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./24-virus.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">24 Virus y agentes subvirales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./25-bacterias-y-arqueas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">25 Bacterias y arqueas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./26-protistas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">26 Protistas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./27-plantas-sin-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">27 Plantas sin semillas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./28-plantas-con-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">E</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./29-hongos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">29 Los hongos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./30-diversidad-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">30 Introducción a la diversidad animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./31-protostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">31 Esponjas, cnidarios, ctenóforos y protóstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./32-deuterostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">32 Los deuteróstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./33-crecimiento-vegetal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">33 Estructura, crecimiento y desarrollo vegetal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./34-hoja.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">L</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./35-tallo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">35 Estructura y transporte en el tallo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./36-raices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">36 Raíces y nutrición mineral</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./37-reproduccion-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">37 Reproducción en plantas con ﬂ ores</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./38-respuestas-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">38 Respuestas de desarrollo en plantas a señales externas e internas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./39-introduccion-fisiologia-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">39 Estructura y función animal. Una introducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./40-proteccion-y-movimiento.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">40 Protección, sostén y movimiento</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./41-senalizacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">41 Señalización neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./42-regulacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">42 Regulación neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./43-sentidos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">43 Sistemas sensoriales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./44-transporte-interno.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">44 Transporte interno</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./45-sistema-inmunologico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">45 El sistema inmunológico: Defensa interna</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./46-intercambio-gases.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">46 Intercambio de gases</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./47-nutricion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">47 Procesamiento de alimentos y nutrición</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./48-osmorregulacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">48 Osmorregulación y desecho de residuos metabólicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./49-regulacion-endocrina.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">49 Regulación endocrina</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./50-reproduccion-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">50 Reproducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./51-desarrollo-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">51 Desarrollo animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./52-comportamiento-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52 Comportamiento animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./53-ecologia-de-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52.6 SELECCIÓN SEXUAL</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./54-ecologia-de-comunidades.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">54 Ecología de comunidades</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./55-ecosistemas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">55 Ecosistemas y la biosfera</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./56-geografia-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">56 Ecología y geografía de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./57-conservacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">57 Diversidad biológica y biología de la conservación</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#t" id="toc-t" class="nav-link active" data-scroll-target="#t">T</a>
+  <ul class="collapse">
+  <li><a href="#trabajo-biológico" id="toc-trabajo-biológico" class="nav-link" data-scroll-target="#trabajo-biológico">7.1 TRABAJO BIOLÓGICO</a></li>
+  <li><a href="#las-leyes-de-la-termodinámica" id="toc-las-leyes-de-la-termodinámica" class="nav-link" data-scroll-target="#las-leyes-de-la-termodinámica">7.2 LAS LEYES DE LA TERMODINÁMICA</a></li>
+  <li><a href="#energía-y-metabolismo" id="toc-energía-y-metabolismo" class="nav-link" data-scroll-target="#energía-y-metabolismo">7.3 ENERGÍA Y METABOLISMO</a></li>
+  <li><a href="#atp-la-moneda-energética-de-la-célula" id="toc-atp-la-moneda-energética-de-la-célula" class="nav-link" data-scroll-target="#atp-la-moneda-energética-de-la-célula">7.4 ATP, LA MONEDA ENERGÉTICA DE LA CÉLULA</a></li>
+  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">˜ ˜</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">˜</a>
+  <ul class="collapse">
+  <li><a href="#transferencia-de-energía-en-reacciones-redox" id="toc-transferencia-de-energía-en-reacciones-redox" class="nav-link" data-scroll-target="#transferencia-de-energía-en-reacciones-redox">7.5 TRANSFERENCIA DE ENERGÍA EN REACCIONES REDOX</a></li>
+  <li><a href="#enzimas" id="toc-enzimas" class="nav-link" data-scroll-target="#enzimas">7.6 ENZIMAS</a></li>
+  <li><a href="#resumen-enfoque-en-los-objetivos-de-aprendizaje" id="toc-resumen-enfoque-en-los-objetivos-de-aprendizaje" class="nav-link" data-scroll-target="#resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">7 Energía y metabolismo</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">septiembre, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>154</p>
+<p>Panda gigante ( Ailuropoda melanoleuca ). La energía química producida mediante fotosíntesis y almacenada en las hojas del bambú se transﬁ ere al panda cuando las come.</p>
+<p>CONCEPTOS CLAVE</p>
+<p>7.1 Energía, la capacidad para realizar trabajo, puede ser energía cinética (energía de movimiento) o energía potencial (energía debida a la posición o al estado). 7.2 La energía no puede crearse o destruirse (primera ley de la termodinámica), pero la cantidad total de energía disponible para efectuar trabajo en un sistema cerrado disminuye con el tiempo (segunda ley de la termodinámica). Los organismos cumplen las leyes de la termodinámica porque, como sistemas abiertos, éstos utilizan la energía que obtienen para realizar trabajo. 7.3 En las células, los procesos que liberan energía (exergónicos) y los procesos que requieren energía (endergónicos) son una unidad. 7.4 El ATP desempeña un papel central en el metabolismo energético celular porque conecta a las reacciones exergónicas y endergónicas. El ATP transﬁ ere energía al mover un grupo fosfato. 7.5 La transferencia de electrones en reacciones redox es otra forma en que las células transﬁ eren energía. 7.6 Como catalizadores biológicos, las enzimas aumentan la rapidez de reacciones químicas especíﬁ cas. La actividad de una enzima está inﬂ uenciada por la temperatura, el pH, la presencia de cofactores, e inhibidores y(o) activadores.</p>
+<section id="t" class="level1">
+<h1>T</h1>
+<p>odos los seres vivos requieren energía para realizar los procesos vitales. Puede parecer obvio que las células necesiten energía para crecer y reproducirse, pero aún células que no crecen requieren energía para mantenerse a sí mismas. Las células tienen muchas formas de obtener energía, pero raramente esa energía se utiliza directamente en los procesos celulares. Por esta razón, las células tienen mecanismos que convierten energía de una forma a otra. La organización del sistema celular provee la información que hace posible esas transformaciones energéticas. Como la mayoría de mecanismos de conversión de energía evolucionaron muy temprano en la historia de la vida, entonces muchos aspectos del metabolismo energético tienden a ser similares en un amplio rango de organismos. El Sol es la fuente ﬁ nal de casi toda la energía que sostiene a la vida; esta energía radiante ﬂ uye del Sol como ondas electromagnéticas. Las plantas y otros organismos fotosintéticos capturan alrededor del 0.02% de la energía solar que llega a la Tierra. Como se analiza en el capítulo 9, los organismos fotosintéticos convierten energía radiante en energía química en los enlaces de moléculas orgánicas. Esta energía química queda disponible para las plantas, animales como el panda gigante que se muestra en la fotografía, y otros organismos a través del proceso de respiración celular. En la respiración celular, que se analiza en el capítulo 8, las moléculas orgánicas se degradan y su energía se convierte en formas de uso más inmediato.</p>
+<p>Karen Sw/Corbís</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07-energia-y-metabolismo/07-energia-y-metabolismo_p188_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>07-energia-y-metabolismo_p188_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Energía y metabolismo 155</p>
+<p>En este capítulo se estudian algunos de los principios básicos que determinan cómo las células capturan, transfieren, almacenan y utilizan la energía. Se analizan las funciones del trifosfato de adenosina (ATP) y otras moléculas empleadas en conversiones de energía, incluyendo aquellas que transﬁ eren electrones en reacciones de reducciónoxidación (redox). También se dedica atención particular a la función esencial de las enzimas en la dinámica energética celular. En el capítulo 55 se analiza el ﬂ ujo de energía en ecosistemas.</p>
+<section id="trabajo-biológico" class="level2">
+<h2 class="anchored" data-anchor-id="trabajo-biológico">7.1 TRABAJO BIOLÓGICO</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>1 Deﬁ nir energía , enfatizando cómo se relaciona con el trabajo y el calor. 2 Dar ejemplos para comparar la energía potencial con la energía cinética.</p>
+<p>Energía, uno de los conceptos más importantes en biología, puede comprenderse en el contexto de materia , que es todo lo que tiene masa y ocupa un espacio. La energía se defi ne como la capacidad para hacer trabajo, que es cualquier cambio de estado o de movimiento de la materia. Técnicamente, la masa es una forma de energía, que es la base de la energía generada por el Sol y otras estrellas. En el Sol, más de 4 mil millones de kilogramos de materia se convierten en energía cada segundo. En general, los biólogos expresan la energía en unidades de trabajo, kilojoules (kJ) . También se pueden expresar en unidades de energía calorífi ca , kilocalorías (kcal) , la energía térmica que fl uye de un objeto con mayor temperatura a un objeto con menor temperatura. Una kilocaloría es igual a 4.184 kJ. La energía calorífi ca no puede realizar trabajo celular porque una célula es tan pequeña que tiene regiones que difi eren en temperatura. Por esa razón, actualmente la unidad más preferida por los biólogos es el kilojoule. Sin embargo, en este libro se utilizarán ambas unidades porque en la literatura científi ca son comunes las referencias a las kilocalorías.</p>
+<p>Los organismos realizan conversiones entre energía potencial y energía cinética</p>
+<p>Cuando un arquero tensa un arco y dispara, la energía cinética , energía de movimiento es utilizada para efectuar este trabajo ( FIGURA 7-1 ). La tensión resultante en el arco y en la cuerda representa la energía almacenada o potencial. La energía potencial es la capacidad para realizar trabajo como consecuencia de la posición o del estado. Cuando la cuerda es liberada, esta energía potencial se convierte en energía cinética en el movimiento del arco, que a su vez impulsa la fl echa. La mayoría de las acciones de un organismo implican una serie de transformaciones energéticas que ocurren conforme la energía cinética se convierte en energía potencial o viceversa. La energía química , que es la energía potencial almacenada en los enlaces químicos, es de particular importancia para los organismos. En este ejemplo, la energía química de las moléculas alimenticias se convierte en energía cinética en las células musculares del arquero. La contracción de sus músculos, al igual que muchas de las actividades efectuadas por un organismo, es un ejemplo de energía mecánica , que realiza trabajo al mover la materia.</p>
+<p>Repaso</p>
+<p>■ Cuando usted ejerce tensión sobre un resorte y después lo suelta. ¿Cómo se relacionan estas acciones con el trabajo, la energía potencial y la energía cinética?</p>
+</section>
+<section id="las-leyes-de-la-termodinámica" class="level2">
+<h2 class="anchored" data-anchor-id="las-leyes-de-la-termodinámica">7.2 LAS LEYES DE LA TERMODINÁMICA</h2>
+<p>OBJETIVO DE APRENDIZAJE</p>
+<p>3 Establecer la primera y segunda leyes de la termodinámica, y analizar las implicaciones de esas leyes en relación con los organismos.</p>
+<p>La termodinámica , el estudio de la energía y sus transformaciones, gobierna todas las actividades del universo, desde la vida y muerte de células hasta la vida y muerte de estrellas. En el contexto de la termodinámica, los científi cos utilizan el término sistema para referirse al objeto bajo estudio, sea una célula, un organismo, o el planeta Tierra. El resto del universo externo al sistema bajo análisis constituye sus alrededores . Un sistema cerrado no intercambia energía con sus alrededores, mientras que un sistema abierto sí puede hacerlo ( FIGURA 7-2 ). Los sistemas biológicos son sistemas abiertos. Existen dos leyes de energía que se aplican a todas las cosas en el universo: la primera y segunda leyes de la termodinámica.</p>
+<p>La energía total en el universo no cambia</p>
+<p>De acuerdo con la primera ley de la termodinámica , la energía no se puede crear o destruir, aunque se puede transferir o convertir de una forma a otra, incluyendo las conversiones entre materia y energía. Hasta donde se sabe, la masa-energía total presente en la formación del universo, hace casi 14 mil millones de años, es igual a la cantidad de energía</p>
+<p>POTENCIAL Energía de posición</p>
+<p>CINÉTICA Energía de movimiento</p>
+<p>FIGURA 7-1 Energía potencial y energía cinética La energía química potencial liberada mediante la respiración celular se convierte en energía cinética en los músculos, que hacen el trabajo de estirar el arco. La energía potencial almacenada en el arco estirado se transforma en energía cinética conforme la cuerda impulsa la ﬂ echa hacia su objetivo.</p>
+<p>156 Capítulo 7</p>
+<p>mil millones de años, toda la energía existirá como calor uniformemente distribuido a través del universo. Si eso pasa, entonces el universo dejará de operar porque no será posible realizar ningún trabajo. Todo estará a la misma temperatura, así que no habrá manera de convertir energía térmica del universo en energía mecánica utilizable. Como consecuencia de la segunda ley de la termodinámica, ningún proceso que requiera una conversión de energía es 100% efi ciente ya que mucha energía es dispersada como calor, incrementando la entropía. Por ejemplo, el motor de un automóvil, que convierte la energía química de la gasolina en energía mecánica, tiene una efi ciencia entre el 20% y 30%. Así, sólo del 20% al 30% de la energía original almacenada en los enlaces químicos de las moléculas de gasolina realmente se transforma en energía mecánica; el otro del 70% al 80% se disipa como desecho calórico. La energía empleada en nuestras células tiene un 40% de efi ciencia y cede la energía restante en forma de calor a los alrededores. Los organismos tienen un alto grado de organización, y a primera vista puede parecer que no cumplen la segunda ley de la termodinámica. Conforme los organismos crecen y se desarrollan, mantienen un elevado nivel de orden y no parecen irse desorganizando. Sin embargo, los organismos son sistemas abiertos; conforme pasa el tiempo sostienen su nivel de orden sólo con la constante entrada de energía de sus alrededores. Por esto las plantas deben realizar la fotosíntesis y los animales deben comer. Aunque, dentro de los organismos, el orden puede tender a incrementarse temporalmente, la entropía total del universo (organismos más alrededores) siempre aumenta con el tiempo.</p>
+<p>Repaso</p>
+<p>■ ¿Cuál es la primera ley de la termodinámica? ¿La segunda ley?</p>
+<p>■ Algunas veces la vida se describe como una batalla constante contra la segunda ley de la termodinámica. ¿Qué hacen los organismos para triunfar en esta batalla sin violar la segunda ley?</p>
+</section>
+<section id="energía-y-metabolismo" class="level2">
+<h2 class="anchored" data-anchor-id="energía-y-metabolismo">7.3 ENERGÍA Y METABOLISMO</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>4 Analizar cómo los cambios de energía libre en una reacción están relacionados con los cambios en entropía y entalpía. 5 Distinguir entre reacciones exergónicas y endergónicas, y ejempliﬁ car cómo se pueden acoplar. 6 Comparar la dinámica energética de una reacción en equilibrio con la dinámica de una reacción fuera del sistema en equilibrio.</p>
+<p>Las reacciones químicas que le permiten a un organismo realizar sus actividades, crecer, moverse, mantenerse y repararse a sí mismo; reproducirse; y responder a estímulos, constituyen su metabolismo. Del capítulo 1 recuerde que el metabolismo es la suma de todas las actividades químicas que ocurren en un organismo. El metabolismo de un organismo consiste en muchas series de reacciones químicas, o rutas metabólicas que se cruzan. El anabolismo y el catabolismo son las dos principales rutas del metabolismo. El anabolismo incluye las diversas rutas en las que se sintetizan moléculas complejas a partir de sustancias más simples, como la unión de aminoácidos para formar proteínas. El catabolismo incluye las rutas en las que grandes moléculas se dividen en moléculas más pequeñas, como en la degradación de almidón para formar monosacáridos.</p>
+<p>actual en el universo. Ésta es toda la energía que puede estar presente en el universo. De igual forma , la energía de cualquier sistema más la de sus alrededores es constante. Un sistema puede absorber energía de sus alrededores, o puede dar a éstos alguna energía, pero siempre es el mismo contenido de energía total de ese sistema más sus alrededores. Como se especifi ca con la primera ley de la termodinámica, los organismos no pueden crear la energía que requieren para vivir. Entonces, éstos deben capturar energía del ambiente y convertirla a una forma que se pueda utilizar para trabajo biológico.</p>
+<p>La entropía del universo es creciente</p>
+<p>La segunda ley de la termodinámica establece que cuando la energía se convierte de una forma a otra, alguna energía utilizable, es decir, energía disponible para efectuar trabajo, se convierte en calor que se dispersa en los alrededores (vea la fi gura 55-1 para una ilustración del fl ujo de energía a través de un ecosistema). Como aprendió en el capítulo 2, el calor es la energía cinética de partículas en movimiento aleatorio. A diferencia de la energía calorífi ca , que fl uye de un objeto de mayor temperatura a otro con menor temperatura, este movimiento aleatorio no puede realizar trabajo. Como resultado, en el universo disminuye la cantidad de energía utilizable para efectuar trabajo. Es importante entender que la segunda ley de la termodinámica es consistente con la primera ley; es decir, en el universo no está disminuyendo la cantidad total de energía. Sin embargo, en el universo sí está disminuyendo la cantidad total de energía utilizable o disponible para efectuar trabajo. La energía en forma menos utilizable es más difusa, o desorganizada. La entropía ( S ) es una medida de este desorden, o aleatoriedad; la energía utilizable tiene baja entropía, está organizada, mientras que la energía desorganizada, como el calor, tiene alta entropía. En el universo la entropía se está incrementando en forma continua en todos los procesos naturales. Quizás en algún momento, dentro de</p>
+<ol type="a">
+<li><p>Un sistema cerrado no intercambia energía con sus alrededores.</p></li>
+<li><p>Un sistema abierto intercambia energía con sus alrededores.</p></li>
+</ol>
+<p>Sistema cerrado</p>
+<p>Alrededores Alrededores</p>
+<p>Intercambio de energía</p>
+<p>Sistema abierto</p>
+<p>FIGURA 7-2 Sistemas cerrados y abiertos</p>
+<p>Energía y metabolismo 157</p>
+<p>puede medir de manera efectiva, la ecuación G = H – TS se puede ampliar para predecir si una reacción química particular liberará energía o requerirá de un ingreso de energía. La razón es que pueden medirse los cambios en la energía libre. Los científi cos utilizan la letra griega mayúscu la delta ( ∆ ) para denotar cualquier cambio que ocurre en el sistema entre su estado inicial antes de la reacción y su estado fi nal posterior a la reacción. Para expresar qué ocurre, con respecto a la energía, en una reacción química, la ecuación queda:</p>
+<p>∆ G = ∆ H − T ∆ S</p>
+<p>Observe que la temperatura no cambia; se conserva constante durante la reacción. Así, el cambio en la energía libre ( ∆ G ) durante la reacción es igual al cambio en la entalpía ( ∆ H ) menos el producto de la temperatura absoluta ( T ) en unidades kelvin multiplicada por el cambio en la entropía ( ∆ S ). Los científi cos expresan a ∆ G y ∆ H en kilojoules o kilocalorías por mol; e indican ∆ S en kilojoules o kilocalorías por kelvin.</p>
+<p>La energía libre disminuye durante una reacción exergónica</p>
+<p>Una reacción exergónica libera energía y se dice que es una reacción espontánea o una “reacción cuesta abajo”, de alta energía libre a más baja ( FIGURA 7-3a ). Como la energía libre total en su estado fi nal es menor que la energía libre total en su estado inicial, entonces ∆ G es un número negativo para reacciones exergónicas. El término espontánea puede dar la falsa impresión de que tales reacciones siempre son instantáneas. En efecto, las reacciones espontáneas no necesariamente ocurren con rapidez; algunas son en extremo lentas. La razón es que se requiere energía, conocida como energía de activación , para iniciar toda reacción, aun en una reacción espontánea. Más adelante, en este capítulo, se analiza la energía de activación.</p>
+<p>La energía libre se incrementa durante una reacción endergónica</p>
+<p>Una reacción endergónica es una reacción en la que existe ganancia de energía libre ( FIGURA 7-3b ). Como la energía libre de los productos es mayor que la energía libre de los reactivos, entonces ∆ G tiene un valor positivo. Esta reacción no puede ocurrir aisladamente. Más bien, debe suceder de manera que la energía pueda ser obtenida de los alrededores.</p>
+<p>Como se verá, esos cambios no sólo implican alteraciones en la organización atómica sino que también en varias transformaciones energéticas. El catabolismo y el anabolismo son procesos complementarios; las rutas catabólicas implican una total liberación de energía, algunas de las cuales alimentan rutas anabólicas, que tienen un requerimiento energético total. En las siguientes secciones, se analiza cómo predecir si una reacción química particular necesita energía o la libera.</p>
+<p>La entalpía es la energía potencial total de un sistema</p>
+<p>En el curso de cualquier reacción química, incluyendo las reacciones metabólicas de una célula, los enlaces químicos se rompen y entonces se pueden formar nuevos y diferentes enlaces. Cada tipo específi co de enlace químico tiene una cierta cantidad de energía de enlace , defi nida como la energía requerida para romper dicho enlace. La energía de enlace total, equivale en esencia a la energía potencial total del sistema, cantidad conocida como entalpía ( H ) .</p>
+<p>La energía libre está disponible para realizar trabajo celular</p>
+<p>La entropía y la entalpía están relacionadas con un tercer tipo de energía, llamada energía libre ( G ) , que es la cantidad de energía disponible para efectuar trabajo bajo las condiciones de una reacción química. ( G , también conocida como “energía libre de Gibbs”, en honor a J. W. Gibbs, profesor de Yale y uno de los fundadores de la ciencia de la termodinámica). La energía libre, el único tipo de energía que puede realizar trabajo celular, es el tema de la termodinámica de mayor interés para un biólogo. La entalpía, la energía libre y la entropía se relacionan mediante la siguiente ecuación:</p>
+<p>H = G + TS</p>
+<p>en donde H es la entalpía; G es la energía libre; T es la temperatura absoluta del sistema, expresada en unidades kelvin; y S es la entropía. Sin considerar por el momento a la temperatura, la entalpía (energía total de un sistema) es igual a la energía libre (la energía utilizable) más la entropía (la energía no utilizable). Un reordenamiento de la ecuación muestra que conforme la entropía se incrementa, entonces decrece la cantidad de energía libre:</p>
+<p>G = H − TS</p>
+<p>Si se supone que la entropía es cero, entonces la energía libre es simplemente igual a la energía potencial total (entalpía); un incremento en la entropía reduce la cantidad de energía libre. ¿Cuál es el signifi cado de la temperatura ( T )? Recuerde que al aumentar la temperatura, existe un incremento en el movimiento molecular aleatorio, que contribuye al desorden y multiplica el efecto del término entrópico.</p>
+<p>Las reacciones químicas implican cambios en la energía libre</p>
+<p>Los biólogos analizan el papel de la energía en las múltiples reacciones bioquímicas del metabolismo. No obstante que la energía libre total de un sistema ( G ) no se</p>
+<p>Energía libre ( G )</p>
+<p>Avance o curso de la reacción</p>
+<p>Reactivos</p>
+<p>Productos</p>
+<p>La energía libre disminuye</p>
+<p>Energía libre ( G )</p>
+<p>Reactivos</p>
+<p>Productos</p>
+<p>La energía libre aumenta</p>
+<ol type="a">
+<li><p>En una reacción exergónica, existe una pérdida neta de energía libre. Los productos tienen menos energía libre que la presente en los reactivos, y la reacción ocurre espontáneamente.</p></li>
+<li><p>En una reacción endergónica, existe una ganancia neta de energía libre. Los productos tienen más energía libre que la que estaba presente en los reactivos.</p></li>
+</ol>
+<p>Avance o curso de la reacción</p>
+<p>FIGURA 7-3 Animada Reacciones exergónicas y endergónicas</p>
+<p>158 Capítulo 7</p>
+<p>En la mayoría de las reacciones bioquímicas existe poca diferencia de energía libre intrínseca entre reactivos y productos. Estas reacciones son reversibles, lo que se indica dibujando fl echas dobles:</p>
+<p>A Δ B</p>
+<p>Al inicio de una reacción, sólo pueden estar presentes las moléculas de los reactivos (A). Conforme la reacción procede, disminuye la concentración de las moléculas de los reactivos y aumenta la concentración de las moléculas del producto (B). Conforme aumenta la concentración de las moléculas del producto, éstas pueden tener sufi ciente energía libre para iniciar la reacción inversa. Así la reacción se efectúa en ambas direcciones en forma simultánea; si no es perturbada, fi nalmente alcanza un estado de equilibrio dinámico , en el que la rapidez de la reacción es igual en las dos direcciones. En equilibrio no existe cambio neto en el sistema; una reacción balancea a la reacción contraria. A temperatura y presión dadas, cada reacción tiene su propio equilibrio característico. Para cualquier reacción dada, los químicos pueden realizar experimentos y cálculos para determinar las concentraciones relativas de los reactivos y productos presentes en la reacción en equilibrio. Si los reactivos tienen mucha mayor energía libre intrínseca que los productos, la reacción prácticamente se realiza por completo; es decir, alcanza el equilibrio en un punto en donde la mayor parte de los reactivos se han convertido a productos. En las reacciones donde los reactivos tienen mucho menos energía libre intrínseca que los productos, el equilibrio se logra en un punto donde muy pocas de las moléculas de los reactivos se han convertido en productos. Si se incrementa la concentración inicial de A, entonces la reacción “se desplazará a la derecha”, y más moléculas A se convertirán en moléculas B. Un efecto similar se obtiene si éstas se eliminan de la mezcla reactiva. La reacción siempre se desplaza en la dirección que reinstala el equilibrio para restaurar las proporciones de reactivos y productos característicos de esa reacción. El efecto opuesto ocurre si se aumenta la concentración de moléculas B o si las moléculas A son eliminadas; aquí el sistema se “desplaza a la izquierda”. El cambio de energía libre real que ocurre durante una reacción está defi nida matemáticamente para incluir esos efectos, que proceden de las concentraciones iniciales relativas de reactivos y productos. Las células utilizan energía para manipular las concentraciones relativas de reactivos y productos de casi toda reacción. En general, las reacciones celulares rara vez están en equilibrio. Al desplazar sus reacciones lejos del equilibrio, las células proporcionan energía a reacciones endergónicas y dirigen su metabolismo de acuerdo con sus necesidades.</p>
+<p>Las células impulsan reacciones endergónicas acoplándolas a reacciones exergónicas</p>
+<p>Muchas reacciones metabólicas, como la síntesis de proteína, son anabólicas y endergónicas. Ya que una reacción endergónica no puede ocurrir sin el ingreso de energía, entonces las reacciones endergónicas están acopladas a reacciones exergónicas. En las reacciones acopladas , la reacción exergónica termodinámicamente favorable proporciona la energía requerida para manejar la reacción endergónica, termodinámicamente desfavorable. La reacción endergónica sólo procede si absorbe la energía libre cedida por la reacción exergónica a la que está acoplada. Considere el cambio de energía libre, ∆ G , en la siguiente reacción:</p>
+<ol type="1">
+<li>A ¡ B ∆ G = + 20.9 kJ/mol ( + 5 kcal/mol)</li>
+</ol>
+<p>De hecho, en las células hay muchas reacciones que requieren energía, y como se verá, los mecanismos metabólicos han evolucionado para aportar la energía que “impulsa” estas reacciones celulares no espontáneas en una dirección dada.</p>
+<p>La difusión es un proceso exergónico</p>
+<p>En el capítulo 5, se vio que las partículas que se mueven aleatoriamente se difunden disminuyendo su propio gradiente de concentración ( FI-</p>
+<p>GURA 7-4 ). No obstante que los movimientos de las partículas individuales son aleatorios, el movimiento neto del grupo de partículas parece ser direccional. ¿Qué proporciona energía a este proceso aparentemente direccional? Un gradiente de concentración , con una región de alta concentración y otra región de más baja concentración, es un estado ordenado. Una célula debe gastar energía para producir un gradiente de concentración. Como el trabajo es realizado para producir este orden, entonces un gradiente de concentración es una forma de energía potencial. Conforme las partículas se mueven aleatoriamente, el gradiente se degrada. Así, la energía libre disminuye al aumentar la entropía. En la respiración celular y en la fotosíntesis, la energía potencial almacenada en un gradiente de concentración de iones de hidrógeno (H + ) es transformada en energía química en trifosfato de adenosina (ATP) conforme los iones de hidrógeno atraviesan la membrana disminuyendo su gradiente de concentración. Este importante concepto, conocido como quimiosmosis , se analiza en detalle en los capítulos 8 y 9.</p>
+<p>Los cambios en la energía libre dependen de la concentración de reactivos y productos</p>
+<p>De acuerdo con la segunda ley de la termodinámica, cualquier proceso que incrementa la entropía puede realizar trabajo. Como ya se ha analizado, las diferencias en la concentración de una sustancia, como ocurre entre dos partes distintas de una célula, representan un estado más ordenado que cuando la sustancia se difunde homogéneamente a través de la célula. Los cambios de la energía libre en cualquier reacción química dependen principalmente de la diferencia en las energías de enlace (entalpía, H ) entre los reactivos y los productos. La energía libre también depende de las concentraciones tanto de los productos como de los reactivos.</p>
+<p>Gradiente de concentración</p>
+<p>Exergónico (proceso que ocurre espontáneamente)</p>
+<ol start="2" type="a">
+<li><p>Cuando las moléculas están distribuidas uniformemente, tienen gran entropía.</p></li>
+<li><p>Un gradiente de concentración es una forma de energía potencial.</p></li>
+</ol>
+<p>FIGURA 7-4 Entropía y difusión La tendencia al aumento de la entropía se puede emplear para realizar trabajo, en este caso, difusión.</p>
+<p>Energía y metabolismo 159</p>
+<p>En todas las células vivas, la energía está temporalmente almacenada dentro de un conocido compuesto químico llamado trifosfato de adenosina (ATP) , que conserva la energía disponible durante muy cortos períodos. Al ATP se le puede considerar la moneda energética de la célula. Cuando se trabaja para ganar dinero, se podría decir que esta energía está simbólicamente almacenada en el dinero ganado. La energía que la célula requiere para uso inmediato está temporalmente guardada en el ATP, como si fuera dinero en efectivo. Cuando usted gana dinero extra, una parte de éste la puede depositar en el banco; de manera similar, una célula puede depositar energía en los enlaces químicos de lípidos, almidones, o glucógeno. Además, al igual que usted no gasta más dinero que el que gana, así la célula debe evitar la quiebra energética, que signifi caría su muerte. Por último, al igual que usted, el dinero que obtiene no lo guarda por mucho tiempo, la célula gasta continuamente su ATP, que debe reemplazarse de inmediato. El ATP es un nucleótido que consiste en tres partes principales: adenina, una base orgánica que contiene nitrógeno; ribosa, un azúcar de cinco carbonos; y tres grupos fosfato, identifi cables como átomos de fósforo rodeados por átomos de oxígeno ( FIGURA 7-5 ). Observe que los</p>
+<p>Ya que ∆ G tiene un valor positivo, entonces el producto de esta reacción tiene más energía libre que el reactivo. Esta es una reacción endergónica, que no es espontánea y que no ocurre sin una fuente de energía. En contraste, considere la siguiente reacción:</p>
+<ol start="2" type="1">
+<li>C ¡ D ∆ G = − 33.5 kJ/mol ( − 8 kcal/mol)</li>
+</ol>
+<p>El valor negativo de ∆ G indica que la energía libre del reactivo es mayor que la energía libre del producto. Esta reacción exergónica procede espontáneamente. Las reacciones 1 y 2 se pueden resumir como sigue:</p>
+<ol type="1">
+<li><p>A ¡ B ∆ G = + 20.9 kJ/mol ( + 5 kcal/mol)</p></li>
+<li><p>C ¡ D ∆ G = − 33.5 kJ/mol ( − 8 kcal/mol)</p></li>
+</ol>
+<p>Total ∆ G = − 12.6 kJ/mol ( − 3 kcal/mol)</p>
+<p>La termodinámica considera los cambios globales en esas dos reacciones, que muestran un valor neto negativo de ∆ G , las dos reacciones tomadas conjuntamente son exergónicas. El hecho que los científi cos puedan escribir reacciones de esta manera es útil, pero esto no signifi ca que una reacción exergónica misteriosamente transfi era energía a una reacción endergónica “espectadora”. Sin embargo, esas reacciones se acoplan si sus rutas se alteran de modo que un intermediario común las enlace. Las reacciones 1 y 2 se podrían acoplar mediante un intermediario (I) de la siguiente forma:</p>
+<ol start="3" type="1">
+<li><p>A + C ¡ I ∆ G = − 8.4 kJ/mol ( − 2 kcal/mol)</p></li>
+<li><p>I ¡ B + D ∆ G = − 4.2 kJ/mol ( − 1 kcal/mol)</p></li>
+</ol>
+<p>Total ∆ G = − 12.6 kJ/mol ( − 3 kcal/mol)</p>
+<p>Observe que las reacciones 3 y 4 son secuenciales. Así, las rutas de reacción han cambiado, pero globalmente los reactivos (A y C) y los productos (B y D) son los mismos, y el cambio de energía libre es idéntico. En general, para cada reacción endergónica que ocurre en una célula viva existe una reacción exergónica acoplada para impulsarla. Es frecuente que la reacción exergónica implique la degradación de ATP. Ahora se examinarán ejemplos específi cos del papel del ATP en el acoplamiento energético.</p>
+<p>Repaso</p>
+<p>■ Considere el cambio de energía libre en una reacción en donde la entalpía disminuye y la entropía aumenta. ¿ ∆ G es cero, tiene un valor positivo o negativo? ¿La reacción es endergónica o exergónica?</p>
+<p>■ ¿Por qué una reacción en equilibrio no puede hacer trabajo?</p>
+</section>
+<section id="atp-la-moneda-energética-de-la-célula" class="level2">
+<h2 class="anchored" data-anchor-id="atp-la-moneda-energética-de-la-célula">7.4 ATP, LA MONEDA ENERGÉTICA DE LA CÉLULA</h2>
+<p>OBJETIVO DE APRENDIZAJE</p>
+<p>7 Explicar cómo la estructura química del ATP le permite transferir un grupo fosfato, y analizar el papel central del ATP en el metabolismo energético global de la célula.</p>
+<ul>
+<li></li>
+</ul>
+<p>Difosfato de adenosina (ADP) Fosfato inorgánico (P i )</p>
+<p>OH OH</p>
+<p>Hidrólisis de ATP</p>
+<p>Trifosfato de adenosina (ATP)</p>
+<p>Grupos fosfato</p>
+<p>Adenina</p>
+<p>HC</p>
+<p>N N</p>
+<p>N</p>
+<p>CH N</p>
+<p>NH 2</p>
+<p>O O O</p>
+<p>O ˉ O ˉ O ˉ</p>
+<p>O O O P P P O ˉ</p>
+<p>Ribosa</p>
+<p>H 2 C</p>
+<p>H H H</p>
+<p>OH OH</p>
+<p>O</p>
+<p>H</p>
+<p>H 2 O</p>
+<p>H 2 C</p>
+<p>H H H H</p>
+<p>O</p>
+<p>O ˉ O ˉ O ˉ</p>
+<p>O O OH HO P P P</p>
+<p>O O O</p>
+<p>O ˉ</p>
+</section>
+</section>
+<section id="section" class="level1">
+<h1>˜ ˜</h1>
+</section>
+<section id="section-1" class="level1">
+<h1>˜</h1>
+<p>HC</p>
+<p>N N</p>
+<p>N</p>
+<p>CH N</p>
+<p>NH 2</p>
+<p>FIGURA 7-5 Animada ATP y ADP ATP, la moneda energética de todas las cosas vivas, consiste en adenina, ribosa, y de tres grupos fosfato. La hidrólisis del ATP, una reacción exergónica, produce ADP y fosfato inorgánico. (Las líneas negras onduladas indican enlaces inestables. Estos enlaces permiten que los fosfatos sean transferidos a otras moléculas, haciéndolas más reactivas).</p>
+<p>160 Capítulo 7</p>
+<p>AMP + P i + energía ¡ ADP</p>
+<p>ADP + P i + energía ¡ ATP</p>
+<p>Así, el ATP ocupa una posición intermedia en el metabolismo celular y es un importante enlace entre reacciones exergónicas, que en general son componentes de rutas catabólicas , y reacciones endergónicas, que generalmente son parte de rutas anabólicas ( FIGURA 7-6 ).</p>
+<p>La célula mantiene una muy alta proporción de ATP a ADP</p>
+<p>La célula mantiene una proporción de ATP a ADP que está lejos del punto de equilibrio. El ATP se forma constantemente a partir del ADP y de fosfato inorgánico conforme los nutrientes se descomponen en la respiración celular o conforme la fotosíntesis atrapa la energía radiante de la luz solar. En cualquier momento, una célula común contiene más de 10 moléculas de ATP por cada molécula de ADP. El hecho de que la célula mantenga la concentración de ATP a tan alto nivel (respecto a la concentración de ADP) hace que su reacción de hidrólisis sea más fuertemente exergónica y más capaz de impulsar las reacciones endergónicas con las que se acopla. Aunque la célula mantiene una elevada proporción de ATP a ADP, no puede almacenar grandes cantidades de ATP. La concentración de ATP siempre es muy baja, menos que 1 mmol/L. En efecto, los estudios sugieren que una célula bacteriana no tiene más que 1 segundo de suministro de ATP. Así, ésta emplea moléculas de ATP casi tan rápidamente como se van produciendo. Un humano adulto saludable en reposo utiliza de manera aproximada 45 kg (100 lb) de ATP cada día, pero la cantidad presente en el cuerpo en cualquier momento dado es menor que 1 g (0.035 oz). Cada segundo en cada célula, un estimado de 10 millones de moléculas de ATP son elaboradas a partir de ADP y fosfato, y un igual número de ATP transfi eren sus grupos fosfato, junto con su energía, a cualquier reacción química que los requiera.</p>
+<p>Repaso</p>
+<p>■ ¿Por qué las reacciones acopladas usualmente tienen intermediarios comunes?</p>
+<p>grupos fosfato se unen en el extremo de la molécula en una serie, semejante a tres vagones detrás de una locomotora y como los vagones de un tren, se pueden pegar y despegar.</p>
+<p>El ATP cede energía mediante la transferencia de un grupo fosfato</p>
+<p>Cuando el fosfato terminal se elimina del ATP, la molécula restante es difosfato de adenosina (ADP) (vea la fi gura 7-5). Si el grupo fosfato no se transfi ere a otra molécula, se libera como fosfato inorgánico (P i ). Ésta es una reacción exergónica con un valor negativo de G relativamente grande. (Son diversos los cálculos de la energía libre de la hidrólisis del ATP, pero varían entre − 28 y − 37 kJ/mol, o de − 6.8 a − 8.7 kcal/mol).</p>
+<ol start="5" type="1">
+<li>ATP + H 2 O ¡ ADP + P i ∆ G = − 32 kJ/mol (o − 7.6 kcal/mol)</li>
+</ol>
+<p>La reacción 5 se puede acoplar a reacciones endergónicas en las células. Considere la siguiente reacción endergónica, en la cual dos monosacáridos, glucosa y fructosa, forman la sacarosa disacárida.</p>
+<ol start="6" type="1">
+<li>glucosa + fructosa ¡ sacarosa + H 2 O ∆ G = + 27 kJ/mol (o + 6.5 kcal/mol)</li>
+</ol>
+<p>Con un cambio de energía libre de − 32 kJ/mol ( − 7.6 kcal/mol), la hidrólisis del ATP en la reacción 5 puede impulsar la reacción 6, pero sólo si las reacciones están acopladas mediante un intermediario común. La siguiente serie de reacciones es una versión simplifi cada de una ruta alternativa utilizada por algunas bacterias:</p>
+<ol start="7" type="1">
+<li><p>glucosa + ATP ¡ glucosa-P + ADP</p></li>
+<li><p>glucosa-P + fructosa ¡ sacarosa + P i</p></li>
+</ol>
+<p>Del capítulo 6, recuerde que una reacción de fosforilación es una en la que un grupo fosfato se transfi ere a algún otro compuesto. En la reacción 7 la glucosa es fosforilada para formar fosfato de glucosa (glucosaP), el intermediario que encadena a las dos reacciones. La glucosa-P, que corresponde a I en las reacciones 3 y 4, reacciona exergónicamente con fructosa para formar sacarosa. Para que la energía de enlace trabaje de esta manera, las reacciones 7 y 8 deben ocurrir en secuencia. Es conveniente resumir las reacciones:</p>
+<ol start="9" type="1">
+<li>glucosa + fructosa + ATP ¡ sacarosa + ADP + P i ∆ G = − 5 kJ/mol ( − 1.2 kcal/mol)</li>
+</ol>
+<p>Cuando usted encuentra una ecuación escrita en esta forma, recuerde que ésta es realmente el resumen de una serie de reacciones y que algunas veces no se muestran los productos intermedios transitorios (en este caso, la glucosa-P).</p>
+<p>El ATP acopla reacciones exergónicas y endergónicas</p>
+<p>Se ha analizado cómo la transferencia de un grupo fosfato del ATP hacia algún otro compuesto está ligada a reacciones endergónicas celulares. Inversamente, agregando un grupo fosfato al monofosfato de adenosina, o AMP (formando ADP), o al ADP (formando ATP) requiere acoplamiento a reacciones exergónicas en la célula.</p>
+<p>La energía liberada impulsa reacciones endergónicas</p>
+<p>ADP + P i ATP</p>
+<p>Las reacciones exergónicas liberan energía</p>
+<p>FIGURA 7-6 El ATP acopla reacciones exergónicas y endergónicas Las reacciones exergónicas en las rutas catabólicas ( parte superior ) proporcionan energía para dirigir la formación endergónica de ATP a partir del ADP. Inversamente, la hidrólisis exergónica del ATP aporta energía a las reacciones endergónicas en rutas anabólicas ( parte inferior ).</p>
+<p>Energía y metabolismo 161</p>
+<p>almacenada en las moléculas alimenticias de manera que pueda sintetizarse el ATP utilizando esa energía.</p>
+<p>La mayoría de los transportadores de electrones transﬁ eren átomos de hidrógeno</p>
+<p>En general, no es fácil eliminar uno o más electrones de un compuesto covalente; es mucho más sencillo eliminar un átomo completo. Por esta razón, en las células usualmente las reacciones redox implican la transferencia de un átomo de hidrógeno en lugar de un solo electrón. Un átomo de hidrógeno contiene un electrón, más un protón que no participa en la reacción de reducción-oxidación. Cuando un electrón, ya sea solo o como parte de un átomo de hidrógeno, se elimina de un compuesto orgánico, se lleva algo de la energía almacenada en el enlace químico del que formaba parte. Ese electrón, junto con su energía, se transfi ere a una molécula receptora (aceptora). Progresivamente, un electrón pierde energía libre al ser transportado de un aceptor a otro. Una de las moléculas aceptoras más comunes en la respiración celular es la nicotinamida adenina dinucleótido ( NAD + ). Cuando la NAD + se reduce, almacena temporalmente grandes cantidades de energía libre. A continuación se presenta una ecuación generalizada que muestra la transferencia de hidrógeno de un compuesto, que se denota por X, a la NAD + :</p>
+<p>XH 2 + NAD + X + NADH + H +</p>
+<p>Oxidado Reducido ¡</p>
+<p>Observe que la NAD + se reduce cuando se combina con el hidrógeno. NAD + es un ion con una carga neta de + 1. Cuando se agregan 2 electrones y un protón, la carga se neutraliza y se produce la forma reducida del compuesto, NADH ( FIGURA 7-7 ). (Aunque la manera correcta de</p>
+<p>■ Dé un ejemplo generalizado de una reacción acoplada que implica ATP, diferenciando entre reacciones exergónicas y endergónicas.</p>
+<p>■ ¿Por qué en una célula la concentración de ATP es aproximadamente 10 veces la concentración de ADP?</p>
+<section id="transferencia-de-energía-en-reacciones-redox" class="level2">
+<h2 class="anchored" data-anchor-id="transferencia-de-energía-en-reacciones-redox">7.5 TRANSFERENCIA DE ENERGÍA EN REACCIONES REDOX</h2>
+<p>OBJETIVO DE APRENDIZAJE</p>
+<p>8 Relacionar la transferencia de electrones (o átomos de hidrógeno) con la transferencia de energía.</p>
+<p>Usted ha visto que las células transfi eren energía mediante la transferencia de un grupo fosfato del ATP. La energía también se transporta por transferencia de electrones. Como se analiza en el capítulo 2, la oxidación es el proceso químico durante el que una sustancia pierde electrones, mientras que la reducción es el proceso complementario en donde una sustancia gana electrones. Ya que en las células vivas, los electrones liberados durante la reacción de oxidación no pueden existir en estado libre, entonces cada reacción de oxidación debe ser acompañada por una reacción de reducción en la cual los electrones son aceptados por otro átomo, ion, o molécula. Con frecuencia, las reacciones de oxidación y de reducción se conocen como reacciones redox porque ocurren simultáneamente. La sustancia que se oxida da energía liberando electrones, y la sustancia reducida recibe energía al ganar electrones. Con frecuencia, las reacciones redox ocurren en una serie, conforme los electrones son transferidos de una molécula a otra. Esos electrones que se transfi eren, son equivalentes a transferir energía, siendo una parte esencial de la respiración celular, de la fotosíntesis, y de muchos otros procesos químicos. Las reacciones redox, por ejemplo, liberan la energía</p>
+<p>O ˉ</p>
+<p>O ˉ</p>
+<p>NH 2</p>
+<p>C C N</p>
+<p>C HC</p>
+<p>N N</p>
+<p>N</p>
+<p>CH</p>
+<p>O O</p>
+<p>H</p>
+<p>CH 2</p>
+<p>H</p>
+<p>OH</p>
+<p>H</p>
+<p>OH</p>
+<p>H</p>
+<p>H</p>
+<p>C C HC</p>
+<p>CH HC</p>
+<p>N +</p>
+<p>O</p>
+<p>H</p>
+<p>CH 2</p>
+<p>H</p>
+<p>OH</p>
+<p>H</p>
+<p>OH</p>
+<p>H</p>
+<p>O</p>
+<p>O</p>
+<p>P O</p>
+<p>P O</p>
+<p>C</p>
+<p>O</p>
+<p>NH 2</p>
+<p>H</p>
+<p>C C</p>
+<p>CH</p>
+<p>HC</p>
+<p>HC</p>
+<p>N</p>
+<p>C</p>
+<p>O</p>
+<p>NH 2</p>
+<p>H</p>
+<ul>
+<li><ul>
+<li><ul>
+<li>X H + X</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>H</p>
+<p>H</p>
+<p>NAD + (oxidada) NADH (reducida)</p>
+<p>Nicotinamida</p>
+<p>Ribosa</p>
+<p>Ribosa</p>
+<p>Adenina</p>
+<p>Fosfato</p>
+<p>Fosfato</p>
+<p>FIGURA 7-7 NAD + y NADH NAD + consiste en dos nucleótidos, uno con adenina y el otro con nicotinamida, que están unidos en sus grupos fosfato. La forma oxidada del anillo nicotinamida en la NAD + ( izquierda ) convierte la forma reducida a NADH ( derecha ) mediante la transferencia de 2 electrones y 1 protón de otro compuesto orgánico (XH 2 ), que se oxida (a X) en el proceso.</p>
+<p>162 Capítulo 7</p>
+<p>maciones químicas antes de lograr algún estado fi nal. Aún entonces, la aparentemente molécula terminada aun puede entrar a otra ruta química y quedar totalmente transformada o consumirse para liberar energía. Las cambiantes necesidades de la célula requieren un sistema de control metabólico fl exible. Los directores clave de este sistema de control son las enzimas. La habilidad catalítica de algunas enzimas es verdaderamente impresionante. Por ejemplo, el peróxido de hidrógeno (H 2 O 2 ) se descompone muy lentamente si la reacción no se cataliza, pero sólo una molécula de la enzima catalasa ¡produce la descomposición de 40 millones de moléculas de peróxido de hidrógeno por segundo! La catalasa tiene la más alta rapidez catalítica que se conoce para una enzima. Esta enzima protege a la célula, destruyendo peróxido de hidrógeno, sustancia venenosa creada como producto de algunas reacciones celulares. El escarabajo bombardero utiliza la enzima catalasa como un mecanismo de defensa ( FIGURA 7-8 ).</p>
+<p>Todas las reacciones requieren de energía de activación</p>
+<p>Todas las reacciones, sean exergónicas o endergónicas, tienen una barrera de energía conocida como la energía de activación ( E A ), que es la energía requerida para romper los enlaces existentes e iniciar la reacción. En una población de moléculas de cualquier tipo, algunas tienen energía cinética relativamente alta, mientras que otras tienen un menor contenido energético. Sólo las moléculas con una energía cinética relativamente alta tienen posibilidad de reaccionar para formar el producto. Aún una reacción fuertemente exergónica, que libera una cantidad de energía signifi cativa, puede no proceder debido a la energía de activación requerida para arrancar la reacción. Por ejemplo, el hidrógeno molecular y el oxígeno molecular pueden reaccionar violentamente para formar agua:</p>
+<p>2 H 2 + O 2 ¡ 2 H 2 O</p>
+<p>escribir la forma reducida de la NAD + es NADH + H + , por simplicidad en este libro se presenta la forma reducida como NADH). Parte de la energía almacenada en los enlaces que unían los átomos de hidrógeno a la molécula X se transfi ere por esta reacción redox y es temporalmente conservada por la NADH. Cuando la NADH transporta electrones hacia alguna otra molécula, entonces parte de su energía también se transfi ere. Por lo común, esta energía se transfi ere a través de una serie de reacciones que fi nalmente resultan en la formación de ATP (se analiza en el capítulo 8). El fosfato de nicotinamida adenina dinucleótido (NADP + ) es un aceptor de hidrógeno que es químicamente similar a la NAD + pero con un grupo fosfato extra. A diferencia de la NADH, la forma reducida del NADP + , que se abrevia NADPH , no participa en la síntesis del ATP. En su lugar, los electrones del NADPH se utilizan más directamente para proporcionar energía para ciertas reacciones, incluyendo ciertas reacciones esenciales de fotosíntesis (se analiza en el capítulo 9). Otros importantes aceptores de hidrógeno o aceptores de electrones son el FAD y los citocromos. El dinucleótido de fl avina adenina (FAD) es un nucleótido que acepta átomos de hidrógeno y a sus electrones; su forma reducida es FADH 2 . Los citocromos son proteínas que contienen hierro; el componente de hierro acepta electrones de los átomos de hidrógeno y entonces transfi ere esos electrones a algún otro compuesto. Al igual que la NAD + y el NADP + , el FAD y los citocromos son agentes de transferencia de electrones. Cada uno existe en un estado reducido , en el que tiene más energía libre, o en un estado oxidado , en donde tiene menos. Cada uno es un componente esencial de múltiples secuencias de reacciones redox celulares.</p>
+<p>Repaso</p>
+<p>■ ¿Cuál tiene mayor energía, la forma oxidada de una sustancia o su forma reducida? ¿Por qué?</p>
+</section>
+<section id="enzimas" class="level2">
+<h2 class="anchored" data-anchor-id="enzimas">7.6 ENZIMAS</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>9 Explicar cómo una enzima disminuye la energía requerida para activar una reacción. 10 Describir maneras especíﬁ cas en que se regulan las enzimas.</p>
+<p>Los principios de la termodinámica ayudan a predecir si una reacción puede ocurrir, pero no dicen nada acerca de la rapidez de la reacción. La descomposición de la glucosa, por ejemplo, es una reacción exergónica, y sin embargo una solución de glucosa podría estar inalterada indefi nidamente en una botella si ésta se mantiene libre de bacterias y mohos sin estar sujeta a elevadas temperaturas o a fuertes ácidos o bases. Las células no pueden esperar siglos a que se descomponga la glucosa, ni tampoco pueden emplear condiciones extremas para dividir moléculas de glucosa. Las células regulan la rapidez de las reacciones químicas mediante enzimas , que son catalizadores biológicos que aumentan la rapidez de una reacción química sin ser consumidas en la reacción. Aunque la mayoría de las enzimas son proteínas, los científi cos han aprendido que algunos tipos de moléculas de ARN también tienen actividad catalítica (el ARN catalítico se analizará en el capítulo 13). Las células requieren una liberación constante de energía, y deben regular esa liberación para satisfacer los requisitos energéticos metabólicos. En general, los procesos metabólicos proceden mediante una serie de pasos tales que una molécula puede ir a través de 20 o 30 transfor-</p>
+<p>FIGURA 7-8 La catalasa como un mecanismo de defensa Cuando es atacado, un escarabajo bombardero ( Stenaptinus insignis ) utiliza la enzima catalasa para descomponer peróxido de hidrógeno. El oxígeno gaseoso formado en la descomposición expulsa agua y otros químicos con fuerza explosiva. Debido a que la reacción libera gran cantidad de calor, entonces el agua sale como vapor.</p>
+<p>© Johannviloria/Shutterstock</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07-energia-y-metabolismo/07-energia-y-metabolismo_p196_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>07-energia-y-metabolismo_p196_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Energía y metabolismo 163</p>
+<p>No obstante que una enzima reduce la energía de activación de una reacción, ésta no tiene efecto sobre el cambio total de energía libre; es decir, una enzima sólo puede impulsar una reacción química que podría ocurrir sin ella. Si la reacción tiende al equilibrio, entonces ningún catalizador puede hacerla ir en una dirección termodinámica desfavorable o infl uir en las concentraciones fi nales de reactivos y productos. Las enzimas simplemente aumentan la rapidez de la reacción.</p>
+<p>Una enzima funciona formando un complejo enzima-sustrato</p>
+<p>Una reacción no catalizada depende de las colisiones aleatorias entre los reactivos. Debido a su estructura ordenada, una enzima reduce esta dependencia sobre eventos aleatorios y por lo tanto controla la reacción. La enzima logra esto formando un complejo intermedio inestable con el sustrato , la sustancia sobre la que actúa. Cuando el complejo enzima sustrato , o complejo ES , se descompone, el producto se libera; la molécula de la enzima original se regenera y queda libre para formar un nuevo complejo ES:</p>
+<p>enzima + sustrato(s) ¡ complejo ES</p>
+<p>complejo ES ¡ enzima + producto(s)</p>
+<p>La enzima en sí misma no resulta permanentemente alterada o consumida por la reacción, así que se puede reutilizar. Como se muestra en la FIGURA 7-11a , cada enzima contiene uno o más sitios activos , regiones en las cuales se une el sustrato, para formar el complejo ES. Los sitios activos de algunas enzimas son ranuras o cavidades en la molécula de la enzima, formadas por cadenas de ami-</p>
+<p>Esta reacción es espontánea, aunque el hidrógeno y el oxígeno pueden mezclarse de manera segura teniendo cuidado con las chispas porque la energía de activación requerida es relativamente alta para esta reacción particular. Una minúscula chispa proporciona la energía de activación que permite que unas cuantas moléculas reaccionen. Estas reacciones liberan tanto calor que el resto de las moléculas reacciona, produciendo una explosión. Esta explosión ocurrió en el transbordador espacial Challenger el 28 de enero de 1986 ( FIGURA 7-9 ). El fallo de un anillo de goma, tipo O, para sellar apropiadamente ocasionó el escape de hidrógeno líquido del tanque pegado al transbordador, iniciándose así un incendio. Unos segundos después, se rompió el tanque de hidrógeno y la fuerza resultante reventó el cercano tanque de oxígeno, originándose una gran explosión al mezclarse el hidrógeno con el oxígeno.</p>
+<p>Una enzima disminuye la energía de activación de una reacción</p>
+<p>Al igual que todos los catalizadores, las enzimas afectan la rapidez de una reacción disminuyendo la energía de activación ( E A ) necesaria para iniciar una reacción química ( FIGURA 7-10 ). Si las moléculas necesitan menos energía para reaccionar porque ha descendido la barrera de activación, entonces en un tiempo dado reacciona una mayor proporción de moléculas del reactivo. Como resultado, la reacción ocurre más rápidamente.</p>
+<p>FIGURA 7-9 Explosión del transbordador espacial Challenger Este desastre resultó por la explosiva reacción exergónica entre el hidrógeno y el oxígeno. En el accidente murieron los siete miembros de la tripulación, el 28 de enero de 1986.</p>
+<p>AP/Wide World Photos</p>
+<p>Una enzima disminuye la energía de activación de una reacción pero no altera el cambio de energía libre.</p>
+<p>Energía libre ( G )</p>
+<p>Avance de la reacción</p>
+<p>Energía de los reactivos</p>
+<p>Energía de los productos</p>
+<p>Cambio en la energía libre ( Δ G )</p>
+<p>Energía de activación ( E A ) sin enzima</p>
+<p>Energía de activación ( E A ) con enzima</p>
+<p>FIGURA 7-10 Animada Energía de activación y enzimas Una enzima acelera una reacción disminuyendo su energía de activación ( E A ). En presencia de una enzima, las moléculas de los reactivos requieren menos energía cinética para completar una reacción.</p>
+<p>PUNTO CLAVE</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07-energia-y-metabolismo/07-energia-y-metabolismo_p197_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>07-energia-y-metabolismo_p197_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>164 Capítulo 7</p>
+<p>Los científi cos clasifi can en grupos a las enzimas que catalizan reacciones similares, no obstante que cada enzima particular en el grupo pueda catalizar sólo una reacción específi ca. La TABLA 7-1 describe las seis clases de enzimas aceptadas por los biólogos. Cada clase está dividida en múltiples subclases. Por ejemplo, la ya mencionada sacarasa, se conoce como glicosidasa ya que parte de un enlace glicosídico. Las glicosidasas son una subclase de las hidrolasas (vea la fi gura 3-8b para la hidrólisis de la sacarosa). Las fosfatasas, enzimas que eliminan grupos fosfatos mediante hidrólisis, también son hidrolasas. Las quinasas, enzimas que transfi eren grupos fosfatos a sustratos, son transferasas.</p>
+<p>Muchas enzimas requieren cofactores</p>
+<p>Algunas enzimas sólo consisten de una proteína. La enzima pepsina, que se secreta por el estómago animal y digiere proteína del alimento rompiendo ciertos enlaces péptidos, es exclusivamente una molécula de proteína. Otras enzimas tienen dos componentes: una proteína llamada apoenzima y un componente químico adicional llamado cofactor . Ni la apoenzima ni el cofactor solos tienen actividad catalítica; solamente cuando ambos se combinan permiten que la enzima funcione. Un cofactor puede ser inorgánico, o puede ser una molécula orgánica. Algunas enzimas requieren un ion metálico específi co como un cofactor. Dos cofactores inorgánicos muy comunes son los iones de magnesio y los iones de calcio. La mayoría de los elementos traza, como el hierro, cobre, zinc y manganeso, que todos los organismos requieren en muy pequeñas cantidades, funcionan como cofactores. Un compuesto orgánico, no polipéptido que se une a la apoenzima y sirve como un cofactor, es una coenzima. La mayoría de las coenzimas transportan moléculas que transfi eren electrones o parte de un sustrato de una molécula a otra. En este capítulo ya se introdujeron algunos ejemplos de coenzimas. NADH, NADPH y FADH 2 son coenzimas; éstas transfi eren electrones.</p>
+<p>noácidos. En la mayoría de las enzimas, los sitios activos se localizan aproximadamente en la superfi cie. Durante la reacción, las moléculas de sustrato que ocupan esos sitios se juntan para reaccionar entre sí. La forma de la enzima no parece exactamente complementaria a la del sustrato. El enlace del sustrato a la molécula de la enzima causa un cambio, conocido como ajuste inducido , en la forma de la enzima ( FIGURA 7-11b ). Normalmente, la forma del sustrato también cambia un poco, de manera que se puedan distorsionar sus enlaces químicos. La proximidad y orientación de los reactivos, junto con las tensiones en sus enlaces químicos, facilitan el rompimiento de los viejos enlaces y la formación de nuevos enlaces. Así, el sustrato es cambiado a un producto, que se difunde lejos de la enzima. Entonces la enzima queda libre para catalizar la reacción de más moléculas del sustrato para formar más moléculas del producto.</p>
+<p>Las enzimas son especíﬁ cas</p>
+<p>Las enzimas catalizan a prácticamente todas las reacciones que ocurren en un organismo. Debido a que la forma del sitio activo está íntimamente relacionada a la forma del sustrato, la mayoría de las enzimas están altamente especializadas y sólo catalizan a unas pocas reacciones químicas cercanamente relacionadas, o en muchos casos, sólo a una reacción particular. La enzima ureasa, que descompone urea a dióxido de carbono y amoniaco, no ataca a otros sustratos. La enzima sacarasa sólo divide sacarosa; no actúa sobre otras disacáridas, tales como la maltosa o la lactosa. Unas pocas enzimas son específi cas sólo en cuanto a que requieren que el sustrato tenga un cierto tipo de enlace químico. Por ejemplo, la lipasa, secretada por el páncreas, divide los enlaces éster conectando el glicerol y ácidos grasos de una amplia variedad de grasas. Los científi cos normalmente nombran a las enzimas agregando el sufi jo asa al nombre del sustrato. La enzima sacarasa, por ejemplo, descompone sacarosa en glucosa y fructosa. Pocas enzimas retienen nombres tradicionales que no terminan enasa ; algunas de ellas fi nalizan enzima . Por ejemplo, la lisozima (del griego lysis , “una relajación”) que es una enzima que se encuentra en las lágrimas y la saliva; rompe las paredes celulares bacteriales. Otros ejemplos de enzimas con nombres tradicionales son la pepsina y la tripsina, que descomponen enlaces péptidos en proteínas.</p>
+<ol type="a">
+<li>Antes de la formación de un complejo ES, el sitio activo de la enzima es el surco en donde se unirá el sustrato.</li>
+</ol>
+<p>Sitio activo</p>
+<p>Ambas: Cortesía de Thomas A. Steitz</p>
+<ol start="2" type="a">
+<li>El enlace del sustrato al sitio activo induce un cambio en la conformación del sitio.</li>
+</ol>
+<p>FIGURA 7-11 Un complejo enzima-sustrato Este modelo computacional gráﬁ co muestra la enzima hexoquinasa ( azul ) y su sustrato, glucosa ( rojo ).</p>
+<p>Clases importantes de enzimas</p>
+<p>Clase de enzima Función</p>
+<p>Oxidorreductasas Catalizan reacciones redox.</p>
+<p>Transferasas Catalizan la transferencia de un grupo funcional de una molécula donadora a una molécula aceptora</p>
+<p>Hidrolasas Catalizan reacciones de hidrólisis</p>
+<p>Isomerasas Catalizan la conversión de una molécula de una forma isomérica a otra</p>
+<p>Ligasas Catalizan ciertas reacciones en las cuales dos moléculas se unen en un proceso acoplado a la hidrólisis del ATP</p>
+<p>Liasas Catalizan ciertas reacciones en las cuales se forman o se rompen enlaces dobles</p>
+<p>TABLA 7-1</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07-energia-y-metabolismo/07-energia-y-metabolismo_p198_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>07-energia-y-metabolismo_p198_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07-energia-y-metabolismo/07-energia-y-metabolismo_p198_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>07-energia-y-metabolismo_p198_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>Energía y metabolismo 165</p>
+<p>óptima es cercana a la temperatura corporal humana (35°C a 40°C). A bajas temperaturas, las reacciones enzimáticas suceden muy lentamente o no ocurren. Al aumentar la temperatura, se incrementa el movimiento molecular, resultando en más colisiones moleculares. Por lo tanto, la rapidez de la mayor parte de las reacciones controladas por enzimas se incrementa al aumentar la temperatura, dentro de ciertos límites (vea la fi gura 7-12a). Las altas temperaturas rápidamente desnaturalizan a la mayoría de las enzimas. La conformación molecular (forma 3-D) de la proteína se altera al romperse los enlaces de hidrógeno responsables de sus estructuras secundaria, terciaria y cuaternaria. Usualmente, no es reversible esta desactivación, entonces la enzima no recupera la actividad cuando se enfría. La mayoría de los organismos son aniquilados si se exponen brevemente a una elevada temperatura; sus enzimas son desnaturalizadas, y son incapaces de continuar el metabolismo. Existen unas pocas excepciones a esta regla. Ciertas especies de arqueas (vea el capítulo 1 para una descripción de las arqueas) pueden sobrevivir en aguas termales, como las del parque Yellowstone, en donde la temperatura es casi de 100°C; estos organismos son responsables de los brillantes colores en las terrazas de las aguas termales ( FIGURA 7-13 ). Hay otras arqueas que viven a temperaturas mayores a la de ebullición del agua, cerca de profundos conductos marinos, en donde la extrema presión conserva al agua en su estado líquido (vea el capítulo 25 para un análisis de las arqueas que viven en hábitats extremos; también vea el capítulo 55, Preguntas acerca de : La vida sin Sol ).</p>
+<p>Cada enzima tiene un pH óptimo</p>
+<p>La mayoría de las enzimas están activas sólo en un estrecho margen de pH y tienen un pH óptimo, en que la rapidez de la reacción es máxima. Para las enzimas humanas, el pH óptimo está entre 6 y 8. Del capítulo 2, recuerde que los amortiguadores minimizan los cambios de pH en la célula y así éste se mantiene dentro de límites estrechos. La pepsina, una enzima secretada por las células del revestimiento estomacal y que digiere proteínas, es una excepción; funciona sólo en un medio muy acido, óptimamente a un pH 2 (vea la fi gura 7-12b). En contraste, la tripsina, una enzima secretada por el páncreas para degradar las proteínas, funciona mejor en las condiciones ligeramente básicas encontradas en el intestino delgado.</p>
+<p>El ATP funciona como una coenzima; es responsable de transferir grupos fosfato. Otra coenzima, la coenzima A, está implicada en la transferencia de grupos derivados de ácidos orgánicos. La mayoría de las vitaminas, que son compuestos orgánicos que un organismo requiere en pequeñas cantidades pero que no puede sintetizarlas por sí mismo, son coenzimas o componentes de coenzimas (vea descripciones de vitaminas en la tabla 47-3).</p>
+<p>Las enzimas son más efectivas en condiciones óptimas</p>
+<p>En general, las enzimas trabajan mejor bajo ciertas condiciones estrechamente defi nidas, como una temperatura apropiada, pH ( FIGURA 7-12 ), y concentración de iones. Cualquier desviación de las condiciones óptimas afecta de modo adverso la actividad enzimática.</p>
+<p>Cada enzima tiene una temperatura óptima</p>
+<p>La mayoría de las enzimas tienen una temperatura óptima, en la cual se da la mayor rapidez de la reacción. Para enzimas humanas, la temperatura</p>
+<p>Rapidez de reacción</p>
+<p>0 Temperatura (°C) 10 20 30 40 50 60 70 80 90 100 110</p>
+<p>Mayoría de las enzimas humanas</p>
+<p>Enzimas de bacterias tolerantes al calor</p>
+<ol type="a">
+<li>Curvas generalizadas para el efecto de la temperatura sobre la actividad enzimática. Al aumentar la temperatura, se incrementa la actividad enzimática hasta lograr una temperatura óptima; si ésta se excede, entonces la actividad enzimática cae abruptamente porque la enzima, al ser una proteína, se desnaturaliza.</li>
+</ol>
+<p>Rapidez de reacción</p>
+<p>0 pH 1 2 3 4 5 6 7 8 9 10</p>
+<p>Pepsina</p>
+<p>Tripsina</p>
+<ol start="2" type="a">
+<li>La actividad enzimática es muy sensible al pH. La pepsina es una enzima digestiva de proteínas, que se encuentra en el muy ácido jugo estomacal. La tripsina, secretada por el páncreas en el medio ligeramente básico del intestino delgado, digiere polipéptidos.</li>
+</ol>
+<p>FIGURA 7-12 Animada Efectos de la temperatura y del pH sobre la actividad enzimática En las reacciones que se muestran se mantienen constantes las concentraciones de sustrato y de enzimas.</p>
+<p>FIGURA 7-13 La gran fuente prismática en el Parque Nacional Yellowstone La tercera fuente de aguas termales más grande del mundo, de aproximadamente 61 m (200 pies) de diámetro, la Gran fuente prismática es abundante en arqueas tolerantes al calor. Los anillos alrededor del perímetro, en donde el agua es ligeramente más fría, obtienen sus colores característicos de los diversos tipos de arqueas que viven allí.</p>
+<p>© Henry Holdworth/4wildbynaturegallery.com</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07-energia-y-metabolismo/07-energia-y-metabolismo_p199_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>07-energia-y-metabolismo_p199_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>166 Capítulo 7</p>
+<p>En las rutas metabólicas, es frecuente que se eliminen los intermediarios y los productos fi nales, para convertirlos a otros compuestos químicos. Esta eliminación impulsa la secuencia de las reacciones en una dirección dada. Suponga que se proporciona continuamente el reactivo A, y que su concentración permanece constante. La enzima 1 convierte al reactivo A en el producto B. La concentración de B siempre es menor que la concentración de A porque B se elimina al convertirlo en C en la reacción catalizada por la enzima 2. Si C se elimina rápidamente conforme se produce (quizás abandonando la célula), entonces la ruta de la reacción total se “jala” hacia C. En algunos casos las enzimas de una ruta metabólica se unen entre sí para formar un complejo multienzimático que efi cientemente transfi ere intermediarios en la ruta de un sitio activo a otro. Un ejemplo de complejo multienzimático, el piruvato deshidrogenasa, se analizará en el capítulo 8.</p>
+<p>La célula regula la actividad enzimática</p>
+<p>Las enzimas regulan la química de la célula, ¿pero qué controla a las enzimas? Un mecanismo de regulación implica el control de la cantidad de enzima producida. Un gen específi co dirige la síntesis de cada tipo de enzima. El gen, a su vez, se puede activar con una señal de una hormona o por alguna otra molécula de señalización. Cuando se activa el gen, la enzima se sintetiza. Entonces la cantidad total de enzima presente afecta la rapidez de la reacción celular global. Si se mantienen constantes el pH y la temperatura (como ocurre en la mayoría de las células), la rapidez de la reacción se puede afectar por la concentración del sustrato o por la concentración enzimática. Si está presente un exceso de sustrato, la concentración enzimática es el factor limitante de la rapidez. Por lo tanto, la rapidez inicial de la reacción es directamente proporcional a la concentración enzimática ( FIGURA</p>
+<p>7-14a ).</p>
+<p>La actividad de una enzima puede cambiar mucho si se cambia el pH, lo que a su vez modifi ca las cargas eléctricas de la enzima. Los cambios en las cargas afectan los enlaces iónicos que contribuyen a las estructuras terciaria y cuaternaria, y modifi cando así la actividad y conformación de la proteína. Muchas enzimas se inactivan, y es común su desnaturalización en forma irreversible, cuando el medio se hace muy acido o muy básico.</p>
+<p>Las enzimas se organizan en equipos en las rutas metabólicas</p>
+<p>Las enzimas desempeñan un papel esencial en el acoplamiento de la reacción porque por lo común trabajan en secuencia, con el producto de una reacción controlada enzimáticamente sirviendo como sustrato para la siguiente. El interior de una célula se puede visualizar como una fábrica con múltiples líneas de montaje (y desmontajes) diferentes operando simultáneamente. Una línea de montaje consiste en un número de enzimas. Cada enzima realiza un paso, tal como cambiar la molécula A a la molécula B. Entonces la molécula B pasa a la siguiente enzima que la convierte en la molécula C, y así sucesivamente. A esta serie de reacciones se le llama ruta metabólica .</p>
+<p>Enzima 1 Enzima 2 A B C</p>
+<p>Cada una de esas reacciones es reversible, a pesar de que una enzima las cataliza. Una enzima, por sí misma, no determina la dirección de la reacción que cataliza. Sin embargo, la secuencia de la reacción total se representa realizándose de izquierda a derecha. Recuerde que si existe una pequeña diferencia de energía libre intrínseca entre los reactivos y los productos para una reacción particular, la dirección de la reacción está determinada principalmente por las concentraciones relativas de los reactivos y de los productos.</p>
+<p>Rapidez de la reacción</p>
+<p>Concentración enzimática</p>
+<ol type="a">
+<li>En este ejemplo, la rapidez de la reacción está medida para diferentes concentraciones enzimáticas, con un exceso de sustrato presente. (La temperatura y el pH son constantes). La rapidez de la reacción es directamente proporcional a la concentración enzimática.</li>
+</ol>
+<p>Rapidez de la reacción</p>
+<p>Concentración de sustrato</p>
+<ol start="2" type="a">
+<li>En este ejemplo, la rapidez de la reacción está medida para diferentes concentraciones de sustrato y la concentración enzimática, la temperatura y el pH son constantes. Si la concentración de sustrato es relativamente baja, la rapidez de la reacción es directamente proporcional a la concentración de sustrato. Sin embargo, altas concentraciones de sustrato no aumentan la rapidez de la reacción porque las enzimas se saturan con el sustrato.</li>
+</ol>
+<p>FIGURA 7-14 Los efectos de la concentración enzimática y de la concentración de sustrato sobre la rapidez de una reacción</p>
+<p>Energía y metabolismo 167</p>
+<p>cias que afectan la actividad enzimática uniéndose a sitios alostéricos se llaman reguladores alostéricos . Algunos reguladores alostéricos son inhibidores alostéricos que mantienen a la enzima en su forma inactiva. Inversamente, las actividades de los activadores alostéricos dan una enzima con un sitio activo funcional. La enzima proteína quinasa dependiente del AMP cíclico es una enzima regulada por una proteína que se une reversiblemente al sitio alostérico y desactiva a la enzima. La proteína quinasa está en su forma inactiva la mayor del tiempo ( FIGURA 7-16 ). Cuando se necesita la actividad de</p>
+<p>Si la concentración enzimática se mantiene constante, la rapidez de una reacción enzimática es proporcional a la concentración de sustrato presente. La concentración de sustrato es el factor limitante de rapidez en bajas concentraciones; por lo tanto, la rapidez de la reacción es directamente proporcional a la concentración de sustrato. Sin embargo, en altas concentraciones de sustrato, las moléculas enzimáticas se saturan con el sustrato; es decir, las moléculas del sustrato se unen a todos los sitios activos disponibles de las moléculas enzimáticas. En esta situación, el aumento de la concentración de sustrato no incrementa la rapidez neta de la reacción ( FIGURA 7-14b ). El producto de una reacción enzimática puede controlar la actividad de otra enzima, especialmente en una secuencia de reacciones enzimáticas. Por ejemplo, considere la siguiente ruta metabólica:</p>
+<p>Enzima 1 Enzima 2 Enzima 3 Enzima 4 A B C D E ¡ ¡ ¡ ¡</p>
+<p>Una diferente enzima cataliza cada paso, y el producto fi nal E puede inhibir la actividad de la enzima 1. Cuando la concentración de E es baja, la secuencia de reacciones procede con rapidez. Sin embargo, un aumento en la concentración de E sirve como una señal para reducir la enzima 1 y fi nalmente detener su funcionamiento. La inhibición de la enzima 1 frena a toda la secuencia de reacciones. Este tipo de regulación enzimática, en la que la formación de un producto inhibe una reacción inicial en la secuencia, se llama inhibición por retroalimentación ( FIGURA 7-15 ). Otro método de control enzimático se enfoca en la activación de las moléculas enzimáticas. En su forma inactiva, los sitios activos de la enzima están confi gurados inapropiadamente, así que los sustratos no encajan. Entre los factores que infl uyen en la confi guración de la enzima son el pH, la concentración de ciertos iones, y la adición de grupos fosfatos a determinados aminoácidos a la enzima. Algunas enzimas tienen un sitio receptor, llamado sitio alostérico , en algún lugar (de la molécula enzimática) distinto al sitio activo. (La palabra alostérico signifi ca “otro espacio”). Cuando una sustancia se une a un sitio alostérico enzimático, cambia la conformación del sitio activo de la enzima, y en consecuencia ésta altera sus actividades. Las sustan-</p>
+<p>Sustratos</p>
+<ol type="a">
+<li><p>Forma inactiva de la enzima. La enzima proteína quinasa se inhibe por una proteína reguladora que se une reversiblemente a su sitio alostérico. Cuando la enzima está en su forma inactiva, la conﬁguración del sitio activo se modiﬁca de manera que el sustrato no pueda combinarse con ésta.</p></li>
+<li><p>Forma activa de la enzima. El AMP cíclico elimina al inhibidor alostérico y activa la enzima.</p></li>
+<li><p>Complejo enzimasustrato. Entonces el sustrato se puede combinar con el sitio activo.</p></li>
+</ol>
+<p>AMP cíclico</p>
+<p>Regulador (inhibidor)</p>
+<p>Sitio alostérico Sitio activo Sustratos</p>
+<p>FIGURA 7-16 Animada Una enzima alostérica</p>
+<p>Treonina</p>
+<p>α -Cetobutirato</p>
+<p>α -Acetoα -hidroxibutirato</p>
+<p>α , β -Dihidroxiβ -metilvalerato</p>
+<p>α -Cetoβ -metilvalerato</p>
+<p>Enzima 1 (Treonina deaminasa)</p>
+<p>Enzima 2</p>
+<p>Enzima 3</p>
+<p>Enzima 4</p>
+<p>Enzima 5</p>
+<p>Inhibición por retroalimentación</p>
+<p>(La isoleucina inhibe a la enzima 1)</p>
+<p>Isoleucina</p>
+<p>FIGURA 7-15 Animada Inhibición por retroalimentación Las bacterias sintetizan el aminoácido isoleucina a partir del aminoácido treonina. La ruta de isoleucina implica cinco etapas, cada una es catalizada por una enzima diferente. Cuando en la célula se acumula suﬁ ciente isoleucina, ésta inhibe la treonina deaminasa, la enzima que cataliza a la primera etapa de esta ruta.</p>
+<p>168 Capítulo 7</p>
+<p>Cuando el PABA está disponible, los microorganismos pueden sintetizar la vitamina ácido fólico , muy necesaria para el crecimiento. Los humanos no sintetizan el ácido fólico a partir del PABA. Por esta razón, los fármacos sulfamidas selectivamente afectan a las bacterias. Cuando está presente un fármaco sulfamida, éste compite con el PABA por el sitio activo de la enzima bacterial. Cuando las bacterias utilizan el fármaco</p>
+<p>la proteína quinasa, el compuesto AMP cíclico (AMPc; vea la fi gura 3-25 para la estructura) contacta al complejo enzima-inhibidor y elimina la proteína inhibidora, activando la proteína quinasa. La activación de las proteínas quinasa mediante el AMPc es un importante aspecto del mecanismo de señalización celular, incluyendo la acción de ciertas hormonas (vea los capítulos 6 y 49 para análisis de señalización celular).</p>
+<p>Las enzimas son inhibidas por ciertos agentes químicos</p>
+<p>La mayoría de las enzimas son inhibidas o aún destruidas por ciertos agentes químicos. La inhibición de la enzima puede ser reversible o irreversible. La inhibición reversible ocurre cuando un inhibidor forma enlaces químicos débiles con la enzima. La inhibición reversible puede ser competitiva o no competitiva. En la inhibición competitiva , el inhibidor compite con el sustrato normal por unirse al sitio activo de la enzima ( FIGURA 7-17a ). Por lo común, un inhibidor competitivo es estructuralmente similar al sustrato normal y se ajusta en el sitio activo y se combina con la enzima. Sin embargo, no es lo sufi cientemente similar para sustituir por completo al sustrato normal en la reacción química, y entonces la enzima no puede convertirlo a moléculas del producto. Un inhibidor competitivo sólo ocupa temporalmente el sitio activo y no daña en forma permanente a la enzima. En la inhibición competitiva, un sitio activo es ocupado por el inhibidor sólo una parte del tiempo y por el sustrato normal el tiempo restante. Si la concentración del sustrato se incrementa con respecto a la concentración del inhibidor, entonces el sitio activo es comúnmente ocupado por el sustrato. Los bioquímicos demuestran de manera experimental la inhibición competitiva probando que el aumento en la concentración del sustrato revierte a la inhibición competitiva. En la inhibición no competitiva , el inhibidor se une a la enzima en un sitio distinto al sitio activo ( FIGURA 7-17b ). El inhibidor desactiva la enzima alterando su confi guración para que el sitio activo no pueda unirse con el sustrato. Muchos importantes inhibidores no competitivos son sustancias metabólicas que regulan la actividad enzimática al combinarse reversiblemente con la enzima. La inhibición alostérica, que ya se analizó, es un tipo de inhibición no competitiva en la que el inhibidor se une a un sitio especial, el sitio alostérico. En la inhibición irreversible , un inhibidor desactiva permanentemente a una enzima o la destruye cuando el inhibidor se combina con uno de los grupos funcionales de la enzima, en el sitio activo o en algún otro lugar. Muchos venenos son inhibidores enzimáticos irreversibles. Por ejemplo, los metales pesados como el mercurio y el plomo se unen de manera irreversible a muchas proteínas y las desnaturalizan, incluyendo enzimas. Ciertos gases nerviosos envenenan la enzima acetilcolinesterasa, que es importante para el funcionamiento de nervios y músculos. La citocromo oxidasa, una de las enzimas que transporta electrones en la respiración celular, es especialmente sensible al cianuro. Los resultados mortales por la ingesta de cianuro se deben a que la citocromo oxidasa se inhibe de manera irreversible y deja de transferir electrones de su sustrato hacia el oxígeno.</p>
+<p>Algunos fármacos son inhibidores enzimáticos</p>
+<p>Los médicos tratan muchas infecciones bacteriales mediante fármacos que directa o indirectamente inhiben la actividad enzimática bacterial. Por ejemplo, los fármacos sulfamidas tienen una estructura química similar a la del nutriente ácido para aminobenzoico ( PABA ) ( FIGURA 7-18 ).</p>
+<ol type="a">
+<li><p>Inhibición competitiva. El inhibidor compite con el sustrato normal por el sitio activo de la enzima. Un inhibidor competitivo sólo ocupa temporalmente el sitio activo.</p></li>
+<li><p>Inhibición no competitiva. El inhibidor se une a la enzima en un sitio distinto al sitio activo, alterando la forma de la enzima y por lo tanto desactivándola.</p></li>
+</ol>
+<p>Sustrato</p>
+<p>Inhibidor</p>
+<p>Enzima</p>
+<p>Sustrato El inhibidor se une al sitio activo</p>
+<p>El sitio activo no es adecuado para la recepción de sustratos</p>
+<p>Inhibidor</p>
+<p>Enzima</p>
+<p>Sustratos Sitio activo</p>
+<p>FIGURA 7-17 Animada Inhibición competitiva y no competitiva</p>
+<p>Ácido para-aminobenzoico (PABA)</p>
+<p>Sulfonamida genérica (fármaco sulfamida)</p>
+<p>O</p>
+<p>C</p>
+<p>OH</p>
+<p>O</p>
+<p>S N</p>
+<p>O R</p>
+<p>H</p>
+<p>H 2 N</p>
+<p>H 2 N</p>
+<p>FIGURA 7-18 Ácido para-aminobenzoico y sulfonamidas Los fármacos sulfamidas inhiben una enzima en las bacterias necesaria para la síntesis de ácido fólico, una importante vitamina requerida para el crecimiento. (Observe la estructura inusual de la molécula de sulfonamida; el sulfuro, que comúnmente forma dos enlaces covalentes, en este caso forma seis).</p>
+<p>Energía y metabolismo 169</p>
+<p>degrada a la penicilina y la inutiliza. Debido a que las bacterias evolucionan con mucha rapidez, la resistencia a los fármacos es un problema creciente en la práctica de la medicina.</p>
+<p>Repaso</p>
+<p>■ ¿Qué efecto tiene una enzima sobre la energía de activación requerida de una reacción?</p>
+<p>■ ¿En qué diﬁ ere la función del sitio activo de una enzima con la de un sitio alostérico?</p>
+<p>■ ¿Cómo se relacionan la temperatura y pH óptimos de una enzima con su estructura y su función?</p>
+<p>■ ¿La inhibición alostérica es competitiva o no competitiva?</p>
+<p>sulfamida en lugar de PABA, sintetizan un compuesto que no se puede emplear para elaborar ácido fólico. Por lo tanto, las células bacteriales no pueden crecer. La penicilina y los antibióticos semejantes inhiben de manera irreversible a una enzima bacterial llamada transpeptidasa . Esta enzima establece algunos de los enlaces químicos en la pared celular bacterial. Las bacterias susceptibles a esos antibióticos no pueden elaborar paredes celulares apropiadamente afectando su multiplicación efectiva. Las células humanas no tienen paredes celulares y por lo tanto no utilizan esta enzima. Así, excepto por individuos alérgicos a ella, la penicilina no perjudica a los humanos. Desafortunadamente, desde que fue introducida, muchas bacterias han desarrollado resistencia a la penicilina. Las bacterias resistentes pelean con una enzima propia, la penicilinasa, que</p>
+<p>7.1 (página 155)</p>
+<p>1 Deﬁ nir energía , enfatizando cómo se relaciona con el trabajo y el calor.</p>
+<p>■ Energía es la capacidad para efectuar trabajo (expresada en kilojoules , kJ ). La energía se puede medir convenientemente como energía caloríﬁ ca , energía térmica que ﬂ uye de un objeto hacia otro con menor temperatura; la unidad de energía caloríﬁ ca es la kilocaloría ( kcal ), que es igual a 4.184 kJ. La energía caloríﬁ ca no puede realizar trabajo celular.</p>
+<p>2 Dar ejemplos para comparar la energía potencial con la energía cinética.</p>
+<p>■ La energía potencial es energía almacenada; la energía cinética es energía de movimiento.</p>
+<p>■ Todas las formas de energía son interconvertibles. Por ejemplo, los organismos fotosintéticos capturan energía radiante y convierten parte de ésta a energía química , una forma de energía potencial que impulsa muchos procesos vitales, como la contracción muscular.</p>
+<p>7.2 (página 155)</p>
+<p>3 Establecer la primera y segunda leyes de la termodinámica, y analizar las implicaciones de esas leyes en relación con los organismos.</p>
+<p>■ Un sistema cerrado no intercambia energía con sus alrededores. Los organismos son sistemas abiertos que intercambian energía con sus alrededores.</p>
+<p>■ La primera ley de la termodinámica establece que la energía no se puede crear ni destruir, pero se puede transferir y cambiar de forma. La primera ley explica por qué los organismos no pueden producir energía; pero como sistemas abiertos, continuamente la capturan de los alrededores.</p>
+<p>■ La segunda ley de la termodinámica establece que el desorden (entropía) en el universo, un sistema cerrado, está continuamente en aumento. Ninguna transferencia de energía es 100% eﬁ ciente; algo de energía se disipa como calor , movimiento aleatorio que contribuye a la entropía ( S ), o desorden. Como los sistemas abiertos, los organismos mantienen sus estados ordenados a expensas de sus alrededores.</p>
+<p>7.3 (página 156)</p>
+<p>4 Analizar cómo los cambios de energía libre en una reacción están relacionados con los cambios de entropía y de entalpía.</p>
+<p>■ Si la entropía aumenta, entonces disminuye la cantidad de energía libre , que es como se muestra en la ecuación G = H − TS , en la cual G es la energía libre, H es la entalpía (energía potencial total del sistema), T es la temperatura absoluta (expresada en unidades kelvin), y S es la entropía.</p>
+<p>■ La ecuación ∆ G = ∆ H − T ∆ S indica que el cambio en la energía libre ( ∆ G ) durante una reacción química es igual al cambio en la entalpía ( ∆ H ) menos el producto de la temperatura absoluta ( T ) multiplicada por el cambio en la entropía ( ∆ S ).</p>
+<p>5 Distinguir entre reacciones exergónicas y endergónicas, y ejempliﬁ car cómo se pueden acoplar.</p>
+<p>■ Una reacción exergónica tiene un valor negativo de ∆ G ; es decir, la energía libre disminuye. Esta reacción es espontánea; libera energía libre que puede efectuar trabajo.</p>
+<p>■ En una reacción endergónica la energía libre se incrementa. Esta reacción tiene un valor positivo de ∆ G y no es espontánea. En una reacción acoplada , la entrada de la energía libre requerida para conducir una reacción endergónica la proporciona una reacción exergónica.</p>
+<p>Aprenda más acerca de reacciones exergónicas y endergónicas haciendo clic sobre la ﬁ gura en CengageNOW.</p>
+<p>6 Comparar la dinámica energética de una reacción en equilibrio con la dinámica de una reacción fuera del sistema en equilibrio.</p>
+<p>■ Cuando una reacción química se encuentra en estado de equilibrio dinámico , el cambio de rapidez en una dirección es exactamente el mismo que en la dirección opuesta; el sistema no puede realizar trabajo porque la diferencia de energía libre entre los reactivos y los productos es cero.</p>
+<p>■ Cuando se aumenta la concentración de moléculas de los reactivos, la reacción se desplaza a la derecha y se forman más moléculas del producto hasta que se restablece el equilibrio.</p>
+<p>7.4 (págin a 159)</p>
+<p>7 Explicar cómo la estructura química del ATP le permite transferir un grupo fosfato, y analizar el papel central del ATP en el metabolismo energético global de la célula.</p>
+<p>■ El trifosfato de adenosina ( ATP ) es la moneda energética celular inmediata. Dona energía mediante su grupo fosfato terminal, que es fácilmente transferido a una molécula aceptora. El ATP se forma por la fosforilación del difosfato de adenosina ( ADP ) , un proceso endergónico que requiere un ingreso de energía.</p>
+<p>■ El ATP es un ingrediente común entre reacciones exergónicas y endergónicas, y entre el catabolismo (degradación de grandes moléculas complejas en más pequeñas y más simples) y el anabolismo (síntesis de moléculas complejas a partir de moléculas más simples).</p>
+<p>7.5 (página 161)</p>
+<p>8 Relacionar la transferencia de electrones (o átomos de hidrógeno) con la transferencia de energía.</p>
+<p>■ La energía se transﬁ ere en reacciones reducción oxidación (redox) . Una sustancia se oxida al dar uno o más electrones a otra sustancia, que se reduce en el proceso. Comúnmente, los electrones se transﬁ eren como parte de átomos de hidrógeno.</p>
+</section>
+<section id="resumen-enfoque-en-los-objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</h2>
+<p>170 Capítulo 7</p>
+<p>■ Una enzima disminuye la energía de activación ( E A ), la energía necesaria para iniciar una reacción. El sitio activo de una enzima es una región 3-D en donde los sustratos tienen cercano contacto y en consecuencia reaccionan más fácilmente. Cuando un sustrato se une a un sitio activo, se forma un complejo enzima sustrato en la que se cambian ligeramente las conﬁ guraciones de la enzima y del sustrato. Este ajuste inducido facilita el rompimiento de enlaces y la formación de nuevos enlaces.</p>
+<p>Aprenda más acerca de energía de activación haciendo clic sobre la ﬁ gura en CengageNOW.</p>
+<p>10 Describir maneras especíﬁ cas en que se regulan las enzimas.</p>
+<p>■ Las enzimas trabajan mejor en condiciones especíﬁ cas de temperatura y de pH.</p>
+<p>■ Una célula puede regular la actividad enzimática controlando la cantidad de enzima producida y regulando las condiciones metabólicas que inﬂ uyen en la conﬁ guración de la enzima.</p>
+<p>■ Algunas enzimas tienen sitios alostéricos , sitios no catalíticos a los que se une un regulador alostérico , cambiando la actividad de la enzima. Algunas enzimas alostéricas están sujetas a la inhibición por retroalimentación , en la que la formación de un producto ﬁ nal inhibe una reacción inicial en la ruta metabólica.</p>
+<p>■ La inhibición reversible ocurre cuando un inhibidor forma enlaces químicos débiles con la enzima. La inhibición reversible puede ser competitiva , en la que el inhibidor compite con el sustrato por el sitio activo, o no competitiva, en la que el inhibidor se une a la enzima en un sitio distinto al activo. La inhibición irreversible ocurre cuando un inhibidor se combina con una enzima para activarla permanentemente.</p>
+<p>Aprenda más acerca de enzimas haciendo clic sobre las ﬁ guras en CengageNOW.</p>
+<p>■ NAD + y el NADP + aceptan electrones como parte de átomos de hidrógeno y se reducen para formar NADH y NADPH , respectivamente. Esos electrones (junto con parte de su energía) se pueden transferir a otros aceptores.</p>
+<p>7.6 (página 162)</p>
+<p>9 Explicar cómo una enzima disminuye la energía requerida para activar una reacción.</p>
+<p>■ Una enzima es un catalizador biológico; incrementa grandemente la rapidez de una reacción química, sin ser consumida.</p>
+<p>Energía libre ( G )</p>
+<p>Avance de la reacción</p>
+<p>Energía de los reactivos</p>
+<p>Energía de los productos</p>
+<p>Cambio en la energía libre ( Δ G )</p>
+<p>Energía de activación ( E A ) sin enzima</p>
+<p>Energía de activación ( E A ) con enzima</p>
+<ol type="1">
+<li><p>¿Cuáles de las siguientes formas de energía pueden hacer trabajo? (a) entropía (b) calor (c) energía calorífi ca (d) todas las anteriores (e) ninguna de las anteriores</p></li>
+<li><p>En una reacción química celular, la energía libre es equivalente a (a) energía calorífi ca (b) calor (c) desorden (d) energía potencial (e) más de uno de los anteriores es verdadero</p></li>
+<li><p>A las células les es posible funcionar porque ellas (a) están sujetas a las leyes de la termodinámica (b) tienen mecanismos que transforman la energía del ambiente a formas útiles (c) pueden emplear enzimas para convertir reacciones endergónicas a reacciones espontáneas (d) todo lo anterior</p></li>
+<li><p>La difusión es un (a) proceso endergónico debido al incremento de energía libre (b) proceso endergónico porque la energía libre disminuye (c) proceso exergónico porque la entropía aumenta (d) proceso exergónico porque la entropía disminuye (e) más de uno de los anteriores</p></li>
+<li><p>Una reacción espontánea es una en la que el cambio de energía libre ( ∆ G ) tiene un valor _______. (a) positivo (b) negativo (c) positivo o negativo (d) ninguno de esos ( ∆ G no tiene un valor medible)</p></li>
+<li><p>Las células vivas saludables mantienen (a) el ATP y el ADP en equilibrio (b) iguales concentraciones de ATP y ADP (c) una razón ATP/ ADP de al menos 10:1 (d) una razón ATP/ADP de no más que 1:10 (e) la mayor parte de la energía almacenada en las células en la forma de ATP</p></li>
+<li><p>¿Cuál de las siguientes reacciones se podría acoplar a una reacción endergónica con ∆ G = + 3.56 kJ/mol?</p></li>
+</ol>
+<ol type="a">
+<li>A ¡ B, ∆ G = + 6.08 kJ/mol (b) C ¡ D, ∆ G = + 3.56 kJ/mol (c) E ¡ F, ∆ G = 0 kJ/mol (d) G ¡ H, ∆ G = − 1.22 kJ/mol (e) I ¡ J, ∆ G = − 5.91 kJ/mol</li>
+</ol>
+<ol start="8" type="1">
+<li><p>Considere esta reacción: glucosa + 6 O 2 ¡ 6 CO 2 + 6 H 2 O ( ∆ G = − 2880 kJ/mol). ¿Cuál de los siguientes enunciados respecto a esta reacción es falso? (a) la reacción es espontánea en un sentido termodinámico (b) se debe suministrar una pequeña cantidad de energía (energía de activación) para arrancar la reacción, que entonces procede con la liberación de energía (c) la reacción es exergónica (d) la reacción puede estar acoplada a una reacción endergónica (e) la reacción debe estar acoplada a una reacción exergónica</p></li>
+<li><p>La energía de activación de una reacción (a) es fi ja, y no se puede alterar (b) se puede disminuir mediante una enzima específi ca (c) se puede aumentar con una enzima específi ca (d) b o c, dependiendo de la enzima (e) ninguna de las anteriores</p></li>
+<li><p>El “ajuste inducido” signifi ca que cuando un sustrato se une al sitio activo de una enzima (a) se ajusta perfectamente, al igual que una llave en una cerradura (b) el sustrato y la enzima experimentan cambios conformacionales (c) un sitio distinto al activo experimenta un cambio conformacional (d) el sustrato y la enzima se acoplan entre sí de manera irreversible (e) c y d</p></li>
+<li><p>La función de una ruta bioquímica es (a) proporcionar energía a las reacciones (b) impulsar una secuencia de reacciones en una dirección particular (c) mantener el equilibrio químico (d) hacer que la energía</p></li>
+</ol>
+<p>EVALÚE SU COMPRENSIÓN</p>
+<p>Energía y metabolismo 171</p>
+<p>fi nal E? (a) enzima 1 (b) enzima 2 (c) enzima 3 (d) enzima 4 (e) enzimas 3 y 4</p>
+<p>Enzima 1 Enzima 2 Enzima 3 Enzima 4 A B C D E ¡ ¡ ¡ ¡</p>
+<p>esté disponible para reacciones endergónicas (e) cualesquiera de las anteriores, dependiendo de la ruta</p>
+<ol start="12" type="1">
+<li><p>En la siguiente serie de reacciones, ¿cuál(es) enzima(s) es (son) más probable(s) que tenga(n) un sitio alostérico al que se une el producto</p></li>
+<li><p>De acuerdo con lo aprendido en este capítulo, explique por qué una fi ebre extremadamente alta (temperatura corporal arriba de 40°C, o 105°F) puede ser mortal.</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. ¿Qué sugiere, respecto a la evolución del metabolismo energético, el hecho de que todos los organismos utilicen ATP/ADP como elementos centrales entre reacciones exergónicas y endergónicas?</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. Algunos han argumentado que “la evolución es imposible porque la segunda ley de la termodinámica establece que la entropía siempre se incrementa; por lo tanto, los procesos naturales no pueden dar origen a mayor complejidad”. ¿En qué puntos este enunciado es un malentendido de las leyes de la termodinámica?</p></li>
+<li><p>ANÁLISIS DE DATOS. ¿La fi gura ilustra una reacción exergónica o una reacción endergónica? ¿Cómo lo sabe?</p></li>
+</ol>
+<p>Energía libre ( G )</p>
+<p>Avance de reacción</p>
+<p>Reactivos</p>
+<p>Productos</p>
+<p>La energía libre disminuye</p>
+<ol start="5" type="1">
+<li><p>ANÁLISIS DE DATOS. Las reacciones 1 y 2 tienen el mismo cambio de energía libre estándar: ∆ G − 41.8 kJ/mol ( − 10 kcal/mol). La reacción 1 está en equilibrio, pero la reacción 2 no está en el equilibrio. ¿Alguna de las reacciones es capaz de realizar trabajo? Si así es, ¿cuál de ellas?</p></li>
+<li><p>ANÁLISIS DE DATOS. Realice un experimento para medir con qué rapidez el succinato se convierte a fumarato mediante la enzima succinato deshidrogenasa. Agregue un poco de malonato para hacer más interesante la situación. Observe que la rapidez de la reacción disminuye marcadamente y esto le hace formular la hipótesis de que el malonato está inhibiendo la reacción. Diseñe un experimento que le ayude a decidir si el malonato está actuando como un inhibidor competitivo o como un inhibidor no competitivo.</p></li>
+</ol>
+<p>Preguntas adicionales están disponibles en CengageNOW en www.cengage.com/login.</p>
+<p>PENSAMIENTO CRÍTICO</p>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+&nbsp;
+
+
+<footer style="background-color:	#d0f0ea; padding:1.5em 1em 0.5em; font-family:'Segoe UI', sans-serif; font-size:0.95em; color:#333; margin-bottom: 0;">
+
+  <div style="max-width:960px; margin:0 auto; text-align:center;">
+
+    <p><a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a> – Ingeniero Ambiental | Magíster en Educación</p>
+
+    <p>Asesor educativo, científico y ambiental con más de 6 años de experiencia desarrollando proyectos de investigación, biodiversidad, ciencia de datos ambientales, ciencia ciudadana y divulgación científica.</p>
+
+    <p>¿Necesitas asesoría experta en educación, medio ambiente, biodiversidad o herramientas científicas como <em>R, Quarto, LaTeX</em> o <em>Google Earth Engine</em>?<br><strong>¡Estoy aquí para ayudarte!</strong></p>
+
+    <p style="margin-top:1em; margin-bottom: 0.5em;">
+
+      <a href="mailto:contacto.envinatu@gmail.com" style="color:#007bff; text-decoration:none;">📩 Contáctame: contacto.envinatu@gmail.com</a><br>
+
+      <a href="https://www.linkedin.com/in/marceloamores" target="_blank" style="color:#007bff; text-decoration:none; display:inline-flex; align-items:center; gap:0.3em;">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#007bff" viewbox="0 0 24 24" style="vertical-align:middle;">
+
+          <path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.3 7.6 24 10.05 24 14.45V24h-5v-8.2c0-1.95-.03-4.45-2.71-4.45-2.71 0-3.13 2.12-3.13 4.3V24h-5V8z"></path>
+
+        </svg>
+
+        Conecta en LinkedIn
+
+      </a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- Carrusel de iNaturalist debajo del footer -->
+
+<div class="inat-carousel-container">
+
+  <div id="inat-carousel-track" class="inat-carousel-track"></div>
+
+</div>
+
+
+
+<style>
+
+.inat-carousel-container {
+
+  overflow: hidden;
+
+  width: 100%;
+
+  background: #d0f0ea;
+
+  padding: 10px 0 14px; /* reducido */
+
+  font-family: 'Segoe UI', sans-serif;
+
+  font-size: 0.85em;
+
+  color: #333;
+
+  margin-top: -8px; /* compensación visual mínima */
+
+}
+
+
+
+.inat-carousel-track {
+
+  display: flex;
+
+  gap: 12px;
+
+  animation: scroll-left 100s linear infinite;
+
+  width: max-content;
+
+  padding: 0 1em;
+
+}
+
+
+
+.inat-card {
+
+  flex: 0 0 auto;
+
+  width: 90px;
+
+  text-align: center;
+
+  background: #fff;
+
+  padding: 8px 6px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 6px;
+
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+}
+
+
+
+.inat-card img {
+
+  width: 75px;
+
+  height: 75px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+}
+
+
+
+.inat-card .species {
+
+  font-weight: 600;
+
+  font-size: 0.75em;
+
+  margin-top: 4px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+}
+
+
+
+.inat-card .date {
+
+  font-size: 0.7em;
+
+  color: #666;
+
+}
+
+
+
+@keyframes scroll-left {
+
+  0% { transform: translateX(0); }
+
+  100% { transform: translateX(-50%); }
+
+}
+
+</style>
+
+
+
+<script>
+
+fetch("https://api.inaturalist.org/v1/observations?user_id=marceloamores&order=desc&order_by=observed_on&per_page=8")
+
+  .then(response => response.json())
+
+  .then(data => {
+
+    const track = document.getElementById("inat-carousel-track");
+
+    const items = data.results.map(obs => {
+
+      const img = obs.photos.length ? obs.photos[0].url.replace("square", "small") : "https://static.inaturalist.org/images/users/defaults/thumb.png";
+
+      const species = obs.taxon ? (obs.taxon.preferred_common_name || obs.taxon.name) : "Sin ID";
+
+      const date = new Date(obs.observed_on).toLocaleDateString("es-EC");
+
+      return `
+
+        <div class="inat-card">
+
+          <a href="https://www.inaturalist.org/observations/${obs.id}" target="_blank" rel="noopener noreferrer">
+
+            <img src="${img}" alt="${species}" />
+
+          </a>
+
+          <div class="species" title="${species}">${species}</div>
+
+          <div class="date">${date}</div>
+
+        </div>`;
+
+    }).join("");
+
+    track.innerHTML = items + items;
+
+  })
+
+  .catch(err => {
+
+    console.error("Error:", err);
+
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<hr />
+
+<p style="text-align: center;">Developed and maintained by <a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a>. <br>
+
+
+
+
+
+Keen to support the site? You're most welcome to <a href='https://ko-fi.com/I2I1K189U' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> </p>
+
+
+
+
+
+
+
+<p style="text-align: center;">For updates, sign up to my <a href="https://github.com/envinatu" target="_blank">newsletter</a></p>
+
+
+
+
+
+<hr>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add icon library 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- Add font awesome icons 
+
+<!--<p style="text-align: center;">
+
+<!--    <a href="https://www.linkedin.com/in/marceloamores" class="fa fa-linkedin" target="_blank"></a>
+
+ <!--   <a href="https://www.inaturalist.org/people/marceloamores" target="_blank">
+
+  <img src="https://static.inaturalist.org/wiki_page_attachments/3154-medium.png" alt="iNaturalist" style="width:24px; height:24px;">
+
+    <a href="https://github.com/envinatu" class="fa fa-github" target="_blank"></a>
+
+    <a href="https://x.com/envinatu" target="_blank">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/300px-X_logo_2023_original.svg.png" alt="X" style="width:13px; height:13px;">
+
+    <a href="https://www.youtube.com/channel/envinatu" class="fa fa-youtube" target="_blank"></a>
+
+</a>
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+
+.inat-widget {padding: 10px; line-height: 1;}
+
+.inat-widget-header {margin-bottom: 10px;}
+
+.inat-widget td {vertical-align: top; padding-bottom: 10px;}
+
+.inat-label { color: #888; }
+
+.inat-meta { font-size: smaller; margin-top: 3px; line-height: 1.2;}
+
+.inat-observation-body, .inat-user-body { padding-left: 10px; }
+
+.inat-observation-image {text-align: center;}
+
+.inat-observation-image, .inat-user-image { width: 48px; display: inline-block; }
+
+.inat-observation-image img, .inat-user-image img { max-width: 48px; }
+
+.inat-observation-image img { vertical-align: middle; }
+
+.inat-widget-small .inat-observation-image { display:block; float: left; margin: 0 3px 3px 0; height:48px;}
+
+.inat-label, .inat-value, .inat-user { font-family: "Trebuchet MS", Arial, sans-serif; }
+
+.inat-user-body {vertical-align: middle;}
+
+.inat-widget td.inat-user-body {vertical-align: middle;}
+
+.inat-widget .inat-footer td.inat-value {vertical-align: middle; padding-left: 10px;}
+
+</style>
+
+<div class="inat-widget">
+
+  
+<table class="inat-footer caption-top" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd inat-user">
+<td class="inat-user-image"><a href="https://www.inaturalist.org/observations/marceloamores" data-border="0"><img src="https://static.inaturalist.org/attachments/users/icons/1116633/thumb.jpg?1628812209" class="usericon img-fluid" /></a></td>
+<td class="inat-value"><strong><a href="https://www.inaturalist.org/observations/marceloamores">Ver las observaciones de Marcelo en iNaturalist »</a></strong></td>
+</tr>
+</tbody>
+</table>
+
+
+  <script type="text/javascript" charset="utf-8" src="https://www.inaturalist.org/observations/marceloamores.widget?layout=large&limit=5&order=desc&order_by=creatrd_at&locale=es"></script>
+
+</div>
+
+
+
+-->
+
+    
+
+
+
+
+
+&nbsp;
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./06-comunicacion-celular.html" class="pagination-link" aria-label="6 Comunicación celular">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">6 Comunicación celular</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./08-produccion-de-atp.html" class="pagination-link" aria-label="8 ¿Cómo producen ATP las células? Rutas de liberación de energía">
+        <span class="nav-page-text"><span class="chapter-title">8 ¿Cómo producen ATP las células? Rutas de liberación de energía</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<div style="display:inline;">
+©
+<script>document.write(new Date().getFullYear());</script>
+<a href="https://github.com/envinatu"> Marcelo F. Amores Palma</a>
+</div>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/">
+      <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu">
+      <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/nvinatu">
+      <i class="bi bi-twitter-x" role="img" aria-label="Quarto X">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/envinatu">
+      <i class="bi bi-youtube" role="img" aria-label="Envinatu YouTube">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:contacto.envinatu@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email Us">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

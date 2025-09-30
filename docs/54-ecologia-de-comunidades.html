@@ -1,0 +1,2432 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Marcelo Amores">
+
+<title>54 Ecología de comunidades – BIOLOGÍA SOLOMON</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./55-ecosistemas.html" rel="next">
+<link href="./53-ecologia-de-poblaciones.html" rel="prev">
+<link href="./images/Icono_E.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<!-- Verificación de Google -->
+
+<meta name="google-site-verification" content="EYveEP5I9oi6m-r8Qa_Fett47y3RJFqSizYYvf7G1RM">
+
+
+
+<!-- Canonical URL dinámico -->
+
+<link rel="canonical" link:"{{="" page.url="" |="" absolute_url="" }}"="">
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/envinatu1.png" alt="Envinatu logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/biologia/"> 
+<span class="menu-text">Biología</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/quimica/"> 
+<span class="menu-text">Química</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/geociencias"> 
+<span class="menu-text">Geociencias</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/pedagogia"> 
+<span class="menu-text">Educación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/rubick"> 
+<span class="menu-text">Ludociencia</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/blog"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/amores"> 
+<span class="menu-text">Sobre Mi</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.pdf"> <i class="bi bi-filetype-pdf" role="img" aria-label="Ver PDF">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.epub"> <i class="bi bi-journal-bookmark-fill" role="img" aria-label="Ver eBook">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/"> <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu"> <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./54-ecologia-de-comunidades.html"><span class="chapter-title">54 Ecología de comunidades</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000-prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefacio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001-al-estudiante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Al estudiante</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-una-vision-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1 Una visión de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-atomos-y-moleculas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2 Átomos y moléculas: la base química de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-quimica-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 La química de la vida: Compuestos orgánicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-organizacion-de-la-celula.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4 Organización de la célula</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-membranas-biologicas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5 Membranas biológicas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-comunicacion-celular.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6 Comunicación celular</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-energia-y-metabolismo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7 Energía y metabolismo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-produccion-de-atp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8 ¿Cómo producen ATP las células? Rutas de liberación de energía</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-fotosintesis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9 Fotosíntesis: captura de energía luminosa</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-mitosis-y-meiosis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10 Cromosomas, mitosis y meiosis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-herencia.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11 Los principios básicos de la herencia</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">12 ADN: Molécula portadora de la información genética</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-expresion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">13 Expresión génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-regulacion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">14 Regulación génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-tecnologia-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">15 Tecnología ADN y genómica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16-genetica-humana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">16 Genética humana y el genoma humano</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-genetica-del-desarrollo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">17 Genética del desarrollo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./18-evolucion-darwiniana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">18 Introducción a la evolución darwiniana</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./19-cambio-en-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">19 Cambio evolutivo en poblaciones</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./20-especiacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">20 Especiación y macroevolución</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./21-historia-evolutiva.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">21 El origen e historia evolutiva de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./22-evolucion-de-primates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">22 La evolución de los primates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./23-sistematica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">23 Comprensión de la diversidad: sistemática</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./24-virus.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">24 Virus y agentes subvirales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./25-bacterias-y-arqueas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">25 Bacterias y arqueas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./26-protistas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">26 Protistas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./27-plantas-sin-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">27 Plantas sin semillas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./28-plantas-con-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">E</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./29-hongos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">29 Los hongos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./30-diversidad-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">30 Introducción a la diversidad animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./31-protostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">31 Esponjas, cnidarios, ctenóforos y protóstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./32-deuterostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">32 Los deuteróstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./33-crecimiento-vegetal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">33 Estructura, crecimiento y desarrollo vegetal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./34-hoja.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">L</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./35-tallo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">35 Estructura y transporte en el tallo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./36-raices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">36 Raíces y nutrición mineral</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./37-reproduccion-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">37 Reproducción en plantas con ﬂ ores</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./38-respuestas-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">38 Respuestas de desarrollo en plantas a señales externas e internas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./39-introduccion-fisiologia-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">39 Estructura y función animal. Una introducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./40-proteccion-y-movimiento.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">40 Protección, sostén y movimiento</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./41-senalizacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">41 Señalización neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./42-regulacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">42 Regulación neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./43-sentidos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">43 Sistemas sensoriales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./44-transporte-interno.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">44 Transporte interno</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./45-sistema-inmunologico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">45 El sistema inmunológico: Defensa interna</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./46-intercambio-gases.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">46 Intercambio de gases</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./47-nutricion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">47 Procesamiento de alimentos y nutrición</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./48-osmorregulacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">48 Osmorregulación y desecho de residuos metabólicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./49-regulacion-endocrina.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">49 Regulación endocrina</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./50-reproduccion-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">50 Reproducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./51-desarrollo-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">51 Desarrollo animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./52-comportamiento-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52 Comportamiento animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./53-ecologia-de-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52.6 SELECCIÓN SEXUAL</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./54-ecologia-de-comunidades.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">54 Ecología de comunidades</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./55-ecosistemas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">55 Ecosistemas y la biosfera</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./56-geografia-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">56 Ecología y geografía de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./57-conservacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">57 Diversidad biológica y biología de la conservación</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#e" id="toc-e" class="nav-link active" data-scroll-target="#e">E</a>
+  <ul class="collapse">
+  <li><a href="#estructura-y-funcionamiento-de-la-comunidad" id="toc-estructura-y-funcionamiento-de-la-comunidad" class="nav-link" data-scroll-target="#estructura-y-funcionamiento-de-la-comunidad">54.1 ESTRUCTURA Y FUNCIONAMIENTO DE LA COMUNIDAD</a></li>
+  <li><a href="#intensidad-y-dirección-de-las-interacciones-comunitarias" id="toc-intensidad-y-dirección-de-las-interacciones-comunitarias" class="nav-link" data-scroll-target="#intensidad-y-dirección-de-las-interacciones-comunitarias">54.2 INTENSIDAD Y DIRECCIÓN DE LAS INTERACCIONES COMUNITARIAS</a></li>
+  <li><a href="#biodiversidad-comunitaria" id="toc-biodiversidad-comunitaria" class="nav-link" data-scroll-target="#biodiversidad-comunitaria">54.3 BIODIVERSIDAD COMUNITARIA</a></li>
+  <li><a href="#desarrollo-comunitario" id="toc-desarrollo-comunitario" class="nav-link" data-scroll-target="#desarrollo-comunitario">54.4 DESARROLLO COMUNITARIO</a></li>
+  <li><a href="#resumen-enfoque-en-los-objetivos-de-aprendizaje" id="toc-resumen-enfoque-en-los-objetivos-de-aprendizaje" class="nav-link" data-scroll-target="#resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">54 Ecología de comunidades</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">septiembre, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>1173</p>
+<p>CONCEPTOS CLAVE</p>
+<p>54.1 Una comunidad consta de poblaciones que viven en el mismo sitio al mismo tiempo. Los ecólogos de comunidades se centran en cuestiones concernientes al número de especies, la abundancia relativa de cada una, la interacción entre ellas y la resistencia de la comunidad a las perturbaciones ambientales. 54.2 Las especies dominantes y las especies clave tienen amplios efectos comunitarios sobre el ﬂ ujo de energía y la estructura de la comunidad: las especies dominantes debido a su gran biomasa o abundancia y las especies clave a pesar de su biomasa o abundancia relativamente pequeña. 54.3 Los factores que inﬂ uyen en la diversidad de la comunidad incluyen el número, la variedad y la abundancia de las especies. Experimentos de campo con plantas, que se iniciaron en la década de 1990 sugieren que las comunidades más diversas tienen mayor estabilidad o resistencia al cambio. 54.4 La mayoría de los ecólogos considera que las comunidades son asociaciones laxas de organismos que tienen requerimientos ambientales semejantes y por tanto viven juntos en el mismo ambiente. Luego de una perturbación, las comunidades experimentan una sucesión de comunidades pioneras a comunidades maduras.</p>
+<section id="e" class="level1">
+<h1>E</h1>
+<p>n el capítulo 53 se analizó la dinámica de poblaciones. En el mundo natural, la mayoría de las poblaciones forman parte de una comunidad , que consta de una asociación de poblaciones de especies diferentes que viven e interactúan en el mismo sitio al mismo tiempo. La deﬁ nición de comunidad es deliberadamente amplia porque se reﬁ ere a categorías ecológicas que varían bastante en tamaño, carecen de fronteras precisas y rara vez están aisladas por completo. Las comunidades más pequeñas se anidan dentro de comunidades más grandes. Un bosque es una comunidad, pero también lo es un tronco en descomposición en ese bosque (vea la fotografía). Los insectos, las plantas y los hongos invaden un árbol caído en la medida en que éste se desintegra. Las termitas y otros insectos que habitan en la madera perforan túneles a través de la corteza y la madera. Otros insectos, raíces de plantas y hongos continúan agrandando estas aberturas. Los musgos y líquenes en la superﬁ cie del tronco atrapan agua de lluvia y extraen minerales (nutrientes inorgánicos), y los hongos y las bacterias hacen más rápida la degradación, lo que suministra nutrientes para otros habitantes. A medida que la decadencia avanza, pequeños mamíferos cavan en la madera y se comen a los hongos, insectos y plantas.</p>
+<p>Comunidad en un tronco en descomposición. Los árboles caídos, conocidos como “troncos nodriza”, protegen plantas y otros organismos para enriquecer el suelo a medida que se desintegran. Fotograﬁ ado en Pennsylvania.</p>
+<p>Michael P. Gadomski/Photo Researchers, Inc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1207_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1207_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>1174 Capítulo 54</p>
+<p>Los organismos existen en un ambiento abiótico (inerte) que es tan esencial para sus vidas como las interacciones entre unos y otros. Por ejemplo: minerales, aire, agua y luz solar son tan importantes en el ambiente de una abeja como las ﬂ ores que poliniza y de las que toma el néctar. En conjunto, una comunidad biológica y su ambiente abiótico forman un ecosistema . Igual que las comunidades, los ecosistemas son entidades amplias que hacen referencia a unidades ecológicas de varios tamaños. Ahora se presentan algunos de los retos en el intento de encontrar patrones y procesos comunes que rigen a las comunidades. La comunidad viviente se destaca en este capítulo y los componentes abióticos de los ecosistemas, incluyendo el ﬂ ujo de energía y la estructura tróﬁ ca (relaciones alimenticias), el ciclo de nutrientes y el clima se consideran en el capítulo 55.</p>
+<section id="estructura-y-funcionamiento-de-la-comunidad" class="level2">
+<h2 class="anchored" data-anchor-id="estructura-y-funcionamiento-de-la-comunidad">54.1 ESTRUCTURA Y FUNCIONAMIENTO DE LA COMUNIDAD</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>1 Deﬁ nir nicho ecológico y distinguir entre un nicho fundamental de un organismo y su nicho realizado. 2 Deﬁ nir competencia y distinguir entre competencia interespecíﬁ ca e intraespecíﬁ ca. 3 Resumir los conceptos de principio de exclusión competitiva, repartición de recursos y desplazamiento de carácter. 4 Deﬁ nir depredación y describir los efectos de la selección natural en las relaciones depredador-presa. 5 Distinguir entre mutualismo, comensalismo y parasitismo, y dar ejemplos de cada uno.</p>
+<p>Las comunidades exhiben características propias que no ocurren en las poblaciones. Estas propiedades, conocidas en conjunto como estructura comunitaria y funcionamiento comunitario, incluyen el número y los tipos de especies presentes, la abundancia relativa de cada una, la interacción entre especies diferentes, la resistencia de la comunidad a las perturbaciones, el fl ujo de energía y nutrientes por toda la comunidad, y la productividad. La ecología de comunidades es la descripción y análisis de patrones y procesos dentro de la comunidad. El descubrimiento de patrones y procesos comunes en una amplia gama de comunidades, por ejemplo: una comunidad estanque, una comunidad de bosque de pinos y una comunidad de artemisas del desierto, ayudan a los ecólogos a comprender la estructura y el funcionamiento de la comunidad. Las comunidades son bastante difíciles de estudiar porque un gran número de individuos de muchas especies diferentes interactúan entre sí y son interdependientes de varias maneras. Las especies compiten en-</p>
+<p>Jardin Lautaret/Station Alpine Joseph Fourier</p>
+<ol start="2" type="a">
+<li><p>Se plantaron pamplinas oreja de ratón de campo ( Cerastium arvense ) que crecieron en grupos dentro ( rojo ) y fuera ( azul ) de macizos de Laretia acaulis .</p></li>
+<li><p>Las plantas Laretia acaulis incrementan la tasa de supervivencia de ciertas plantas vecinas a 2800 m en los Andes chilenos. El efecto es menos pronunciado a elevaciones mayores.</p></li>
+<li><p>Se plantaron plantas de cebada alpina ( Hordeum comosum ) que crecieron en grupos dentro ( rojo ) y fuera ( azul ) de macizos de Laretia acaulis .</p></li>
+</ol>
+<p>Porcentaje de supervivencia de plántulas</p>
+<p>Tiempo (días) Tiempo (días)</p>
+<p>100</p>
+<p>80</p>
+<p>60</p>
+<p>40</p>
+<p>20</p>
+<p>100</p>
+<p>80</p>
+<p>60</p>
+<p>40</p>
+<p>20</p>
+<p>20 0 40 60 80 100 120 140 160 20 0 40 60 80 100 120 140 160</p>
+<p>FIGURA 54-1 Facilitación en comunidades alpinas (b y c , adaptadas de Cavieres, L. A. et al . “Positive Interactions between Alpine Plant Species and the Nurse Cushion Plants Laretia acaulis Do Not Increase with Elevation in the Andes of Central Chile”. New Phytologist , 2005).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1208_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1208_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Ecología de comunidades 1175</p>
+<p>llotas también atrae a ciervos portadores de garrapatas hacia los bosques de robles. La descendencia hambrienta de las garrapatas se alimenta de los ratones, que a menudo son vectores de la bacteria que produce la enfermedad de Lyme. La bacteria infecta a las garrapatas en maduración y, a su vez, se dispersa a los humanos que son mordidos por las garrapatas infectadas. En 2006, los científi cos concluyeron que es posible pronosticar qué años representan la mayor amenaza potencial de la enfermedad de Lyme para los humanos, con base en la época cuando los robles son más productivos. El riesgo de la enfermedad de Lyme es mayor dos años después de una abundante cosecha de bellotas. Dentro de una comunidad, ninguna especie existe de manera independiente de otra especie. Como muestra el ejemplo precedente, las poblaciones de una comunidad interactúan y se afectan mutuamente de maneras complicadas que no siempre son evidentes. Entre las especies en una comunidad ocurren tres tipos principales de interacciones: competencia, depredación y simbiosis. Sin embargo, antes de abordarlas, es necesario analizar el estilo de vida de una especie dada en su comunidad.</p>
+<p>El nicho es un papel ecológico de una especie en la comunidad</p>
+<p>Se cree que cada especie tiene su propio papel ecológico dentro de la estructura y funcionamiento de una comunidad; dicho papel se denomina nicho ecológico . Aunque el concepto de nicho ecológico ya ha estado en uso en ecología desde principios del siglo xx, el ecólogo de Yale, G. E. Hutchinson fue el primero en describir en 1957 la naturaleza multidimensional del nicho que se acepta hoy. Un nicho ecológico considera todos los aspectos bióticos y abióticos de la existencia de la especie; es decir, todos los factores físicos, químicos y biológicos que las especies requieren para sobrevivir, permanecer sanas y reproducirse. Entre otras</p>
+<p>tre sí por comida, agua, espacio vital y otros recursos. (De acuerdo con este contexto, un recurso es cualquier cosa del ambiente que satisfaga las necesidades de una especie particular). Algunos organismos matan y consumen a otros organismos. Algunas especies establecen asociaciones estrechas entre sí, mientras otras parecen estar conectadas sólo de manera distante. Ciertas especies interactúan en formas positivas, en un proceso conocido como facilitación , que modifi ca y mejora el ambiente local para otras especies. Por ejemplo, las plantas alpinas en ambientes montañosos hostiles crecen más rápido, a mayor altura y se reproducen con mayor éxito cuando en su proximidad crecen otras plantas de cierta clase ( FIGURA 54-1 ). Asimismo, cada organismo desempeña uno de tres papeles importantes en la vida comunitaria: productor, consumidor o desintegrador. Uno de los objetivos de los ecólogos de comunidades es desentrañar las muchas interacciones positivas y negativas, directas e indirectas de los organismos que viven juntos como comunidad.</p>
+<p>Las interacciones comunitarias son complicadas y a menudo no son fácilmente evidentes</p>
+<p>A fi nes de la década de 1990 surgió una relación intrincada entre la producción de bellotas, ratones de patas blancas, ciervos, crecimiento de población de polillas gitanas y la posible presencia de la enfermedad de Lyme en los humanos ( FIGURA 54-2 ). Experimentos a gran escala realizados en bosques de roble en el noreste de Estados Unidos relacionaron las abundantes cosechas de bellotas, que ocurren cada tres o cuatro años, con el aumento de las poblaciones de ratón (el ratón come bellotas). Debido a que los ratones también comen pupas de polillas gitanas, las condiciones de abundancia de bellotas también llevan a bajas poblaciones de polillas gitanas. Este resultado ayuda a los robles porque las polillas gitanas producen defoliación grave. Sin embargo, la abundancia de be-</p>
+<p>Ciervo atraído al bosque de robles</p>
+<p>Aumento en la población de garrapatas</p>
+<p>Peligro para la salud pública</p>
+<p>Árboles del bosque más sanos</p>
+<p>Incremento de la exposición humana a la bacteria de la enfermedad de Lyme</p>
+<p>Abundante cosecha de bellotas Disminución en la población de pupas de polilla gitana</p>
+<p>Aumento en la población de ratones de patas blancas</p>
+<p>FIGURA 54-2 Relaciones con el tamaño de una cosecha de bellotas Cuando hay una abundante cosecha de bellotas, más ratones sobreviven y se reproducen en invierno, y más ciervos son atraídos a los bosques de robles. Los ratones y los ciervos son huéspedes de garrapatas que pueden transmitir la bacteria de la enfermedad de Lyme a los humanos. La abundancia de ratones también reduce las poblaciones de polillas gitanas, mejorando así la salud de los árboles del bosque.</p>
+<p>1176 Capítulo 54</p>
+<p>y rápidamente se volvió común ( FIGURA 54-3b ). De repente, las lagartijas verdes se volvieron raras, aparentemente expulsadas de su hábitat por competencia con las lagartijas cafés ligeramente más grandes. Sin embargo, una investigación detallada descubrió que las lagartijas verdes aún habitaban el lugar. Ahora estaban bastante confi nadas a la vegetación en los humedales y a las copas foliadas de los árboles, donde eran menos fáciles de ver. La porción de hábitat del nicho fundamental de las lagartijas verdes incluye los troncos y las copas de los árboles, las paredes exteriores de las casas y muchos otros sitios. Una vez que las lagartijas cafés se establecieron en el hábitat de las lagartijas verdes, desplazaron a éstas de todas partes, salvo de los humedales y de las copas de los árboles; la competencia entre las dos especies redujo el nicho realizado de las lagartijas verdes ( FIGURA 54-3c y d ). Debido a que las comunidades constan de numerosas especies, muchas de las cuales compiten en alguna medida, las interacciones entre ellas producen el nicho realizado de cada especie.</p>
+<p>Los recursos limitantes restringen el nicho ecológico de una especie</p>
+<p>Las adaptaciones estructurales, fi siológicas y conductuales de una especie determinan su tolerancia a extremos ambientales. Si cualquier característica de un ambiente se ubica fuera de los límites de su tolerancia, entonces la especie no puede vivir ahí. De la misma manera en que no se espera encontrar un cactus viviendo en un estanque, no es de esperar encontrar lirios acuáticos en un desierto. Los factores ambientales que realmente determinan el nicho ecológico de una especie son difíciles de identifi car. Por ello, el concepto de nicho ecológico es bastante abstracto, aunque algunas de sus dimensiones pueden determinarse de manera experimental. Cualquier recurso ambiental que, debido a que es escaso o desfavorable, tiende a restringir el nicho ecológico de una especie se denomina recurso limitante . La mayoría de los recursos limitantes que han sido estudiados son variables simples, como el contenido de minerales en el suelo, las temperaturas extremas y las cantidades de precipitación. Tales investigaciones han revelado que cualquier factor que excede la tolerancia de una especie o que está presente en cantidades inferiores al mínimo requerido, limita la presencia de dicha especie en una comunidad. Por su interacción, tales factores ayudan a defi nir el nicho ecológico de una especie. Los recursos limitantes pueden afectar sólo parte del ciclo de vida de un organismo. Por ejemplo, aunque los cangrejos azules adultos viven en agua dulce o ligeramente salobre, no se establecen permanentemente en tales áreas porque sus larvas (formas inmaduras) requieren agua salada.</p>
+<p>cosas, el nicho incluye el ambiente local en que vive una especie: su hábitat . Un nicho también comprende lo que una especie come, qué se la come, qué organismos compiten con ella y cómo interactúa con los componentes abióticos de su ambiente, como luz, temperatura y humedad, y como es infl uida por ellos. Así, el nicho representa la totalidad de adaptaciones de una especie a su ambiente, su uso de recursos y el estilo de vida al que se adapta. Aunque una descripción completa de nicho ecológico de un organismo implica muchas dimensiones y resulta difícil de defi nir con precisión, los ecólogos suelen confi nar sus estudios a una o algunas variables del nicho, como conductas de alimentación o capacidad para tolerar temperaturas extremas. El nicho ecológico de una especie es mucho más amplio desde un punto de vista hipotético que real. Una especie suele ser capaz de usar muchos más de los recursos de su ambiente o de vivir en una variedad de hábitats más amplia de los que realmente habita. El nicho ecológico potencial de una especie es su nicho fundamental , pero varios factores, como la competencia con otras especies, pueden excluirla de parte de su nicho fundamental. Así, el estilo de vida que una especie persigue realmente y los recursos que verdaderamente usa constituyen su nicho realizado . Un ejemplo puede ayudar a hacer esta distinción más clara. La lagartija verde, nativa de Florida y otros estados sudorientales de Estados Unidos, se posa en los árboles, arbustos o vallas durante el día en espera de presas: insectos o arañas ( FIGURA 54-3a ). En el pasado estas pequeñas lagartijas abundaban en Florida. Sin embargo, hace algunos años, una especie relacionada, la lagartija café, fue introducida desde Cuba en el sur de Florida</p>
+<ol type="a">
+<li><p>La lagartija verde ( Anolis carolinensis ) es la única especie de su tipo nativa de Norteamérica. Los machos miden alrededor de 12.5 cm de largo; las hembras son ligeramente más pequeñas.</p></li>
+<li><p>La larga lagartija café de 15.2 cm de longitud fue introducida en Florida. Es nativa de Cuba y las Bahamas.</p></li>
+<li><p>Posiciones de las dos especies a lo largo de una sola dimensión del nicho (en este caso, hábitat). La especie 1 representa la lagartija verde y la 2 la lagartija café. Los nichos fundamentales de las dos lagartijas se superponen.</p></li>
+<li><p>La lagartija café compite con la lagartija verde en el área donde sus nichos se superponen, restringiendo el nicho de la lagartija verde.</p></li>
+</ol>
+<p>Uso del recurso</p>
+<p>Dimensión del nicho (hábitat)</p>
+<p>Especie 1 Especie 2</p>
+<p>Superposición de nichos</p>
+<p>Uso del recurso</p>
+<p>Dimensión del nicho (hábitat)</p>
+<p>Especie 1 Especie 2</p>
+<p>Ed Kanze/Dembinsky Photo Associates</p>
+<p>© Hakoar/Dreamstime</p>
+<p>FIGURA 54-3 Efecto de la competencia en el nicho realizado de una especie</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1210_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1210_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1210_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1210_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>Ecología de comunidades 1177</p>
+<p>a la desecación cuando la marea se retira. Sin embargo, cuando Connell retiró los Balanus de las rocas inferiores, el Chthalamus se expandió hacia las partes inferiores de la zona intermareal. Las dos especies compiten por espacio y el Balanus , que es más grande y crece más rápido, compite con los percebes Chthalamus más pequeños. La competencia entre las especies de percebes por el recurso limitante de espacio vital fue uno de los procesos que demostró la investigación de Connell. A continuación se abordan algunos aspectos de la competencia que varios ecólogos han revelado tanto en el laboratorio como en estudios de campo.</p>
+<p>La competencia es intraespecíﬁ ca o interespecíﬁ ca</p>
+<p>La competencia ocurre cuando dos o más individuos intentan usar el mismo recurso esencial, como comida, agua, abrigo, espacio vital o luz solar. Debido a que el suministro de recursos a menudo está limitado en el ambiente, su uso por un individuo disminuye la cantidad disponible para otros ( TABLA 54-1 ). Por ejemplo, si un árbol en un bosque denso crece más alto que los árboles circundantes, absorbe más de la luz solar entrante. En consecuencia, hay menos luz solar disponible para los árboles próximos que crecen a la sombra del árbol más alto. La competencia ocurre entre los individuos de una población (competencia intraespecífi ca) o entre especies diferentes (competencia interespecífi ca) . (La competencia intraespecífi ca se analizó en el capítulo 53).</p>
+<p>De manera semejante, el faisán de collar, un popular ave de caza nativa de Asia, ha sido introducido ampliamente en el sur de Estados Unidos. Las aves adultas se encuentran bien ahí, pero los huevos no se desarrollan apropiadamente en las temperaturas sureñas más cálidas.</p>
+<p>Los factores bióticos y abióticos inﬂ uyen el nicho ecológico de una especie</p>
+<p>En la década de 1960, el ecólogo estadounidense Joseph H. Connell investigó los factores bióticos y abióticos que afectan la distribución de dos especies de percebes en la zona intermareal rocosa a lo largo de la costa de Escocia. Esta zona es un ambiente desafi ante, cuyos organismos deben tolerar la exposición al aire que los seca durante las mareas bajas. Los percebes son crustáceos sésiles cuyos cuerpos están cubiertos por una concha de carbonato de calcio (vea la fi gura 31-22a). Cuando su concha está abierta, extiende sus apéndices plumosos para fi ltrar comida del agua. A lo largo de la costa de Escocia, más adultos de una especie de percebe, Balanus balanoides , están fi jos en rocas inferiores en la zona intermareal que adultos de otra especie, Chthalamus stellatus ( FIGURA 54-4 ). La distribución de las dos especies no se traslapa, aunque larvas inmaduras de ambas especies viven juntas en la zona intermareal. Connell manipuló las dos poblaciones para determinar los factores que afectan sus distribuciones. Cuando retiró los Chthalamus de las rocas superiores, los percebes Balanus no se expandieron al área vacante. Los experimentos de Connell demostraron que el Chthalamus es más resistente que el Balanus</p>
+<p>Chthalamus</p>
+<p>Balanus</p>
+<p>Nivel de la marea más alta</p>
+<p>Nivel de la marea más baja</p>
+<ol type="a">
+<li><p>Especies de percebes de dos géneros, Chthalamus y Balanus , crecen en la zona intermareal de una costa rocosa en Escocia.</p></li>
+<li><p>Cuando individuos de Chthalamus fueron retirados experimentalmente, los individuos de Balanus no se expandieron a su sección en la roca.</p></li>
+<li><p>Cuando individuos de Balanus fueron retirados experimentalmente, los individuos de Chthalamus se distribuyeron en el área vacía.</p></li>
+</ol>
+<p>Marea alta</p>
+<p>Marea baja</p>
+<p>FIGURA 54-4 Factores abióticos y bióticos que afectan la distribución de percebes (Según Connell, J. H., “The Inﬂ uence of Interspeciﬁ c Competition and Other Factors on the Distribution of the Barnacle Chthalamus stellatus”. Ecology , vol.&nbsp;42, 1961).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1211_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1211_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>1178 Capítulo 54</p>
+<p>duce. En el ejemplo de las lagartijas, la competencia directa entre las dos especies se redujo a medida que las lagartijas café excluyeron a las verdes de la mayor parte de su hábitat. La evidencia inicial de que la competencia interespecífi ca contribuye al nicho realizado de una especie proviene de una serie de experimentos de laboratorio efectuados por el biólogo ruso Georgyi F. Gause en la década de 1930 (vea las descripciones de otros experimentos de Gause en el capítulo 53). En un estudio, Gause hizo crecer poblaciones de dos especies de protozoarios, Paramecium aurelia , y el más grande P. caudatum , en condiciones controladas ( FIGURA 54-5 ). Cuando se les hizo crecer en tubos de ensayo separados; es decir, en ausencia de la segunda especie, la población de cada especie aumentó rápidamente</p>
+<p>Los ecólogos suponían tradicionalmente que la competencia es el determinante más importante tanto en el número de especies encontradas en una comunidad como en el tamaño de cada población. Hoy los ecólogos reconocen que la competencia es sólo uno de los muchos factores bióticos y abióticos interactuantes que afectan la estructura de la comunidad. Además, la competencia no siempre es una interacción directa. Por ejemplo, varios tipos de plantas que fl orecen viven en un bosque de pinos jóvenes y presumiblemente compiten con las coníferas por recursos como la humedad del suelo y los minerales presentes en éste. Sin embargo, su relación es más complicada que la simple competencia. Las fl ores producen néctar que es consumido por algunas especies de insectos que también son depredadores de insectos que se alimentan de las agujas de los árboles, reduciendo así el número de insectos que se alimentan de los pinos. Por tanto, resulta difícil valorar el efecto global que las plantas con fl ores ejercen sobre los pinos. Si las plantas que fl orecen fuesen retiradas de su comunidad, ¿los pinos crecerían más rápido debido a que ya no tendrían que competir por los recursos naturales? ¿O el aumento en la cantidad de insectos que se alimentan de las agujas de los árboles (ocasionado por menos insectos depredadores) inhibiría el crecimiento de los pinos? Experimentos a corto plazo, en los que la especie de una planta que compite se retira de una comunidad boscosa, a menudo han demostrado una mejora en el crecimiento de las especies restantes. Sin embargo, muy pocos estudios han probado los efectos experimentados a largo plazo por las especies forestales debidos a la eliminación de una sola especie que compite. Estos efectos a largo plazo pueden ser sutiles, indirectos y difíciles de comprobar; podrían disminuir o negar los efectos a corto plazo de la competencia por recursos.</p>
+<p>La competencia entre especies con nichos que se podría llevar a exclusión competitiva</p>
+<p>Cuando dos especies son semejantes, como las lagartijas verde y café o las dos especies de percebes, sus nichos fundamentales pueden superponerse. Sin embargo, con base en trabajo experimental y de elaboración de modelos, muchos ecólogos consideran que no hay dos especies que ocupen de manera indefi nida el mismo nicho en la misma comunidad. Según el principio de exclusión competitiva , se conjetura que una especie excluye a otra de su nicho como resultado de la competencia interespecífi ca. Aunque es posible que las especies compitan por algún recurso necesario sin ser competidores totales, no pueden coexistir dos especies específi cas con nichos ecológicos absolutamente idénticos. Sin embargo, la coexistencia ocurre si el traslape entre los dos nichos se re-</p>
+<p>Interacciones ecológicas entre especies</p>
+<p>Efecto en Efecto en la Interacción la especie 1 especie 2</p>
+<p>Competencia entre la especie 1 Dañino Dañino y la especie 2</p>
+<p>Depredación de la especie 2 (presa) Benéﬁ co Dañino por la especie 1 (depredador)</p>
+<p>Simbiosis</p>
+<p>Mutualismo de las Benéﬁ co Benéﬁ co especies 1 y 2</p>
+<p>Comensalismo de las Benéﬁ co Ningún especies 1 y 2 efecto</p>
+<p>Parasitismo de la especie 1 Benéﬁ co Dañino (parásito) sobre la especie 2 (huésped)</p>
+<p>TABLA 54-1</p>
+<p>EXPERIMENTO CLAVE</p>
+<p>PREGUNTA: ¿Es posible demostrar la exclusión competitiva en el laboratorio en condiciones controladas?</p>
+<p>HIPÓTESIS: Cuando dos poblaciones de paramecios (protozoos ciliados) crecen juntas en un cultivo mixto, una especie compite con la otra.</p>
+<p>EXPERIMENTO: Gause hizo crecer dos especies de paramecios por separado y juntas.</p>
+<p>50</p>
+<p>100</p>
+<p>50</p>
+<p>100</p>
+<p>50</p>
+<p>100</p>
+<p>3 0 6 9 12 15 18</p>
+<p>Días</p>
+<p>Densidad de población relativa</p>
+<p>P. aurelia (sola)</p>
+<p>P. aurelia (en el cultivo mixto)</p>
+<p>P. caudatum (sola)</p>
+<p>P. caudatum (en el cultivo mixto)</p>
+<p>RESULTADOS Y CONCLUSIÓN: Las gráﬁ cas superior y de en medio muestran cómo cada especie de Paramecium prospera cuando crece sola. La gráﬁ ca inferior muestra la forma en que crecen juntas, en competencia mutua. En el cultivo mixto, el P. aurelia compite con el P. caudatum, lo cual resulta en exclusión competitiva.</p>
+<p>Fuente: adaptado de Gause, G. F., The Struggle for Existence. Williams &amp; Wilkins, Baltimore, 1934.</p>
+<p>FIGURA 54-5 Animada Experimento clásico de G. F. Gause sobre competencia interespecíﬁ ca</p>
+<p>Ecología de comunidades 1179</p>
+<p>existe una o la otra. Sin embargo, donde sus distribuciones se superponen, las dos especies difi eren signifi cativamente en tamaño de fl or y son polinizadas por diferentes tipos de abeja. En otras palabras, el desplazamiento de carácter reduce la competencia interespecífi ca, en este caso para el mismo animal polinizador. Los tamaños de los picos de los pinzones de Darwin son otro ejemplo de desplazamiento de carácter ( FIGURA 54-7 ). En grandes islas en las Galápagos donde el pinzón terrestre mediano ( Geospiza fortis ) y el pinzón terrestre pequeño ( G. fuliginosa ) viven juntos, las profundidades de sus picos son distintivas. El Geospiza fuliginosa tiene una profundidad de pico menor que le permite romper semillas pequeñas, mientras el G. fortis tiene una mayor profundidad de pico que le permite romper semillas de tamaño mediano. Sin embargo, el G. fortis y el G. fuliginosa también viven en islas separadas. Donde las dos especies viven separadas, las profundidades de pico son aproximadamente del mismo tamaño intermedio, tal vez porque no hay competencia de la otra especie. Aunque estos ejemplos de la coexistencia de especies semejantes son explicados en términos de desplazamiento de carácter, la hipótesis del desplazamiento de carácter ha sido demostrada en la naturaleza en sólo unos cuantos casos. En 2006, Peter y Rosemary Grant, que han estudiado los pinzones de Darwin en las islas Galápagos por más de 30 años, reportaron en el periódico Science otro ejemplo de desplazamiento de carácter en los pinzones de Darwin. El pinzón terrestre mediano ( G. fortis ) originalmente vivía solo en una de las pequeñas islas Galápagos. Diferentes individuos de G. fortis tenían tamaños de pico variables que les permitían comer semillas pequeñas, medianas y grandes. Sin em-</p>
+<p>hasta un nivel impuesto por los recursos y permaneció ahí durante algún tiempo. Sin embargo, cuando crecen juntos, sólo el P . aurelia prosperó, mientras el P . caudatum disminuyó y terminó por morir. En condiciones de cultivo diferentes, el P . caudatum prevaleció sobre el P . aurelia . Gause interpretó estos resultados como el hecho de que aun cuando un conjunto de condiciones favoreció a una especie, un conjunto diferente favoreció a la otra. A pesar de lo anterior, debido a que ambas especies eran tan semejantes, con el tiempo el triunfo fi nal era posible para una u otra. Experimentos semejantes con especies en competencia de moscas de fruta, ratones, escarabajos y plantas anuales han apoyado los resultados de Gause: una especie prospera y la otra termina por desaparecer. Así, la competencia tiene efectos adversos sobre especies que usan un recurso limitado y puede resultar en exclusión competitiva de una o más de ellas. En consecuencia, se concluye que con el tiempo la selección natural debe favorecer a individuos de cada especie que evitan o reducen la competencia por recursos ambientales. La competencia reducida entre especies que coexisten se denomina repartición de recursos y es resultado de que el nicho de cada especie difi ere de los nichos de otras de una o más formas. La repartición de recursos está bien documentado en animales; estudios en bosques tropicales en América Central y Sudamérica demuestran poco traslape en la dietas de aves, primates y murciélagos que comen frutos y coexisten en el mismo hábitat. Aunque los frutos son la comida más importante de varios cientos de especies de aves, primates y murciélagos, la amplia gama de frutos disponibles ha permitido que los consumidores de frutos se especialicen, lo cual reduce la competencia. La repartición de recursos también puede incluir la hora de alimentación, la ubicación de la comida, los sitios para anidar y otros aspectos del nicho ecológico de una especie. El estudio de Robert MacArthur, ecólogo de Princeton, de cinco especies de currucas es un ejemplo clásico de repartición de recursos ( FIGURA 54-6 ). Aunque al principio los nichos de las currucas parecían casi idénticos, MacArthur encontró que los individuos de cada especie pasan la mayor parte de su tiempo de alimentación en porciones diferentes de los abetos y otras coníferas que frecuentan. También se mueven en direcciones diferentes a través de la copa, consumen combinaciones diferentes de insectos y anidan en momentos ligeramente distintos. La diferencia en la profundidad de la raíz es un ejemplo de repartición de recursos en las plantas. Por ejemplo, tres plantas anuales comunes encontradas en campos abandonados son: pimienta de agua, malva de la India y cola de zorra erizada. Las raíces de la pimienta de agua se extienden profundamente en el suelo, las de malva crecen a una profundidad media y las de cola de zorra erizada son superfi ciales. Esta diferencia reduce la competencia por los mismos recursos, agua y minerales, al permitir que las plantas exploten porciones diferentes del recurso.</p>
+<p>El desplazamiento de carácter es una consecuencia adaptativa de la competencia interespecíﬁ ca</p>
+<p>Algunas veces las poblaciones de dos especies semejantes existen juntas en algunos sitios y por separado en otros. Donde sus distribuciones geográfi cas se superponen, las dos especies tienden a diferir más en sus características estructurales, ecológicas y conductuales que cuando viven en áreas geográfi cas separadas. Esta divergencia en los rasgos de dos especies semejantes que viven en la misma área geográfi ca se conoce como desplazamiento de carácter . Los biólogos consideran que el desplazamiento de carácter reduce la competencia entre dos especies porque sus diferencias les proporcionan nichos ecológicos algo diferentes en el mismo ambiente. Hay varios ejemplos bien documentados de desplazamiento de carácter entre dos especies estrechamente relacionadas. Las fl ores de dos especies Solanum en México son bastante semejantes en áreas donde</p>
+<p>Curruca de cabo May</p>
+<p>Reinita cerulea</p>
+<p>Curruca de pecho amarillo (mirto)</p>
+<p>Cúa</p>
+<p>Curruca austral</p>
+<p>FIGURA 54-6 Animada Repartición de recursos Cada especie de curruca pasa por lo menos la mitad del tiempo de forrajeo en su área designada de un abeto, reduciendo así la competencia entre especies de currucas. (Según MacArthur, R. H., “Population Ecology of Some Warblers of Northeastern Coniferous Forests”. Ecology , vol.&nbsp;39, 1958).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1213_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1213_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>1180 Capítulo 54</p>
+<p>pequeños picos no pueden romper las semillas más grandes preferidas por el pinzón terrestre grande.</p>
+<p>La selección natural conforma los cuerpos y las conductas de la presa y del depredador</p>
+<p>La depredación es el consumo de una especie, la presa , por otra, el depredador (vea la tabla 54-1). La depredación incluye animales que comen otros animales, así como animales que comen plantas ( herbivoría ). La depredación ha resultado en una “carrera por las armas” evolucionista, con la evolución de estrategias depredatorias (formas más efi caces para atrapar presas) y estrategias de presa (mejores formas de escapar del depredador). Un depredador que es más efi ciente para atrapar presas ejerce una intensa fuerza selectiva sobre su presa. Con el tiempo, las adaptaciones que reducen la probabilidad de ser capturado pueden evolucionar en las especies de presas. Estas adaptaciones, a su vez, ejercen una intensa fuerza selectiva sobre el depredador. Este tipo de evolución interdependiente de dos especies interactuantes se conoce como coevolución (vea el análisis de la coevolución en el capítulo 37). A continuación se abordan varias adaptaciones relacionadas con interacciones depredador-presa. Éstas incluyen estrategias del depredador (persecución y emboscada) y estrategias de la presa (defensas de vegetales y defensas de animales). Al leer estas descripciones, tenga en cuenta que tales estrategias no son “elegidas” por los depredadores o presas respectivas. Nuevos rasgos surgen aleatoriamente en una población como resultado de cambios genéticos. Algunos rasgos nuevos son benéfi cos, algunos son dañinos y otros carecen de efecto. Las estrategias o rasgos benéfi cos persisten en una población porque tales características hacen a los individuos que las poseen bastante aptos para desarrollarse y reproducirse. Por el contrario, las características que hacen a los individuos que las poseen defi cientemente adaptados para su ambiente tienden a desaparecer en una población.</p>
+<p>La persecución y la emboscada son dos estrategias del depredador</p>
+<p>Un pelícano gris ve a su presa, un pez, cuando está volando. Menos de dos segundos después de sumergirse en el agua a una velocidad hasta de 72 km/h, ya la ha capturado. Las orcas (antes conocidas como ballenas asesinas) cazan en grupo y a menudo llevan al cardumen de salmón o atún a una caleta para que su captura sea más fácil. Cualquier rasgo que incremente la efi cacia para cazar, como la velocidad de los pelícanos grises o la inteligencia de las orcas, favorece a los depredadores que persiguen a su presa. Debido a que estos carnívoros deben procesar información con rapidez durante la persecución de su presa, sus cerebros suelen ser más grandes, con respecto al cuerpo, que los de las presas que persiguen. La emboscada es otra manera efi caz de atrapar presas. La araña cangrejo amarilla, por ejemplo, es del mismo color que las fl ores blancas o amarillas donde se esconde ( FIGURA 54-8 ). Este camufl aje impide que los insectos desprevenidos que visitan la fl or en busca de néctar se percaten de la araña hasta que es demasiado tarde. También engaña a las aves que la depredan. Los depredadores que atraen a la presa son particularmente efectivos para emboscar. Por ejemplo, un grupo diverso de peces de aguas profundas conocidos como alacranes marinos cuentan con señuelos luminiscentes parecidos a varillas cerca de la boca para atraer la presa.</p>
+<p>La protección química es una defensa vegetal eﬁ caz contra los herbívoros</p>
+<p>Las plantas no pueden volar para escapar de los depredadores, aunque cuentan con varias adaptaciones físicas y químicas que las protegen de</p>
+<p>bargo, en años recientes el pinzón terrestre grande ( G . magnirostris ) colonizó la isla y comenzó a competir con el pinzón terrestre mediano por las semillas más grandes. Una sequía grave redujo el suministro de semillas, imponiendo presión adicional a la población de pinzón mediano. En respuesta, el pico del pinzón terrestre mediano divergió con rapidez, volviéndose signifi cativamente menor en longitud, profundidad y ancho promedios de lo que era. La población modifi cada de pinzones terrestres medianos ahora consume semillas pequeñas casi exclusivamente; sus</p>
+<p>EXPERIMENTO CLAVE</p>
+<p>PREGUNTA: ¿Es posible demostrar el desplazamiento de carácter en la naturaleza?</p>
+<p>HIPÓTESIS : Dos especies de pinzones son más diferentes donde viven juntas que donde viven por separado.</p>
+<p>EXPERIMENTO: Dos especies de pinzones de Darwin en las islas Galápagos fueron observadas en islas donde viven por separado y en una isla donde viven juntas. La profundidad del pico (a) que varía considerablemente en las dos especies, fue medida en los ambientes diferentes.</p>
+<p>20</p>
+<p>40</p>
+<p>8 0</p>
+<p>0</p>
+<p>0</p>
+<p>10 12 14</p>
+<p>20</p>
+<p>40</p>
+<p>20</p>
+<p>40</p>
+<p>8 10 12 14</p>
+<p>8 10 12 14</p>
+<p>Profundidad del pico (mm)</p>
+<p>Porcentaje de individuos de cada clase de tamaño</p>
+<ol type="a">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<p>G. fuliginosa G. fortis Profundidad del pico</p>
+<p>RESULTADOS Y CONCLUSIÓN : (b) Donde las dos especies se encontraron en la misma isla (Santa Cruz), el G. fuliginosa ( rosa ) tenía una profundidad de pico promedio menor que el G . fortis ( azul ). Donde viven en islas diferentes ( c , en Dafne Mayor y d , en Los Hermanos), la profundidad promedio del pico de cada una son semejantes. Así, éste es un ejemplo de desplazamiento de carácter.</p>
+<p>Fuente: según Lack, D. Darwin’s Finches . Cambridge University Press, Cambridge, 1947.</p>
+<p>FIGURA 54-7 Desplazamiento de carácter</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1214_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1214_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1214_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1214_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>Ecología de comunidades 1181</p>
+<p>estómago (vea la fi gura 32-14a). Algunos animales viven en grupos; por ejemplo, una manada de antílopes, una colonia de abejas, un banco de anchoas o una bandada de palomas. Debido a que un grupo tiene muchos ojos, oídos y narices que ven, escuchan y huelen a los depredadores, esta conducta social disminuye la probabilidad de que un depredador atrape desprevenido a cualquiera del grupo. Las defensas químicas también son comunes entre los animales de presa. La rana veneno de fl echa sudamericana ( Dendrobates sp. ) guarda veneno en su piel. (Estas ranas obtienen las toxinas de hormigas y otros insectos en su dieta). La brillante coloración aposemática de la rana advierte a los depredadores con experiencia evitarla (vea la fi gura 32-18a). ¡Las serpientes y otros animales que alguna vez han intentado devorar a una rana venenosa no repiten el error! Otros ejemplos de coloración aposemática ocurren en la mofeta rayada, que rocía productos químicos de sus glándulas anales, y el escarabajo bombardero, que vomita productos químicos agresivos a depredadores potenciales (vea la fi gura 7-8). Algunos animales tienen coloración críptica , colores o marcas que les ayudan a ocultarse de los depredadores al mezclarse con sus entornos físicos. Ciertas orugas se asemejan tanto a ramitas que no es posible distinguir si son animales a menos que se muevan. Los peces aguja son largos, de color verde y se confunden casi perfectamente con las algas verdes. Los gecos de cola de hoja en el sur de Madagascar parecen hojas muertas o corteza musgosa, dependiendo de la especie ( FIGURA 54-10 ). Esta coloración críptica ha sido preservada y acentuada</p>
+<p>ser comidas. La presencia de espinas, aguijones, hojas duras correosas e inclusive cera espesa en las hojas desalienta a los herbívoros a que se alimenten de estas plantas. Otras plantas producen un arreglo de productos químicos protectores que son desagradables e inclusive tóxicos para los herbívoros. Los ingredientes activos en plantas tóxicas como mariguana y tabaco afectan la actividad hormonal y las funciones nerviosas, musculares, del hígado y los riñones, y pueden desalentar el forrajeo de los herbívoros. Algo interesante de mencionar es que muchas de las defensas químicas en las plantas son de utilidad para los humanos. Por ejemplo, el árbol neem de la India contiene productos químicos efectivos contra más de 100 especies de insectos, ácaros y nematodos herbívoros. La nicotina del tabaco, el piretro del crisantemo y la rotenona de la planta de derris son otros ejemplos de productos químicos extraídos y usados como insecticidas. Las asclepias son otro ejemplo excelente de coevolución bioquímica entre las plantas y los herbívoros ( FIGURA 54-9 ). Las asclepias producen alcaloides y glicósidos cardiacos, productos químicos venenosos para todos los animales excepto para un pequeño grupo de insectos. La habilidad de tolerar o metabolizar las toxinas de las asclepias ha evolucionado en estos insectos, las comen y evitan la competencia de otros insectos herbívoros porque pocos toleran dichas toxinas. Los depredadores también aprenden a evitar a estos insectos, los cuales acumulan las toxinas en sus tejidos y por tanto se vuelven tóxicos ellos mismos. La coloración negra, blanca y amarilla de la oruga monarca, que se alimenta de asclepias, anuncia claramente su toxicidad a los depredadores que han aprendido a asociar los colores brillantes con la enfermedad. Los colores o patrones llamativos, que advierten lo desagradable de una especie a los depredadores potenciales, se denominan coloración aposemática (del griego apo “lejos” y semat , “marca o signo”) o coloración de advertencia .</p>
+<p>Las presas animales cuentan con varias adaptaciones defensivas para evitar a los depredadores</p>
+<p>Muchos animales, como ratones de campo y marmotas, huyen de los depredadores al refugiarse en sus madrigueras subterráneas. Otros tienen defensas mecánicas, como las púas del puercoespín y la concha de una tortuga de estanque. Para desalentar a los depredadores, el pez globo se infl a hasta el triple de su tamaño normal al bombear agua hacia su</p>
+<p>FIGURA 54-8 Emboscada Una araña cangrejo amarilla ( Misumena vatia ) se confunde con su entorno, esperando que algún insecto desprevenido visite la ﬂ or. La emboscada, una eﬁ caz estrategia depredatoria, depende de sorprender a la presa.</p>
+<p>© Leszcynski, Zigmund/Animals Animals</p>
+<p>FIGURA 54-9 Defensas químicas de una planta Productos químicos tóxicos protegen el algodoncillo común ( Asclepia syriaca ). Sus hojas son venenosas para la mayoría de los herbívoros excepto para la oruga monarca ( Danaus plexippus ) y algunos otros insectos. Las orugas monarca tienen coloración aposemática brillante. Fotograﬁ ada en Michigan.</p>
+<p>© Beatty, Bill/Animals Animals/Earth Scenes</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1215_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1215_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1215_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1215_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>1182 Capítulo 54</p>
+<p>Algunas veces una especie indefensa (un mímico ) es protegida de la depredación por medio de su parecido con otra especie que de alguna manera es peligrosa (un modelo ). Esta estrategia se denomina mimetismo de Batos o batesiano . Hay muchos ejemplos de este fenómeno. Por ejemplo, una inofensiva serpiente escarlata rey se parece tanto a una serpiente coralillo que los depredadores podrían evitarla ( FIGURA</p>
+<p>54-11 ). De manera interesante, el rango de la serpiente escarlata rey es muy superior al de la serpiente coralillo. En un área donde no existen las serpientes coralillo, tener la coloración del modelo no confi ere ninguna ventaja especial a la serpiente rey y podría ser dañino, ya que activaría la selección natural. Parece que éste es el caso: en 2008 científi cos reportaron en la revista Nature que poblaciones de serpiente escarlata rey localizadas lejos de las serpientes coralillo habían experimentado selección natural y se parecían menos a su modelo. En el mimetismo de Müller o mülleriano , especies distintas ( comodelos ), todas venenosas, dañinas o desagradables, se parecen una a otras. Aunque su nocividad las protege como especie individual, su apariencia semejante funciona como una ventaja adicional porque los depredadores potenciales aprenden más fácilmente una simple coloración aposemática. Los científi cos conjeturan que las mariposas virrey y monarca son un ejemplo de mimetismo mülleriano (vea Preguntas acerca de: Mimetismo en las mariposas ).</p>
+<p>La simbiosis implica una asociación estrecha entre especies</p>
+<p>La simbiosis es cualquier relación o asociación estrecha entre miembros de dos o más especies. En términos generales, la simbiosis implica una especie que vive sobre o dentro de otra especie. Los compañeros de una relación simbiótica, denominados simbiontes , pueden benefi ciarse, no ser afectados o sufrir daño por la relación (vea la tabla 54-1). Ejemplos de simbiosis ocurren a lo largo de todos los dominios y reinos de la vida. La mayoría de los miles, e incluso millones, de asociaciones simbióticas son resultado de la coevolución. La simbiosis asume tres formas: mutualismo, comensalismo y parasitismo.</p>
+<p>por medio de selección natural. Es menos probable que los depredadores capturen animales con coloración críptica. En consecuencia, estos animales tienen mayor probabilidad de vivir hasta la madurez y producir descendencia que también posee los genes de la coloración críptica.</p>
+<p>FIGURA 54-10 Coloración críptica El geco de cola de hoja musgosa ( Uroplatus sikorae ) caza insectos en la noche y duerme oprimido contra la rama de un árbol durante el día. Es virtualmente invisible cuando duerme (observe detenidamente para percibir su cabeza y pata delantera). Fotograﬁ ado en un bosque tropical en el sur de Madagascar.</p>
+<p>Greg Dimijian/Photo Researchers, Inc.</p>
+<p>Suzanne L. and Joseph T. Collins/Photo Researchers, Inc.</p>
+<ol type="a">
+<li><p>Serpiente escarlata rey</p></li>
+<li><p>Serpiente coralillo oriental</p></li>
+</ol>
+<p>Suzanne L. Collins/Photo Researchers, Inc.</p>
+<p>FIGURA 54-11 Mimetismo batesiano En este ejemplo, (a) la serpiente escarlata rey ( Lampropeltis triangulum elapsoides ) es el mímico y (b) la serpiente coralillo oriental ( Micrurus fulvius fulvius ) es el modelo. Observe que los colores rojo y amarillo de advertencia se tocan en la coralillo pero no en el mímico inofensivo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1216_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1216_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1216_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1216_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1216_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1216_img3.jpeg</figcaption>
+</figure>
+</div>
+<p>Ecología de comunidades 1183</p>
+<p>Los beneﬁ cios son compartidos en el mutualismo</p>
+<p>El mutualismo es una relación simbiótica en la que ambos participantes se benefi cian. El mutualismo es obligado (esencial para la supervivencia de ambas especies) o facultativo (cada participante puede vivir por sí solo en ciertas condiciones). La asociación entre las bacterias fi jadoras de nitrógeno del género Rhizobium y las legumbres (plantas como chícharos, frijoles y trébol) son un ejemplo de mutualismo (vea la fi gura 55-9). Las bacterias fi jadoras de nitrógeno, que viven dentro de nódulos en las raíces de las legumbres, abastecen a las plantas con la mayor parte del nitrógeno que requieren para manufacturar compuestos que contienen este elemento, como clorofi las, proteínas y ácidos nucleicos. Las legumbres suministran azúcares y otras moléculas orgánicas ricas en azúcares a sus simbiontes bacterianos. Otro ejemplo de mutualismo es la asociación entre animales constructores de arrecifes y dinofl agelados denominados zooxantelas . Estos protistas simbióticos viven dentro de células de pólipos coralinos (el coral forma una vacuola alrededor de la célula del alga), donde fotosintetizan y proporcionan al animal compuestos de carbono y nitrógeno, así como oxígeno ( FIGURA 54-12 ). Los esqueletos de carbonato</p>
+<p>¿Por qué algunas especies de mariposas se parecen unas a otras? Por ejemplo, la mariposa monarca ( Danaus plexippus ), es un insecto atractivo que abunda en Norteamérica (vea la ﬁ gura, lado izquierdo ). Cuando es oruga, se alimenta exclusivamente de hojas de asclepia. El líquido blanco lechoso producido por la planta contiene venenos que el insecto tolera pero que permanecen en sus tejidos para toda la vida. Cuando un ave joven encuentra e intenta comer su primera mariposa monarca, se enferma y vomita. A partir de entonces, las aves evitan comer el insecto marcado de manera distintiva. Muchas personas confunden la mariposa virrey ( Limenitis archippus ; vea la ﬁ gura, lado derecho) con la monarca. La virrey, que se encuentra en casi toda Norteamérica, es aproximadamente del mismo tamaño, con el color y las marcas de sus alas casi idénticos a los de la monarca. Cuando son orugas, las virrey comen álamo americano, álamo temblón y hojas de sauce, que aparentemente no contienen las sustancias venenosas. Durante el siglo pasado se creía que la mariposa virrey era un manjar para las aves, aunque su estrecho parecido con la monarca le proporcionaba alguna protección en contra de ser devorada. En otras palabras, las aves que habían aprendido a asociar las marcas distintivas y la coloración de la mariposa monarca con su mal gusto tendían a evitar a la mariposa virrey porque sus marcas eran semejantes. Por tanto, la mariposa virrey era considerada un ejemplo clásico de mimetismo batesiano.</p>
+<p>En 1991, los ecólogos David Ritland y Lincoln Brower de la Universidad de Florida reportaron los resultados de un experimento que probó la idea sostenida largamente de que a las aves les agrada el sabor de las mariposas virrey aunque evitaban comerlas debido a su parecido con las monarca. Retiraron las alas de varios tipos de mariposas, monarca, virrey y varias especies de sabor agradable, y alimentaron con los cuerpos sin alas aparentemente idénticos a mirlos de alas rojas. Los resultados fueron sorprendentes: las monarca y las virrey eran igualmente desagradables para los pájaros. Como resultado de su trabajo, los ecólogos están reevaluando la importancia evolutiva de diferentes tipos de mimetismo. En lugar de ser un ejemplo de mimetismo batesiano, las monarca y las virrey podrían</p>
+<p>serlo de mimetismo mülleriano, en el que dos o más especies diferentes que son desagradables o venenosas han llegado a parecerse entre sí durante el transcurso de la evolución. Esta semejanza proporciona una ventaja adaptativa porque los depredadores aprenden pronto a evitar a todas las mariposas con la coloración y marcas de las monarca y las virrey. Como resultado, menos mariposas de cada especie mueren y más individuos sobreviven para reproducirse. El estudio de las mariposas constituye un recordatorio útil sobre el proceso de la ciencia. La ampliación del conocimiento en la ciencia es una empresa en marcha y evidencias recientemente adquiridas ayudan a los cientíﬁ cos a reevaluar modelos o ideas actuales. Así, el conocimiento y la comprensión cientíﬁ cos están cambiando continuamente.</p>
+<p>Preguntas acerca de</p>
+<p>MIMETISMO EN LAS MARIPOSAS</p>
+<p>Mimetismo mülleriano. La evidencia sugiere que las mariposas monarca (izquierda) y virrey (derecha) son un ejemplo de mimetismo mülleriano, en el que dos o más especies venenosas, dañinas o desagradables se parecen entre sí.</p>
+<p>Thomas C. Emmel</p>
+<p>FIGURA 54-12 Mutualismo Las motas verdes grisáceas en estos pólipos de coral rocoso ( Pocillopora ) son zooxantelas, algas que viven simbióticamente dentro de las células translúcidas del coral y lo abastecen de compuestos de carbono y nitrógeno. A cambio, el coral proporciona a las zooxantelas nitrógeno en forma de amoniaco.</p>
+<p>P. Parks/OSF/Animals Animals</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1217_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1217_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1217_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1217_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>1184 Capítulo 54</p>
+<p>amebiana; el Plasmodium , un apicomplejo que provoca la malaria; y una variedad de gusanos parásitos, como los trematodos de la sangre, tenias, oxiuros y lombrices intestinales (vea las fi guras 31-9 y 31-11). Desde la década de 1980, las abejas silvestres y domésticas en Estados Unidos han estado muriendo; por ejemplo, los apicultores perdieron aproximadamente la mitad de sus abejas en 2005, según el Department of Agriculture de Estados Unidos. Aunque la pérdida de hábitat, los climas severos y el uso de pesticidas han contribuido al problema, los ácaros varroa y los ácaros traqueales más pequeños han sido una razón fundamental de la disminución de las abejas ( FIGURA 54-14 ).</p>
+<p>Repaso</p>
+<p>■ ¿Cuál es la relación entre las bellotas, las polillas gitanas y la enfermedad de Lyme?</p>
+<p>■ ¿Por qué el nicho realizado de un organismo suele ser más estrecho, o más restringido, que su nicho fundamental?</p>
+<p>■ ¿Cuál es el principio de exclusión competitiva?</p>
+<p>■ ¿Cuáles son los tres tipos de simbiosis?</p>
+<p>de calcio se forman mucho más rápido alrededor de los cuerpos de coral cuando hay zooxantelas presentes; su crecimiento más rápido ayuda al coral a dominar su ubicación en un arrecife. Los corales, a su vez, suministran a las zooxantelas productos de desecho como amoniaco, que las algas usan para hacer compuestos de nitrógeno para ambos participantes. Las micorrizas son asociaciones mutualistas entre hongos y raíces de plantas. La asociación es común; los biólogos consideran que alrededor de 80% de las especies de plantas tienen micorrizas. El hongo, que crece alrededor y hacia dentro de las raíces, así como hacia el suelo circundante, absorbe minerales esenciales, especialmente fósforo, del suelo y los proporciona a la planta. A cambio, la planta suministra al hongo moléculas orgánicas producidas por fotosíntesis. Las plantas crecen más vigorosamente en presencia de hongos micorrizas (vea las fi guras 29-19 y 36-11) y toleran mejor los estresantes ambientales como sequías y elevadas temperaturas del suelo. De hecho, algunas plantas son incapaces de mantenerse por sí solas en condiciones naturales si no están presentes los hongos con los que normalmente forman micorrizas.</p>
+<p>El comensalismo es tomar sin dañar</p>
+<p>El comensalismo es un tipo de simbiosis en el que una especie se benefi cia y la otra no es dañada ni ayudada. Un ejemplo de comensalismo es la relación entre insectos sociales y carroñeros como ácaros, escarabajos o milpiés, que viven en los nidos de los insectos sociales. Por ejemplo, ciertos tipos de lepismas se mueven juntos en asociación permanente con las columnas en marcha de un ejército de hormigas y comparten la abundante comida atrapada en las incursiones de las hormigas. El ejército de hormigas no obtiene ningún benefi cio o daño aparente de las lepismas. Otro ejemplo de comensalismo es la relación entre un árbol huésped y sus epifi tas, que son plantas más pequeñas, como orquídeas, helechos y musgos sujetos a las ramas del huésped ( FIGURA 54-13 ). La epifi ta se ancla al árbol pero no obtiene nutrientes o agua directamente de éste. Vivir en el árbol le permite obtener luz adecuada, agua (como gotas de lluvia que escurren por las ramas) y minerales necesarios (deslavados de las hojas del árbol por la lluvia). Así, la epifi ta se benefi cia de la asociación, mientras el árbol permanece sin cambio aparente. (Sin embargo, las epifi tas dañan a su huésped si están presentes en un número sufi cientemente grande para bloquear la luz solar hacia las hojas del huésped; en este caso, la relación ya no es comensalismo).</p>
+<p>El parasitismo es tomar a expensas de otro</p>
+<p>El parasitismo es una relación simbiótica en la que un miembro, el parásito , se benefi cia, mientras el otro, el huésped , es afectado de manera adversa. El parásito obtiene alimento de su huésped. Un parásito rara vez mata directamente al huésped, aunque puede debilitarlo, haciéndolo más vulnerable a los depredadores, competidores y estresantes abióticos. Cuando un parásito provoca una enfermedad y algunas veces la muerte del huésped, se denomina patógeno . Las garrapatas y otros parásitos que viven fuera del cuerpo del huésped se denominan ectoparásitos . La fi gura 32-9 muestra una lamprea, un ectoparásito sobre un pez. Parásitos como las lombrices que viven dentro del huésped se denominan endoparásitos . El parasitismo es un estilo de vida exitoso; según una estimación, más de dos tercios de todas las especies son parásitas, ¡y más de 100 especies de parásitos viven dentro o sobre la especie humana sola! Algunos ejemplos de parásitos humanos incluyen la Entamoeba histolytica , una ameba que provoca disentería</p>
+<p>FIGURA 54-13 Comensalismo El musgo de Florida ( Tillandsia usneoides ) es una epiﬁ ta gris que cuelga de plantas más grandes en el sureste de Estados Unidos. En realidad no es un musgo, sino una planta de la familia de las pináceas que ﬂ orece. Aunque a menudo mide 6 m o más, no es parásito y no daña al árbol huésped. Fotograﬁ ado en otoño en Carolina del Norte, suspendida de un ciprés de los pantanos cuyo follaje ha cambiado de color.</p>
+<p>Jeff Lepore/Photo Researchers, Inc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1218_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1218_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Ecología de comunidades 1185</p>
+<p>Otras especies de una comunidad dependen de las especies clave o son afectadas en gran medida por ellas</p>
+<p>Ciertas especies, denominadas especies clave , son cruciales en la determinación de la naturaleza de toda la comunidad; es decir, su composición de especies y el funcionamiento del ecosistema. Las especies clave no suelen ser las más abundantes en la comunidad. Aunque están presentes en cantidades relativamente pequeñas, los individuos de una especie clave infl uyen de manera profunda en toda la comunidad porque a menudo afectan la cantidad de comida y agua disponibles, o algún otro recurso. Así, el impacto de las especies clave es bastante desproporcionado con respecto a su abundancia. La identifi cación y protección de las especies clave son dos metas cruciales de la biología de conservación (vea el capítulo 57). Si una especie clave desaparece de una comunidad, muchas otras especies en dicha comunidad podrían volverse más comunes a raras, e inclusive desaparecer. El término especies clave fue acuñado por el ecólogo Robert T. Paine en 1969, con base en sus estudios experimentales a lo largo de la costa del Pacífi co en el estado de Washington ( FIGURA 54-15 ). Paine retiró una estrella de mar depredadora, Pisaster ochraceus , de una comunidad intermareal que incluía percebes, mejillones, lapas y quitones, a todos los cuales depredaba la estrella de mar. Observó los cambios resultantes en la estructura de la comunidad y los comparó con un área de control próxima donde las estrellas de mar se dejaron intactas. Después de retirar las estrellas de mar, aproximadamente la mitad de las 15 especies desapareció del área de prueba, saturada de ciertas poblaciones de mejillones y percebes, que aumentaron rápidamente una vez libres de la depredación de las estrellas de mar. Paine observó que cuando de una comunidad se retira un depredador clave como la estrella de mar, la diversidad de especies de esa comunidad cambia notoriamente. Un problema con el concepto de especie clave es que a menudo resulta difícil medir todos sus impactos directos e indirectos sobre un ecosistema. En consecuencia, la mayoría de la evidencia sobre la existencia</p>
+</section>
+<section id="intensidad-y-dirección-de-las-interacciones-comunitarias" class="level2">
+<h2 class="anchored" data-anchor-id="intensidad-y-dirección-de-las-interacciones-comunitarias">54.2 INTENSIDAD Y DIRECCIÓN DE LAS INTERACCIONES COMUNITARIAS</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>6 Distinguir entre especies clave y especies dominantes. 7 Distinguir entre los procesos abajo-arriba y arriba-abajo en la regulación de los ecosistemas.</p>
+<p>Hay bastante variación en la intensidad y dirección de las interacciones entre especies dentro de comunidades ecológicas. Algunas especies, conocidas como especies clave , están presentes en una comunidad en poca abundancia y/o biomasa, pero tienen poderosos efectos sobre sus comunidades. Otras especies, conocidas como especies dominantes , ejercen poderosos efectos en sus comunidades porque están presentes en gran abundancia y/o biomasa. Dos tipos de control afectan a las comunidades ecológicas, los procesos abajo-arriba y los procesos arribaabajo. En los procesos abajo-arriba , la disponibilidad de nutrientes o de organismos alimento cuya población se ve afectada directamente por la asequibilidad de nutrientes afecta la abundancia de otros organismos de la comunidad. En los procesos arriba-abajo , los depredadores afectan la abundancia de otras poblaciones en la comunidad. A continuación se analizarán estos aspectos de las interacciones entre especies dentro de comunidades ecológicas.</p>
+<p>100 μ m</p>
+<p>U.S. Department of Agriculture/Agricultural Research Service</p>
+<p>FIGURA 54-14 Parasitismo Los ácaros traqueales microscópicos ( Acarapis woodi ) son endoparásitos que viven en los tubos traqueales de las abejas, obstruyendo sus vías respiratorias de modo que no pueden respirar eﬁ cientemente. Los ácaros traqueales también chupan el ﬂ uido circulatorio de las abejas, debilitándolas y ﬁ nalmente matándolas. Los entomólogos creen que los ácaros varroa más grandes ( no se muestran ), que son ectoparásitos que también se alimentan del ﬂ uido circulatorio, son más devastadores para las poblaciones de abejas que los ácaros traqueales. Los ácaros también pueden transmitir virus a sus abejas huéspedes.</p>
+<p>FIGURA 54-15 Comunidad rocosa intermareal durante la marea baja Estrellas de mar Pisaster y quitones adheridos a la roca durante la marea baja. El color de las estrellas de mar Pisaster va del morado al café y al anaranjado. Fotograﬁ ado en verano en el Pacíﬁ co noroccidental.</p>
+<p>© blueeyes/Shutterstock</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1219_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1219_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1219_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1219_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>1186 Capítulo 54</p>
+<p>en el fl ujo de energía a lo largo del ecosistema boscoso. De manera semejante, la espartina ( Spartina ) es la especie dominante en las marismas, los pastos en los pastizales y las algas marinas en los lechos de algas marinas. Los animales también son especies dominantes; por ejemplo, los corales son la especie dominante en los arrecifes de coral y el ganado es la especie dominante en los pastizales pastoreados en exceso. En términos generales, una comunidad tiene una o algunas especies dominantes, y la mayoría de las demás especies es relativamente rara.</p>
+<p>La regulación de un ecosistema ocurre abajo-arriba y arriba-abajo</p>
+<p>Una cuestión que los ecólogos han considerado recientemente es cuál proceso regulatorio, abajo-arriba o arriba-abajo, es más importante en la regulación de varios ecosistemas. Tanto el fl ujo de energía (vea la fi gura 1-8) como los ciclos de la materia están implicados en los procesos abajo-arriba y arriba-abajo. Los procesos abajo-arriba se basan en redes alimentarias , la serie interconectada de organismos a través de los cuales fl uye la energía en un ecosistema. Las redes alimentarias siempre tienen plantas u otros productores en el primer nivel trófi co (el más bajo) ( FIGURA 54-16a ). (Un nivel trófi co es la posición de un organismo en una red alimentaria; por ejemplo, los productores son el primer nivel trófi co y los herbívoros que consumen plantas son el segundo nivel). En cierto sentido, los ciclos biogeoquímicos que regeneran nutrientes como nitratos y fosfatos para que los productores los asimilen se encuentran localizados “bajo” el primer nivel trófi co. Así, los procesos abajo-arriba regulan la función del ecosistema por ciclaje de nutrientes y por la disponibilidad de otros recursos. Si los procesos abajo-arriba dominan un ecosistema, la disponibilidad de recursos como agua o minerales del suelo controla el número de productores, lo que a su vez controla el número de herbívoros, que controla el número de carnívoros. (Recuerde del capítulo 53 que los recursos limitantes tienden a restringir los nichos ecológicos de los organismos, afectando así el tamaño de la población). Los procesos abajo-arriba parecen predominar en ciertos ecosistemas acuáticos en los que el nitrógeno o el fósforo son limitantes. Un experimento en el que se agregó fósforo a un río defi ciente de fósforo (el río Kaparuk en Alaska) resultó en un incremento de algas, seguido con</p>
+<p>de especies clave se basa en observaciones indirectas en lugar de en manipulaciones experimentales. Por ejemplo, considere la higuera. Debido a que este árbol produce una cosecha continua de frutos, podría ser una especie clave en los bosques tropicales de Centro y Sudamérica. Los monos, pájaros, murciélagos y otros vertebrados que comen frutas del bosque normalmente no consumen grandes cantidades de higo en su dieta. Sin embargo, durante ese período del año cuando otras frutas son menos abundantes, la higuera se vuelve importante para el sustento de los vertebrados que consumen frutas. En consecuencia, se supone que en caso de que la higuera desapareciera, también lo harían la mayoría de los vertebrados que comen frutas. A su vez, en caso de que éstos desaparecieran, la distribución espacial de otras plantas productoras de frutas se volvería más limitada debido a que los consumidores de frutas ayudan a dispersar sus semillas. Así, es posible que la protección de la higuera en tales ecosistemas de bosques tropicales incremente la probabilidad de supervivencia de monos, aves, murciélagos y muchas otras especies arboríferas. La pregunta es si esta evidencia circunstancial de la higuera como especie clave es sufi cientemente fuerte para que los políticos garanticen una protección especial para ella. Así como las estrellas de mar Pisaster , muchas especies clave son depredadores del más alto nivel; por ejemplo, considere al lobo gris. En los sitios donde los lobos estaban en peligro de extinción, las poblaciones de renos, venados y otros grandes herbívoros creció en forma exponencial. Cuando estos herbívoros pacieron en exceso la vegetación, muchas especies de plantas que no pudieron tolerar este hecho desaparecieron. Animales más pequeños como roedores, conejos e insectos disminuyeron en cantidad porque las plantas de las que dependían para alimentarse ahora eran menos abundantes. La cantidad de zorros, halcones, búhos y tejones que depredan a estos animales pequeños disminuyó, así como el número de cuervos, águilas y otras carroñeras que comen los restos de la presa del lobo. Así, la desaparición del lobo resultó en comunidades con una diversidad biológica considerablemente menor. La reintroducción de los lobos en el Parque Nacional Yellowstone en 1995 signifi có para los ecólogos una oportunidad única para estudiar los impactos de las especies clave. El regreso del lobo ya ha ocasionado cambios sustanciales para otros residentes del parque. Los efectos depredatorios máximos han variado desde la modifi cación de las relaciones entre las especies de depredadores y presas hasta la transformación de perfi les de vegetación. Los coyotes son presas potenciales para los lobos y las manadas de éstos han diezmado algunas poblaciones de coyotes. La reducción de coyotes ha permitido que las poblaciones de presas de los coyotes, como ardillas de tierra y ardillas, crezcan. Carroñeros como los cuervos, águilas calvas y osos grises se han benefi ciado al alimentarse de los restos que deja el lobo. Las poblaciones de presas como el alce han declinado en años recientes, aunque los biólogos no están seguros de si el efecto de poda de los lobos es la razón principal. El clima (en este caso, una sequía extensa) y la cosecha humana son otros factores posibles.</p>
+<p>Las especies dominantes inﬂ uyen a una comunidad como resultado de su mayor tamaño o abundancia</p>
+<p>En contraste con las especies clave, que tienen un mayor impacto sin importar la proporción de su abundancia, las especies dominantes afectan bastante a la comunidad porque son muy comunes. Los árboles, la especie dominante de los bosques, modifi can el ambiente local. Los árboles proporcionan sombra, lo cual cambia la disponibilidad de luz y humedad en el piso del bosque. Los árboles proporcionan numerosos hábitats y microhábitats (como un hueco en el tronco de un árbol) para otras especies. Los bosques de árboles también proporcionan comida para muchos organismos, por lo que desempeñan un papel importante</p>
+<p>Carnívoros</p>
+<p>Herbívoros</p>
+<p>Productores</p>
+<p>Nutrientes</p>
+<p>Carnívoros</p>
+<p>Herbívoros</p>
+<p>Productores</p>
+<p>Nutrientes</p>
+<ol start="2" type="a">
+<li>Procesos de arriba (a) Procesos de abajo</li>
+</ol>
+<p>FIGURA 54-16 Procesos abajo-arriba y arriba-abajo</p>
+<p>Ecología de comunidades 1187</p>
+<p>Repaso</p>
+<p>■ Las especies dominante y clave ejercen fuertes efectos sobre el carácter de una comunidad, pero en formas diferentes. ¿En qué diﬁ eren la especie dominante y la especie clave?</p>
+<p>■ Los biólogos creen que la reintroducción de lobos en el Parque Nacional de Yellowstone, que empezó en 1995, terminará por resultar en una composición más variada y exuberante de plantas. ¿Éste es un ejemplo de proceso arriba-abajo o abajo-arriba? ¿Por qué?</p>
+</section>
+<section id="biodiversidad-comunitaria" class="level2">
+<h2 class="anchored" data-anchor-id="biodiversidad-comunitaria">54.3 BIODIVERSIDAD COMUNITARIA</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>8 Resumir los determinantes más importantes de la riqueza de especies en una comunidad y relacionar la riqueza de especies con la estabilidad de la comunidad.</p>
+<p>9 Plantear los resultados del análisis del efecto de la distancia en las especies de aves del Pacíﬁ co sur.</p>
+<p>La diversidad de especies, la riqueza de especies y la uniformidad de especies varían bastante de una comunidad a otra y son infl uidas por muchos factores bióticos y abióticos. La diversidad de especies es una medida del número de especies en una comunidad ( riqueza de especies ) y de la importancia relativa de cada especie, con base en su abundancia, productividad o tamaño ( uniformidad de especies ). La riqueza de especies , el número de especies en una comunidad, está determinada por el conteo de la especie de interés. Los bosques tropicales y los arrecifes de coral son ejemplos de comunidades con una riqueza de especies extremadamente alta. Por el contrario, las islas aisladas geográfi camente y las cimas montañosas exhiben menos riqueza de especies. La uniformidad de especies da cuenta de la abundancia relativa de una especie en comparación con otras especies ( FIGURA 54-17 ). Los ecólogos han desarrollado varias expresiones matemáticas, como el índice de Shannon , para representar cuantitativamente la diversidad de especies. Estos índices de diversidad permiten que los ecólogos comparen la diversidad de especies en diferentes comunidades. Los</p>
+<p>el tiempo por un aumento en las poblaciones de insectos acuáticos, otros invertebrados y peces. Por el contrario, los procesos arriba-abajo regulan la función del ecosistema por medio de interacciones trófi cas, en particular desde el nivel trófi co superior ( FIGURA 54-16b ). La regulación del ecosistema por procesos arriba-abajo ocurre porque los carnívoros comen herbívoros, que a su vez comen productores, lo cual afecta los niveles de nutrientes. Si los procesos arriba-abajo dominan un ecosistema, los efectos de un incremento en la población de los depredadores superiores producen un efecto en cascada hacia abajo de la red alimentaria a través de los herbívoros y productores. De hecho, los procesos arriba-abajo también se conocen como cascada trófi ca . Por ejemplo, un cambio en las preferencias alimenticias de las orcas, antes conocidas como ballenas asesinas, en la costa de Alaska proporciona un excelente ejemplo de una cascada trófi ca. Hace algunas décadas, cuando las orcas comenzaron a depredar a las nutrias marinas, la población de éstas declinó notablemente. A medida que las nutrias marinas disminuían, el número de erizos de mar, que son comidos por las nutrias marinas, aumentó. Los erizos de mar comen kelp (un alga marina), el productor en la base de la red alimentaria; el incremento en el número de erizos de mar ha ocasionado una disminución en las poblaciones de kelp. Parece que la regulación arriba-abajo predomina en los ecosistemas con menos niveles trófi cos y baja riqueza de especies. Tales ecosistemas podrían tener sólo una o unas cuantas especies de herbívoros dominantes, pero éstas tienen un fuerte impacto en las poblaciones de productores. Un excelente ejemplo de regulación arriba-abajo fue analizado en el capítulo 53: los renos introducidos en las islas Pribilof de Alaska pacieron en exceso la vegetación hasta que las plantas fueron casi eliminadas. Podría ser que los procesos regulatorios arriba-abajo y abajo-arriba no sean mutuamente excluyentes. En un estudio de 13 años de la comunidad del matorral espinoso en el centro de Chile, los ecólogos demostraron que la regulación arriba-abajo predomina en ciertas especies de mamíferos y plantas pequeños del desierto. Sin embargo, durante los eventos periódicos de El Niño (que se abordan después en el capítulo), el aumento en la precipitación resultó en incrementos abajo-arriba en los productores y en los consumidores. Parece que en este ecosistema los procesos regulatorios arriba-abajo y abajo-arriba son importantes en la dinámica trófi ca a lo largo de un amplio período.</p>
+<ol type="a">
+<li><p>Baja uniformidad de especies. En esta comunidad la abundancia de pasto es alta comparada con la de otras ﬂores silvestres (bardana, milenrama y margarita ojo de buey). En consecuencia, la comunidad tiene menos uniformidad de especies.</p></li>
+<li><p>Alta uniformidad de especies. En esta comunidad cada especie tiene la misma abundancia y la comunidad tiene mayor uniformidad de especies</p></li>
+</ol>
+<p>FIGURA 54-17 Uniformidad de especies Se muestran dos comunidades hipotéticas con diferentes uniformidades de especies pero la misma riqueza de especies (es decir, cada una tiene cuatro especies de ﬂ ores silvestres).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img4.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img5.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img5.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img7.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img7.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img8.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img8.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img9.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img9.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img11.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img11.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img13.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img13.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img14.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img14.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img15.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img15.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img16.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img16.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img17.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img17.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img18.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img18.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img19.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img19.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img20.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img20.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img22.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img22.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img23.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img23.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img24.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img24.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img25.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img25.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1221_img26.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1221_img26.jpeg</figcaption>
+</figure>
+</div>
+<p>1188 Capítulo 54</p>
+<p>que, ofrece una mayor variedad de nichos ecológicos potenciales que una comunidad simple, como en un desierto árido o un pastizal semiárido ( FIGURA 54-18 ). Un hábitat ya complejo, como un arrecife de coral, puede volverse aún más complicado si especies potencialmente capaces de ocupar nichos ecológicos vacantes evolucionan en la comunidad o migran hacia ella, porque dichas especies crean “oportunidades” para otras adicionales. Así, parece que la riqueza de especies se autoperpetúa en cierta medida. La riqueza de especies está relacionada inversamente con el aislamiento geográfi co de una comunidad. Las comunidades de islas aisladas suelen ser mucho menos diversas que las comunidades de amientes semejantes encontrados en los continentes. Esto se debe parcialmente al efecto de la distancia , la difi cultad que encuentran muchas especies para llegar y colonizar exitosamente una isla ( FIGURA 54-19 ). Asimismo, algunas veces las especies se extinguen localmente como resultado de eventos aleatorios. En hábitats aislados, como islas o cimas de montañas, las especies extintas localmente no son reemplazadas con</p>
+<p>biólogos conservacionistas usan índices de diversidad como parte de un enfoque amplio para salvar la biodiversidad.</p>
+<p>Los ecólogos buscan explicar por qué algunas comunidades tienen más especies que otras</p>
+<p>¿Qué determina el número de especies en una comunidad? No hay ninguna respuesta única concluyente, aunque varias explicaciones parecen plausibles. Algunas incluyen la complejidad estructural de los hábitats, el aislamiento geográfi co, el estrés del hábitat, la proximidad con los márgenes de comunidades adyacentes, la dominancia de una especie sobre otras y la historia geológica. Aunque éstos y otros factores ambientales tienen efectos positivos o negativos sobre la riqueza de especies, en cada explicación hay excepciones y variaciones. Algunas explicaciones varían a diferentes escalas espaciales: una explicación que parece funcionar a gran escala geográfi ca (como un continente) podría no hacerlo a una escala más pequeña (como una pradera). En muchos hábitats, la riqueza de especies está relacionada con la complejidad estructural de los hábitats. En ambientes terrestres, los tipos de plantas que crecen en el área suelen determinar la complejidad estructural. Una comunidad estructuralmente compleja, como un bos-</p>
+<p>Una comunidad donde la vegetación es estructuralmente compleja suele ofrecer a los animales más tipos de alimento y sitios para ocultarse que una comunidad con menor complejidad estructural.</p>
+<p>0 0.4 0.8 1.2 1.6 2.0</p>
+<p>Complejidad estructural de la vegetación</p>
+<p>10</p>
+<p>0</p>
+<p>20</p>
+<p>30</p>
+<p>40</p>
+<p>Número de especies de aves</p>
+<p>Sudáfrica</p>
+<p>California</p>
+<p>Chile</p>
+<p>FIGURA 54-18 Efecto de la complejidad de la comunidad sobre la riqueza de especies Los datos se compilaron en hábitats de chaparrales similares (áreas arbustivas y leñosas) en Chile, Sudáfrica y California. La complejidad estructural de la vegetación ( eje x ) es un gradiente de hábitats asignado numéricamente, con base en la altura y densidad de la vegetación, desde complejidad baja (matorrales muy secos) hasta complejidad alta (bosques). (Según Cody, M. L. y J. M. Diamond, eds.&nbsp;Ecology and Evolution of Communities . Harvard University, Cambridge, MA, 1975).</p>
+<p>PUNTO CLAVE</p>
+<p>EXPERIMENTO CLAVE</p>
+<p>PREGUNTA : ¿El aislamiento geográﬁ co de una comunidad afecta su riqueza de especies?</p>
+<p>HIPÓTESIS: Las islas cercanas a tierra ﬁ rme (o a una isla muy grande) tienen mayor riqueza de especies que las islas más alejadas de tierra ﬁ rme.</p>
+<p>EXPERIMENTO: El número de especies de aves fue catalogado en las islas del Pacíﬁ co sur situadas a varias distancias de Nueva Guinea, una fuente de especies colonizadoras para estas islas más pequeñas. Cada punto en la gráﬁ ca representa una isla diferente.</p>
+<p>2000 0 4000 6000 8000 10,000</p>
+<p>Distancias a Nueva Guinea (km)</p>
+<p>6.25</p>
+<p>12.5</p>
+<p>25</p>
+<p>50</p>
+<p>100</p>
+<p>Porcentaje de especies que viven en islas diferentes (escala logarítmica)</p>
+<p>RESULTADOS Y CONCLUSIÓN: El porcentaje de especies de aves del Pacíﬁ co sur encontrado en cada isla en la misma región está relacionado con la distancia a Nueva Guinea. (Nueva Guinea cuenta con 100% de las especies de aves que viven en esa región). Así, la riqueza de especies declina a medida que aumenta la distancia a Nueva Guinea.</p>
+<p>Fuente: según Diamond, J. M. “Biogeographic Kinetics: Estimation of Relaxation Times for Avifaunas of Southwest Paciﬁ c Islands”. Proceedings of the National Academy of Sciences , vol.&nbsp;69, 1972.</p>
+<p>FIGURA 54-19 El efecto de la distancia</p>
+<p>Ecología de comunidades 1189</p>
+<p>cia por comida y a un hábitat modifi cado debido a que la abundancia de especies de pastos se incrementó de manera extraordinaria después del retiro de las ratas canguro. La riqueza de especies se ve bastante afectada por la historia geológica. Muchos científi cos piensan que los bosques tropicales son antiguas comunidades estables que han experimentado relativamente pocas perturbaciones extendidas a lo largo de la historia de la Tierra. (En ecología, una perturbación es cualquier evento en el tiempo que interrumpe la</p>
+<p>rapidez. Las áreas aisladas suelen ser pequeñas y tienen menos nichos ecológicos potenciales. Por lo general, la riqueza de especies está inversamente relacionada con el estrés ambiental de un hábitat. Sólo las especies capaces de soportar condiciones extremas viven en una comunidad estresada por el ambiente. Así, la riqueza de especies de un río altamente contaminado es baja en comparación con la de una corriente prístina próxima. De manera semejante, la riqueza de especies de comunidades en latitudes altas (más alejadas del ecuador) expuestas a climas severos es menor que la de comunidades en latitudes más bajas (próximas al ecuador) con climas más benignos ( FIGU -</p>
+<p>RA 54-20 ). Esta observación, conocida como hipótesis de la riqueza de energía de las especies sugiere que las diferentes latitudes afectan la riqueza de especies debido a variaciones en la energía solar. Más energía podría permitir que más especies coexistan en una región dada. Aunque los países ecuatoriales; Colombia, Ecuador y Perú, ocupan sólo 2% de la superfi cie terrestre, contienen de manera notable 45,000 especies de plantas nativas. El territorio continental de Estados Unidos y Canadá, un área superfi cial signifi cativamente más grande, aloja un total de 19,000 especies de plantas nativas. Sólo Ecuador contiene más de 1300 especies de aves nativas: el doble que Estados Unidos y Canadá combinados. La riqueza de especies suele ser mayor en los márgenes de comunidades distintas que en sus centros. La razón es que un ecotono , una zona de transición donde se encuentran dos o más especies, contiene a todos o a la mayoría de los nichos ecológicos de las comunidades adyacentes, así como a algunos que son únicos del ecotono (vea la fi gura 56-24). Este cambio en la composición de especies producido en el ecotono se conoce como efecto de borde . La riqueza de especies se reduce cuando cualquier especie disfruta una posición de dominancia dentro de una comunidad; una especie dominante puede apropiarse de una porción desproporcionada de los recursos disponibles, dispersando así o sacando de la competencia a otras especies. El ecólogo James H. Brown de la Universidad de Nuevo México se ha dedicado a estudiar la composición y riqueza de especies en experimentos conducidos desde 1977 en el desierto chihuahuense del sureste de Arizona. En un experimento, el retiro de tres especies dominantes, todas ratas canguro, de varias parcelas resultó en un incremento en la diversidad de otras especies de roedores. Este aumento fue atribuido a la disminución de la competen-</p>
+<p>La riqueza de especies aumenta a lo largo de un gradiente polar ¡ ecuatorial. Esta correlación ha sido observada para muchos organismos, desde plantas hasta primates en ambientes terrestres y marinos.</p>
+<p>60</p>
+<p>60</p>
+<p>60</p>
+<p>80</p>
+<p>80</p>
+<p>80</p>
+<p>100</p>
+<p>100</p>
+<p>100</p>
+<p>120</p>
+<p>120</p>
+<p>120</p>
+<p>140</p>
+<p>140</p>
+<p>140</p>
+<p>160 160</p>
+<p>160</p>
+<p>180 180</p>
+<p>180</p>
+<p>200</p>
+<p>200 220</p>
+<p>220 240</p>
+<p>240 240</p>
+<p>280 280 300 320 340</p>
+<p>360</p>
+<p>380</p>
+<p>400 420 440 480 460</p>
+<p>260 260</p>
+<p>260</p>
+<p>160</p>
+<p>160</p>
+<p>140 140</p>
+<p>120</p>
+<p>40</p>
+<p>A</p>
+<p>B</p>
+<p>C</p>
+<p>FIGURA 54-20 Animada Efecto de la latitud sobre la riqueza de especies de aves que se reproducen en Norteamérica Se muestra la riqueza de especies de tres transectas norte-sur (A, B y C). Observe que el número global de especies de aves reproductoras es mayor a altitudes más bajas hacia el ecuador que a altitudes más elevadas. Sin embargo, este patrón es modiﬁ cado en mayor grado por otros factores, como características de la precipitación y la superﬁ cie (como las montañas). (Según Cook, R. E. “Variation in Species Density of North American Birds”. Systematic Zoology , vol.&nbsp;18, 1969).</p>
+<p>PUNTO CLAVE</p>
+<p>1190 Capítulo 54</p>
+<p>en una comunidad, resulta evidente que algunas especies se benefi cian a expensas de otras. Si una especie declina en un año dado, otras especies que compiten con ella podrían aumentar. Por tanto, si un ecosistema contiene más especies, es probable que por lo menos algunas sean resistentes a cualquier perturbación dada.</p>
+<p>Repaso</p>
+<p>■ ¿Cómo está relacionada la riqueza de especies de una comunidad con el aislamiento geográﬁ co?</p>
+<p>■ ¿De qué manera es relevante la complejidad estructural de los hábitats para la riqueza de especies?</p>
+<p>■ ¿Cómo está relacionada la riqueza de especies de una comunidad con el estrés ambiental de un hábitat?</p>
+</section>
+<section id="desarrollo-comunitario" class="level2">
+<h2 class="anchored" data-anchor-id="desarrollo-comunitario">54.4 DESARROLLO COMUNITARIO</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>10 Deﬁ nir sucesión y distinguir entre sucesión primaria y secundaria. 11 Describir la hipótesis de la perturbación intermedia. 12 Analizar las dos opiniones tradicionales de la naturaleza de las comunidades: el modelo organísmico de Clement y el modelo individualista de Gleason.</p>
+<p>Una comunidad no cobra existencia en plena fl orescencia, sino que se desarrolla gradualmente a través de una serie de etapas, cada una dominada por diferentes organismos. El proceso de desarrollo de la comunidad a lo largo del tiempo, lo cual implica que las especies en una etapa sean sustituidas por especies diferentes, se denomina sucesión . Un área está colonizada inicialmente por ciertas especies sucesionales tempranas que dan lugar con el tiempo a otras; que a su vez dan lugar a especies sucesionales tardías. La sucesión suele describirse en términos de los cambios en la composición de las especies de vegetación de una zona, aunque cada etapa sucesional también tiene sus propios tipos de animales característicos y otras especies. El tiempo implicado en la sucesión es del orden de decenas, cientos o miles de años, no los millones de años implicados en la escala de tiempo de la evolución. Los ecólogos distinguen dos tipos de sucesión: primaria y secundaria. La sucesión primaria es el cambio en la composición de las especies a lo largo del tiempo en un hábitat que no estaba poblado previamente por organismos. Cuando empieza la sucesión primaria no existe suelo. Las superfi cies rocosas desnudas, como la lava volcánica recientemente formada y roca limpia raspada por los glaciares son ejemplos de sitios donde la sucesión primaria podría tener lugar ( FIGURA 54-21 ). La isla indonesia de Krakatoa ha proporcionado a los científi cos un estudio perfecto a largo plazo de la sucesión primaria en un bosque tropical. En 1883, una erupción volcánica destruyó virtualmente toda la vida sobre la isla. Los ecólogos han estudiado el ecosistema durante más de 100 años desde la devastación a fi n de documentar el regreso de las formas de vida. Hasta alrededor de la década de 1990, los ecólogos encontraron que el avance de la sucesión primaria era extremadamente lento, en parte debido al aislamiento de Krakatoa (recuerde el efecto de la distancia analizado antes en el capítulo). Muchas especies están limitadas en su capacidad para dispersarse sobre el agua. Por ejemplo, el bosque de Krakatoa puede contar con sólo la décima parte de la riqueza de especies arbóreas de un bosque tropical no perturbado en las islas vecinas. A su vez, la falta de diversidad vegetal ha limitado a su vez el número de especies animales colonizadoras. Por ejemplo, en un área fo-</p>
+<p>estructura de la comunidad o de la población). Durante este tiempo, en los bosques tropicales evolucionó una multitud de especies. Por el contrario, los glaciares han alterado repetidamente las regiones templadas y árticas durante la historia de la Tierra. Un área desocupada recientemente por glaciares tendrá baja riqueza de especies porque pocas de ellas tendrán la posibilidad de ingresar y establecerse ahí. La idea de que los hábitats más antiguos y estables tienen mayor riqueza de especies que los hábitats sometidos a perturbaciones frecuentes de largo alcance se conoce como hipótesis del tiempo .</p>
+<p>La riqueza de especies puede promover la estabilidad de la comunidad</p>
+<p>Tradicionalmente, la mayoría de los ecólogos suponían que la estabilidad de la comunidad, la capacidad de una comunidad para resistir perturbaciones, es una consecuencia de su complejidad. Es decir, los ecólogos conjeturaban que una comunidad con considerable riqueza de especies es más estable que una comunidad con menos riqueza de especies. Según este enfoque, mientras mayor sea la riqueza de especies, menos críticamente importante debería ser cualquier especie por sí sola. Con muchas interacciones posibles dentro de la comunidad, parece improbable que alguna perturbación única pudiera afectar sufi cientes componentes del sistema para hacer una diferencia signifi cativa en su funcionamiento. La evidencia que apoya esta hipótesis se encuentra en el hecho de que los brotes destructivos de epidemias son más comunes en los campos cultivados, que tienen menor riqueza de especies, que en comunidades naturales con mayor riqueza de especies. Como otro ejemplo, la casi completa pérdida del castaño estadounidense a causa del hongo roya del castaño tuvo poco efecto sobre los bosques de los Apalaches, con una diversidad moderada, de los que formaba parte. Estudios en curso dirigido por David Tilman de la Universidad de Minnesota y John Downing de la Universidad de Iowa han reforzado el vínculo entre riqueza de especies y estabilidad de la comunidad. En su estudio inicial, establecieron y supervisaron 207 parcelas de varias especies de pastos en Minnesota por siete años. Durante el período de estudio, ocurrió la peor sequía en Minnesota en 50 años (1987-1988). Los ecólogos encontraron que las parcelas con el mayor número de especies de plantas perdieron menos cobertura del suelo, medida en peso seco, y se recuperaron más rápido que las parcelas pobres en especies. Después, estudios de Tilman y sus colegas apoyaron estas conclusiones y mostraron un efecto semejante de la riqueza de especies sobre la estabilidad de la comunidad durante años sin sequía. Trabajos parecidos realizados por casi tres docenas de ecólogos en ocho sitios de pastizales en Europa también apoyan el vínculo entre riqueza de especies y estabilidad de la comunidad. Algunos científi cos no están de acuerdo con la conclusión de Tilman y otros grupos de investigadores en que la presencia de más especies confi ere mayor estabilidad a la comunidad. Estos críticos argumentan que es difícil separar el número de especies de otros factores que podría afectar la productividad. Sugieren que sería mejor empezar con ecosistemas establecidos y estudiar lo que ocurre con su productividad una vez que se retiran las plantas. Otra observación que agrega una capa de complejidad al debate riqueza de especies-estabilidad de la comunidad es que las poblaciones de especies individuales dentro de una comunidad rica en especies a menudo varían de manera signifi cativa de un año al otro. Podría parecer paradójico que la variación dentro de las poblaciones de especies individuales se relacione con la estabilidad de toda la comunidad. Sin embargo, cuando se consideran todas las interacciones entre los organismos</p>
+<p>Ecología de comunidades 1191</p>
+<p>de abeto Douglas también empezaron a aparecer en 1998. Los ecólogos continúan supervisando los cambios en Yellowstone a medida que avanza la sucesión secundaria.</p>
+<p>Las perturbaciones afectan la sucesión y la riqueza de especies</p>
+<p>Estudios recientes han sugerido que la sucesión avanza inevitablemente hacia una comunidad estable y persistente, conocida como comunidad clímax , que está determinada sólo por el clima. No se pensaba que las perturbaciones periódicas, como incendios o inundaciones, tuvieran mucha infl uencia sobre las comunidades clímax. Si la comunidad clímax era perturbada de cualquier manera, regresaría a un equilibrio estable y autosustentable con el tiempo. Este punto de vista tradicional de la estabilidad ha dejado de ser favorecido. La aparente estabilidad de punto fi nal de la composición de especies en un bosque “clímax” es probablemente el resultado de</p>
+<p>restal de Krakatoa, donde los zoólogos esperaban encontrar más de 100 especies de mariposas, sólo hay dos. La sucesión secundaria es el cambio en la composición de las especies que ocurre después de que una perturbación remueve la vegetación existente; el suelo ya existe en estos sitios. Los campos agrícolas abandonados o las zonas abiertas producidas por incendios forestales son ejemplos comunes de sitios donde ocurre sucesión secundaria. Durante el verano de 1988, los incendios destruyeron aproximadamente la tercera parte del Parque Nacional Yellowstone. Este desastre natural constituyó una valiosa oportunidad para estudiar la sucesión secundaria en áreas que habían sido bosques. Después de la confl agración, la ceniza gris cubrió el suelo forestal y la mayoría de los árboles, aunque aún de pie, fueron carbonizados y murieron. La sucesión secundaria en Yellowstone ha ocurrido con rapidez desde 1988. Menos de un año después, en la primavera de 1989, trucha lirio y otras hierbas brotaron y cubrieron buena parte del suelo. En 1998, un bosque joven de pinos desde 40 cm hasta poco más de un metro de altura dominaba el área. Plántulas</p>
+<ol type="a">
+<li><p>Después del retroceso del glaciar, la grava morrena fue colonizada inicialmente por líquenes. Luego siguieron los musgos y hierbas con raíces poco profundas, como las garioﬁleas de montaña ( Dryas sp .).</p></li>
+<li><p>Densas esteras de plantas Dryas sp . de bajo crecimiento dominan el paisaje, estabilizando la delgada capa del suelo en desarrollo.</p></li>
+<li><p>A medida que mejora la condición del suelo, el abeto sitka ( Picea sichensis ) sustituye a la comunidad de aliso. Después de varios cientos de años, el bosque consta de abeto sitka y tsuga occidental ( Tsuga heterophylla ).</p></li>
+<li><p>Los alisos sustituyen a la comunidad de Dryas sp . Tanto los alisos como los Dryas sp . cuentan con bacterias que ﬁjan nitrógeno en los nódulos de su raíz, lo cual mejora el contenido de nitrógeno del suelo.</p></li>
+</ol>
+<p>© Wolfgang Kaehler/Corbis</p>
+<p>© Don Paulson/Alamy Jupiter Images</p>
+<p>© Don Paulson/Alamy</p>
+<p>FIGURA 54-21 Animada Sucesión primaria luego del retroceso de los glaciares Los ecologistas tienen documentada la sucesión primaria del retroceso de los glaciares en Glacier Bay, Alaska.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1225_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1225_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1225_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1225_img2.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1225_img3.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1225_img3.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1225_img4.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1225_img4.jpeg</figcaption>
+</figure>
+</div>
+<p>1192 Capítulo 54</p>
+<p>de desarrollo era la sucesión y la etapa adulta era la comunidad clímax. Este enfoque cooperativo de la comunidad, denominado modelo organísmico provoca estrés en la interacción de los miembros, los cuales tienden a agruparse estrechamente dentro de los límites discretos de la comunidad ( FIGURA 54-23a ). Los opositores del modelo organísmico, en particular el ecólogo Henry A. Gleason (1882-1975), sostenían que las interacciones biológicas son menos importantes en la producción de comunidades que los gradientes ambientales (como clima y suelo) e inclusive el azar. En efecto, el concepto de comunidad es cuestionable. Puede ser una categoría clasifi catoria sin sustento en la realidad, que refl eja poco más que la tendencia de organismos con requerimientos ambientales parecidos a vivir en sitios semejantes. Esta escuela de pensamiento, denominada modelo individualista , enfatiza la individualidad de las especies, cada una con sus propios requerimientos de vida abióticos. Sostiene que las comunidades son por tanto asociaciones no interdependientes de organismos. Más bien, cada especie está distribuida de manera independiente a través de un continuo de áreas que satisfacen sus propios requerimientos individuales ( FIGURA 54-23b ). Debates como éste sobre la naturaleza de las comunidades forman parte integral del proceso científi co porque alimentan la discusión y la investigación que llevan a una mejor comprensión de amplios principios científi cos. Estudios que prueban la hipótesis organísmica e individualista de las comunidades no apoyan el concepto interactivo de Clements de las comunidades como unidades discretas. En cambio, la mayoría de los estudios están a favor del modelo individualista. Como se muestra en la FIGURA 54-23c , las especies arbóreas en los bosques de Wisconsin están distribuidas en un gradiente que va de ambientes húmedos a secos. Además, los estudios de movimientos de plantas y animales durante los pasados 14,000 años apoyan el modelo individualista porque parece que las especies individuales, no las comunidades enteras, se han redistribuido en respuesta a cambios climatológicos.</p>
+<p>Repaso</p>
+<p>■ ¿Qué es la sucesión?</p>
+<p>■ ¿En qué se diferencia la sucesión primaria de la sucesión secundaria?</p>
+<p>■ ¿Qué es la hipótesis de la perturbación intermedia de Connell?</p>
+<p>■ ¿En qué se diferencian los modelos organizativo e individualista de la naturaleza de las comunidades?</p>
+<p>cuánto viven los árboles con respecto a la duración de la vida útil humana. Ahora se acepta que las comunidades forestales nunca alcanzan un estado de equilibrio permanente, sino que existen en un estado de perturbación continua. La composición de especies y la abundancia relativa de cada especie varían en una comunidad madura sobre un intervalo de gradientes ambientales, aunque la comunidad retenga una apariencia relativamente uniforme de manera global. Debido a que todas las comunidades están expuestas a perturbaciones periódicas, tanto naturales como inducidas por los humanos, los ecólogos han intentado comprender desde hace mucho los efectos de la perturbación sobre la riqueza de especies. Un avance importante fue el desarrollo de la hipótesis de la perturbación intermedia de Joseph H. Connell. Cuando él analizó la riqueza de especies en bosques tropicales y arrecifes de coral, propuso que la riqueza de especies es máxima a niveles moderados de perturbación ( FIGURA 54-22 ). A un nivel moderado de perturbación, la comunidad es un mosaico de parches de hábitats en diferentes etapas de sucesión; existe un intervalo de sitios, desde los recientemente perturbados hasta los que no han sido perturbados en muchos años. Cuando las perturbaciones son frecuentes o intensas, sólo las especies mejor adaptadas a etapas previas de la sucesión persisten, mientras que las perturbaciones de bajo nivel permiten que especies sucesionales tardías dominen a tal grado que las otras especies desaparecen. Por ejemplo, cuando los incendios periódicos son suprimidos en los bosques, reduciendo la perturbación a un bajo nivel, algunas de las hierbas “típicas” del bosque declinan en número e inclusive desaparecen. Una de las difi cultades con la hipótesis de la perturbación intermedia es defi nir con precisión lo que constituye un nivel “intermedio” de perturbación. A pesar de este problema, la hipótesis tiene ramifi caciones importantes para la biología de la conservación porque establece que no es posible mantener una comunidad particular simplemente por el hecho de crear una reserva a su alrededor. Las perturbaciones tanto naturales como inducidas por los humanos provocan cambios en la composición de las especies y es posible que los humanos tengan que intervenir intencionalmente a fi n de preservar la riqueza de especies de la comunidad original. Qué tipo de intervención humana es necesaria y en qué grado para mantener la riqueza de especies es un tema polémico.</p>
+<p>Los ecólogos continúan estudiando la estructura comunitaria</p>
+<p>Una de las cuestiones fundamentales en la ecología de comunidades, desde principios de 1900 hasta el presente, es la naturaleza de las comunidades. ¿Las comunidades son sistemas altamente organizados de especies predecibles o son abstracciones producidas por la mente de los ecólogos? El botánico estadounidense Frederick E. Clements (1874-1945) estaba sorprendido por la uniformidad mundial de largos tractos de vegetación; por ejemplo, los bosques tropicales en Sudamérica, África y el sureste de Asia. También observó que aun cuando la composición de las especies de una comunidad en un hábitat particular puede ser diferente de la de una comunidad en un hábitat con clima semejante en cualquier parte del planeta, los componentes globales de las dos comunidades suelen ser semejantes. Consideró a las comunidades algo así como “superorganismos” cuyas especies miembro cooperaban entre sí de manera que semejaba la cooperación de las partes del cuerpo de un organismo individual. El enfoque de Clements era que la comunidad pasaba por ciertas etapas de desarrollo, como las etapas embrionarias de un organismo, y que terminaba por llegar a una etapa adulta; el proceso</p>
+<p>FIGURA 54-22 Hipótesis de la perturbación intermedia La riqueza de especies es máxima a un nivel intermedio de perturbación. (Según Connell, J. H. “Diversity in Tropical Rain Forests and Coral Reefs”. Science , vol.&nbsp;199, 1978.)</p>
+<p>Riqueza de especies</p>
+<p>Nivel de perturbación</p>
+<p>Alta</p>
+<p>Baja Baja</p>
+<p>Diversidad máxima en el nivel intermedio de perturbación</p>
+<p>Alta</p>
+<p>Ecología de comunidades 1193</p>
+<p>La mayoría de las comunidades son asociaciones individualistas de especies, más que unidades distintas que actúan como “superorganismos”.</p>
+<p>#1 #2 #3 #4</p>
+<p>Abundancia de especies diferentes</p>
+<p>Gradiente ambiental</p>
+<p>Abundancia de especies diferentes</p>
+<p>Gradiente ambiental</p>
+<ol type="a">
+<li><p>Modelo organísmico. De acuerdo con esta hipótesis, las comunidades están organizadas como unidades distintas. Cada una de las cuatro comunidades mostradas ( corchetes numerados ) consta de un ensamblaje de especies distintas ( cada curva coloreada representa una sola especie ). Las ﬂechas indican ecotonos, regiones de transición a lo largo de las fronteras comunitarias.</p></li>
+<li><p>Modelo individualista. Este modelo pronostica un ensamblaje de especies más aleatorio a lo largo de un gradiente de condiciones ambientales.</p></li>
+<li><p>Las especies de árboles en los bosques de Wisconsin, que están distribuidas a lo largo de un gradiente de humedad se parecen más al modelo individualista. El “valor en importancia” ( eje y ) de cada especie en una ubicación dada combina tres aspectos (densidad de población, frecuencia y tamaño).</p></li>
+</ol>
+<p>Húmedo Moderadamente húmedo Moderado</p>
+<p>Gradiente de humedad</p>
+<p>Moderadamente seco Seco</p>
+<p>50</p>
+<p>0</p>
+<p>100</p>
+<p>150</p>
+<p>Valor en importancia</p>
+<p>Sauce negro</p>
+<p>Olmo estadounidense</p>
+<p>Arce azucarado</p>
+<p>Olmo resbaloso</p>
+<p>Roble rojo</p>
+<p>Roble blanco</p>
+<p>FIGURA 54-23 Naturaleza de las comunidades ( c, adaptado de Curtis, J. T. The Vegetation of Wisconsin , University of Wisconsin Press, Madison, 1959).</p>
+<p>PUNTO CLAVE</p>
+<p>54.1 ( página 1174 )</p>
+<p>1 Deﬁ nir nicho ecológico y distinguir entre un nicho fundamental de un organismo y su nicho realizado.</p>
+<p>■ El estilo de vida y el papel particulares de un organismo en una comunidad es su nicho ecológico. El nicho ecológico de un organismo toma en cuenta todos los aspectos bióticos y abióticos de la existencia del organismo. El hábitat de un organismo (donde vive) es uno de los parámetros empleados para describir el nicho.</p>
+<p>■ Los organismos pueden explotar más recursos y desempeñar un papel más amplio en la vida de su comunidad de lo que en realidad hacen. El nicho ecológico potencial para un organismo es su nicho fundamental , mientras que el nicho que realmente ocupa es su nicho realizado . 2 Deﬁ nir competencia y distinguir entre competencia interespecíﬁ ca e intraespecíﬁ ca.</p>
+<p>■ La competencia ocurre cuando dos o más individuos intentan usar el mismo recurso esencial, como alimento, agua, refugio, espacio vital o luz solar.</p>
+<p>■ La competencia ocurre entre individuos dentro de una población (competencia intraespecíﬁ ca) o entre diferentes especies (competencia interespecíﬁ ca) . 3 Resumir los conceptos de principio de exclusión competitiva, repartición de recursos y desplazamiento de carácter.</p>
+<p>■ De acuerdo con el principio de exclusión competitiva , dos especies no pueden ocupar el mismo nicho en la misma comunidad por un período</p>
+<p>indeﬁ nido; una especie es excluida por otra como resultado de la competencia por un recurso limitante.</p>
+<p>■ La evolución de diferencias en el uso de los recursos, conocida como repartición de recursos , reduce la competencia entre especies similares.</p>
+<p>■ La competencia entre algunas especies es reducida por el desplazamiento de carácter , en el cual sus características estructurales, ecológicas y de conducta divergen cuando sus rangos se traslapan.</p>
+<p>G. fuliginosa G. fortis Profundidad de pico</p>
+<p>4 Deﬁ nir depredación y describir los efectos de la selección natural en las relaciones depredador-presa.</p>
+<p>■ La depredación es el consumo de una especie (la presa ) por otra (el depredador ). Durante la coevolución entre depredador y presa, en las especies depredadoras evolucionaron maneras más eﬁ cientes de atrapar presas y en las especies que son presas evolucionaron mejores maneras de escapar de los depredadores.</p>
+</section>
+<section id="resumen-enfoque-en-los-objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1227_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1227_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/54-ecologia-de-comunidades/54-ecologia-de-comunidades_p1227_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>54-ecologia-de-comunidades_p1227_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>1194 Capítulo 54</p>
+<p>■ La riqueza de especies a menudo es grande en un hábitat que tiene complejidad estructural; en una comunidad que no está aislada (el efecto de la distancia) o gravemente estresada; en una comunidad donde hay más disponibilidad de energía (la hipótesis de la riqueza de energía de las especies); en ecotonos (zonas de transición entre comunidades); y en comunidades con largas historias sin perturbaciones importantes, eventos que desorganizan a la comunidad o a su estructura de población.</p>
+<p>■ Varios estudios sugieren que la riqueza de especies puede promover estabilidad en la comunidad. 9 Plantear los resultados del análisis del efecto de la distancia en las especies de aves del Pacíﬁ co sur.</p>
+<p>■ El número de especies de aves encontradas en cada isla en el Pacíﬁ co sur está relacionada inversamente con su aislamiento geográﬁ co; es decir, con su distancia a Nueva Guinea. La riqueza de una especie disminuye a medida que aumenta la distancia a Nueva Guinea.</p>
+<p>54.4 ( página 1190 )</p>
+<p>10 Deﬁ nir sucesión y distinguir entre sucesión primaria y secundaria.</p>
+<p>■ Sucesión es el reemplazo ordenado de una comunidad por otra. La sucesión primaria ocurre en un área que previamente estaba inhabitada (como una roca desnuda). La sucesión secundaria empieza en un área donde había una comunidad preexistente y un suelo bien formado (como tierras de cultivo abandonadas). 11 Describir la hipótesis de la perturbación intermedia.</p>
+<p>■ La perturbación afecta la sucesión y la riqueza de especies. Según la hipótesis de la perturbación intermedia , la riqueza de especies es máxima a niveles moderados de perturbación, lo que crea un mosaico de parches de hábitat en etapas diferentes de sucesión. 12 Analizar las dos opiniones tradicionales de la naturaleza de las comunidades: el modelo organísmico de Clement y el modelo individualista de Gleason.</p>
+<p>■ El modelo organísmico considera a una comunidad como un “superorganismo” que pasa por ciertas etapas de desarrollo (sucesión) hacia la adultez (clímax). En este enfoque, las interacciones biológicas son responsables en primera instancia de la composición de la especie y los organismos son bastante interdependientes.</p>
+<p>■ La mayoría de los ecólogos apoyan el modelo individualista , que desafía el concepto de una comunidad altamente interdependiente. Según este modelo, los factores ambientales abióticos son los determinantes primarios de la composición de las especies en una comunidad y los organismos son independientes entre sí de alguna manera.</p>
+<p>Explore la competencia interespecíﬁ ca, la repartición de recursos, el mimetismo y el efecto de la distancia haciendo clic en las ﬁ guras en CengageNOW.</p>
+<p>5 Distinguir entre mutualismo, comensalismo y parasitismo, y dar ejemplos de cada uno.</p>
+<p>■ La simbiosis es cualquier asociación íntima o a largo plazo entre dos o más especies. Los tres tipos de simbiosis son mutualismo, comensalismo y parasitismo.</p>
+<p>■ En el mutualismo ambos participantes se beneﬁ cian. Tres ejemplos de mutualismo son las bacterias ﬁ jadoras de nitrógeno y las legumbres, zooxantelas y corales, y micorrizas (hongos y raíces de plantas).</p>
+<p>■ En el comensalismo un organismo se beneﬁ cia y el otro permanece sin cambio. Dos ejemplos de comensalismo son las lepismas y el ejército de hormigas, así como las epiﬁ tas y plantas más grandes.</p>
+<p>■ En el parasitismo, un organismo (el parásito ) se beneﬁ cia mientras el otro ( el huésped ) es dañado. Un ejemplo de parasitismo se encuentra en los ácaros que crecen dentro o sobre las abejas. Algunos parásitos son patógenos que provocan enfermedades.</p>
+<p>54.2 ( página 1185 )</p>
+<p>6 Distinguir entre especies clave y especies dominantes.</p>
+<p>■ Las especies clave están presentes en cantidades relativamente pequeñas pero son cruciales para determinar la composición de las especies y el funcionamiento del ecosistema de toda la comunidad.</p>
+<p>■ Al contrario de las especies clave, que tienen un impacto que es desproporcionado con respecto a su abundancia, las especies dominantes afectan bastante a la comunidad de la que forman parte porque son muy comunes. 7 Distinguir entre los procesos abajo-arriba y arriba-abajo en la regulación de los ecosistemas.</p>
+<p>■ Si los procesos abajo-arriba dominan en un ecosistema, la disponibilidad de recursos, como los minerales, controla la cantidad de productores (es decir, el nivel tróﬁ co más bajo), que a su vez controla el número de herbívoros, lo que a su vez controla el número de carnívoros.</p>
+<p>■ Los procesos arriba-abajo regulan los ecosistemas desde el nivel tróﬁ co más alto: por consumidores que comen productores. Si los procesos arribaabajo dominan un ecosistema, un aumento en la cantidad de depredadores superiores ocasiona una cascada hacia abajo de la red alimentaria a través de herbívoros y productores.</p>
+<p>54.3 ( página 1187 )</p>
+<p>8 Resumir los determinantes más importantes de la riqueza de especies en una comunidad y relacionar la riqueza de especies con la estabilidad de la comunidad.</p>
+<p>■ La complejidad de una comunidad se expresa en términos de la riqueza de especies , el número de especies dentro de una comunidad, y la diversidad de especies , una medida de la importancia relativa de cada especie dentro de una comunidad con base en su abundancia, productividad o tamaño.</p>
+<ol type="1">
+<li><p>Un recurso limitante hace todo lo siguiente excepto que (a) tiende a restringir el nicho ecológico de una especie (b) su disponibilidad es corta con respecto a la necesidad de una especie por él (c) limita la presencia de una especie en una comunidad dada (d) resulta en una perturbación intermedia (e) puede ser limitante sólo para parte del ciclo de vida de un organismo</p></li>
+<li><p>Con base en la evidencia actual, las mariposas monarca y virrey son probablemente un ejemplo de (a) mimetismo batesiano (b) desplazamiento de carácter (c) repartición de recursos (d) mimetismo mülleriano (e) coloración críptica</p></li>
+<li><p>Una asociación simbiótica en la que los organismos se benefi cian mutuamente se conoce como (a) depredación (b) competencia interespecífi ca (c) competencia intraespecífi ca (d) comensalismo (e) mutualismo</p></li>
+<li><p>El (la) ______ de una especie es la totalidad de sus adaptaciones, su uso de recursos y su estilo de vida. (a) hábitat (b) ecotono (c) nicho ecológico (d) exclusión competitiva (e) coevolución</p></li>
+<li><p>La competencia con otras especies ayuda a un organismo a determinar su (a) ecotono (b) nicho fundamental (c) nicho realizado (d) recurso limitante (e) ecosistema</p></li>
+<li><p>“Los competidores completos no pueden existir” es una afi rmación del principio de (a) sucesión primaria (b) recursos limitantes (c) mimetismo mülleriano (d) exclusión competitiva (e) desplazamiento de carácter</p></li>
+<li><p>El ______ signifi ca que la riqueza de una especie es mayor donde dos comunidades se encuentran que en el centro de cualquiera de las comunidades. (a) efecto de borde (b) nicho fundamental (c) desplazamiento de carácter (d) nicho realizado (e) recurso limitante</p></li>
+</ol>
+<p>EVALÚE SU COMPRENSIÓN</p>
+<p>Ecología de comunidades 1195</p>
+<p>interespecífi ca. La explicación más probable es (a) falta de especies clave (b) baja riqueza de especies (c) competencia intraespecífi ca manifi esta (d) coevolución de estrategias depredador-presa (e) repartición de recursos</p>
+<ol start="12" type="1">
+<li><p>El apoyo para el modelo individualista de la estructura comunitaria incluye (a) el declive de las abejas debido a dos especies de ácaros (b) la identifi cación de higueras como especie clave en bosques tropicales (c) la exclusión competitiva de una especie de Paramecium por otra (d) la distribución de árboles a lo largo de un gradiente de humedad en bosques de Wisconsin (e) los efectos de retirar una especie de roedor dominante de un desierto de Arizona</p></li>
+<li><p>La sucesión primaria ocurre en (a) roca desnuda (b) lava recién enfriada (c) tierras de cultivo abandonadas (d) a y b (e) a, b y c</p></li>
+<li><p>La tendencia de dos especies a diferir entre sí de manera más acentuada en áreas donde existen juntas se conoce como (a) mimetismo mülleriano (b) mimetismo batesiano (c) repartición de recursos (d) exclusión competitiva (e) desplazamiento de carácter</p></li>
+<li><p>Una especie con sabor desagradable muestra su amenaza a los depredadores potenciales al exhibir (a) desplazamiento de carácter (b) recursos limitantes (c) coloración críptica (d) coloración aposemática (e) exclusión competitiva</p></li>
+<li><p>Un ecólogo que estudia varias especies de aves que comen insectos y habitan en bosques no encuentra ninguna evidencia de competencia</p></li>
+<li><p>¿En qué relación simbiótica están implicados los humanos?</p></li>
+<li><p>CIENCIA, TECNOLOGÍA Y SOCIEDAD. Describa el nicho ecológico de los humanos. ¿Piensa usted que nuestro nicho realizado ha cambiado durante los pasados 1000 años? ¿Por qué sí o por qué no? ¿Qué papel ha desempeñó la tecnología?</p></li>
+<li><p>¿Cómo es que la distribución vertical de los percebes en Escocia es un ejemplo de exclusión competitiva?</p></li>
+<li><p>En su opinión, ¿los humanos son una especie dominante o una especie clave? Explique su respuesta.</p></li>
+<li><p>Muchas plantas que producen nódulos para las bacterias fi jadoras de nitrógeno son comunes en sitios perturbados. Explique cómo estas plantas podrían competir con otras especies vegetales y al mismo tiempo facilitarlas.</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. El tritón de piel rugosa, que vive en el occidente de Norteamérica, almacena un veneno en su piel y es evitado por los depredadores. Sin embargo, varias poblaciones de culebras han experimentado una o algunas mutaciones que les permiten tolerar la toxina, y estas serpientes se comen a los tritones sin enfermarse. ¿Cómo es que la selección natural afectó esta relación depredador-presa? Con base en lo que ha aprendido sobre la carrera armamentista evolutiva pronostique lo que les podría ocurrir a los tritones y a las culebras resistentes al veneno al paso del tiempo.</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. La competencia es una parte importante de la teoría de Darwin de la evolución por selección natural, y la evolución de características que reducen la competencia aumenta la aptitud general de una especie. Relacione esta idea con el desplazamiento de carácter y con la repartición de recursos en los pinzones de Darwin.</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. El ecólogo Charles Krebs afi rmó que “la evolución opera por medio de la selección natural, que es ecología en acción”. Explique qué quiso decir y relacione esta idea con un ejemplo de regulación de un ecosistema desde la perspectiva abajo-arriba o arriba-abajo.</p></li>
+<li><p>ANÁLISIS DE DATOS. Analice las gráfi cas superior y de en medio en la fi gura 54-5. ¿Son ejemplos de crecimiento exponencial o logístico de la población? ¿Dónde está K en cada gráfi ca? (Tal vez sea necesario consultar el capítulo 53 para responder estas preguntas).</p></li>
+<li><p>ANÁLISIS DE DATOS. Analice la fi gura 54-19 (que se muestra abajo). ¿Aproximadamente qué porcentaje de especies han colonizado islas a 2000 km de Nueva Guinea? ¿Y a 6000 km de Nueva Guinea? Con base en sus respuestas, explique la relación entre riqueza de especies y aislamiento geográfi co.</p></li>
+</ol>
+<p>2000 0 4000 6000 8000 10,000</p>
+<p>Distancia a Nueva Guinea (km)</p>
+<p>6.25</p>
+<p>12.5</p>
+<p>25</p>
+<p>50</p>
+<p>100</p>
+<p>Porcentaje de especies que habitan en diferentes islas (escala logarítmica)</p>
+<p>Preguntas adicionales están disponibles en CengageNOW en www.cengage.com/login.</p>
+<p>PENSAMIENTO CRÍTICO</p>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+&nbsp;
+
+
+<footer style="background-color:	#d0f0ea; padding:1.5em 1em 0.5em; font-family:'Segoe UI', sans-serif; font-size:0.95em; color:#333; margin-bottom: 0;">
+
+  <div style="max-width:960px; margin:0 auto; text-align:center;">
+
+    <p><a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a> – Ingeniero Ambiental | Magíster en Educación</p>
+
+    <p>Asesor educativo, científico y ambiental con más de 6 años de experiencia desarrollando proyectos de investigación, biodiversidad, ciencia de datos ambientales, ciencia ciudadana y divulgación científica.</p>
+
+    <p>¿Necesitas asesoría experta en educación, medio ambiente, biodiversidad o herramientas científicas como <em>R, Quarto, LaTeX</em> o <em>Google Earth Engine</em>?<br><strong>¡Estoy aquí para ayudarte!</strong></p>
+
+    <p style="margin-top:1em; margin-bottom: 0.5em;">
+
+      <a href="mailto:contacto.envinatu@gmail.com" style="color:#007bff; text-decoration:none;">📩 Contáctame: contacto.envinatu@gmail.com</a><br>
+
+      <a href="https://www.linkedin.com/in/marceloamores" target="_blank" style="color:#007bff; text-decoration:none; display:inline-flex; align-items:center; gap:0.3em;">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#007bff" viewbox="0 0 24 24" style="vertical-align:middle;">
+
+          <path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.3 7.6 24 10.05 24 14.45V24h-5v-8.2c0-1.95-.03-4.45-2.71-4.45-2.71 0-3.13 2.12-3.13 4.3V24h-5V8z"></path>
+
+        </svg>
+
+        Conecta en LinkedIn
+
+      </a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- Carrusel de iNaturalist debajo del footer -->
+
+<div class="inat-carousel-container">
+
+  <div id="inat-carousel-track" class="inat-carousel-track"></div>
+
+</div>
+
+
+
+<style>
+
+.inat-carousel-container {
+
+  overflow: hidden;
+
+  width: 100%;
+
+  background: #d0f0ea;
+
+  padding: 10px 0 14px; /* reducido */
+
+  font-family: 'Segoe UI', sans-serif;
+
+  font-size: 0.85em;
+
+  color: #333;
+
+  margin-top: -8px; /* compensación visual mínima */
+
+}
+
+
+
+.inat-carousel-track {
+
+  display: flex;
+
+  gap: 12px;
+
+  animation: scroll-left 100s linear infinite;
+
+  width: max-content;
+
+  padding: 0 1em;
+
+}
+
+
+
+.inat-card {
+
+  flex: 0 0 auto;
+
+  width: 90px;
+
+  text-align: center;
+
+  background: #fff;
+
+  padding: 8px 6px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 6px;
+
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+}
+
+
+
+.inat-card img {
+
+  width: 75px;
+
+  height: 75px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+}
+
+
+
+.inat-card .species {
+
+  font-weight: 600;
+
+  font-size: 0.75em;
+
+  margin-top: 4px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+}
+
+
+
+.inat-card .date {
+
+  font-size: 0.7em;
+
+  color: #666;
+
+}
+
+
+
+@keyframes scroll-left {
+
+  0% { transform: translateX(0); }
+
+  100% { transform: translateX(-50%); }
+
+}
+
+</style>
+
+
+
+<script>
+
+fetch("https://api.inaturalist.org/v1/observations?user_id=marceloamores&order=desc&order_by=observed_on&per_page=8")
+
+  .then(response => response.json())
+
+  .then(data => {
+
+    const track = document.getElementById("inat-carousel-track");
+
+    const items = data.results.map(obs => {
+
+      const img = obs.photos.length ? obs.photos[0].url.replace("square", "small") : "https://static.inaturalist.org/images/users/defaults/thumb.png";
+
+      const species = obs.taxon ? (obs.taxon.preferred_common_name || obs.taxon.name) : "Sin ID";
+
+      const date = new Date(obs.observed_on).toLocaleDateString("es-EC");
+
+      return `
+
+        <div class="inat-card">
+
+          <a href="https://www.inaturalist.org/observations/${obs.id}" target="_blank" rel="noopener noreferrer">
+
+            <img src="${img}" alt="${species}" />
+
+          </a>
+
+          <div class="species" title="${species}">${species}</div>
+
+          <div class="date">${date}</div>
+
+        </div>`;
+
+    }).join("");
+
+    track.innerHTML = items + items;
+
+  })
+
+  .catch(err => {
+
+    console.error("Error:", err);
+
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<hr />
+
+<p style="text-align: center;">Developed and maintained by <a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a>. <br>
+
+
+
+
+
+Keen to support the site? You're most welcome to <a href='https://ko-fi.com/I2I1K189U' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> </p>
+
+
+
+
+
+
+
+<p style="text-align: center;">For updates, sign up to my <a href="https://github.com/envinatu" target="_blank">newsletter</a></p>
+
+
+
+
+
+<hr>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add icon library 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- Add font awesome icons 
+
+<!--<p style="text-align: center;">
+
+<!--    <a href="https://www.linkedin.com/in/marceloamores" class="fa fa-linkedin" target="_blank"></a>
+
+ <!--   <a href="https://www.inaturalist.org/people/marceloamores" target="_blank">
+
+  <img src="https://static.inaturalist.org/wiki_page_attachments/3154-medium.png" alt="iNaturalist" style="width:24px; height:24px;">
+
+    <a href="https://github.com/envinatu" class="fa fa-github" target="_blank"></a>
+
+    <a href="https://x.com/envinatu" target="_blank">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/300px-X_logo_2023_original.svg.png" alt="X" style="width:13px; height:13px;">
+
+    <a href="https://www.youtube.com/channel/envinatu" class="fa fa-youtube" target="_blank"></a>
+
+</a>
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+
+.inat-widget {padding: 10px; line-height: 1;}
+
+.inat-widget-header {margin-bottom: 10px;}
+
+.inat-widget td {vertical-align: top; padding-bottom: 10px;}
+
+.inat-label { color: #888; }
+
+.inat-meta { font-size: smaller; margin-top: 3px; line-height: 1.2;}
+
+.inat-observation-body, .inat-user-body { padding-left: 10px; }
+
+.inat-observation-image {text-align: center;}
+
+.inat-observation-image, .inat-user-image { width: 48px; display: inline-block; }
+
+.inat-observation-image img, .inat-user-image img { max-width: 48px; }
+
+.inat-observation-image img { vertical-align: middle; }
+
+.inat-widget-small .inat-observation-image { display:block; float: left; margin: 0 3px 3px 0; height:48px;}
+
+.inat-label, .inat-value, .inat-user { font-family: "Trebuchet MS", Arial, sans-serif; }
+
+.inat-user-body {vertical-align: middle;}
+
+.inat-widget td.inat-user-body {vertical-align: middle;}
+
+.inat-widget .inat-footer td.inat-value {vertical-align: middle; padding-left: 10px;}
+
+</style>
+
+<div class="inat-widget">
+
+  
+<table class="inat-footer caption-top" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd inat-user">
+<td class="inat-user-image"><a href="https://www.inaturalist.org/observations/marceloamores" data-border="0"><img src="https://static.inaturalist.org/attachments/users/icons/1116633/thumb.jpg?1628812209" class="usericon img-fluid" /></a></td>
+<td class="inat-value"><strong><a href="https://www.inaturalist.org/observations/marceloamores">Ver las observaciones de Marcelo en iNaturalist »</a></strong></td>
+</tr>
+</tbody>
+</table>
+
+
+  <script type="text/javascript" charset="utf-8" src="https://www.inaturalist.org/observations/marceloamores.widget?layout=large&limit=5&order=desc&order_by=creatrd_at&locale=es"></script>
+
+</div>
+
+
+
+-->
+
+    
+
+
+
+
+
+&nbsp;
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./53-ecologia-de-poblaciones.html" class="pagination-link" aria-label="52.6 SELECCIÓN SEXUAL">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">52.6 SELECCIÓN SEXUAL</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./55-ecosistemas.html" class="pagination-link" aria-label="55 Ecosistemas y la biosfera">
+        <span class="nav-page-text"><span class="chapter-title">55 Ecosistemas y la biosfera</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<div style="display:inline;">
+©
+<script>document.write(new Date().getFullYear());</script>
+<a href="https://github.com/envinatu"> Marcelo F. Amores Palma</a>
+</div>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/">
+      <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu">
+      <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/nvinatu">
+      <i class="bi bi-twitter-x" role="img" aria-label="Quarto X">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/envinatu">
+      <i class="bi bi-youtube" role="img" aria-label="Envinatu YouTube">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:contacto.envinatu@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email Us">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

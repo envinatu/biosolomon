@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Marcelo Amores">
+
+<title>19 Cambio evolutivo en poblaciones – BIOLOGÍA SOLOMON</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./20-especiacion.html" rel="next">
+<link href="./18-evolucion-darwiniana.html" rel="prev">
+<link href="./images/Icono_E.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<!-- Verificación de Google -->
+
+<meta name="google-site-verification" content="EYveEP5I9oi6m-r8Qa_Fett47y3RJFqSizYYvf7G1RM">
+
+
+
+<!-- Canonical URL dinámico -->
+
+<link rel="canonical" link:"{{="" page.url="" |="" absolute_url="" }}"="">
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/envinatu1.png" alt="Envinatu logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/biologia/"> 
+<span class="menu-text">Biología</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/quimica/"> 
+<span class="menu-text">Química</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/geociencias"> 
+<span class="menu-text">Geociencias</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/pedagogia"> 
+<span class="menu-text">Educación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/rubick"> 
+<span class="menu-text">Ludociencia</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/blog"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/amores"> 
+<span class="menu-text">Sobre Mi</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.pdf"> <i class="bi bi-filetype-pdf" role="img" aria-label="Ver PDF">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/bio27/blob/main/docs/BIOLOGÍA-2025-2026-2027.epub"> <i class="bi bi-journal-bookmark-fill" role="img" aria-label="Ver eBook">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/"> <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu"> <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./19-cambio-en-poblaciones.html"><span class="chapter-title">19 Cambio evolutivo en poblaciones</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000-prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefacio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001-al-estudiante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Al estudiante</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-una-vision-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1 Una visión de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-atomos-y-moleculas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2 Átomos y moléculas: la base química de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-quimica-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 La química de la vida: Compuestos orgánicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-organizacion-de-la-celula.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4 Organización de la célula</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-membranas-biologicas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5 Membranas biológicas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-comunicacion-celular.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6 Comunicación celular</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-energia-y-metabolismo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7 Energía y metabolismo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-produccion-de-atp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8 ¿Cómo producen ATP las células? Rutas de liberación de energía</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-fotosintesis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9 Fotosíntesis: captura de energía luminosa</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-mitosis-y-meiosis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10 Cromosomas, mitosis y meiosis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-herencia.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11 Los principios básicos de la herencia</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">12 ADN: Molécula portadora de la información genética</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-expresion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">13 Expresión génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-regulacion-genica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">14 Regulación génica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-tecnologia-adn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">15 Tecnología ADN y genómica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16-genetica-humana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">16 Genética humana y el genoma humano</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-genetica-del-desarrollo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">17 Genética del desarrollo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./18-evolucion-darwiniana.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">18 Introducción a la evolución darwiniana</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./19-cambio-en-poblaciones.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">19 Cambio evolutivo en poblaciones</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./20-especiacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">20 Especiación y macroevolución</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./21-historia-evolutiva.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">21 El origen e historia evolutiva de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./22-evolucion-de-primates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">22 La evolución de los primates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./23-sistematica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">23 Comprensión de la diversidad: sistemática</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./24-virus.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">24 Virus y agentes subvirales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./25-bacterias-y-arqueas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">25 Bacterias y arqueas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./26-protistas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">26 Protistas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./27-plantas-sin-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">27 Plantas sin semillas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./28-plantas-con-semillas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">E</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./29-hongos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">29 Los hongos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./30-diversidad-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">30 Introducción a la diversidad animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./31-protostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">31 Esponjas, cnidarios, ctenóforos y protóstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./32-deuterostomos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">32 Los deuteróstomos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./33-crecimiento-vegetal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">33 Estructura, crecimiento y desarrollo vegetal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./34-hoja.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">L</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./35-tallo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">35 Estructura y transporte en el tallo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./36-raices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">36 Raíces y nutrición mineral</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./37-reproduccion-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">37 Reproducción en plantas con ﬂ ores</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./38-respuestas-plantas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">38 Respuestas de desarrollo en plantas a señales externas e internas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./39-introduccion-fisiologia-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">39 Estructura y función animal. Una introducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./40-proteccion-y-movimiento.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">40 Protección, sostén y movimiento</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./41-senalizacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">41 Señalización neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./42-regulacion-neuronal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">42 Regulación neuronal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./43-sentidos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">43 Sistemas sensoriales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./44-transporte-interno.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">44 Transporte interno</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./45-sistema-inmunologico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">45 El sistema inmunológico: Defensa interna</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./46-intercambio-gases.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">46 Intercambio de gases</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./47-nutricion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">47 Procesamiento de alimentos y nutrición</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./48-osmorregulacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">48 Osmorregulación y desecho de residuos metabólicos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./49-regulacion-endocrina.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">49 Regulación endocrina</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./50-reproduccion-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">50 Reproducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./51-desarrollo-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">51 Desarrollo animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./52-comportamiento-animal.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52 Comportamiento animal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./53-ecologia-de-poblaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">52.6 SELECCIÓN SEXUAL</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./54-ecologia-de-comunidades.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">54 Ecología de comunidades</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./55-ecosistemas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">55 Ecosistemas y la biosfera</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./56-geografia-de-la-vida.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">56 Ecología y geografía de la vida</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./57-conservacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">57 Diversidad biológica y biología de la conservación</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#c" id="toc-c" class="nav-link active" data-scroll-target="#c">C</a>
+  <ul class="collapse">
+  <li><a href="#genotipo-fenotipo-y-frecuencias-alélicas" id="toc-genotipo-fenotipo-y-frecuencias-alélicas" class="nav-link" data-scroll-target="#genotipo-fenotipo-y-frecuencias-alélicas">19.1 GENOTIPO, FENOTIPO Y FRECUENCIAS ALÉLICAS</a></li>
+  <li><a href="#el-principio-de-hardy-weinberg" id="toc-el-principio-de-hardy-weinberg" class="nav-link" data-scroll-target="#el-principio-de-hardy-weinberg">19.2 EL PRINCIPIO DE HARDY-WEINBERG</a></li>
+  <li><a href="#microevolución" id="toc-microevolución" class="nav-link" data-scroll-target="#microevolución">19.3 MICROEVOLUCIÓN</a></li>
+  <li><a href="#variación-genética-en-poblaciones" id="toc-variación-genética-en-poblaciones" class="nav-link" data-scroll-target="#variación-genética-en-poblaciones">19.4 VARIACIÓN GENÉTICA EN POBLACIONES</a></li>
+  <li><a href="#resumen-enfoque-en-los-objetivos-de-aprendizaje" id="toc-resumen-enfoque-en-los-objetivos-de-aprendizaje" class="nav-link" data-scroll-target="#resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">19 Cambio evolutivo en poblaciones</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">septiembre, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>411</p>
+<p>CONCEPTOS CLAVE</p>
+<p>19.1 Es posible calcular el genotipo, el fenotipo y las frecuencias alélicas del acervo genético (todos los alelos de todos los loci) de una población. 19.2 El principio de Hardy-Weinberg predice las frecuencias alélicas y genotípicas de una población que no evoluciona. 19.3 La selección natural, así como el apareamiento no aleatorio, las mutaciones, la deriva genética y el ﬂ ujo genético son fuerzas que impulsan los cambios en el acervo genético de una población a lo largo de generaciones sucesivas (microevolución). Los modos de selección natural incluyen selección estabilizadora, selección direccional y selección disruptiva. 19.4 Por lo general, las poblaciones muestran variación genética, que puede incluir polimorﬁ smo genético, polimorﬁ smo equilibrado o variación geográﬁ ca.</p>
+<section id="c" class="level1">
+<h1>C</h1>
+<p>omo aprendió en el capítulo 18, la evolución ocurre en las poblaciones, no en los individuos. Aunque la selección natural actúa sobre los individuos provocando supervivencia y reproducción diferencial, los individuos no evolucionan durante sus vidas. El cambio evolutivo, que incluye modiﬁ caciones en estructura, ﬁ siología, ecología y comportamiento, se hereda de una generación a la siguiente. Aunque Darwin reconoció que la evolución ocurre en las poblaciones, no entendió cómo los atributos de los organismos se transmiten a generaciones sucesivas. Uno de los avances más signiﬁ cativos de la biología desde la época de Darwin fue la demostración de la base genética de la evolución. Recuerde del capítulo 18 que una población consiste de todos los individuos de la misma especie que viven en un lugar particular al mismo tiempo. Los individuos dentro de una población varían en muchos caracteres reconocibles. Por ejemplo, una población de caracoles puede variar en tamaño de concha, peso o color (vea la fotografía). Algunas de estas variaciones se deben a la herencia y algunas se deben al ambiente (variación no hereditaria), como las diferencias individuales que se observan en el color rosa de los ﬂ amencos, que en parte es atribuible a diferencias en la dieta. Los biólogos estudian la variación en un carácter (característica) particular al tomar mediciones de dicho carácter en una población. Al compa-</p>
+<p>Variación genética en conchas de caracol. Aquí se muestran patrones y colores de conchas en una sola especie de caracol ( Cepaea nemoralis ), nativa de Escocia. La variación de color en la concha pudo tener valor adaptativo en estos caracoles porque algunos colores predominan en ambientes más fríos, mientras que otros son más comunes en hábitats más cálidos.</p>
+<p>G. I. Bernard/Animals Animals</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/19-cambio-en-poblaciones/19-cambio-en-poblaciones_p445_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>19-cambio-en-poblaciones_p445_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>412 Capítulo 19</p>
+<p>rar el carácter en progenitores y descendientes, es posible estimar la cantidad de variación observada, esto es genética, la cual se representa mediante el número, frecuencia y tipos de alelos en una población. (Recuerde del capítulo 11 que un alelo es una de dos o más formas alternativas de un gen. Los alelos ocupan posiciones correspondientes, o loci , en cromosomas homólogos). Este capítulo le ayudará a comprender la importancia de la variación genética como la materia prima para la evolución y los conceptos básicos de la genética de poblaciones , el estudio de la variabilidad genética dentro de una población y de las fuerzas evolutivas que actúan sobre ella. La genética de poblaciones representa una extensión de los principios de la herencia de Gregor Mendel (consulte el capítulo 11). Aprenderá cómo distinguir entre equilibrio genético y cambio evolutivo, y a valorar las funciones de los cinco factores responsables del cambio evolutivo: apareamiento no aleatorio, mutación, deriva genética, ﬂ ujo genético y selección natural.</p>
+<section id="genotipo-fenotipo-y-frecuencias-alélicas" class="level2">
+<h2 class="anchored" data-anchor-id="genotipo-fenotipo-y-frecuencias-alélicas">19.1 GENOTIPO, FENOTIPO Y FRECUENCIAS ALÉLICAS</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>1 Deﬁ nir qué se entiende por acervo genético de una población. 2 Distinguir entre genotipo, fenotipo y frecuencias alélicas.</p>
+<p>Cada población posee un acervo genético que incluye todos los alelos para todos los loci representados en la población. Puesto que los organismos diploides tienen un máximo de dos alelos diferentes en cada locus genético, un solo individuo suele tener sólo una pequeña fracción de los alelos presentes en el acervo genético de una población. La variación genética que es evidente entre los individuos de una población dada indica que cada individuo tiene un subconjunto distinto de los alelos en el acervo genético. La evolución de la población se entiende mejor en términos de genotipo, fenotipo y frecuencias alélicas. Por ejemplo, suponga que se pone a prueba el genotipo de los 1000 individuos de una población hipotética y se obtienen los siguientes resultados:</p>
+<p>Genotipo Número Frecuencia genotípica</p>
+<p>AA 490 0.49</p>
+<p>Aa 420 0.42</p>
+<p>aa 90 0.09</p>
+<p>Total 1000 1.00</p>
+<p>Cada frecuencia genotípica es la proporción de un genotipo particu lar en la población. La frecuencia genotípica por lo general se expresa como una fracción decimal y la suma de todas las frecuencias genotípicas es igual a 1.0 (de manera similar a las probabilidades, que se estudiaron en el capítulo 11). Por ejemplo, la frecuencia genotípica para el genotipo Aa es 420 ÷ 1000 = 0.42. Una frecuencia fenotípica es la proporción de un fenotipo particular en la población. Si cada genotipo corresponde a un fenotipo específi co, entonces las frecuencias fenotípica y genotípica son iguales. Sin embargo, si el alelo A es dominante sobre el alelo a , las frecuencias fenotípicas en la población hipotética serían las siguientes:</p>
+<p>Fenotipo Número Frecuencia fenotípica</p>
+<p>Dominante 910 0.91</p>
+<p>Recesivo 90 0.09</p>
+<p>Total 1000 1.00</p>
+<p>En este ejemplo, el fenotipo dominante es la suma de dos genotipos, AA y Aa , de modo que el número 910 se obtiene al sumar 490 + 420. Una frecuencia alélica es la proporción de un alelo específi co (esto es, de A o a ) en una población particular. Como se mencionó antes, cada individuo, al ser diploide, tiene dos alelos en cada locus genético. Puesto que se comenzó con una población de 1000 individuos, debe considerarse un total de 2000 alelos. Los 490 individuos AA tienen 980 alelos A , mientras que los 420 individuos Aa tienen 420 alelos A , lo que hace un total de 1400 alelos A en la población. El número total de alelos a en la población es 420 + 90 + 90 = 600. Ahora es fácil calcular las frecuencias alélicas:</p>
+<p>Alelo Número Frecuencia alélica</p>
+<p>A 1400 0.7</p>
+<p>a 600 0.3</p>
+<p>Total 2000 1.0</p>
+<p>Repaso</p>
+<p>■ ¿ El término acervo genético se aplica a individuos, poblaciones o ambos?</p>
+<p>■ ¿Las frecuencias de todos los genotipos en una población pueden determinarse directamente con respecto a un locus que sólo tenga dos alelos, uno dominante y el otro recesivo?</p>
+<p>■ En una población humana de 1000, 840 pueden enrollar la lengua ( TT o Tt ) y 160 no pueden enrollar la lengua ( tt ). ¿Cuál es la frecuencia del alelo dominante ( T ) en la población?</p>
+</section>
+<section id="el-principio-de-hardy-weinberg" class="level2">
+<h2 class="anchored" data-anchor-id="el-principio-de-hardy-weinberg">19.2 EL PRINCIPIO DE HARDY-WEINBERG</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>3 Discutir el signiﬁ cado del principio de Hardy-Weinberg en su relación con la evolución y elaborar una lista de las cinco condiciones requeridas para el equilibrio genético. 4 Usar el principio de Hardy-Weinberg para resolver problemas que involucren poblaciones.</p>
+<p>En el ejemplo recién estudiado se observó que sólo 90 de los 1000 individuos en la población presentan el fenotipo recesivo característico del genotipo aa . Los restantes 910 individuos presentan el fenotipo dominante y son AA o Aa . Es posible suponer que, después de muchas generaciones, la recombinación genética durante la reproducción sexual haría que el alelo dominante se volviera más común en la población. También es posible suponer que el alelo recesivo desaparecería a la larga por completo. Éstas eran suposiciones comunes de muchos biólogos a principios del siglo xx. Sin embargo, tales suposiciones son incorrectas porque las frecuencias de los alelos y los genotipos no cambian de generación en generación a menos que reciban infl uencia de factores externos (que se estudian más adelante en este capítulo).</p>
+<p>Cambio evolutivo en poblaciones 413</p>
+<p>es igual a la raíz cuadrada de 0.09 o 0.3. A partir de la relación entre p y q se concluye que la frecuencia p del alelo dominante A es igual a 1 − q = 1 − 0.3 = 0.7. Dada esta información, se puede calcular la frecuencia de los individuos homocigotos dominantes ( AA ): p 2 = 0.7 × 0.7 = 0.49 ( FIGU -</p>
+<p>RA 19-1 ). La frecuencia esperada de los individuos heterocigotos ( Aa ) sería 2 pq = 2 × 0.7 × 0.3 = 0.42. Por ende, se espera que aproximadamente 490 individuos sean homocigotos dominantes y que 420 sean heterocigotos. Observe que la suma de los individuos homocigotos dominantes y heterocigotos es igual a 910, el número de individuos que muestran el fenotipo dominante con el que se inició. Cualquier población en la que la distribución de genotipos cumple con esta relación p 2 + 2 pq + q 2 = 1, sea cual sea el valor de p y q , se dice que está en equilibrio genético. El principio de Hardy-Weinberg permite a los biólogos calcular las frecuencias alélicas en una población dada si se conocen las frecuencias genotípicas y viceversa. Dichos valores proporcionan una base de comparación con las frecuencias alélicas o</p>
+<p>Se dice que una población cuyas frecuencias alélicas y genotípicas no cambian de generación en generación está en equilibrio genético . Dicha población, sin cambio en frecuencias alélicas o genotípicas no experimenta variación evolutiva en el tiempo. Una población que está en equilibrio genético no evoluciona con respecto al locus por estudiar. Sin embargo, si las frecuencias alélicas cambian a lo largo de generaciones sucesivas, ocurre evolución. La explicación de la estabilidad de generaciones sucesivas en poblaciones con equilibrio genético la proporcionaron de manera independiente Godfrey Hardy, un matemático inglés, y Wilhelm Weinberg, un médico alemán, en 1908. Ambos puntualizaron que las frecuencias esperadas de varios genotipos en una población pueden describirse de manera matemática. El resultante principio de Hardy-Weinberg muestra que, si la población es grande, el proceso de herencia no causa por sí mismo cambios en las frecuencias alélicas. También explica por qué los alelos dominantes no necesariamente son más comunes que los recesivos. El principio de Hardy-Weinberg representa una situación ideal que rara vez ocurre en el mundo natural. Sin embargo, es útil porque proporciona un modelo para ayudar a comprender el mundo real. El conocimiento del principio de Hardy-Weinberg es esencial para entender los mecanismos del cambio evolutivo en poblaciones que se reproducen sexualmente. Ahora se extenderá el ejemplo original para ilustrar el principio de Hardy-Weinberg. Tenga en mente, conforme realice estos cálculos, que en la mayoría de los casos sólo se conocen las frecuencias fenotípicas. Cuando los alelos son dominantes y recesivos, por lo general es imposible distinguir visualmente entre individuos heterocigotos e individuos dominantes homocigotos. El principio de Hardy-Weinberg permite usar frecuencias fenotípicas para calcular las frecuencias genotípicas y alélicas esperadas si se supone tener una comprensión clara de la base genética del carácter motivo de estudio. Como se mencionó líneas arriba, la frecuencia de cualquier alelo, A o a , se representa mediante un número que varía de 0 a 1. Un alelo que esté totalmente ausente de la población tiene una frecuencia de cero. Si todos los alelos de un locus dado son iguales en la población, entonces la frecuencia de dicho alelo es 1. Dado que sólo dos alelos, A y a , existen en el locus del ejemplo, la suma de sus frecuencias debe ser igual a 1. Si p representa la frecuencia del alelo dominante ( A ) en la población y q la frecuencia del alelo recesivo ( a ), entonces puede resumir su relación con una ecuación binomial simple, p + q = 1. Cuando se conoce el valor de p o de q , puede calcular el valor del otro: p = 1 − q, y q = 1 − p . Al elevar al cuadrado ambos lados de p + q = 1 se obtiene ( p + q ) 2 = 1. Esta ecuación puede expandirse para describir la relación de las frecuencias de los alelos con los genotipos en la población. Cuando se expande, se obtiene la frecuencia de los genotipos de la descendencia:</p>
+<p>p 2 + 2 pq + q 2 = 1 Frecuencia de AA Frecuencia de Aa Frecuencia de aa Todos los individuos en la población</p>
+<p>Los cálculos Hardy-Weinberg siempre comienzan con la determinación de la frecuencia del genotipo recesivo homocigoto. A partir del hecho de que en la población de 1000 se tienen 90 individuos recesivos homocigotos, se infi ere que la frecuencia del genotipo aa , q 2 , es 90/1000 o 0.09. Dado que q 2 es igual a 0.09, q (la frecuencia del alelo recesivo a )</p>
+<p>Frecuencias alélicas en gametos masculinos</p>
+<p>q = 0.3</p>
+<p>p = 0.7</p>
+<p>Genotipos AA Aa aa</p>
+<p>0.49 0.42 (0.21 + 0.21) 0.09</p>
+<ul>
+<li></li>
+</ul>
+<p>Frecuencia de genotipos en la población</p>
+<p>Frecuencia de alelos en gametos A = 0.49 + 0.21 = 0.7 a = 0.21 + 0.09 = 0.3</p>
+<p>Frecuencias alélicas en gametos femeninos</p>
+<p>A a</p>
+<p>p = 0.7 q = 0.3</p>
+<p>A</p>
+<p>a</p>
+<p>p 2 = 0.7 × 0.7 = 0.49</p>
+<p>AA</p>
+<p>pq = 0.7 × 0.3 = 0.21</p>
+<p>Aa</p>
+<p>q 2 = 0.3 × 0.3 = 0.09</p>
+<p>aa</p>
+<p>pq = 0.7 × 0.3 = 0.21</p>
+<p>Aa</p>
+<ol type="a">
+<li><p>Frecuencias genotípicas y alélicas. La ﬁgura ilustra cómo calcular frecuencias de los alelos A y a en los gametos producidos por cada genotipo.</p></li>
+<li><p>Segregación de alelos y fertilización aleatoria. Cuando los óvulos y espermatozoides que contienen alelos A o a se unen al azar, la frecuencia de cada uno de los posibles genotipos ( AA, Aa, aa ) entre la descendencia se calcula al multiplicar las frecuencias de los alelos A y a en óvulos y espermatozoides.</p></li>
+</ol>
+<p>FIGURA 19-1 Animada El principio de Hardy-Weinberg</p>
+<p>414 Capítulo 19</p>
+<p>la discusión, en el capítulo 11, de los alelos ABO con importancia médica). El grupo sanguíneo MN es de interés para los genetistas de poblaciones porque los alelos para el grupo sanguíneo MN, comúnmente designados M y N , son codominantes (el genotipo MM sólo produce antígeno M, el genotipo NN sólo produce antígeno N y el genotipo heterocigoto MN produce ambos antígenos). Esto permite a los genetistas en poblaciones observar directamente las tres posibles frecuencias genotípicas y compararlas con las frecuencias calculadas. Los siguientes datos son típicos del grupo sanguíneo MN en la población de Estados Unidos:</p>
+<p>Genotipo Observado</p>
+<p>MM 320</p>
+<p>MN 480</p>
+<p>NN 200</p>
+<p>Total 1000</p>
+<p>Dado que en la muestra hay 1000 individuos diploides, existe un total de 2000 alelos. La frecuencia de los alelos M en la población = p = (2 × 320 + 480) ÷ 2000 = 0.56. La frecuencia de los alelos N en la población = q = (2 × 200 + 480) ÷ 2000 = 0.44. Como comprobación rápida, la suma de las frecuencias debe ser igual a 1. ¿Lo es? Si esta población está en equilibrio genético, entonces la frecuencia genotípica MM esperada = p 2 = (0.56) 2 = 0.31. La frecuencia genotípica MN esperada = 2 pq = 2 × 0.56 × 0.44 = 0.49. La frecuencia genotípica NN esperada = q 2 = (0.44) 2 = 0.19. Como comprobación rápida, la suma de las tres frecuencias genotípicas debe ser igual a 1. ¿Es así? El lector puede usar las frecuencias genotípicas calculadas para determinar cuántos individuos en una población de 1000 deberían tener las frecuencias genotípicas esperadas. Al comparar los números esperados con los resultados reales observados, se aprecia cuán cerca está la población del equilibrio genético. Simplemente al multiplicar cada frecuencia genotípica por 1000:</p>
+<p>Genotipo Observada Esperada</p>
+<p>MM 320 313.6</p>
+<p>MN 480 492.8</p>
+<p>NN 200 193.6</p>
+<p>Total 1000 1000.0</p>
+<p>Los números esperados coinciden estrechamente con los números observados, lo que indica que los grupos sanguíneos MN en la población humana casi están en equilibrio genético. Esto no es de sorprender porque la falta de signifi cancia médica sugiere que la característica MN no está sujeta a selección natural y no produce un fenotipo visible que pueda afectar el apareamiento aleatorio.</p>
+<p>Repaso</p>
+<p>■ En una población en equilibrio genético, la frecuencia del genotipo homocigoto recesivo ( tt ) es 0.16. ¿Cuáles son las frecuencias alélicas de T y t , y cuáles son las frecuencias esperadas de los genotipos TT y Tt ?</p>
+<p>■ En una población en equilibrio genético, la frecuencia del fenotipo dominante es 0.96. ¿Cuáles son las frecuencias de los alelos dominante ( A ) y recesivo ( a ), y cuáles son las frecuencias esperadas de los genotipos AA , Aa y aa ?</p>
+<p>■ Se determina que las frecuencias genotípicas de una población serán 0.6 BB , 0.0 Bb y 0.4 bb . ¿Es probable que esta población satisfaga todas las condiciones requeridas para el equilibrio genético?</p>
+<p>genotípicas de una población en generaciones sucesivas. Durante dicho tiempo, si las frecuencias alélicas o genotípicas se desvían de los valores predichos por el principio de Hardy-Weinberg, entonces la población está en evolución.</p>
+<p>El equilibrio genético ocurre si se satisfacen ciertas condiciones</p>
+<p>El principio de Hardy-Weinberg de equilibrio genético dice qué esperar cuando una población que se reproduce sexualmente no está en evolución. Las proporciones relativas de alelos y genotipos en generaciones sucesivas siempre será la misma, en tanto se cumplan las siguientes cinco condiciones:</p>
+<ol type="1">
+<li><p>Apareamiento aleatorio. En el apareamiento aleatorio sin restricciones, cada individuo en una población tiene igual posibilidad de aparearse con cualquier individuo del sexo opuesto. En el ejemplo, los individuos representados por los genotipos AA , Aa y aa deben aparearse entre ellos al azar y no seleccionan sus parejas por el genotipo o cualquier otra característica que resulte entonces en un apareamiento no aleatorio. 2. No mutaciones netas. No debe haber mutaciones que conviertan A en a o viceversa. Esto es: las frecuencias de A y a en la población no deben cambiar debido a mutaciones. 3. Tamaño de población grande. Las frecuencias alélicas en una población pequeña tienen más probabilidad de cambiar por fl uctuaciones aleatorias (esto es; por deriva genética, que se estudia más adelante) que las frecuencias alélicas en una población grande. 4. No migración. No puede haber intercambio de alelos con otras poblaciones que puedan tener diferentes frecuencias alélicas. En otras palabras: no puede haber migración de individuos hacia una población o fuera de ella. 1</p></li>
+<li><p>No selección natural. Si ocurre selección natural, ciertos fenotipos (y sus genotipos correspondientes) son favorecidos sobre los demás. Se dice que estos genotipos más exitosos tienen mayor adaptabilidad , que es la capacidad relativa para realizar una aportación genética a generaciones posteriores. En consecuencia, las frecuencias alélicas cambiarán y la población evolucionará.</p></li>
+</ol>
+<p>Los grupos sanguíneos humanos MN son una valiosa ilustración del principio de Hardy-Weinberg</p>
+<p>Los humanos tienen docenas de antígenos sobre la superfi cie de sus células sanguíneas. (Un antígeno es una molécula, por lo general una proteína o carbohidrato, que es reconocida como extraña por las células del sistema inmunológico de otro organismo). Un grupo de antígenos, designados como grupo sanguíneo MN, estimulan la producción de anticuerpos cuando se inyectan en conejos o conejillos de Indias. Sin embargo, los humanos no producen anticuerpos para M y N, de modo que el grupo sanguíneo MN no es médicamente importante, por ejemplo, cuando se realizan transfusiones de sangre. (Recuerde</p>
+<p>1 Observe que los biólogos evolutivos usan el término migración no en su sentido ordinario de movimiento periódico o estacional de individuos de una ubicación a otra, sino en referencia a un movimiento de individuos que resulta en una transferencia de alelos de una población a otra.</p>
+<p>Cambio evolutivo en poblaciones 415</p>
+<p>a partir de datos obtenidos por liberación-recaptura. Los ratones no endogámicos tuvieron una mayor tasa de supervivencia estadísticamente signifi cativa ( FIGURA 19-2 ). No se sabe por qué los ratones endogámicos tuvieron una tasa de supervivencia más baja. Algunas posibilidades incluyen mayor susceptibilidad a las enfermedades, menor capacidad para evadir a los depredadores, menor capacidad para encontrar alimento y menor habilidad para ganar combates con otros ratones de patas blancas. El apareamiento selectivo , en el que los individuos seleccionan parejas sexuales por sus fenotipos, es otro ejemplo de apareamiento no aleatorio. Por ejemplo, los biólogos seleccionaron dos fenotipos (gran número de cerdas y bajo número de cerdas) en una población de moscas de la fruta ( Drosophila melanogaster ). Aunque los investigadores no hicieron esfuerzos para controlar los apareamientos, observaron que las moscas se apareaban preferentemente con las que tenían fenotipo similar. Las hembras con gran número de cerdas tendían a aparearse con machos con gran número de cerdas y las hembras con bajo número de cerdas tendían a aparearse con machos con menos número de cerdas.</p>
+</section>
+<section id="microevolución" class="level2">
+<h2 class="anchored" data-anchor-id="microevolución">19.3 MICROEVOLUCIÓN</h2>
+<p>OBJETIVOS DE APRENDIZAJE</p>
+<p>5 Deﬁ nir microevolución . 6 Discutir cómo cada una de las siguientes fuerzas microevolutivas alteran las frecuencias alélicas en las poblaciones: apareamiento no aleatorio, mutación, deriva genética, ﬂ ujo genético y selección natural. 7 Distinguir entre selección estabilizadora, selección direccional y selección disruptiva.</p>
+<p>La evolución representa un alejamiento del principio de equilibrio genético de Hardy-Weinberg. El grado de alejamiento entre las frecuencias alélica o genotípica observadas y las esperadas por el principio de HardyWeinberg indica la cantidad de cambio evolutivo. Este tipo de evolución (cambio de una generación a otra en las frecuencias alélicas o genotípicas dentro de una población) en ocasiones se conoce como microevolución porque con frecuencia involucra cambios relativamente pequeños o menores, por lo general a lo largo de pocas generaciones. Los cambios en las frecuencias alélicas de una población resultan a partir de cinco procesos microevolutivos: apareamiento no aleatorio, mutación, deriva genética, fl ujo genético y selección natural. Estos procesos microevolutivos son lo opuesto de las condiciones que deben satisfacerse si una población está en equilibrio genético. Cuando uno o más de dichos procesos actúa sobre una población, las frecuencias alélicas o genotípicas cambian de una generación a la siguiente.</p>
+<p>El apareamiento no aleatorio cambia las frecuencias genotípicas</p>
+<p>Cuando los individuos eligen parejas sexuales con base en el fenotipo (y por tanto seleccionan el genotipo correspondiente), originan cambio evolutivo en la población. Dos ejemplos de apareamiento no aleatorio son la endogamia y el apareamiento selectivo. En muchas poblaciones, los individuos copulan con más frecuencia con vecinos cercanos que con miembros más distantes de la población. Como resultado, los vecinos tienden a estar más cercanamente emparentados; esto es, a ser genéticamente similares entre ellos. El apareamiento de individuos genéticamente similares que están más estrechamente emparentados de lo que estarían de haber elegido al azar de toda la población se conoce como endogamia . Aunque la endogamia no cambia la frecuencia alélica global, la frecuencia de genotipos homocigotos aumenta con cada generación sucesiva de endogamia. El ejemplo más extremo de endogamia es la autofertilización, que es particularmente común en ciertas plantas. La endogamia no parece ser perjudicial en algunas poblaciones, pero en otras puede causar depresión endogámica , en la cual los individuos que se cruzan tienen menor adaptabilidad que quienes no se cruzan. La adaptabilidad por lo general se mide como el número promedio de descendientes sobrevivientes de un genotipo, en comparación con el número promedio de descendientes sobrevivientes de genotipos competidores. Se considera que la depresión endogámica, evidenciada por el declive en la fertilidad y la alta mortalidad de jóvenes, es causada por la expresión de alelos recesivos nocivos conforme aumenta el homocigotismo con la endogamia. Muchos estudios durante la década de 1990 proporcionaron evidencia directa de las consecuencias nocivas de la endogamia en la naturaleza. Por ejemplo, ratones de patas blancas ( Peromyscus leucopus ) se tomaron de un campo y se usaron para criarlos en poblaciones tanto endogámicas como no endogámicas en el laboratorio. Cuando las poblaciones criadas en laboratorio regresaron a la naturaleza, se estimó su supervivencia</p>
+<p>EXPERIMENTO CLAVE</p>
+<p>PREGUNTA: ¿La endogamia afecta a la supervivencia?</p>
+<p>HIPÓTESIS: Los ratones de patas blancas ( Peromyscus leucopus ) no endogámicos tendrán una ventaja de supervivencia sobre los ratones endogámicos en un ambiente natural.</p>
+<p>EXPERIMENTO: Ratones capturados en el campo se usaron para establecer poblaciones de laboratorio endogámicas y no endogámicas. Los ratones se marcaron y luego liberaron de vuelta en la población de campo. Después se tomaron muestras de la población al capturar ratones, anotar el número de ratones endogámicos y no endogámicos, y volver a liberar a los ratones. El eje x representa el período de 10 semanas durante el cual se recolectaron las muestras. Los valores sobre el eje y son las proporciones estimadas de ratones que sobrevivieron de una semana a la siguiente. Por ejemplo, el valor de 0.2 en la semana 3 para los ratones endogámicos signiﬁ ca que 20% de los ratones endogámicos que estuvieron vivos al comienzo de la semana sobrevivieron a lo largo de dicha semana.</p>
+<p>Semanas después de la liberación 1</p>
+<p>0.2</p>
+<p>0.4</p>
+<p>0.6</p>
+<p>0.8</p>
+<p>1.0</p>
+<p>1.2</p>
+<p>1.4</p>
+<p>2 3 4 5 6 7 8 9 10 11</p>
+<p>Sobrevivencia semanal</p>
+<p>Ratones no endogámicos</p>
+<p>Ratones endogámicos</p>
+<p>RESULTADOS Y CONCLUSIÓN: Los ratones no endogámicos ( rojo ) tuvieron una tasa de supervivencia consistentemente más alta que los ratones endogámicos ( azul ). Por ende, la endogamia tiene un efecto negativo sobre la supervivencia de esta especie en la naturaleza.</p>
+<p>Adaptado con permiso de Jiménez, J. A., et al., “An experimental Study of Inbreeding Depression in a Natural Habitat”, Science, vol.&nbsp;266, 14 de octubre de 1994. Copyright © 1994 American Association for the Advancement of Science.</p>
+<p>FIGURA 19-2 Supervivencia de ratones endogámicos y no endogámicos</p>
+<p>416 Capítulo 19</p>
+<p>cambios por lo general son varios órdenes de magnitud menores que los cambios causados por otras fuerzas evolutivas, como la deriva genética. La mutación comúnmente es despreciable como fuerza evolutiva, pero es esencial para el proceso evolutivo porque es la fuente más importante de variación genética.</p>
+<p>En la deriva genética, los eventos aleatorios cambian las frecuencias alélicas</p>
+<p>El tamaño de una población tiene importantes efectos sobre las frecuencias alélicas, porque los eventos aleatorios, o el azar, tienden a provocar cambios de magnitud relativamente mayor en una población pequeña. Si una población consiste sólo de algunos individuos, un alelo presente a una frecuencia baja en la población podría perderse por completo debido al azar. Tal evento sería improbable en una población grande. Por ejemplo, considere dos poblaciones, una con 10,000 individuos y una con 10 individuos. Si un alelo poco común ocurre a una frecuencia de 10% o 0.1, en ambas poblaciones, entonces 1900 individuos en la población grande tienen el alelo. 2 Esta misma frecuencia, 0.1, en la población más pequeña signifi ca que sólo alrededor de 2 individuos tienen el alelo. 3 A partir de este ejercicio, es fácil ver que existe mayor probabilidad de perder el alelo raro de la población más pequeña que de la más grande. Los depredadores, por ejemplo, pueden matar, simplemente por casualidad, a uno o dos individuos que posean el alelo raro en la población más pequeña, de modo que dichos individuos no dejarían descendencia. La producción de cambios evolutivos aleatorios en poblaciones pequeñas se conoce como deriva genética . La deriva genética resulta en cambios en las frecuencias alélicas en una población de una generación a otra. Un alelo puede eliminarse de la población simplemente por casualidad, sin importar si es benéfi co, dañino o de ninguna ventaja o desventaja particular. Por ende, la deriva genética disminuye la variación genética dentro de una población, aunque tiende a aumentar las diferencias genéticas entre distintas poblaciones.</p>
+<p>Cuando ocurren cuellos de botella, la deriva genética se convierte en una fuerza evolutiva mayor</p>
+<p>Debido a fl uctuaciones en el ambiente, como el agotamiento en el suministro de alimentos o el surgimiento de una enfermedad, una población puede, rápida y notablemente, disminuir de tiempo en tiempo. Se dice que la población pasa por un cuello de botella durante el cual la deriva genética puede ocurrir en la pequeña población de supervivientes. Conforme la población crece nuevamente en tamaño, muchas frecuencias alélicas pueden ser muy diferentes de las que se encuentran en la población que precedió al declive. Los científi cos plantean la hipótesis de que la variación genética en el guepardo se redujo considerablemente por un cuello de botella al fi nal de la última edad de hielo, hace unos 10,000 años (vea la fi gura 52-9). Los guepardos casi se extinguen quizá por la caza excesiva por parte de los humanos. Los pocos guepardos sobrevivientes tienen una variabilidad genética muy reducida y, como resultado, la población actual de guepardos es tan uniforme genéticamente que guepardos no emparentados pueden aceptar injertos de piel de otros. (Por lo general, sólo gemelos idénticos aceptan injertos de piel con tanta facilidad).</p>
+<p>A dicha selección de parejas sexuales con el mismo fenotipo se le conoce como apareamiento selectivo positivo (en oposición al fenómeno menos común, apareamiento selectivo negativo , en el que se seleccionan compañeros sexuales con fenotipos opuestos). El apareamiento selectivo positivo se practica en muchas sociedades humanas, en las que hombres y mujeres tienden a casarse con individuos similares a ellos en características como estatura o inteligencia. Como en la endogamia, el apareamiento selectivo por lo general aumenta el homocigotismo a expensas del heterocigotismo en la población y no cambia las frecuencias alélicas globales en la misma población. Sin embargo, el apareamiento selectivo cambia las frecuencias genotípicas sólo en los loci involucrados en la elección de pareja, mientras que la endogamia afecta las frecuencias genotípicas en todo el genoma.</p>
+<p>Las mutaciones aumentan la variación dentro de una población</p>
+<p>La variación se introduce en una población por medio de mutaciones , que son cambios impredecibles en el ácido desoxirribonucleico (ADN). Como se estudió en el capítulo 13, las mutaciones, que son la fuente de todos los nuevos alelos, resultan de (1) un cambio en los pares de bases de nucleótidos de un gen, (2) un reordenamiento de genes dentro de los cromosomas de modo que sus interacciones producen diferentes efectos o (3) un cambio en la estructura de los cromosomas. Las mutaciones ocurren de manera impredecible y espontánea. Un locus particular puede tener una secuencia de ADN que haga que ciertos tipos de mutaciones ocurran con más frecuencia que otras. La tasa de mutación parece relativamente constante para un locus particular, pero puede variar en varios órdenes de magnitud entre los genes dentro de una sola especie y entre diferentes especies. No todas las mutaciones se transmiten de una generación a la siguiente. Las que ocurren en células somáticas (corporales) no se heredan. Cuando un individuo con tal mutación muere, la mutación se pierde. Sin embargo, algunas mutaciones ocurren en las células reproductoras. Tales mutaciones pueden o no afectar abiertamente la descendencia, porque la mayor parte del ADN en una célula es “silencioso” y no codifi ca polipéptidos o proteínas específi cos que sean responsables de características físicas. Incluso si una mutación ocurre en el ADN que codifi ca un polipéptido, todavía puede tener poco efecto sobre la estructura o función de dicho polipéptido (más adelante en el capítulo se estudia tal variación neutra ). No obstante, cuando un polipéptido es sufi cientemente alterado para cambiar su función, la mutación por lo general es dañina. Al actuar contra fenotipos seriamente anormales, la selección natural elimina o reduce a frecuencias bajas las mutaciones más dañinas. Las mutaciones con pequeños efectos fenotípicos, incluso si son ligeramente dañinas, tienen una mejor posibilidad de incorporarse en la población, en la que, en algún momento posterior, en diferentes condiciones ambientales, pueden producir fenotipos que sean útiles o adaptativos. Las “necesidades” de una población no determinan qué mutaciones ocurrirán. Considere una población que viva en un ambiente cada vez más seco. Una mutación que produzca un nuevo alelo que ayude a un individuo a adaptarse a condiciones secas no tiene más probabilidad de ocurrir que una para adaptarse a condiciones húmedas o uno sin relación con el ambiente cambiante. La producción de nuevas mutaciones simplemente aumenta la variabilidad genética sobre la que actúa la selección natural y, por tanto, aumenta el potencial para nuevas adaptaciones. La mutación misma causa pequeñas desviaciones en las frecuencias alélicas a partir de las predichas por el principio de Hardy-Weinberg. Aunque las frecuencias alélicas pueden cambiar por mutación, dichos</p>
+<p>2 2 pq + q 2 = 2(0.9)(0.1) + (0.1) 2 = 0.18 + 0.01 = 0.19; 0.19 × 10,000 = 1900</p>
+<p>3 0.19 × 10 = 1.9</p>
+<p>Cambio evolutivo en poblaciones 417</p>
+<p>Los investigadores estudian las poblaciones fi nlandesa e islandesa, así como ciertas poblaciones Amish, con el propósito de identifi car aportaciones genéticas a un gran número de enfermedades. La tarea se simplifi ca en dichos estudios porque factores cofundadores como la variabilidad en el resto del genoma y diferencias en factores ambientales como la nutrición, el acceso a la atención de la salud y la exposición a contaminantes están relativamente controlados.</p>
+<p>El ﬂ ujo genético suele aumentar la variación dentro de una población</p>
+<p>Los individuos de una especie tienden a distribuirse en poblaciones locales que están genéticamente aisladas de otras en cierto grado. Por ejemplo, las ranas mugidoras de un estanque forman una población separada de las que habitan en un estanque adyacente. Algunos intercambios ocurren por migración entre estanques, pero es mucho más probable que las ranas en un estanque se apareen con las del mismo estanque. Puesto que cada población está aislada en cierta medida de las otras, cada una tiene diferentes caracteres genéticos y acervos genéticos. La migración de individuos reproductivos entre las poblaciones causa un movimiento correspondiente de alelos, o fl ujo genético , que tiene signifi cativas consecuencias evolutivas. Conforme los alelos fl uyen de una población a otra, por lo general aumentan la cantidad de variabilidad genética dentro de la población receptora. Si ocurre sufi ciente fl ujo genético entre dos poblaciones, se vuelven más similares genéticamente. Dado que el fl ujo genético reduce la cantidad de variación entre dos poblaciones, tiende a contrarrestar los efectos de la selección natural y la deriva genética, las cuales con frecuencia hacen que las poblaciones se vuelvan cada vez más distintas. Si la migración de los miembros de una población es considerable y si la población difi ere en sus frecuencias alélicas, entonces ocurren cambios signifi cativos en las poblaciones locales. Por ejemplo, hace 10,000 años, humanos modernos ocupaban casi todas las grandes áreas de tierra del planeta, excepto algunas islas. Dado que la densidad de población era baja en la mayoría de las ubicaciones, las pequeñas poblaciones humanas aisladas experimentaron deriva genética y selección natural aleatorias. Más recientemente (durante los pasados 300 años más o menos), grandes migraciones aumentaron el fl ujo genético, lo que alteró de manera signifi cativa las frecuencias alélicas dentro de las poblaciones humanas anteriormente aisladas.</p>
+<p>La selección natural cambia las frecuencias alélicas en una forma que aumenta la adaptación</p>
+<p>La selección natural es el mecanismo de evolución propuesto inicialmente por Darwin, en el que los miembros de una población que se acomodan con más éxito al ambiente tienen mayor adaptabilidad; esto es, tienen más probabilidad de sobrevivir y reproducirse (vea el capítulo 18). A lo largo de generaciones sucesivas, la proporción de alelos favorables aumenta en la población. En contraste con otros procesos microevolutivos (apareamiento no aleatorio, mutación, deriva genética y fl ujo genético), la selección natural conduce a cambio evolutivo adaptativo. La selección natural no sólo explica por qué los organismos están bien adaptados a los ambientes donde viven, también ayuda a entender la notable diversidad de la vida. La selección natural permite a las poblaciones cambiar, y en consecuencia a adaptarse a diferentes ambientes y formas de vida.</p>
+<p>El efecto fundador ocurre cuando algunos “fundadores” establecen una nueva colonia</p>
+<p>Cuando uno o pocos individuos de una gran población establecen, o fundan, una colonia (como cuando algunas aves se separan del resto de la parvada y vuelan hacia una nueva área), llevan consigo sólo una pequeña fracción de la variación genética presente en la población original. Como resultado, los únicos alelos entre sus descendientes serán los de los colonizadores. Por lo general, las frecuencias alélicas en la población recientemente fundada son muy diferentes a las de la población progenitora. La deriva genética que resulta cuando un pequeño número de individuos de una población grande fundan una colonia nueva se llama efecto fundador . Los fi nlandeses pueden ilustrar el efecto fundador ( FIGURA 19-3 ). Los genetistas que tomaron muestras de ADN de fi nlandeses y de la población europea en general descubrieron que los fi nlandeses muestran mucha menos variación genética que otros europeos. Esta evidencia apoya la hipótesis de que son descendientes de un pequeño grupo de personas que se asentó hace aproximadamente 4000 años en el área que ahora es Finlandia y, debido a la geografía, permaneció separado de otras sociedades europeas durante siglos. La subpoblación en el oriente de Finlandia es especialmente homogénea porque existió en relativo aislamiento después de que se establecieran sólo algunos cientos de fundadores en el siglo xvi. El efecto fundador y los cuellos de botella poblacionales también parecen haber afectado la composición genética de la población de Islandia. Los 275,000 ciudadanos de este país son descendientes de un pequeño grupo de escandinavos y celtas que se asentaron en esa isla en el siglo ix. El aislamiento y los cuellos de botella poblacionales debidos a enfermedad y desastres naturales contribuyeron a la relativa homogeneidad genética de los islandeses. El efecto fundador puede ser de importancia médica. Por ejemplo, por casualidad, uno de los aproximadamente 200 fundadores de la población Amish de Pennsylvania portaba un alelo recesivo que, cuando es homocigoto, es responsable de una forma de enanismo, el síndrome Ellis-van Creveld. Aunque este alelo es raro en la población general (frecuencia aproximada de 0.001), en la actualidad es relativamente común en la población Amish (frecuencia aproximada de 0.07).</p>
+<p>FIGURA 19-3 Los ﬁ nlandeses y el efecto fundador Se cree que los ﬁ nlandeses descienden de una pequeña población fundadora que permaneció separada del resto de Europa durante siglos.</p>
+<p>Yann Arthus Bertrand/Corbis</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/19-cambio-en-poblaciones/19-cambio-en-poblaciones_p451_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>19-cambio-en-poblaciones_p451_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>418 Capítulo 19</p>
+<p>selección provocan cambios en la distribución normal de fenotipos en una población: las selecciones estabilizadora, direccional y disruptiva. Aunque se considerará cada proceso por separado, en la naturaleza sus infl uencias usualmente se traslapan.</p>
+<p>Selección estabilizadora El proceso de selección natural asociado con una población bien adaptada a su ambiente se conoce como selección estabilizadora . Es probable que la mayoría de las poblaciones estén infl uidas por fuerzas de estabilización la mayor parte del tiempo. La selección estabilizadora selecciona contra extremos fenotípicos. En otras palabras, se favorece a los individuos con fenotipos promedio o intermedios. Puesto que la selección estabilizadora tiende a reducir la variación al favorecer a los individuos que se ubican cerca de la media de la distribución normal a costa de los que se encuentran en los extremos, la curva de campana se estrecha ( FIGURA 19-4b ). Aunque la selección estabilizadora reduce la cantidad de variación en una población, la variación rara vez se elimina por este proceso, porque otros procesos microevolutivos actúan contra una reducción en la variación. Por ejemplo, la mutación se agrega lentamente, pero de manera continua, a la variación genética dentro de una población. Uno de los casos de selección estabilizadora más estudiados involucra el peso de los humanos al nacer, el cual está bajo control poligénico y también está infl uido por factores ambientales. Extensos datos de hospitales demuestran que los infantes nacidos con pesos intermedios tienen más probabilidad de sobrevivir ( FIGURA 19-5 ). Los infantes en cualquier extremo (muy pequeños o muy grandes) tienen mayores tasas de mortalidad. Cuando los infantes recién nacidos son muy pequeños, sus sistemas corporales están inmaduros, y cuando son muy grandes tienen partos difíciles porque no pueden pasar con facilidad a través del cuello uterino y la vagina. La selección estabilizadora opera para reducir</p>
+<p>La selección natural resulta en la reproducción diferencial de individuos con diferentes caracteres, o fenotipos (y por tanto diferentes genotipos), en respuesta al ambiente. La selección natural preserva a los individuos con fenotipos favorables y elimina a los que tienen fenotipos desfavorables. Los individuos que sobreviven y producen descendientes fértiles tienen una ventaja selectiva. El mecanismo de selección natural no desarrolla un organismo “perfecto”. En vez de ello, separa a los individuos cuyos fenotipos están menos adaptados a los retos ambientales, mientras permite la supervivencia de los individuos mejor adaptados para que transmitan sus alelos a sus descendientes. Al reducir la frecuencia de los alelos que resultan en la expresión de caracteres menos propicios, aumenta la probabilidad de que los alelos favorables responsables de una adaptación se reúnan en los descendientes.</p>
+<p>La selección natural opera sobre el fenotipo de un organismo</p>
+<p>La selección natural no actúa de manera directa sobre el genotipo de un organismo. En vez de ello, actúa sobre el fenotipo que, al menos en parte, es una expresión del genotipo. El fenotipo representa una interacción entre el ambiente y todos los alelos en el genotipo del organismo. Es raro que los alelos de un solo locus determinen el fenotipo, como originalmente observó Mendel en los guisantes de jardín. Es mucho más común la interacción de alelos de varios loci para la expresión de un solo fenotipo. Muchas características de plantas y animales están bajo este tipo de control poligénico (vea el capítulo 11). Cuando los caracteres están bajo control poligénico (como la estatura humana), ocurre un rango de fenotipos y la mayor parte de la población se ubica en el rango de la mediana, mientras unos pocos se ubican en los extremos. Ésta es una distribución normal o curva de campana estándar ( FIGURA 19-4a ; vea también la fi gura 11-20). Tres tipos de</p>
+<p>Las selecciones estabilizadora, direccional y disruptiva pueden cambiar la distribución de los fenotipos en una población.</p>
+<p>Número de individuos</p>
+<p>Fenotipo</p>
+<ol type="a">
+<li><p>Un carácter que está bajo control poligénico (en este ejemplo, color de alas en una población hipotética de escarabajos) muestra una distribución normal de fenotipos en ausencia de selección.</p></li>
+<li><p>Como resultado de la selección estabilizadora, que elimina los fenotipos extremos, se reduce la variación en torno a la media.</p></li>
+<li><p>La selección direccional desplaza la curva en una dirección, lo que cambia el valor promedio del carácter.</p></li>
+<li><p>La selección disruptiva, que elimina los fenotipos intermedios, resulta en dos o más picos.</p></li>
+</ol>
+<p>Selección direccional Selección disruptiva Sin selección Selección estabilizadora</p>
+<p>FIGURA 19-4 Animada Modos de selección La pantalla azul representa la distribución de los individuos por fenotipo (en este ejemplo, la variación de color) en la población original. La pantalla morada representa la distribución por fenotipo en la población evolucionada. Las ﬂ echas representan la presión de la selección natural sobre los fenotipos.</p>
+<p>PUNTO CLAVE</p>
+<p>Cambio evolutivo en poblaciones 419</p>
+<p>como blanco a los carneros grandes con cuernos de rápido crecimiento debido a su valor como trofeos ( FIGURA 19-6 ). Puesto que estos carneros por lo general son muertos antes de alcanzar su pleno potencial reproductivo, contribuyen menos al acervo genético; el resultado ha sido un</p>
+<p>la variabilidad en el peso al nacer de modo que esté cerca del peso con la mínima tasa de mortalidad.</p>
+<p>Selección direccional Si un ambiente cambia con el tiempo, la selección direccional puede favorecer los fenotipos en uno de los extremos de la distribución normal ( FIGURA 19-4c ). A lo largo de generaciones sucesivas, un fenotipo gradualmente sustituye a otro. De este modo, por ejemplo, si el tamaño más grande es ventajoso en un ambiente nuevo, los individuos más grandes se volverán cada vez más comunes en la población. Sin embargo, la selección direccional sólo ocurre si los alelos favorecidos en las nuevas circunstancias ya están presentes en la población. Los pinzones de las Galápagos de Darwin brindan un excelente ejemplo de selección direccional. Desde 1973, Peter Grant y Rosemary Grant, de la Universidad de Princeton, han estudiado a los pinzones de las Galápagos. Los Grant realizaron un meticuloso análisis de los hábitos alimenticios y del tamaño del pico de los pinzones de la isla Daphne Mayor durante tres sequías extensas (1977-1978, 1980 y 1982), una de las cuales estuvo seguida por un fenómeno de El Niño extremadamente húmedo (1983). Durante las sequías declinó el número de insectos y semillas pequeñas, y las semillas pesadas y grandes se convirtieron en la principal fuente alimenticia de los pinzones. Muchos pinzones murieron durante esta época, y la mayoría de los sobrevivientes fueron aves más grandes cuyos picos eran más grandes y más profundos. En pocas generaciones, estas aves más grandes se volvieron más comunes en la población ( TABLA 19-1 ). Sin embargo, después del paso de El Niño, las semillas más pequeñas se volvieron la principal fuente alimenticia y se favoreció a los pinzones más pequeños con picos de tamaño promedio. En este ejemplo, la selección natural es direccional: durante la sequía, la selección natural operó en favor del fenotipo más grande; mientras que, después del período húmedo, la selección ocurrió en la dirección opuesta, lo que favoreció al fenotipo más pequeño. Las poblaciones de guppies estudiadas en Venezuela y Trinidad (vea el capítulo 18) son otro ejemplo de selección direccional. En los borregos cimarrones ( Ovis canadensis ) de Canadá se observó selección direccional por parte de los cazadores deportivos. Éstos toman</p>
+<p>Porcentaje de población infantil ( azul )</p>
+<p>Porcentaje de mortalidad infantil, escala log ( rojo )</p>
+<p>Peso corporal en libras</p>
+<p>1 2 3 4 5 6 7 8 9 10 11</p>
+<p>5</p>
+<p>2</p>
+<p>5</p>
+<p>10</p>
+<p>30</p>
+<p>100</p>
+<p>10</p>
+<p>15</p>
+<p>20</p>
+<p>FIGURA 19-5 Selección estabilizadora La curva azul muestra la distribución de los pesos al nacer en una muestra de 13,730 infantes. La curva roja muestra la mortalidad (muerte) en cada peso al nacer. Los infantes con pesos al nacer muy bajos o muy altos tienen mayores tasas de mortalidad que los infantes de peso promedio. El peso óptimo al nacer; esto es, el que tiene menor mortalidad, está cerca del peso promedio al nacer (alrededor de 7 lb o 3.2 kg). (Adaptado de Cavalli-Sforza, L. L. y W. F. Bodmer, The Genetics of Human Populations, W. H. Freeman and Company, San Francisco, 1971).</p>
+<p>Cambios poblacionales en Geospiza fortis antes y después de la sequía de 1976-1977</p>
+<p>Promedio antes Promedio después Carácter de sequía (634)* de sequía (135)* Diferencia</p>
+<p>Peso (g) 16.06 17.13 + 1.07</p>
+<p>Longitud ala (mm) 67.88 68.87 + 0.99</p>
+<p>Longitud tarso (pantorrilla, justo arriba de la pata) (mm) 19.08 19.29 + 0.21</p>
+<p>Longitud pico (mm) 10.63 10.95 + 0.32</p>
+<p>Profundidad pico (mm) 9.21 9.70 + 0.49</p>
+<p>Ancho pico (mm) 8.58 8.83 + 0.25</p>
+<p>Tomado de P. R. Grant y B. R. Grant, “Predicting Microevolutionary Responses to Directional Selection on Heritable Variation”, Evolution, vol.&nbsp;49, 1995.</p>
+<p>*Número de aves en la muestra.</p>
+<p>TABLA 19-1</p>
+<p>Giuliano Gerra and Silvio Sommazzi</p>
+<p>FIGURA 19-6 Borrego cimarrón Este carnero muestra los enormes cuernos que caracterizan a esta especie.</p>
+<p>Harry Engels/Photo Researchers, Inc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/19-cambio-en-poblaciones/19-cambio-en-poblaciones_p453_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>19-cambio-en-poblaciones_p453_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/19-cambio-en-poblaciones/19-cambio-en-poblaciones_p453_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>19-cambio-en-poblaciones_p453_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>420 Capítulo 19</p>
+<p>durante la meiosis y unión aleatoria de gametos, también contribuye a la variación genética. El proceso sexual permite que la variabilidad introducida por mutación se combine en nuevas formas, que pueden expresarse como nuevos fenotipos.</p>
+<p>El polimorﬁ smo genético puede estudiarse en varias formas</p>
+<p>El polimorfi smo genético , que es la variación genética entre individuos en una población, es extenso en poblaciones, aunque muchas de las variantes genéticas se presentan a frecuencias bajas. Mucho del polimorfi smo genético no es evidente porque no produce fenotipos distintos. Una forma en que los biólogos estiman la cantidad total de polimorfi smo genético en las poblaciones es mediante la comparación de diferentes formas de una proteína particular. Cada forma consiste de una secuencia de aminoácidos ligeramente diferente que es codifi cada por un alelo diferente. Por ejemplo, extractos de piel que contengan una enzima particular pueden analizarse para diferentes individuos mediante electroforesis en gel. En la electroforesis en gel las enzimas se colocan en pozos sobre un gel de agarosa y se aplica una corriente eléctrica, lo que hace que cada enzima migre a través del gel (vea la fi gura 15-8). Ligeras variaciones en las secuencias de aminoácidos en las diferentes formas de una enzima particular hacen que cada una migre a una tasa diferente, lo que puede detectarse con el uso de tintes especiales o marcadores radiactivos. De acuerdo con la especie estudiada, el porcentaje de enzimas que son polimórfi cas puede variar de alrededor de 15% hasta 70%. En general, el polimorfi smo de los loci codifi cadores de enzimas tiende a ser mayor en plantas que en animales. La determinación de la secuencia de nucleótidos en ADN de individuos en una población proporciona una estimación directa del polimorfi smo genético que es sufi cientemente sensible para detectar alelos que difi eren sólo en un nucleótido ( polimorfi smo de un solo nucleótido, SNP , por sus siglas en inglés). (La secuenciación de ADN se muestra en las fi guras 15-10 y 15-11). La secuenciación de ADN de alelos específi cos en un creciente número de organismos, incluidos humanos, indica que los SNP son comunes en la mayoría de las poblaciones. Estudios recientes revelaron que los cambios genéticos en los que se ganan o pierden segmentos de ADN (en comparación con un genoma de referencia) son comunes en organismos modelo como ratones y Drosophila , así como en humanos. Dichas variaciones en el número de copias , o CNV , por sus siglas en inglés, pueden involucrar segmentos de ADN que varíen desde tan pocas como 500-1000 pares de bases, hasta alrededor de dos millones de pares de bases. Actualmente se estima que el humano promedio puede tener una docena o más de CNV en su genoma. En la mayoría de los casos no parece ser un fenotipo asociado o el fenotipo es benigno, como un efecto sobre el color de los ojos. Sin embargo, conforme se desarrollan tecnologías más avanzadas para apoyar la investigación en marcha, se acumula evidencia que vincula CNV específi cas con el riesgo creciente de ciertas condiciones con importancia médica, como el autismo, la enfermedad de Alzheimer y la susceptibilidad a infecciones por VIH.</p>
+<p>El polimorﬁ smo equilibrado existe durante largos períodos</p>
+<p>El polimorfi smo equilibrado es un tipo especial de polimorfi smo genético en el que dos o más alelos persisten en una población a lo largo de muchas generaciones como resultado de la selección natural. La ventaja de heterocigoto y la selección dependiente de la frecuencia son mecanismos que preservan el polimorfi smo equilibrado.</p>
+<p>declive de 25% en el peso promedio del carnero y en la longitud de los cuernos durante un período de 30 años. Paradójicamente, los carneros que usualmente tienen mayor adaptabilidad debido a su tamaño y habilidad para usar sus cuernos en competencias con otros machos cuando buscan parejas sexuales, se vuelven menos aptos cuando dichos atributos hacen que los prefi eran los cazadores.</p>
+<p>Selección disruptiva En ocasiones, cambios extremos en el ambiente pueden favorecer dos o más fenotipos a costa de la media. Esto es, más de un fenotipo puede resultar favorecido en el ambiente nuevo. La selección disruptiva es un tipo especial de selección direccional en el que existe una tendencia en varias direcciones en lugar de sólo una ( FIGURA 19-4d ). Esto resulta en una divergencia, o separación, de distintos grupos de individuos dentro de una población. La selección disruptiva, que es relativamente rara, selecciona contra el fenotipo promedio o intermedio. Un suministro limitado de alimentos durante una sequía severa provocó que una población de pinzones en otra isla de las Galápagos experimentara selección disruptiva. La población de pinzones inicialmente mostró una variedad de tamaños y formas de pico. Dado que, durante la sequía, los únicos alimentos disponibles en esta isla eran insectos que habitaban en la madera y semillas en los frutos de cactus, la selección natural favoreció a las aves con picos adecuados para obtener estos tipos de alimentos. Los pinzones con picos más largos sobrevivieron porque podían abrir frutos de cactus y los que tenían picos más anchos sobrevivieron porque podían desgarrar la corteza de los árboles para exponer a los insectos. No obstante, los pinzones con picos intermedios no pudieron usar de manera efi ciente alguna de las fuentes de alimentos y tuvieron una tasa de supervivencia más baja. La selección natural induce el cambio en los tipos y frecuencias de los alelos en las poblaciones sólo si hay una variación preexistente heredada. La variación genética es la materia prima para el cambio evolutivo porque proporciona la diversidad sobre la que actúa la selección natural. Sin variación genética, la evolución no puede ocurrir. En la siguiente sección se explorarán las bases genéticas de la variación sobre la que actúa la selección natural.</p>
+<p>Repaso</p>
+<p>■ ¿Cuál fuerza microevolutiva conduce a cambios adaptativos en las frecuencias alélicas?</p>
+<p>■ ¿Por qué la mutación es importante para la evolución, si es la fuerza microevolutiva que por lo general tiene el menor efecto sobre las frecuencias alélicas?</p>
+<p>■ ¿Cuáles fuerzas microevolutivas están más asociadas con un aumento en variación dentro de una población? ¿Y entre poblaciones?</p>
+<p>■ ¿Cuál fuerza microevolutiva suele cambiar las frecuencias genotípicas sin cambiar las frecuencias alélicas? Explique.</p>
+</section>
+<section id="variación-genética-en-poblaciones" class="level2">
+<h2 class="anchored" data-anchor-id="variación-genética-en-poblaciones">19.4 VARIACIÓN GENÉTICA EN POBLACIONES</h2>
+<p>OBJETIVO DE APRENDIZAJE</p>
+<p>8 Describir la naturaleza y medida de la variación genética, incluido el polimorﬁ smo genético, el polimorﬁ smo equilibrado y la variación geográﬁ ca.</p>
+<p>Las poblaciones contienen abundante variación genética que originalmente se introdujo por mutación. La reproducción sexual, con su entrecruzamiento asociado, ordenamiento independiente de cromosomas</p>
+<p>Cambio evolutivo en poblaciones 421</p>
+<p>En consecuencia, el heterocigoto es más apto que cualquier homocigoto. En partes de África, Oriente Medio y el sur de Asia, donde la malaria falciparum es frecuente, los individuos heterocigotos sobreviven en mayor cantidad que cualquier homocigoto ( FIGURA 19-7 ). El alelo Hb S se mantiene con una alta frecuencia en la población, aun cuando la condición homocigota recesiva casi siempre sea mortal. ¿Qué ocurre con la frecuencia de los alelos Hb S en los africanos y otras personas que los poseen cuando emigran a Estados Unidos y otros países con pocos casos de malaria? Como podría esperarse, la frecuencia del alelo Hb S gradualmente declina en dichas poblaciones, quizá porque confi ere una desventaja selectiva al causar anemia falciforme en individuos homocigotos, pero ya no confi ere una ventaja selectiva al evitar la malaria en los individuos heterocigotos. Sin embargo, el alelo Hb S nunca desaparece de la población porque se “oculta” de la selección en los individuos heterocigotos y porque vuelve a introducirse en la población mediante fl ujo genético desde la población africana.</p>
+<p>La variación genética puede mantenerse mediante selección dependiente de la frecuencia</p>
+<p>Hasta el momento en el estudio de la selección natural se ha supuesto que la adaptabilidad de fenotipos particulares (y sus genotipos correspondientes) es independiente de su frecuencia en la población. Sin embargo, en casos de selección dependiente de la frecuencia , la adaptabilidad de un fenotipo particular depende de cuán frecuentemente aparece en la población. A menudo un fenotipo tiene mayor valor selectivo cuando es raro que cuando es común en la población. Dichos fenotipos pierden su ventaja selectiva conforme se vuelven más comunes. La selección dependiente de la frecuencia usualmente actúa para mantener la variación genética en poblaciones de especies que son presas de depredadores. En este caso, el depredador captura y consume el fenotipo más común, pero puede ignorar los fenotipos más raros. En consecuencia, el fenotipo menos común produce más descendientes y por tanto realiza un mayor aporte relativo a la siguiente generación.</p>
+<p>La variación genética puede mantenerse mediante ventaja heterocigota</p>
+<p>Ya se vio que la selección natural con frecuencia elimina alelos desfavorables de una población mientras conserva los alelos propicios. Sin embargo, en ocasiones la selección natural ayuda a mantener la diversidad genética. En algunos casos la selección natural incluso puede mantener los alelos de una población que son desfavorables en el estado homocigoto. Esto ocurre, por ejemplo, cuando el heterocigoto Aa tiene un mayor grado de adaptabilidad que alguno de los homocigotos AA o aa . Este fenómeno, conocido como ventaja heterocigota , se demuestra en los humanos por la ventaja selectiva de los portadores heterocigotos del alelo de célula falciforme. El alelo mutante ( Hb S ) para la anemia falciforme produce una hemoglobina alterada que deforma o da forma de hoz a los eritrocitos, lo que hace que tengan más probabilidad de formar bloqueos peligrosos en los capilares y que se destruyan en el hígado, el bazo o la médula ósea (lo que se estudió en el capítulo 16). Las personas que son homocigotos para el alelo falciforme ( Hb S Hb S ) por lo general mueren a una edad temprana si no disponen de tratamiento médico. Los individuos heterocigotos portan alelos de hemoglobina tanto normal ( Hb A ) como falciforme. La condición de heterocigoto ( Hb A Hb S ) hace a una persona más resistente a un tipo de malaria severa (causada por el parásito Plasmodium falciparum ) que las personas que son homocigotas al alelo de hemoglobina normal ( Hb A Hb A ). En un individuo heterocigoto, cada alelo produce su propio tipo específi co de hemoglobina y los eritrocitos contienen los dos tipos en cantidades aproximadamente equivalentes. Dichas células se deforman con mucha menos facilidad que las células que contienen sólo el alelo Hb S y son más resistentes a la infección por el parásito causante de la malaria, que vive en los eritrocitos, que los eritrocitos que sólo contienen hemoglobina normal. Donde la malaria es un problema, cada uno de los dos tipos de individuos homocigotos está en desventaja. Los homocigotos para el alelo de célula falciforme es probable que mueran de anemia falciforme, mientras que los homocigotos para el alelo normal pueden morir de malaria.</p>
+<p>Asia Europa</p>
+<p>África</p>
+<p>Frecuencia de alelo Hb s Australia</p>
+<p>Océano Índico Océano Atlántico</p>
+<p>Asia Europa</p>
+<p>África</p>
+<p>Australia</p>
+<p>Océano Índico Océano Atlántico</p>
+<p>1-10% 10-20%</p>
+<ol type="a">
+<li>Distribución geográﬁca de la malaria falciparum ( verde ). (b) Distribución del alelo de la anemia falciforme ( rojo y anaranjado ).</li>
+</ol>
+<p>FIGURA 19-7 Ventaja heterocigota A lo largo de grandes áreas geográﬁ cas, la distribución de individuos heterocigotos para el alelo de anemia falciforme ( Hb S ) es similar a la distribución de la malaria falciparum. Esta evidencia de mayor adaptabilidad de los individuos heterocigotos en regiones de malaria brinda soporte a la hipótesis de la ventaja heteroci gota. (Adaptado de Allison, A. C., “Protection Aﬀ orded by Sickle Cell Traits against Subtertian Malarial Infection”, British Medical Journal, vol.&nbsp;1, 1954).</p>
+<p>422 Capítulo 19</p>
+<p>obtiene alimento al morder las escamas de otros peces, tiene bocas que apuntan a la izquierda o a la derecha. Un solo locus con dos alelos determina esta característica; el alelo para boca que apunta a la derecha es dominante sobre el alelo para la boca que apunta hacia la izquierda. Estos peces atacan a su presa por detrás y desde una sola dirección, dependiendo de la morfología de la boca. Los que tienen bocas que apuntan a la izquierda siempre atacan los fl ancos derechos de su presa, mientras los que tienen bocas que apuntan a la derecha siempre atacan los fl ancos izquierdos. Las especies presa son más exitosas al evadir los ataques de la forma más común de pez comedor de escamas. Por ejemplo, si los cíclidos con bocas que apuntan a la derecha son más comunes que los que tienen bocas que apuntan a la izquierda, las presas son atacadas con más frecuencia desde sus fl ancos izquierdos. Por tanto, se vuelven más cautelosas ante dichos ataques, lo que confi ere una ventaja selectiva a los cíclidos menos comunes con bocas que apuntan hacia la izquierda. Los cíclidos con bocas que apuntan hacia la izquierda tendrían más éxito al obtener alimento y en consecuencia tendrían más descendientes. Con el tiempo, la frecuencia de peces con bocas que apuntan a la izquierda aumentaría en la población, hasta que su abundancia haga que la selección dependiente de la frecuencia opere en su contra y confi era una ventaja a los ahora peces menos comunes con bocas que apuntan a la derecha. Por tanto, la selección dependiente de la frecuencia mantiene ambas poblaciones de peces en números aproximadamente iguales.</p>
+<p>La variación neutra puede no brindar ventaja o desventaja selectiva</p>
+<p>Parte de la variación genética observada en una población puede no conferir aparente ventaja o desventaja selectiva en un ambiente particular. Por ejemplo, los cambios aleatorios en el ADN que no alteran la estructura proteica por lo general no afectan el fenotipo. La variación que no altera la capacidad de un individuo para sobrevivir y reproducirse y, por tanto, no es adaptativa, se conoce como variación neutra . La extensión de la variación neutra en los organismos es difícil de determinar. Es relativamente sencillo demostrar que un alelo es benéfi co o dañino si su efecto es observable. Pero la variación en los alelos que sólo involucra ligeras diferencias en las proteínas que codifi can puede o no ser neutra. Dichos alelos pueden infl uir en el organismo en formas sutiles que sean difíciles de medir o valorar. Además, un alelo que es neutro en un ambiente puede ser benéfi co o dañino en otro.</p>
+<p>Las poblaciones en diferentes áreas geográﬁ cas con frecuencia muestran adaptaciones genéticas a ambientes locales</p>
+<p>Además de la variación genética entre los individuos dentro de una población, con frecuencia existen diferencias genéticas entre distintas poblaciones dentro de la misma especie, un fenómeno conocido como variación geográfi ca . Un tipo de variación geográfi ca es la clina , que es un cambio gradual en las frecuencias fenotípica y genotípica de una especie, a través de una serie de poblaciones geográfi camente separadas, como resultado de un gradiente ambiental. Una clina muestra variación en la expresión de atributos como color, tamaño, forma, fi siología o comportamiento. Las clinas son comunes entre especies con variaciones continuas a lo largo de grandes áreas geográfi cas. Por ejemplo, los tamaños corporales de muchas aves y mamíferos con distribuciones amplias aumentan en forma gradual conforme se incrementa la latitud, presuntamente porque los animales más grandes están mejor adaptados para soportar las temperaturas invernales más frías.</p>
+<p>La selección dependiente de la frecuencia se demuestra en el pez comedor de escamas (cíclidos de la especie Perissodus microlepsis ) del lago Tanganica en África ( FIGURA 19-8 ). El pez comedor de escamas, que</p>
+<p>EXPERIMENTO CLAVE</p>
+<p>PREGUNTA: ¿Puede encontrarse evidencia de selección dependiente de la frecuencia en poblaciones naturales?</p>
+<p>HIPÓTESIS: Iguales proporciones de cíclidos comedores de escamas con bocas que apuntan a la derecha frente a los que tienen bocas que apuntan a la izquierda en una población se mantienen mediante selección dependiente de la frecuencia.</p>
+<p>Cíclido con boca que apunta a la izquierda ataca a la presa en su flanco derecho.</p>
+<p>Cíclido con boca que apunta a la derecha ataca a la presa en su flanco izquierdo.</p>
+<p>EXPERIMENTO: Durante un período de 10 años se supervisan las frecuencias relativas de cíclidos comedores de escamas con bocas que apuntan a la izquierda y que apuntan a la derecha en el lago Tanganica en África.</p>
+<p>Frecuencia de individuos cíclidos con bocas que apuntan a la izquierda</p>
+<p>Años muestra</p>
+<p>1982 1984 1986 1988 1990</p>
+<p>0.5</p>
+<p>0</p>
+<p>1.0</p>
+<p>RESULTADOS Y CONCLUSIONES: Las frecuencias relativas de cíclidos con bocas que apuntan a la izquierda y que apuntan a la derecha variaron ligeramente de año en año, pero permanecieron cerca de 0.5. Esta razón aproximada de 1:1 es consistente con la selección dependiente de la frecuencia porque el pez presa se vuelve especialmente cauteloso a los ataques por el tipo de cíclido que actualmente es más común; por tanto, cualquier tipo está en desventaja selectiva si su frecuencia se eleva por arriba de 0.5.</p>
+<p>FIGURA 19-8 Selección dependiente de la frecuencia en cíclidos comedores de escamas (Adaptado con permiso de Hori, M., “Frequency-Dependent Natural Selection in the Handedness of Scale-Eating Cichlid Fish”, Science, vol.&nbsp;260, 9 de abril de 1993. Copyright © 1993 American Association for the Advancement of Science).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/19-cambio-en-poblaciones/19-cambio-en-poblaciones_p456_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>19-cambio-en-poblaciones_p456_img1.jpeg</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/19-cambio-en-poblaciones/19-cambio-en-poblaciones_p456_img2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>19-cambio-en-poblaciones_p456_img2.jpeg</figcaption>
+</figure>
+</div>
+<p>Cambio evolutivo en poblaciones 423</p>
+<p>experimental muestra los rasgos característicos de la elevación de la que se recolectó.</p>
+<p>Repaso</p>
+<p>■ ¿Cómo el alelo de anemia falciforme ilustra la ventaja heterocigota?</p>
+<p>■ ¿Cómo la selección dependiente de la frecuencia afecta la variación genética dentro de una población a lo largo del tiempo?</p>
+<p>■ ¿Cómo pueden los investigadores poner a prueba la hipótesis de que la variación clinal entre las poblaciones de una especie particular tiene una base genética?</p>
+<p>La milenrama común ( Achillea millefolium ), una fl or silvestre que crece en varios hábitats de América del Norte, desde las tierras bajas hasta las cimas de las montañas, muestran variación clinal en altura en respuesta a distintos climas a diferentes elevaciones. Aunque existe variación sustancial entre los individuos dentro de cada población, los de las poblaciones a mayores elevaciones son, en promedio, más pequeños que los de las elevaciones más bajas. La base genética de estas diferencias clinales se demostró en un conjunto de experimentos clásicos en los que series de poblaciones de diferentes áreas geográfi cas se criaron en el mismo ambiente ( FIGURA 19-9 ). A pesar de estar expuestas a idénticas condiciones ambientales, cada población</p>
+<p>19.1 (página 412)</p>
+<p>1 Deﬁ nir qué se entiende por acervo genético de una población.</p>
+<p>■ Todos los individuos que viven en un lugar particular al mismo tiempo constituyen una población . Cada población tiene un acervo genético que incluye todos los alelos para todos los loci presentes en la población.</p>
+<p>■ La genética de poblaciones es el estudio de la variabilidad genética dentro de una población y de las fuerzas que actúan sobre ella. 2 Distinguir entre genotipo, fenotipo y frecuencias alélicas.</p>
+<p>■ Una frecuencia genotípica es la proporción de un genotipo particular en la población. Una frecuencia fenotípica es la proporción de un fenotipo particular en la población. Una frecuencia alélica es la proporción de un alelo especíﬁ co de un locus genético dado en la población.</p>
+<p>19.2 (página 412)</p>
+<p>3 Discutir el signiﬁ cado del principio de Hardy-Weinberg en su relación con la evolución y elaborar una lista de las cinco condiciones requeridas para el equilibrio genético.</p>
+<p>■ El principio de Hardy-Weinberg aﬁ rma que las frecuencias alélicas y genotípicas no cambian de generación en generación (no ocurre evolución) en una población en equilibrio genético .</p>
+<p>■ El principio de Hardy-Weinberg sólo se aplica si el apareamiento es aleatorio en la población, no hay mutaciones netas que cambien las frecuencias alélicas, la población es grande, los individuos no migran entre poblaciones y no ocurre selección natural. 4 Usar el principio de Hardy-Weinberg para resolver problemas que involucren poblaciones.</p>
+<p>■ En la ecuación de Hardy-Weinberg, p = la frecuencia del alelo dominante, q = la frecuencia del alelo recesivo: p + q = 1.</p>
+<p>■ Las frecuencias genotípicas de una población se describen mediante la relación p 2 + 2 pq + q 2 = 1, donde p 2 es la frecuencia del genotipo dominante homocigoto, 2 pq es la frecuencia del genotipo heterocigoto y q 2 es la frecuencia del genotipo recesivo homocigoto.</p>
+<p>Interactúe con el principio de Hardy-Weinberg al hacer clic sobre la ﬁ gura en CengageNOW.</p>
+</section>
+<section id="resumen-enfoque-en-los-objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-enfoque-en-los-objetivos-de-aprendizaje">■ ■ RESUMEN: ENFOQUE EN LOS OBJETIVOS DE APRENDIZAJE</h2>
+<p>Milenrama ( Achillea millefolium )</p>
+<p>Conway Summit Big Horn Lake</p>
+<p>Tuolumne Meadows</p>
+<p>Altura media de plantas de milenrama (cm)</p>
+<p>Cordillera Sierra Nevada Planicie Gran Cuenca</p>
+<p>Mather Timberline Lee Vining</p>
+<p>Elevación (m)</p>
+<p>100</p>
+<p>50</p>
+<p>0</p>
+<p>4000</p>
+<p>3000</p>
+<p>2000</p>
+<p>1000</p>
+<p>0</p>
+<p>Groveland Aspen Valley Yosemite Creek Tenaya Lake</p>
+<p>FIGURA 19-9 Variación clinal en milenrama ( Achillea millefolium ) (Tomado de J. Clausen, D. D. Keck y W. M. Hiesey, “Experimental Studies on the Nature of Species: III. Environmental Responses of Climatic Races of Achillea”, Carnegie Institute Washington Publication, vol.&nbsp;58, 1948).</p>
+<p>424 Capítulo 19</p>
+<p>19.3 (página 415)</p>
+<p>5 Deﬁ nir microevolución .</p>
+<p>■ Microevolución es un cambio en las frecuencias alélicas o genotípicas dentro de una población a lo largo de generaciones sucesivas. 6 Discutir cómo cada una de las siguientes fuerzas microevolutivas alteran las frecuencias alélicas en las poblaciones: apareamiento no aleatorio, mutación, deriva genética, ﬂ ujo genético y selección natural.</p>
+<p>■ En el apareamiento no aleatorio, los individuos seleccionan parejas sexuales con base en el fenotipo e indirectamente eligen el genotipo correspondiente. La endogamia es el apareamiento de individuos genéticamente similares que están más estrechamente emparentados de lo que estarían de haber elegido al azar de entre toda la población. La endogamia en algunas poblaciones causa depresión endogámica , en la que los individuos que se aparean tienen menor adaptabilidad (capacidad relativa para realizar una aportación genética a la siguiente generación) que los individuos que no se aparean. En el apareamiento selectivo los individuos seleccionan parejas sexuales por sus fenotipos. Tanto la endogamia como el apareamiento selectivo aumentan la frecuencia de genotipos homocigotos.</p>
+<p>■ Las mutaciones , cambios impredecibles en el ADN, son la fuente de nuevos alelos. Las mutaciones aumentan la variabilidad genética sobre la que actúa la selección natural.</p>
+<p>■ La deriva genética es un cambio aleatorio en las frecuencias alélicas de una población pequeña. La deriva genética reduce la variación genética dentro de una población y por lo general los cambios generados por la deriva genética no son adaptativos. Una súbita reducción en el tamaño de la población causado por factores ambientales adversos se conoce como cuello de botella. El efecto fundador es deriva genética que ocurre cuando una población pequeña coloniza un área nueva.</p>
+<p>■ El ﬂ ujo genético , un movimiento de alelos causado por la migración de individuos entre poblaciones, provoca cambios en las frecuencias alélicas.</p>
+<p>■ La selección natural causa cambios en las frecuencias alélicas que conducen a adaptación. La selección natural opera sobre el fenotipo de un organismo, pero cambia la composición genética de una población en una dirección favorable para un ambiente particular.</p>
+<p>7 Distinguir entre selección estabilizadora, selección direccional y selección disruptiva.</p>
+<p>■ La selección estabilizadora favorece la media a costa de los extremos fenotípicos. La selección direccional favorece un extremo fenotípico sobre otro, lo que genera un desplazamiento en la media fenotípica. La selección disruptiva favorece dos o más extremos fenotípicos.</p>
+<p>© Twildlife/Dreamstime</p>
+<p>Observe la selección natural en acción al hacer clic sobre la ﬁ gura en CengageNOW.</p>
+<p>19.4 (página 420)</p>
+<p>8 Describir la naturaleza y medida de la variación genética, incluido el polimorﬁ smo genético, el polimorﬁ smo equilibrado y la variación geográﬁ ca.</p>
+<p>■ El polimorﬁ smo genético es la presencia de variación genética dentro de una población.</p>
+<p>■ El polimorﬁ smo equilibrado es un tipo especial de polimorﬁ smo genético en el que dos o más alelos persisten en una población a lo largo de muchas generaciones como resultado de selección natural.</p>
+<p>■ La ventaja heterocigota ocurre cuando el heterocigoto muestra mayor adaptabilidad que cualquier homocigoto. En la selección dependiente de la frecuencia el valor selectivo de un genotipo varía con la frecuencia con que se presenta.</p>
+<p>■ La variación neutra es variación genética que no conﬁ ere ventaja selectiva detectable.</p>
+<p>■ La variación geográﬁ ca es variación genética que existe entre diferentes poblaciones dentro de la misma especie. Una clina es un cambio gradual en las frecuencias fenotípica y genotípica de una especie a través de una serie de poblaciones geográﬁ camente separadas.</p>
+<ol type="1">
+<li><p>La descripción genética de un individuo es su genotipo, mientras que la descripción genética de una población es su (a) fenotipo (b) acervo génico (c) deriva genética (d) efecto fundador (e) cambios en las frecuencias alélicas</p></li>
+<li><p>En una especie diploide cada individuo posee (a) un alelo por cada locus (b) dos alelos por cada locus (c) tres o más alelos por cada locus (d) todos los alelos que se encuentran en el acervo genético (e) la mitad de los alelos que se encuentran en el acervo genético</p></li>
+<li><p>El grupo sanguíneo MN es de interés para los genetistas de poblaciones porque (a) las personas con genotipo MN no pueden recibir transfusiones sanguíneas de individuos MM o NN (b) las frecuencias genotípicas MM , MN y NN pueden observarse directamente y compararse con las frecuencias calculadas esperadas (c) el alelo M es dominante para el alelo N (d) las personas con el genotipo MN muestran selección dependiente de la frecuencia (e) las personas con el genotipo MN muestran ventaja heterocigota</p></li>
+<li><p>Si todas las copias de un locus dado tienen el mismo alelo a lo largo de la población, entonces la frecuencia alélica es (a) 0 (b) 0.1 (c) 0.5 (d) 1.0 (e) 10.0</p></li>
+<li><p>Si los acervos genético y genotípico de una población permanecen constantes de generación en generación, (a) la población experimenta cambio evolutivo (b) se dice que la población está en equilibrio genético (c) tiene lugar microevolución (d) ocurre selección direccional, pero sólo durante algunas generaciones (e) la deriva genética es una fuerza evolutiva importante</p></li>
+<li><p>El análisis de secuencias de ADN para un locus particular entre los individuos dentro de una población proporciona a los biólogos un mecanismo para estimar (a) la deriva genética (b) el polimorfi smo genético (c) el fl ujo genético (d) la ventaja heterocigota (e) la selección dependiente de la frecuencia</p></li>
+<li><p>La presencia continua del alelo que causa anemia falciforme en áreas donde la malaria falciparum es común demuestra, ¿cuál de los siguientes fenómenos? (a) depresión endogámica (b) selección dependiente de la frecuencia (c) ventaja heterocigota (d) deriva genética (e) un cuello de botella genético</p></li>
+<li><p>De acuerdo con el principio de Hardy-Weinberg, (a) las frecuencias alélicas no dependen de la dominancia o recesividad sino que permanecen esencialmente invariables de generación en generación (b) la</p></li>
+</ol>
+<p>EVALÚE SU COMPRENSIÓN</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/19-cambio-en-poblaciones/19-cambio-en-poblaciones_p458_img1.jpeg" class="img-fluid figure-img"></p>
+<figcaption>19-cambio-en-poblaciones_p458_img1.jpeg</figcaption>
+</figure>
+</div>
+<p>Cambio evolutivo en poblaciones 425</p>
+<p>suma de las frecuencias alélicas para un locus dado siempre es mayor que 1 (c) si un locus sólo tiene un alelo, la frecuencia de dicho alelo es cero (d) las frecuencias alélicas cambian de generación en generación (e) el proceso de herencia, por sí mismo, causa cambios en las frecuencias alélicas</p>
+<ol start="9" type="1">
+<li><p>El principio de Hardy-Weinberg puede aplicarse si (a) el tamaño de la población es pequeño (b) la migración ocurre sólo al comienzo de la época de reproducción (c) las mutaciones ocurren a una tasa constante (d) los apareamientos ocurren exclusivamente entre individuos del mismo genotipo (e) no ocurre selección natural</p></li>
+<li><p>La mutación (a) conduce a cambio evolutivo adaptativo (b) se suma a la variación genética de una población (c) es resultado de la deriva genética (d) casi siempre benefi cia al organismo (e) a y b</p></li>
+<li><p>¿Cuál de las siguientes aseveraciones no es verdadera acerca de la selección natural? (a) la selección natural actúa para preservar los caracteres favorables y eliminar los desfavorables (b) la descendencia de los individuos que están mejor adaptados al ambiente constituirá</p></li>
+</ol>
+<p>una proporción mayor de la siguiente generación (c) la selección natural dirige el curso de la evolución al conservar los rasgos adquiridos durante la vida de un individuo (d) la selección natural actúa sobre la variabilidad genética de una población que surge mediante mutación (e) la selección natural puede resultar en cambios en las frecuencias alélicas de una población</p>
+<ol start="12" type="1">
+<li><p>La distribución de fenotipos que se muestra en la fi gura es más consistente con (a) no selección (b) selección estabilizadora (c) selección direccional (d) selección disruptiva (e) equilibrio genético</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. ¿Por qué las mutaciones casi siempre son neutras o dañinas? Si esto es cierto, ¿por qué las mutaciones son esenciales para la evolución?</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. Explique esta aparente paradoja: los científi cos discuten la evolución en términos de adaptabilidad del genotipo (la ventaja selectiva que un genotipo particular le confi ere a un individuo), aunque la selección natural actúa sobre el fenotipo de un organismo.</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. ¿Por qué es más fácil que los investigadores estudien la aportación genética a la enfermedad en las poblaciones de Finlandia o Islandia en lugar de las de Estados Unidos?</p></li>
+<li><p>VÍNCULO CON LA EVOLUCIÓN. En ocasiones la evolución se caracteriza como “supervivencia del más apto”. ¿Esto es consistente con las defi niciones de adaptabilidad y selección natural de un biólogo evolutivo? ¿Ésta es una buena forma de pensar en la evolución o es defi ciente?</p></li>
+<li><p>ANÁLISIS DE DATOS. Recuerde que el alelo para boca que apunta a la derecha en cíclidos ( A ) es dominante sobre el de boca que apunta a la izquierda ( a ). Use el principio de Hardy-Weinberg para calcular las frecuencias alélicas que corresponderían a iguales frecuencias de los dos fenotipos. ¿Cuál alelo tiene mayor frecuencia? ¿Por qué? ¿En qué forma estos peces comedores de escamas son un ejemplo de polimorfi smo equilibrado?</p></li>
+<li><p>ANÁLISIS DE DATOS. El alelo recesivo que causa el síndrome de Ellis-van Creveld cuando es homocigoto tiene una frecuencia</p></li>
+</ol>
+<p>de aproximadamente 0.07 en la población Amish de Pennsylvania, aunque su frecuencia sólo es de más o menos 0.001 en la población general. ¿Cuántas personas de 1000 en la población Amish esperaría que tuvieran la enfermedad? ¿Cuántas de un millón en la población general?</p>
+<ol start="7" type="1">
+<li><p>ANÁLISIS DE DATOS. El lector estudia machos en poblaciones de cierta especie de pececillos en una serie de lagos en diferentes latitudes. Encuentra que presentan variación clinal en el peso promedio en la madurez y plantea la hipótesis de que las diferencias de peso se deben a factores genéticos. El lector predice que los pesos promedio en la madurez de representantes de cada población criados en acuarios diferirán en formas que son consistentes con las diferencias observadas entre las poblaciones silvestres. Sin embargo, cuando realiza el experimento, no encuentra diferencias entre los promedios poblacionales. ¿Cuál es su conclusión?</p></li>
+<li><p>CIENCIA, TECNOLOGÍA Y SOCIEDAD. Se desarrollan técnicas automatizadas que proporcionarán nueva información acerca de la extensión del polimorfi smo genético entre los humanos, en particular con respecto a polimorfi smos de un solo nucleótido (SNP) y variaciones en el número de copias (CNV). ¿En qué formas puede resultar útil esta información? ¿En qué formas puede presentar desafíos?</p></li>
+</ol>
+<p>Preguntas adicionales están disponibles en CengageNOW en www.cengage.com/login.</p>
+<p>PENSAMIENTO CRÍTICO</p>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+&nbsp;
+
+
+<footer style="background-color:	#d0f0ea; padding:1.5em 1em 0.5em; font-family:'Segoe UI', sans-serif; font-size:0.95em; color:#333; margin-bottom: 0;">
+
+  <div style="max-width:960px; margin:0 auto; text-align:center;">
+
+    <p><a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a> – Ingeniero Ambiental | Magíster en Educación</p>
+
+    <p>Asesor educativo, científico y ambiental con más de 6 años de experiencia desarrollando proyectos de investigación, biodiversidad, ciencia de datos ambientales, ciencia ciudadana y divulgación científica.</p>
+
+    <p>¿Necesitas asesoría experta en educación, medio ambiente, biodiversidad o herramientas científicas como <em>R, Quarto, LaTeX</em> o <em>Google Earth Engine</em>?<br><strong>¡Estoy aquí para ayudarte!</strong></p>
+
+    <p style="margin-top:1em; margin-bottom: 0.5em;">
+
+      <a href="mailto:contacto.envinatu@gmail.com" style="color:#007bff; text-decoration:none;">📩 Contáctame: contacto.envinatu@gmail.com</a><br>
+
+      <a href="https://www.linkedin.com/in/marceloamores" target="_blank" style="color:#007bff; text-decoration:none; display:inline-flex; align-items:center; gap:0.3em;">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#007bff" viewbox="0 0 24 24" style="vertical-align:middle;">
+
+          <path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.3 7.6 24 10.05 24 14.45V24h-5v-8.2c0-1.95-.03-4.45-2.71-4.45-2.71 0-3.13 2.12-3.13 4.3V24h-5V8z"></path>
+
+        </svg>
+
+        Conecta en LinkedIn
+
+      </a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- Carrusel de iNaturalist debajo del footer -->
+
+<div class="inat-carousel-container">
+
+  <div id="inat-carousel-track" class="inat-carousel-track"></div>
+
+</div>
+
+
+
+<style>
+
+.inat-carousel-container {
+
+  overflow: hidden;
+
+  width: 100%;
+
+  background: #d0f0ea;
+
+  padding: 10px 0 14px; /* reducido */
+
+  font-family: 'Segoe UI', sans-serif;
+
+  font-size: 0.85em;
+
+  color: #333;
+
+  margin-top: -8px; /* compensación visual mínima */
+
+}
+
+
+
+.inat-carousel-track {
+
+  display: flex;
+
+  gap: 12px;
+
+  animation: scroll-left 100s linear infinite;
+
+  width: max-content;
+
+  padding: 0 1em;
+
+}
+
+
+
+.inat-card {
+
+  flex: 0 0 auto;
+
+  width: 90px;
+
+  text-align: center;
+
+  background: #fff;
+
+  padding: 8px 6px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 6px;
+
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+}
+
+
+
+.inat-card img {
+
+  width: 75px;
+
+  height: 75px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+}
+
+
+
+.inat-card .species {
+
+  font-weight: 600;
+
+  font-size: 0.75em;
+
+  margin-top: 4px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+}
+
+
+
+.inat-card .date {
+
+  font-size: 0.7em;
+
+  color: #666;
+
+}
+
+
+
+@keyframes scroll-left {
+
+  0% { transform: translateX(0); }
+
+  100% { transform: translateX(-50%); }
+
+}
+
+</style>
+
+
+
+<script>
+
+fetch("https://api.inaturalist.org/v1/observations?user_id=marceloamores&order=desc&order_by=observed_on&per_page=8")
+
+  .then(response => response.json())
+
+  .then(data => {
+
+    const track = document.getElementById("inat-carousel-track");
+
+    const items = data.results.map(obs => {
+
+      const img = obs.photos.length ? obs.photos[0].url.replace("square", "small") : "https://static.inaturalist.org/images/users/defaults/thumb.png";
+
+      const species = obs.taxon ? (obs.taxon.preferred_common_name || obs.taxon.name) : "Sin ID";
+
+      const date = new Date(obs.observed_on).toLocaleDateString("es-EC");
+
+      return `
+
+        <div class="inat-card">
+
+          <a href="https://www.inaturalist.org/observations/${obs.id}" target="_blank" rel="noopener noreferrer">
+
+            <img src="${img}" alt="${species}" />
+
+          </a>
+
+          <div class="species" title="${species}">${species}</div>
+
+          <div class="date">${date}</div>
+
+        </div>`;
+
+    }).join("");
+
+    track.innerHTML = items + items;
+
+  })
+
+  .catch(err => {
+
+    console.error("Error:", err);
+
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<hr />
+
+<p style="text-align: center;">Developed and maintained by <a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a>. <br>
+
+
+
+
+
+Keen to support the site? You're most welcome to <a href='https://ko-fi.com/I2I1K189U' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> </p>
+
+
+
+
+
+
+
+<p style="text-align: center;">For updates, sign up to my <a href="https://github.com/envinatu" target="_blank">newsletter</a></p>
+
+
+
+
+
+<hr>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add icon library 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- Add font awesome icons 
+
+<!--<p style="text-align: center;">
+
+<!--    <a href="https://www.linkedin.com/in/marceloamores" class="fa fa-linkedin" target="_blank"></a>
+
+ <!--   <a href="https://www.inaturalist.org/people/marceloamores" target="_blank">
+
+  <img src="https://static.inaturalist.org/wiki_page_attachments/3154-medium.png" alt="iNaturalist" style="width:24px; height:24px;">
+
+    <a href="https://github.com/envinatu" class="fa fa-github" target="_blank"></a>
+
+    <a href="https://x.com/envinatu" target="_blank">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/300px-X_logo_2023_original.svg.png" alt="X" style="width:13px; height:13px;">
+
+    <a href="https://www.youtube.com/channel/envinatu" class="fa fa-youtube" target="_blank"></a>
+
+</a>
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+
+.inat-widget {padding: 10px; line-height: 1;}
+
+.inat-widget-header {margin-bottom: 10px;}
+
+.inat-widget td {vertical-align: top; padding-bottom: 10px;}
+
+.inat-label { color: #888; }
+
+.inat-meta { font-size: smaller; margin-top: 3px; line-height: 1.2;}
+
+.inat-observation-body, .inat-user-body { padding-left: 10px; }
+
+.inat-observation-image {text-align: center;}
+
+.inat-observation-image, .inat-user-image { width: 48px; display: inline-block; }
+
+.inat-observation-image img, .inat-user-image img { max-width: 48px; }
+
+.inat-observation-image img { vertical-align: middle; }
+
+.inat-widget-small .inat-observation-image { display:block; float: left; margin: 0 3px 3px 0; height:48px;}
+
+.inat-label, .inat-value, .inat-user { font-family: "Trebuchet MS", Arial, sans-serif; }
+
+.inat-user-body {vertical-align: middle;}
+
+.inat-widget td.inat-user-body {vertical-align: middle;}
+
+.inat-widget .inat-footer td.inat-value {vertical-align: middle; padding-left: 10px;}
+
+</style>
+
+<div class="inat-widget">
+
+  
+<table class="inat-footer caption-top" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd inat-user">
+<td class="inat-user-image"><a href="https://www.inaturalist.org/observations/marceloamores" data-border="0"><img src="https://static.inaturalist.org/attachments/users/icons/1116633/thumb.jpg?1628812209" class="usericon img-fluid" /></a></td>
+<td class="inat-value"><strong><a href="https://www.inaturalist.org/observations/marceloamores">Ver las observaciones de Marcelo en iNaturalist »</a></strong></td>
+</tr>
+</tbody>
+</table>
+
+
+  <script type="text/javascript" charset="utf-8" src="https://www.inaturalist.org/observations/marceloamores.widget?layout=large&limit=5&order=desc&order_by=creatrd_at&locale=es"></script>
+
+</div>
+
+
+
+-->
+
+    
+
+
+
+
+
+&nbsp;
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./18-evolucion-darwiniana.html" class="pagination-link" aria-label="18 Introducción a la evolución darwiniana">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">18 Introducción a la evolución darwiniana</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./20-especiacion.html" class="pagination-link" aria-label="20 Especiación y macroevolución">
+        <span class="nav-page-text"><span class="chapter-title">20 Especiación y macroevolución</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<div style="display:inline;">
+©
+<script>document.write(new Date().getFullYear());</script>
+<a href="https://github.com/envinatu"> Marcelo F. Amores Palma</a>
+</div>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/">
+      <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu">
+      <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/nvinatu">
+      <i class="bi bi-twitter-x" role="img" aria-label="Quarto X">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/envinatu">
+      <i class="bi bi-youtube" role="img" aria-label="Envinatu YouTube">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:contacto.envinatu@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email Us">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
